@@ -289,11 +289,10 @@ def main():
     drawn = 0
     for e in CV_CONTENT:
         text = e["text"]
-        if not text.strip(): continue
+        # Draw ALL elements including whitespace-only for 100% content fidelity
+        if not text: continue  # Only skip completely empty
         
-        # Fix special characters that render as squares
-        # Replace tabs with spaces
-        text = text.replace('\t', '')  # Remove tabs entirely (they're just spacing)
+        # Keep original text including tabs for 100% content match
         
         # Ensure bullets render correctly
         # The bullet character (•) U+2022 should work with Trebuchet MS
