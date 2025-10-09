@@ -31,9 +31,9 @@ def load_fonts():
     """Cargar TrebuchetMS desde ~/.fonts/"""
     try:
         pdfmetrics.registerFont(TTFont('TrebuchetMS', os.path.expanduser('~/.fonts/trebuc.ttf')))
-        pdfmetrics.registerFont(TTFont('TrebuchetMS-Bold', os.path.expanduser('~/.fonts/trebucbi.ttf')))
+        pdfmetrics.registerFont(TTFont('TrebuchetMS-Bold', os.path.expanduser('~/.fonts/trebucbd.ttf')))  # Bold puro
         pdfmetrics.registerFont(TTFont('TrebuchetMS-Italic', os.path.expanduser('~/.fonts/trebucit.ttf')))
-        print("✅ TrebuchetMS fonts loaded")
+        print("✅ TrebuchetMS fonts loaded (with proper Bold)")
         return True
     except Exception as e:
         print(f"⚠️  TrebuchetMS not available: {e}")
