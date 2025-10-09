@@ -48,13 +48,11 @@ bash install_fonts.sh
 
 ```
 CV/
-├── generate_cv.py              # Main CV generator (self-contained)
+├── generate_cv.py              # Main CV generator (self-contained, refactored)
 ├── Nicolas_Fredes_CV.pdf       # Generated CV output
 ├── EN_NicolasFredes_CV.pdf    # Original PDF (reference)
 ├── README.md                   # This file
-├── LICENSE                     # MIT License
 ├── requirements.txt            # Python dependencies
-├── compare_pdf.py             # Optional: PDF comparison tool
 └── install_fonts.sh           # Optional: Font installation script
 ```
 
@@ -63,10 +61,12 @@ CV/
 The CV content is embedded in `generate_cv.py` as structured data. To update:
 
 1. Open `generate_cv.py`
-2. Find the `CV_CONTENT` list (starts around line 40)
+2. Find the `CV_CONTENT` list in the code
 3. Modify text, positions, fonts, or colors
 4. Run `python3 generate_cv.py`
 5. Your updated CV is generated!
+
+Note: The code now uses an object-oriented architecture with a `CVGenerator` class for better modularity and maintainability.
 
 ### Data Structure
 
@@ -114,16 +114,6 @@ The generated PDF achieves:
 
 ## Advanced Usage
 
-### Comparison Tool
-
-To compare your generated PDF with the reference:
-
-```bash
-python3 compare_pdf.py
-```
-
-This will output detailed metrics about similarity.
-
 ### Customization
 
 You can modify:
@@ -142,10 +132,6 @@ You can modify:
 - **Color Space**: RGB
 - **Font Embedding**: TrueType fonts embedded in PDF
 - **Coordinate System**: Bottom-left origin (ReportLab standard)
-
-## License
-
-MIT License - See LICENSE file for details.
 
 ## Author
 
