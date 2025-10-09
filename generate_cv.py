@@ -356,8 +356,8 @@ def main():
         except:
             c.setFont("Helvetica", e["size"])
         
-        # Draw - USE JUSTIFICATION for long text in right column
-        if e["x"] > RIGHT_COL_X and len(text.strip()) > 50 and not text.startswith('•'):
+        # Draw - USE JUSTIFICATION for long text in right column  
+        if e["x"] > RIGHT_COL_X and len(text.strip()) > 25 and not text.startswith('•'):
             # Long paragraph text in right column - JUSTIFY
             # Calculate dynamic width from element's X to right edge
             justify_width = RIGHT_COL_END - e["x"]
