@@ -288,7 +288,16 @@ def main():
     # Draw content
     drawn = 0
     for e in CV_CONTENT:
-        if not e["text"].strip(): continue
+        text = e["text"]
+        if not text.strip(): continue
+        
+        # Fix special characters that render as squares
+        # Replace tabs with spaces
+        text = text.replace('\t', '')  # Remove tabs entirely (they're just spacing)
+        
+        # Ensure bullets render correctly
+        # The bullet character (•) U+2022 should work with Trebuchet MS
+        # If it doesn't, we'll use Times-Roman which has it
         
         # Color
         col = e["color"]
@@ -299,14 +308,18 @@ def main():
         else:
             c.setFillColor(colors.HexColor(f"#{col:06x}"))
         
-        # Font
+        # Font - use Times-Roman for bullets to ensure they render
+        font_name = get_font(e["font"], e["bold"], e["italic"], has_treb)
+        if '•' in text:
+            font_name = "Times-Roman"  # Times-Roman handles bullets better
+        
         try:
-            c.setFont(get_font(e["font"], e["bold"], e["italic"], has_treb), e["size"])
+            c.setFont(font_name, e["size"])
         except:
             c.setFont("Helvetica", e["size"])
         
         # Draw
-        c.drawString(e["x"], e["y"], e["text"])
+        c.drawString(e["x"], e["y"], text)
         drawn += 1
     
     # Add clickable links
