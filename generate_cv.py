@@ -235,11 +235,11 @@ BANNER_COLOR = colors.HexColor("#2d73b3")  # Blue background for sections
 
 # Clickable links (email, social media, DOI) - EXACT areas from original
 LINKS = [
-    {"url": "mailto:nico.fredes.franco@gmail.com", "rect": [34.19, 81.25, 168.53, 92.34]},
-    {"url": "https://github.com/nicolasfredesfranco", "rect": [77.59, 92.34, 163.31, 103.34]},
-    {"url": "http://www.linkedin.com/in/nicolasfredesfranco", "rect": [85.0, 103.34, 170.72, 114.34]},
-    {"url": "https://twitter.com/NicoFredesFranc", "rect": [79.41, 114.34, 147.84, 125.34]},
-    {"url": "https://doi.org/10.1109/ACCESS.2021.3094723", "rect": [451.66, 703.03, 573.47, 718.5]},
+    {"url": "mailto:nico.fredes.franco@gmail.com", "rect": [34.20, 699.69, 174.28, 709.69]},
+    {"url": "https://github.com/nicolasfredesfranco", "rect": [34.20, 688.69, 168.16, 698.69]},
+    {"url": "http://www.linkedin.com/in/nicolasfredesfranco", "rect": [34.20, 677.69, 175.58, 687.69]},
+    {"url": "https://twitter.com/NicoFredesFranc", "rect": [34.20, 666.69, 149.34, 676.69]},
+    {"url": "https://doi.org/10.1109/ACCESS.2021.3094723", "rect": [431.69, 68.50, 576.08, 78.50]},
 ]
 
 OUTPUT_FILE = "Nicolas_Fredes_CV.pdf"
@@ -272,6 +272,38 @@ def get_font(name, bold, italic, has_treb):
     if italic or "Italic" in name: return "TrebuchetMS-Italic"
     return "TrebuchetMS"
 
+def draw_justified_text(c, text, x, y, width, font_name, font_size):
+    """Draw justified text by spacing words evenly"""
+    # Set font
+    c.setFont(font_name, font_size)
+    
+    # Split into words
+    words = text.split()
+    
+    if len(words) <= 1:
+        c.drawString(x, y, text)
+        return
+    
+    # Calculate total width of words (without spaces)
+    words_width = sum(c.stringWidth(word, font_name, font_size) for word in words)
+    
+    # If text is too wide, just draw normally
+    if words_width >= width:
+        c.drawString(x, y, text)
+        return
+    
+    # Calculate space between words to fill the width
+    total_space = width - words_width
+    num_gaps = len(words) - 1
+    space_per_gap = total_space / num_gaps
+    
+    # Draw each word at calculated position
+    current_x = x
+    for i, word in enumerate(words):
+        c.drawString(current_x, y, word)
+        word_width = c.stringWidth(word, font_name, font_size)
+        current_x += word_width + space_per_gap
+
 # ============================================================================
 # PDF GENERATOR
 # ============================================================================
@@ -292,6 +324,9 @@ def main():
     
     # Draw content
     drawn = 0
+    RIGHT_COL_X = 200  # Column boundary
+    JUSTIFY_WIDTH = 370  # Width for justified text
+    
     for e in CV_CONTENT:
         text = e["text"]
         
@@ -301,10 +336,6 @@ def main():
         
         # Remove tabs from text to prevent NULL chars (tabs are just formatting)
         text = text.replace('\t', '')
-        
-        # Ensure bullets render correctly
-        # The bullet character (•) U+2022 should work with Trebuchet MS
-        # If it doesn't, we'll use Times-Roman which has it
         
         # Color
         col = e["color"]
@@ -325,8 +356,19 @@ def main():
         except:
             c.setFont("Helvetica", e["size"])
         
-        # Draw
-        c.drawString(e["x"], e["y"], text)
+        # Draw - USE JUSTIFICATION for long text in right column
+        if e["x"] > RIGHT_COL_X and len(text.strip()) > 50 and not text.startswith('•'):
+            # Long paragraph text in right column - JUSTIFY
+            try:
+                draw_justified_text(c, text, e["x"], e["y"], JUSTIFY_WIDTH, font_name, e["size"])
+            except Exception as ex:
+                # Fallback to regular drawing if justification fails
+                print(f"  ⚠ Justification failed: {str(ex)[:50]}")
+                c.drawString(e["x"], e["y"], text)
+        else:
+            # Regular drawing for titles, bullets, left column
+            c.drawString(e["x"], e["y"], text)
+        
         drawn += 1
     
     # Add clickable links

@@ -777,7 +777,7 @@ def ultra_detailed_comparison(orig, gen):
         # Margin recommendations
         for margin in ['left', 'top', 'right', 'bottom']:
             if report['margins'][margin]['diff'] > 2:
-                report['recommendations'].append(
+            report['recommendations'].append(
                     f"⚠️ Margin {margin}: {gm[margin]:.2f}pt should be {om[margin]:.2f}pt "
                     f"(diff: {report['margins'][margin]['diff']:.2f}pt, {report['margins'][margin]['diff_percent']:.1f}%)"
                 )
@@ -789,7 +789,7 @@ def ultra_detailed_comparison(orig, gen):
             gc = gen['column_analysis'][col]
             
             report['columns'][col] = {
-                'x_position': {
+            'x_position': {
                     'original': oc['x_avg'],
                     'generated': gc['x_avg'],
                     'diff': round(abs(oc['x_avg'] - gc['x_avg']), 2),
@@ -800,8 +800,8 @@ def ultra_detailed_comparison(orig, gen):
                     'original': oc['x_end_avg'],
                     'generated': gc['x_end_avg'],
                     'diff': round(abs(oc['x_end_avg'] - gc['x_end_avg']), 2)
-                },
-                'width': {
+            },
+            'width': {
                     'original': oc['width_avg'],
                     'generated': gc['width_avg'],
                     'diff': round(abs(oc['width_avg'] - gc['width_avg']), 2),
@@ -833,7 +833,7 @@ def ultra_detailed_comparison(orig, gen):
             
             # Column width recommendations
             if report['columns'][col]['width']['diff'] > 2:
-                report['recommendations'].append(
+            report['recommendations'].append(
                     f"⚠️ {col.capitalize()} column width: {gc['width_avg']:.2f}pt should be {oc['width_avg']:.2f}pt "
                     f"(diff: {report['columns'][col]['width']['diff']:.2f}pt, {report['columns'][col]['width']['diff_percent']:.1f}%)"
                 )
@@ -1443,7 +1443,7 @@ def ultra_detailed_comparison(orig, gen):
             if hierarchy_differences:
                 report['minor_issues'].append(
                     f"➖ Visual hierarchy differs in {len(hierarchy_differences)} levels"
-                )
+            )
     
     return report
 
