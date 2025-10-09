@@ -228,13 +228,13 @@ BANNERS = [
 
 BANNER_COLOR = colors.HexColor("#2d73b3")  # Blue background for sections
 
-# Clickable links (email, social media, DOI)
+# Clickable links (email, social media, DOI) - EXACT areas from original
 LINKS = [
-    {"url": "mailto:nico.fredes.franco@gmail.com", "rect": [34, 701.9, 171, 713]},
-    {"url": "https://github.com/nicolasfredesfranco", "rect": [77, 690.9, 166, 702]},
-    {"url": "http://www.linkedin.com/in/nicolasfredesfranco", "rect": [85, 679.9, 174, 691]},
-    {"url": "https://twitter.com/NicoFredesFranc", "rect": [79, 668.9, 148, 680]},
-    {"url": "https://doi.org/10.1109/ACCESS.2021.3094723", "rect": [451, 92, 573, 105]},
+    {"url": "mailto:nico.fredes.franco@gmail.com", "rect": [34.19, 81.25, 168.53, 92.34]},
+    {"url": "https://github.com/nicolasfredesfranco", "rect": [77.59, 92.34, 163.31, 103.34]},
+    {"url": "http://www.linkedin.com/in/nicolasfredesfranco", "rect": [85.0, 103.34, 170.72, 114.34]},
+    {"url": "https://twitter.com/NicoFredesFranc", "rect": [79.41, 114.34, 147.84, 125.34]},
+    {"url": "https://doi.org/10.1109/ACCESS.2021.3094723", "rect": [451.66, 703.03, 573.47, 718.5]},
 ]
 
 OUTPUT_FILE = "Nicolas_Fredes_CV.pdf"
