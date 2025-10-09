@@ -79,7 +79,7 @@ python3 test.py
 
 The test compares the generated PDF against the original reference and provides:
 - Section-by-section analysis (CONTACT, EDUCATION, SKILLS, etc.)
-- Global match score (currently: **85.34%** - GOOD quality)
+- Global match score (currently: **84.60%** - ACCEPTABLE quality)
 - Detailed metrics: text content, positioning, fonts, colors
 - Identification of weak points for improvement
 
