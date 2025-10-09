@@ -1,0 +1,53 @@
+# ================================
+# CV PDF Replication - .gitignore
+# ================================
+
+# Generated PDFs (regenerable)
+generated.pdf
+
+# Comparison reports (regenerable)
+detailed_comparison.json
+comparison_report.json
+comparison_full_report.txt
+*.txt
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+*.log
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# ================================
+# IMPORTANT: Keep these files
+# ================================
+# These files MUST be tracked:
+# - EN_NicolasFredes_CV.pdf
+# - compare_pdf.py
+# - generate_cv_from_python.py
+# - README.md
+# - install_fonts.sh
+
