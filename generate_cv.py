@@ -325,7 +325,7 @@ def main():
     # Draw content
     drawn = 0
     RIGHT_COL_X = 200  # Column boundary
-    JUSTIFY_WIDTH = 370  # Width for justified text
+    RIGHT_COL_END = 576  # Right edge of justified text
     
     for e in CV_CONTENT:
         text = e["text"]
@@ -359,8 +359,10 @@ def main():
         # Draw - USE JUSTIFICATION for long text in right column
         if e["x"] > RIGHT_COL_X and len(text.strip()) > 50 and not text.startswith('•'):
             # Long paragraph text in right column - JUSTIFY
+            # Calculate dynamic width from element's X to right edge
+            justify_width = RIGHT_COL_END - e["x"]
             try:
-                draw_justified_text(c, text, e["x"], e["y"], JUSTIFY_WIDTH, font_name, e["size"])
+                draw_justified_text(c, text, e["x"], e["y"], justify_width, font_name, e["size"])
             except Exception as ex:
                 # Fallback to regular drawing if justification fails
                 print(f"  ⚠ Justification failed: {str(ex)[:50]}")
