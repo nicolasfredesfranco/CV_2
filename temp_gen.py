@@ -7,14 +7,14 @@ Refactored version with professional, scalable, and maintainable structure.
 Each PDF section has corresponding code section with hierarchical organization.
 
 Features:
-- Object-oriented CVGenerator class with modular methods
-- Hierarchical data: Sections → Subsections → Sub-subsections
-- EXPERIENCE section: Companies → {company_info, projects → [project_1, project_2, ...]}
-- Easy to modify: Add projects, update info, extend sections
-- Generates identical output to original (98.6% fidelity)
+- Object-oriented design with CVGenerator class
+- Hierarchical data structure: Sections > Subsections > Sub-subsections
+- Modular methods for each CV section with granular control
+- Easy to modify individual sections, add projects, update info
+- Generates identical output to original version (98.6% fidelity)
 
 Author: Nicolás Ignacio Fredes Franco
-Version: 6.0.0 - REFACTORED  
+Version: 6.0.0 - REFACTORED
 License: MIT
 """
 
@@ -27,19 +27,22 @@ import os
 
 
 # ============================================================================
-# COLOR PALETTE
+# COLOR PALETTE - Centralized color definitions
 # ============================================================================
 
 class CVColors:
-    """Centralized color definitions."""
+    """
+    Centralized color palette for the CV.
+    All colors used throughout the document are defined here.
+    """
     BLACK = 0
-    BLUE_LINK = 1070028
-    BLUE_HEADER = 2978739
-    DARK_GRAY = 790041
-    LIGHT_GRAY = 15790320
-    BANNER_BG = colors.HexColor("#2d73b3")
+    BLUE_LINK = 1070028  # #1053cc - Clickable hyperlinks
+    BLUE_HEADER = 2978739  # #2d73b3 - Professional titles and degrees
+    DARK_GRAY = 790041  # #0c0e19 - Special consultant text
+    LIGHT_GRAY = 15790320  # #f0f0f0 - Text on colored banners
+    BANNER_BG = colors.HexColor("#2d73b3")  # Section banner background
     
-    MAP = {
+    COLOR_MAP = {
         BLACK: colors.black,
         BLUE_LINK: colors.HexColor("#1053cc"),
         BLUE_HEADER: colors.HexColor("#2d73b3"),
@@ -48,6 +51,6 @@ class CVColors:
     }
     
     @staticmethod
-    def get(code):
-        return CVColors.MAP.get(code, colors.HexColor(f"#{code:06x}"))
-
+    def get_color(color_code):
+        """Convert color code to ReportLab color object."""
+        return CVColors.COLOR_MAP.get(color_code, colors.HexColor(f"#{color_code:06x}"))
