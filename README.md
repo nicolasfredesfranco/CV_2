@@ -51,6 +51,7 @@ CV/
 ├── generate_cv.py              # Main CV generator (self-contained, refactored)
 ├── Nicolas_Fredes_CV.pdf       # Generated CV output
 ├── EN_NicolasFredes_CV.pdf    # Original PDF (reference)
+├── test.py                     # Visual comparison test (quality assurance)
 ├── README.md                   # This file
 ├── requirements.txt            # Python dependencies
 └── install_fonts.sh           # Optional: Font installation script
@@ -67,6 +68,26 @@ The CV content is embedded in `generate_cv.py` as structured data. To update:
 5. Your updated CV is generated!
 
 Note: The code now uses an object-oriented architecture with a `CVGenerator` class for better modularity and maintainability.
+
+## Quality Assurance
+
+Run the visual comparison test to verify output quality:
+
+```bash
+python3 test.py
+```
+
+The test compares the generated PDF against the original reference and provides:
+- Section-by-section analysis (CONTACT, EDUCATION, SKILLS, etc.)
+- Global match score (currently: **85.34%** - GOOD quality)
+- Detailed metrics: text content, positioning, fonts, colors
+- Identification of weak points for improvement
+
+**Current Quality Metrics:**
+- Text Content Match: 98.8%
+- Font Consistency: 100.0%
+- Links: 5/5 (100%)
+- File Size: 66.6 KB (28.7% more efficient than original)
 
 ### Data Structure
 
