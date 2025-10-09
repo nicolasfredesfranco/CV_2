@@ -273,36 +273,36 @@ def get_font(name, bold, italic, has_treb):
     return "TrebuchetMS"
 
 def draw_justified_text(c, text, x, y, width, font_name, font_size):
-    """Draw justified text by spacing words evenly"""
-    # Set font
+    """Draw justified text - single line only, expand spaces to fill width"""
     c.setFont(font_name, font_size)
     
     # Split into words
     words = text.split()
-    
     if len(words) <= 1:
         c.drawString(x, y, text)
         return
     
-    # Calculate total width of words (without spaces)
-    words_width = sum(c.stringWidth(word, font_name, font_size) for word in words)
+    # Calculate total width of all words (without spaces)
+    words_widths = [c.stringWidth(word, font_name, font_size) for word in words]
+    total_words_width = sum(words_widths)
     
-    # If text is too wide, just draw normally
-    if words_width >= width:
+    # Calculate space available for gaps between words
+    available_space = width - total_words_width
+    num_gaps = len(words) - 1
+    
+    # Don't justify if it would create huge gaps
+    if available_space < 0 or available_space / num_gaps > font_size:
         c.drawString(x, y, text)
         return
     
-    # Calculate space between words to fill the width
-    total_space = width - words_width
-    num_gaps = len(words) - 1
-    space_per_gap = total_space / num_gaps
-    
-    # Draw each word at calculated position
+    # Draw each word with calculated spacing
     current_x = x
+    space_between = available_space / num_gaps
+    
     for i, word in enumerate(words):
         c.drawString(current_x, y, word)
-        word_width = c.stringWidth(word, font_name, font_size)
-        current_x += word_width + space_per_gap
+        if i < len(words) - 1:  # Not the last word
+            current_x += words_widths[i] + space_between
 
 # ============================================================================
 # PDF GENERATOR
@@ -356,20 +356,8 @@ def main():
         except:
             c.setFont("Helvetica", e["size"])
         
-        # Draw - USE JUSTIFICATION for long text in right column  
-        if e["x"] > RIGHT_COL_X and len(text.strip()) > 25 and not text.startswith('•'):
-            # Long paragraph text in right column - JUSTIFY
-            # Calculate dynamic width from element's X to right edge
-            justify_width = RIGHT_COL_END - e["x"]
-            try:
-                draw_justified_text(c, text, e["x"], e["y"], justify_width, font_name, e["size"])
-            except Exception as ex:
-                # Fallback to regular drawing if justification fails
-                print(f"  ⚠ Justification failed: {str(ex)[:50]}")
-                c.drawString(e["x"], e["y"], text)
-        else:
-            # Regular drawing for titles, bullets, left column
-            c.drawString(e["x"], e["y"], text)
+        # Draw ALL text normally first (no justification to avoid overlaps)
+        c.drawString(e["x"], e["y"], text)
         
         drawn += 1
     
