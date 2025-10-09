@@ -215,17 +215,18 @@ CV_CONTENT = [
     {"text": " Expositor of the hyperbolic neural networks used in a GAN architecture.", "x": 213.32, "y": 35.16, "font": "TrebuchetMS", "size": 10.0, "color": 0, "bold": False, "italic": False},
 ]
 
-# Section banners configuration (EXACT from original PDF)
+# Section banners configuration (EXACT coordinates from original PDF)
 # These are large blue rectangles that serve as section backgrounds
+# Coordinates converted to ReportLab system (origin at bottom-left)
 BANNERS = [
-    {"x": 36.0, "y": 125.35, "w": 155.9, "h": 19.57, "text": "EDUCATION"},
-    {"x": 36.0, "y": 330.62, "w": 155.9, "h": 23.87, "text": "SKILLS"},
-    {"x": 36.0, "y": 662.32, "w": 155.9, "h": 25.57, "text": "LANGUAGES"},
-    {"x": 209.0, "y": 682.07, "w": 365.85, "h": 20.97, "text": "EXPERIENCE"},
-    {"x": 209.0, "y": 58.0, "w": 365.85, "h": 27.02, "text": "PAPERS & WORKSHOPS"},
+    {"x": 36.0, "y": 647.08, "w": 155.90, "h": 19.57, "text": "LANGUAGES"},
+    {"x": 36.0, "y": 437.51, "w": 155.90, "h": 23.87, "text": "SKILLS"},
+    {"x": 36.0, "y": 104.11, "w": 155.90, "h": 25.57, "text": "EDUCATION"},
+    {"x": 209.0, "y": 706.98, "w": 365.85, "h": 27.02, "text": "PAPERS & WORKSHOPS"},
+    {"x": 209.0, "y": 88.96, "w": 365.85, "h": 20.97, "text": "EXPERIENCE"},
 ]
 
-BANNER_COLOR = colors.HexColor("#2d73b3")  # Blue, not gray!
+BANNER_COLOR = colors.HexColor("#2d73b3")  # Blue background for sections
 
 # Clickable links (email, social media, DOI)
 LINKS = [
