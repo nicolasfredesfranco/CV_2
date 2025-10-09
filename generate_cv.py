@@ -273,36 +273,35 @@ def get_font(name, bold, italic, has_treb):
     return "TrebuchetMS"
 
 def draw_justified_text(c, text, x, y, width, font_name, font_size):
-    """Draw justified text - single line only, expand spaces to fill width"""
-    c.setFont(font_name, font_size)
+    """
+    Draw justified text using Paragraph with careful positioning
+    Uses single drawOn to avoid creating multiple overlapping text objects
+    """
+    style = ParagraphStyle(
+        'Justified',
+        fontName=font_name,
+        fontSize=font_size,
+        leading=font_size,
+        alignment=TA_JUSTIFY,
+        leftIndent=0,
+        rightIndent=0,
+        wordWrap=None  # Don't wrap
+    )
     
-    # Split into words
-    words = text.split()
-    if len(words) <= 1:
+    # Create paragraph
+    para = Paragraph(text.strip(), style)
+    
+    # Wrap to width
+    w, h = para.wrap(width, font_size * 2)
+    
+    # If wrapped to multiple lines (height > 1.3 * fontSize), fallback
+    if h > font_size * 1.3:
+        # Text too long - just draw normally
+        c.setFont(font_name, font_size)
         c.drawString(x, y, text)
-        return
-    
-    # Calculate total width of all words (without spaces)
-    words_widths = [c.stringWidth(word, font_name, font_size) for word in words]
-    total_words_width = sum(words_widths)
-    
-    # Calculate space available for gaps between words
-    available_space = width - total_words_width
-    num_gaps = len(words) - 1
-    
-    # Don't justify if it would create huge gaps
-    if available_space < 0 or available_space / num_gaps > font_size:
-        c.drawString(x, y, text)
-        return
-    
-    # Draw each word with calculated spacing
-    current_x = x
-    space_between = available_space / num_gaps
-    
-    for i, word in enumerate(words):
-        c.drawString(current_x, y, word)
-        if i < len(words) - 1:  # Not the last word
-            current_x += words_widths[i] + space_between
+    else:
+        # Draw justified - adjust Y to match drawString baseline
+        para.drawOn(c, x, y - font_size * 0.8)
 
 # ============================================================================
 # PDF GENERATOR
@@ -325,8 +324,9 @@ def main():
     # Draw content
     drawn = 0
     RIGHT_COL_X = 200  # Column boundary
-    RIGHT_COL_END = 576  # Right edge of justified text
+    RIGHT_COL_END = 580  # Right edge of justified text
     
+    # Simply draw all content - overlaps are normal (elements on same line)
     for e in CV_CONTENT:
         text = e["text"]
         
@@ -356,7 +356,7 @@ def main():
         except:
             c.setFont("Helvetica", e["size"])
         
-        # Draw ALL text normally first (no justification to avoid overlaps)
+        # Draw all text exactly as in the original (no justification tricks)
         c.drawString(e["x"], e["y"], text)
         
         drawn += 1
