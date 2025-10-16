@@ -53,13 +53,15 @@ bash install_fonts.sh
 
 ```
 CV/
-├── generate_cv.py              # Main CV generator (self-contained, refactored)
-├── Nicolas_Fredes_CV.pdf       # Generated CV output
-├── EN_NicolasFredes_CV.pdf    # Original PDF (reference)
+├── generate_cv.py              # Main CV generator (self-contained, production-perfect)
+├── Nicolas_Fredes_CV.pdf       # Generated CV output (~68.6 KB, 399 elements)
 ├── test.py                     # Visual comparison test (quality assurance)
-├── README.md                   # This file
+├── README.md                   # Complete project documentation
+├── CHANGELOG.md                # Version history and improvements
+├── LICENSE                     # MIT License with attribution requirements
 ├── requirements.txt            # Python dependencies
-└── install_fonts.sh           # Optional: Font installation script
+├── install_fonts.sh            # Optional: Font installation script
+└── .gitignore                  # Git ignore rules
 ```
 
 ## Modifying Your CV
@@ -177,19 +179,67 @@ You can modify:
 - **Font Embedding**: TrueType fonts embedded in PDF
 - **Coordinate System**: Bottom-left origin (ReportLab standard)
 
-## Author
+## Author & Copyright
 
-Nicolás Ignacio Fredes Franco
-- Email: nico.fredes.franco@gmail.com
-- GitHub: [@nicolasfredesfranco](https://github.com/nicolasfredesfranco)
-- LinkedIn: [nicolasfredesfranco](https://linkedin.com/in/nicolasfredesfranco)
+**Nicolás Ignacio Fredes Franco**
+
+- 📧 Email: nico.fredes.franco@gmail.com
+- 💼 GitHub: [@nicolasfredesfranco](https://github.com/nicolasfredesfranco)
+- 🔗 LinkedIn: [nicolasfredesfranco](https://linkedin.com/in/nicolasfredesfranco)
+- 🐦 Twitter: [@NicoFredesFranc](https://twitter.com/NicoFredesFranc)
+
+### Copyright Notice
+
+© 2025 Nicolás Ignacio Fredes Franco. All rights reserved.
+
+**This CV and its content belong exclusively to Nicolás Ignacio Fredes Franco.**
+
+The CV content, personal information, work experience, and achievements described in this document are the intellectual property of Nicolás Ignacio Fredes Franco and are protected by copyright law.
+
+## License
+
+This project is licensed under the **MIT License** - see below for details.
+
+### MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+**Attribution Requirement**: Any use, modification, or distribution of this code must include clear attribution to the original author:
+
+> "CV Generator originally created by Nicolás Ignacio Fredes Franco"  
+> GitHub: [@nicolasfredesfranco](https://github.com/nicolasfredesfranco)
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+### Important Notes
+
+- ✅ **You CAN**: Use this code structure for your own CV
+- ✅ **You CAN**: Modify and adapt the code for personal or commercial use
+- ✅ **You CAN**: Learn from the implementation and techniques used
+- ⚠️ **You MUST**: Attribute the original author (Nicolás Ignacio Fredes Franco)
+- ⚠️ **You MUST**: Replace the CV content with your own information
+- ❌ **You CANNOT**: Use Nicolás Fredes Franco's personal information, experience, or achievements
+- ❌ **You CANNOT**: Claim this work as your own without attribution
 
 ## Contributing
 
-This is a personal CV generator, but feel free to fork and adapt for your own use!
+This is a personal CV generator. While the code is open source, this repository primarily serves as a showcase of professional CV generation techniques.
+
+**If you use this code:**
+1. Fork the repository
+2. Replace all personal content with your own
+3. Maintain attribution to the original author
+4. Share your improvements (optional but appreciated!)
 
 ## Acknowledgments
 
-- Original CV design created with macOS Pages
-- PDF generation powered by ReportLab
-- Fonts: Trebuchet MS (Microsoft)
+- **Original Design & Content**: Nicolás Ignacio Fredes Franco
+- **Architecture & Implementation**: Nicolás Ignacio Fredes Franco
+- **PDF Generation**: [ReportLab](https://www.reportlab.com/) library
+- **Fonts**: Trebuchet MS (Microsoft Typography)
+
+---
+
+**Made with ❤️ by [Nicolás Ignacio Fredes Franco](https://github.com/nicolasfredesfranco)**

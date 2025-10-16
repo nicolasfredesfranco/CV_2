@@ -1,5 +1,10 @@
 # Changelog
 
+**CV Generator by Nicolás Ignacio Fredes Franco**  
+© 2025 Nicolás Ignacio Fredes Franco. All rights reserved.
+
+---
+
 ## Version 8.0.0 - PRODUCTION PERFECT (October 15, 2025)
 
 ### ✨ Major Achievements
