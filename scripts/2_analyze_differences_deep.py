@@ -11,8 +11,11 @@ from collections import defaultdict
 import sys
 from PIL import Image
 
-def extract_all_elements(pdf_path):
-    """Extrae TODOS los elementos con coordenadas, fuentes y colores exactos"""
+def extract_all_elements(pdf_path, region=None):
+    """
+    Extrae elementos con filtro de región opcional
+    region: 'left' (x < 200), 'right' (x >= 200), or None
+    """
     doc = fitz.open(pdf_path)
     page = doc[0]
     
@@ -25,6 +28,14 @@ def extract_all_elements(pdf_path):
             
         for line in block['lines']:
             for span in line['spans']:
+                x = span['bbox'][0]
+                
+                # Filtro de región
+                if region == 'left' and x >= 200:
+                    continue
+                if region == 'right' and x < 200:
+                    continue
+                
                 elem = {
                     'text': span['text'],
                     'x': round(span['bbox'][0], 2),
@@ -131,24 +142,24 @@ def analyze_sections(gen_elements, obj_elements):
     
     return dict(gen_sections), dict(obj_sections)
 
-def analyze_differences_comprehensive(gen_path, obj_path):
+def analyze_differences_comprehensive(gen_path, obj_path, region=None):
     """
-    Análisis exhaustivo y detallado de diferencias
-    Retorna score continuo de 0.0 a 1.0 y reporte completo
+    Análisis exhaustivo con soporte para regiones
     """
     print("=" * 100)
-    print("ANÁLISIS PROFUNDO DE DIFERENCIAS - CV PIXEL-PERFECT")
+    print(f"ANÁLISIS DE DIFERENCIAS ({region.upper() if region else 'GLOBAL'})")
     print("=" * 100)
     
     # 1. Extracción de elementos
     print("\n[1/4] Extrayendo elementos textuales...")
-    gen_elements = extract_all_elements(gen_path)
-    obj_elements = extract_all_elements(obj_path)
+    gen_elements = extract_all_elements(gen_path, region)
+    obj_elements = extract_all_elements(obj_path, region)
     
     print(f"   📊 Generado: {len(gen_elements)} elementos")
     print(f"   📊 Objetivo: {len(obj_elements)} elementos")
     
-    # 2. Similitud pixel-a-pixel
+    # 2. Similitud pixel-a-pixel (Simplificado por ahora siempre compara global, 
+    # pero podríamos cropear imágenes si fuera necesario. Mantenemos global como proxy)
     print("\n[2/4] Calculando similitud pixel-a-pixel...")
     pixel_score = calculate_pixel_similarity(gen_path, obj_path)
     print(f"   🎯 Similitud de píxeles: {pixel_score*100:.4f}%")
@@ -157,6 +168,8 @@ def analyze_differences_comprehensive(gen_path, obj_path):
     print("\n[3/4] Clasificando por secciones...")
     gen_sections, obj_sections = analyze_sections(gen_elements, obj_elements)
     
+    # ... resto de la lógica igual, los elementos ya están filtrados ...
+    
     all_sections = sorted(set(list(gen_sections.keys()) + list(obj_sections.keys())))
     
     # 4. Análisis detallado por sección
@@ -164,7 +177,6 @@ def analyze_differences_comprehensive(gen_path, obj_path):
     
     section_scores = {}
     section_deltas = {}
-    detailed_diffs = {}
     
     for section in all_sections:
         gen_sec = gen_sections.get(section, [])
@@ -198,7 +210,7 @@ def analyze_differences_comprehensive(gen_path, obj_path):
                 error = np.sqrt(dx**2 + dy**2)
                 position_errors.append(error)
                 
-                if error > 1.0:  # Solo reportar desviaciones significativas
+                if error > 1.0:
                     print(f"   ⚠️  '{obj_elem['text'][:30]}...' - Δx:{dx:+.2f}, Δy:{dy:+.2f}, dist:{error:.2f}pts")
         
         # Calcular score de la sección
@@ -206,13 +218,11 @@ def analyze_differences_comprehensive(gen_path, obj_path):
         
         if position_errors:
             avg_error = np.mean(position_errors)
-            # Score de posición: decrece exponencialmente con el error
-            # Error de 0pts = 1.0, Error de 5pts ≈ 0.37, Error de 10pts ≈ 0.13
             position_score = np.exp(-avg_error / 5.0)
         else:
             position_score = 1.0 if matched == len(obj_sec) else 0.0
         
-        # Score combinado (70% contenido, 30% posición)
+        # Score combinado
         section_score = 0.7 * content_score + 0.3 * position_score
         section_scores[section] = section_score
         
@@ -229,21 +239,25 @@ def analyze_differences_comprehensive(gen_path, obj_path):
             section_deltas[section] = {'dx': 0.0, 'dy': 0.0}
             print(f"   ❌ Sin matches")
     
-    # Score global
+    # Score global (SOLO SECCIONES FILTRADAS)
     if section_scores:
         structural_score = np.mean(list(section_scores.values()))
     else:
         structural_score = 0.0
     
-    # Score final combinado (50% píxeles, 50% estructura)
-    global_score = 0.5 * pixel_score + 0.5 * structural_score
+    # Score final combinado (para región específica damos más peso a estructura)
+    if region:
+        global_score = structural_score
+    else:
+        global_score = 0.5 * pixel_score + 0.5 * structural_score
     
     print(f"\n{'=' * 100}")
-    print(f"RESULTADOS FINALES")
+    print(f"RESULTADOS FINALES ({region.upper() if region else 'GLOBAL'})")
     print(f"{'=' * 100}")
-    print(f"   🎨 Score Píxeles:     {pixel_score*100:.4f}%")
+    if not region:
+        print(f"   🎨 Score Píxeles:     {pixel_score*100:.4f}%")
     print(f"   🏗️  Score Estructura:  {structural_score*100:.4f}%")
-    print(f"   🌟 SCORE GLOBAL:      {global_score*100:.4f}%")
+    print(f"   🌟 SCORE FINAL:       {global_score*100:.4f}%")
     print(f"{'=' * 100}\n")
     
     # Generar reporte JSON
@@ -259,7 +273,7 @@ def analyze_differences_comprehensive(gen_path, obj_path):
         }
     }
     
-    # Guardar en el directorio padre si se ejecuta desde scripts/
+    # Guardar reporte
     import os
     script_dir = os.path.dirname(os.path.abspath(__file__))
     parent_dir = os.path.dirname(script_dir)
@@ -269,18 +283,18 @@ def analyze_differences_comprehensive(gen_path, obj_path):
         json.dump(report, f, indent=2, ensure_ascii=False)
     
     print(f"✅ Reporte guardado: {report_path}\n")
-    
     return report
 
 if __name__ == "__main__":
     import os
+    import argparse
     
-    # Determinar rutas relativas
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    parent_dir = os.path.dirname(script_dir)
+    parser = argparse.ArgumentParser()
+    parser.add_argument('gen_pdf', nargs='?', default=os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'outputs', 'Nicolas_Fredes_CV.pdf'))
+    parser.add_argument('obj_pdf', nargs='?', default=os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'Objetivo_No_editar.pdf'))
+    parser.add_argument('--region', choices=['left', 'right'], help='Region to analyze')
     
-    gen_pdf = sys.argv[1] if len(sys.argv) > 1 else os.path.join(parent_dir, 'outputs', 'Nicolas_Fredes_CV.pdf')
-    obj_pdf = sys.argv[2] if len(sys.argv) > 2 else os.path.join(parent_dir, 'Objetivo_No_editar.pdf')
+    args = parser.parse_args()
     
-    analyze_differences_comprehensive(gen_pdf, obj_pdf)
+    analyze_differences_comprehensive(args.gen_pdf, args.obj_pdf, args.region)
 

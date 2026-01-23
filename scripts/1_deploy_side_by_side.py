@@ -7,15 +7,9 @@ import fitz  # PyMuPDF
 from PIL import Image, ImageDraw, ImageFont
 import sys
 
-def deploy_side_by_side(generated_path, objective_path, output_path, zoom=3.0):
+def deploy_side_by_side(generated_path, objective_path, output_path, zoom=3.0, region=None):
     """
-    Genera comparación lado a lado de alta resolución
-    
-    Args:
-        generated_path: Path al PDF generado
-        objective_path: Path al PDF objetivo
-        output_path: Path donde guardar la comparación
-        zoom: Factor de zoom (por defecto 3.0 para alta resolución)
+    Genera comparación lado a lado de alta resolución con crop opcional
     """
     print(f"📄 Abriendo PDFs...")
     gen_doc = fitz.open(generated_path)
@@ -30,6 +24,21 @@ def deploy_side_by_side(generated_path, objective_path, output_path, zoom=3.0):
     # Convertir a PIL Images
     gen_img = Image.frombytes('RGB', [gen_pix.width, gen_pix.height], gen_pix.samples)
     obj_img = Image.frombytes('RGB', [obj_pix.width, obj_pix.height], obj_pix.samples)
+    
+    # Crop logic
+    if region == 'left':
+        # Crop Left Column (approx 0 to 200pts * zoom)
+        # Adding some margin (220pts)
+        crop_width = int(220 * zoom)
+        crop_box = (0, 0, crop_width, gen_img.height)
+        gen_img = gen_img.crop(crop_box)
+        obj_img = obj_img.crop(crop_box)
+    elif region == 'right':
+        # Crop Right Column (approx 200 to end)
+        crop_start = int(190 * zoom)
+        crop_box = (crop_start, 0, gen_img.width, gen_img.height)
+        gen_img = gen_img.crop(crop_box)
+        obj_img = obj_img.crop(crop_box)
     
     # Crear composición
     margin = 60
@@ -49,8 +58,13 @@ def deploy_side_by_side(generated_path, objective_path, output_path, zoom=3.0):
         font_small = ImageFont.load_default()
     
     # Títulos
-    draw.text((margin, 30), "GENERADO", fill='#FF0000', font=font_large)
-    draw.text((gen_img.width + margin * 2, 30), "OBJETIVO", fill='#00AA00', font=font_large)
+    title_suffix = f" ({region.upper()})" if region else ""
+    draw.text((margin, 30), f"GENERADO{title_suffix}", fill='#FF0000', font=font_large)
+    if region == 'left':
+        # Adjust objective title position for narrow left column comparison
+        draw.text((gen_img.width + margin * 2, 30), "OBJETIVO", fill='#00AA00', font=font_large)
+    else:
+        draw.text((gen_img.width + margin * 2, 30), "OBJETIVO", fill='#00AA00', font=font_large)
     
     # Subtítulos con paths
     draw.text((margin, 85), generated_path.split('/')[-1], fill='#666666', font=font_small)
@@ -76,8 +90,13 @@ def deploy_side_by_side(generated_path, objective_path, output_path, zoom=3.0):
     return output_path
 
 if __name__ == "__main__":
-    gen_pdf = sys.argv[1] if len(sys.argv) > 1 else "Nicolas_Fredes_CV.pdf"
-    obj_pdf = sys.argv[2] if len(sys.argv) > 2 else "Objetivo_No_editar.pdf"
-    out_img = sys.argv[3] if len(sys.argv) > 3 else "comparison.png"
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument('gen_pdf', nargs='?', default="Nicolas_Fredes_CV.pdf")
+    parser.add_argument('obj_pdf', nargs='?', default="Objetivo_No_editar.pdf")
+    parser.add_argument('out_img', nargs='?', default="comparison.png")
+    parser.add_argument('--region', choices=['left', 'right'], help='Region to crop')
     
-    deploy_side_by_side(gen_pdf, obj_pdf, out_img)
+    args = parser.parse_args()
+    
+    deploy_side_by_side(args.gen_pdf, args.obj_pdf, args.out_img, region=args.region)

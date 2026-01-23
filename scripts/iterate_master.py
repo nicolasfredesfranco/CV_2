@@ -39,22 +39,26 @@ class CVIterator:
         return result.returncode == 0
     
     def run_comparison(self, cycle):
-        """Genera comparación visual"""
+        """Genera comparación visual (ZOOM IZQUIERDO)"""
         output_path = f'../outputs/comparison_cycle_{cycle}.png'
         result = subprocess.run(
             ['python3', '1_deploy_side_by_side.py',
              '../outputs/Nicolas_Fredes_CV.pdf',
              '../Objetivo_No_editar.pdf',
-             output_path],
+             output_path,
+             '--region', 'left'],
             capture_output=True,
             text=True
         )
         return result.returncode == 0, output_path
     
     def run_analysis(self):
-        """Ejecuta análisis de diferencias"""
+        """Ejecuta análisis de diferencias (SOLO IZQUIERDA)"""
         result = subprocess.run(
-            ['python3', '2_analyze_differences_deep.py'],
+            ['python3', '2_analyze_differences_deep.py',
+             '../outputs/Nicolas_Fredes_CV.pdf',
+             '../Objetivo_No_editar.pdf',
+             '--region', 'left'],
             capture_output=True,
             text=True
         )
