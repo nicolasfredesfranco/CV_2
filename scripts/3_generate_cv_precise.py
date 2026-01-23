@@ -16,6 +16,7 @@ FONT_PATHS = {
     'TrebuchetMS': '/home/nicofredes/.fonts/trebuc.ttf',
     'TrebuchetMS-Bold': '/home/nicofredes/.fonts/trebucbd.ttf',
     'TrebuchetMS-Italic': '/home/nicofredes/.fonts/trebucit.ttf',
+    'AbyssinicaSIL-Regular': '/usr/share/fonts/truetype/abyssinica/AbyssinicaSIL-Regular.ttf'
 }
 
 # Registrar fuentes
@@ -25,7 +26,7 @@ for font_name, font_path in FONT_PATHS.items():
         pdfmetrics.registerFont(TTFont(font_name, font_path))
         fonts_loaded.append(font_name)
     except Exception as e:
-        print(f"⚠️  No se pudo cargar fuente {font_name}: {e}")
+        print(f"⚠️  No se pudo cargar fuente {font_name} ({font_path}): {e}")
 
 if fonts_loaded:
     print(f"✅ Fuentes cargadas: {', '.join(fonts_loaded)}")
@@ -112,8 +113,21 @@ def generate_cv_from_coords(coords_file, output_pdf, config=None):
         
         y = (height - y_orig) - (y_offset + y_section_offset)   # NOTA: RESTAR ambos offsets
         
-        # Tamaño de fuente
+        # Tamaño de fuente (Micro-ajustes por sección)
         size = elem['size']
+        
+        # AJUSTE MANUAL: HEADER suele necesitar un ajuste fino de tamaño para coincidir
+        # con la versión 'bolder' del objetivo
+        if config and 'sections' in config:
+            from cv_utils import classify_element
+            section = classify_element(elem)
+            if section == 'HEADER':
+                size *= 0.99  # Reducción imperceptible para ajustar kerning/boldness
+            elif section == 'CONTACT':
+                # CONTACT parece tener un problema de interlineado, lo compensamos
+                # moviendo ligeramente cada línea si es necesario.
+                # Por ahora confiamos en el iterador, pero el tamaño sí puede influir.
+                pass
         
         # Determinar fuente
         font_family = elem.get('font', 'TrebuchetMS')
@@ -125,6 +139,8 @@ def generate_cv_from_coords(coords_file, output_pdf, config=None):
             font_name = 'TrebuchetMS-Bold'
         elif 'Italic' in font_family or is_italic:
             font_name = 'TrebuchetMS-Italic'
+        elif 'AbyssinicaSIL' in font_family:
+            font_name = 'AbyssinicaSIL-Regular'
         else:
             if 'TrebuchetMS' in font_family:
                 font_name = 'TrebuchetMS'
