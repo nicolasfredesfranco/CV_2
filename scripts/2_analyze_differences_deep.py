@@ -114,30 +114,8 @@ def analyze_sections(gen_elements, obj_elements):
     """Agrupa elementos por sección y calcula métricas detalladas"""
     
     # Keywords para clasificación de secciones
-    section_keywords = {
-        'HEADER': ['Nicolás', 'Ignacio', 'Fredes', 'Franco'],
-        'CONTACT': ['phone', 'email', '@', 'github', 'linkedin', 'twitter', 'Viña', 'Chile'],
-        'EDUCATION': ['EDUCATION', 'University', 'B.S.', 'M.S.', 'Federico', 'Valparaíso', 'GPA'],
-        'PAPERS': ['PAPERS', 'WORKSHOPS', 'IEEE', 'NeurIPS', 'HGAN'],
-        'SKILLS': ['SKILLS', 'PROGRAMMING', 'LANGUAGES', 'FRAMEWORKS', 'CLOUD', 'CONCEPTS', 
-                   'Python', 'C++', 'PyTorch', 'TensorFlow', 'Vertex', 'Google-ADK'],
-        'LANGUAGE': ['Spanish', 'English', 'Native', 'CEFR'],
-        'EXPERIENCE': ['EXPERIENCE'],
-        'JOBSITY': ['JOBSITY', 'Jobsity'],
-        'ZENTA': ['ZENTA'],
-        'DEUNA': ['DEUNA', 'Mexico'],
-        'SPOT': ['SPOT'],
-        'EPAM': ['EPAM'],
-        'WALMART': ['WALMART'],
-        'LAMNGEN': ['LAMNGEN', 'Lamngen']
-    }
-    
-    def classify_element(elem):
-        text = elem['text']
-        for section, keywords in section_keywords.items():
-            if any(kw in text for kw in keywords):
-                return section
-        return 'OTHER'
+    from cv_utils import classify_element
+
     
     # Clasificar elementos
     gen_sections = defaultdict(list)

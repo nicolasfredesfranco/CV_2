@@ -99,13 +99,18 @@ def generate_cv_from_coords(coords_file, output_pdf, config=None):
         # Fórmula: y_reportlab = height - y_pdf
         
         x = x_orig + x_offset
-        y = (height - y_orig) - y_offset   # NOTA: RESTAR el offset
         
-        # Aplicar escala si es necesario (generalmente no se usa)
-        if scale_factor != 1.0:
-            center_x, center_y = width / 2, height / 2
-            x = center_x + (x - center_x) * scale_factor
-            y = center_y + (y - center_y) * scale_factor
+        # Calcular offset Y total (Global + Sección)
+        y_section_offset = 0.0
+        if config and 'sections' in config:
+            from cv_utils import classify_element
+            section = classify_element(elem)
+            if section in config['sections']:
+                sec_config = config['sections'][section]
+                x += sec_config.get('x', 0.0)
+                y_section_offset = sec_config.get('y', 0.0)
+        
+        y = (height - y_orig) - (y_offset + y_section_offset)   # NOTA: RESTAR ambos offsets
         
         # Tamaño de fuente
         size = elem['size']

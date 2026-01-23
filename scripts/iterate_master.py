@@ -17,7 +17,8 @@ class CVIterator:
         self.config = {
             'x_offset': 0.0,
             'y_offset': 0.0,
-            'scale': 1.0
+            'scale': 1.0,
+            'sections': {}
         }
         self.history = []
         self.best_score = 0.0
@@ -74,79 +75,84 @@ class CVIterator:
     def calculate_corrections(self, report):
         """
         Calcula correcciones inteligentes basadas en el reporte
-        Usa un enfoque de descenso de gradiente adaptativo
+        Usa un enfoque de descenso de gradiente adaptativo por SECCIÓN
         """
+        corrections = {
+            'x_offset': 0.0,
+            'y_offset': 0.0,
+            'scale': 0.0,
+            'sections': {}
+        }
+        
         if not report or 'section_deltas' not in report:
-            return {'x_offset': 0.0, 'y_offset': 0.0, 'scale': 0.0}
+            return corrections
         
         deltas = report['section_deltas']
-        
-        if not deltas:
-            return {'x_offset': 0.0, 'y_offset': 0.0, 'scale': 0.0}
-        
-        # Calcular promedio ponderado de deltas
-        total_dx = 0
-        total_dy = 0
-        count = 0
-        
-        for section, delta_dict in deltas.items():
-            dx = delta_dict.get('dx', 0.0)
-            dy = delta_dict.get('dy', 0.0)
-            total_dx += dx
-            total_dy += dy
-            count += 1
-        
-        if count == 0:
-            return {'x_offset': 0.0, 'y_offset': 0.0, 'scale': 0.0}
-        
-        avg_dx = total_dx / count
-        avg_dy = total_dy / count
-        
-        # Learning rate adaptativo ultra-preciso
         score = report.get('global_score', 0.0)
         
+        # Learning rate adaptativo
         if score > 0.99:
-            # Muy cerca: correcciones mínimas
             learning_rate = 0.005
         elif score > 0.95:
-            # Cerca del objetivo: correcciones muy pequeñas
             learning_rate = 0.02
         elif score > 0.90:
-            # Bastante cerca: ajuste fino
             learning_rate = 0.05
         elif score > 0.85:
-            # Moderadamente cerca: correcciones medias
             learning_rate = 0.15
         else:
-            # Lejos: correcciones grandes
             learning_rate = 0.3
         
-        # Calcular correcciones (invertir signos para corregir)
-        correction_x = -avg_dx * learning_rate
-        correction_y = -avg_dy * learning_rate
-        
-        # Clamp dinámico basado en score
+        # Clamp dinámico
         if score > 0.95:
-            max_correction = 0.5  # Muy conservador cerca del objetivo
+            max_correction = 0.5
         elif score > 0.90:
             max_correction = 1.0
         else:
             max_correction = 3.0
             
-        correction_x = max(min(correction_x, max_correction), -max_correction)
-        correction_y = max(min(correction_y, max_correction), -max_correction)
-        
-        return {
-            'x_offset': correction_x,
-            'y_offset': correction_y,
-            'scale': 0.0  # Por ahora no ajustamos escala
-        }
+        # Calcular correcciones por sección
+        for section, delta_dict in deltas.items():
+            dx = delta_dict.get('dx', 0.0)
+            dy = delta_dict.get('dy', 0.0)
+            
+            # Calcular corrección (invertir signos)
+            corr_x = -dx * learning_rate
+            corr_y = -dy * learning_rate
+            
+            # Aplicar clamp
+            corr_x = max(min(corr_x, max_correction), -max_correction)
+            corr_y = max(min(corr_y, max_correction), -max_correction)
+            
+            corrections['sections'][section] = {'x': corr_x, 'y': corr_y}
+            
+        return corrections
+    
+    SECTIONS_TO_OPTIMIZE = {
+        'HEADER',    # Left Column (Top)
+        'EDUCATION', # Left Column
+        'PAPERS',    # Left Column
+        'SKILLS',    # Left Column
+        'LANGUAGE'   # Left Column
+    }
     
     def apply_corrections(self, corrections):
-        """Aplica correcciones a la configuración"""
+        """Aplica correcciones a la configuración (SOLO SECCIONES IZQUIERDAS)"""
+        # Correcciones globales (mantenemos 0 por ahora para priorizar secciones)
         self.config['x_offset'] += corrections['x_offset']
         self.config['y_offset'] += corrections['y_offset']
         self.config['scale'] += corrections['scale']
+        
+        # Correcciones por sección (FILTRADO STRICTO)
+        if 'sections' in corrections:
+            for section, corr in corrections['sections'].items():
+                if section not in self.SECTIONS_TO_OPTIMIZE:
+                    continue
+                    
+                if section not in self.config['sections']:
+                    self.config['sections'][section] = {'x': 0.0, 'y': 0.0}
+                
+                self.config['sections'][section]['x'] += corr['x']
+                self.config['sections'][section]['y'] += corr['y']
     
     def run_cycle(self, cycle):
         """Ejecuta un ciclo completo de iteración"""
@@ -162,6 +168,8 @@ class CVIterator:
         print(f"\n[1/3] Generando CV...")
         if not self.run_generation():
             print("❌ Error en generación")
+            # Forzamos impresión de error si existe (aunque run_generation no devuelve el objeto result, deberíamos modificar run_generation para devolverlo o imprimirlo allí. 
+            # Modificaré run_generation para que imprima el error directamente si falla)
             return None
         
         # 3. Analizar diferencias
