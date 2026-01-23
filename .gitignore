@@ -1,16 +1,29 @@
+# Archivos temporales de iteración
+comparison_cycle_*.png
+iteration_*.txt
+detailed_analysis.txt
+offset_search*.txt
+test_comparison.png
+
+# Archivos generados (mantener en outputs/)
+Nicolas_Fredes_CV.pdf
+comparison_*.png
+
+# Historial de iteraciones
+iteration_history.json
+analysis_report.json
+
+# Configuración temporal
+generation_config.json
+
 # Python
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+*.py[cod]
+*$py.class
 .Python
+*.so
 
-# PDF outputs (keep only specific files)
-*.pdf
-!EN_NicolasFredes_CV.pdf
-!Nicolas_Fredes_CV.pdf
-
-# IDE
+# IDEs
 .vscode/
 .idea/
 *.swp
@@ -20,8 +33,3 @@ __pycache__/
 # OS
 .DS_Store
 Thumbs.db
-
-# Temporary files
-*.tmp
-*.bak
-*_backup.py
