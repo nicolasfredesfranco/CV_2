@@ -4,7 +4,8 @@ CV Generator (Precision: 99.99%)
 ================================
 
 This script generates a pixel-perfect replica of the target CV based on 
-optimized coordinate data and geometric shapes.
+optimized coordinate data and geometric shapes. It serves as the single
+source of truth for the CV generation pipeline.
 
 Features:
 - Exact coordinate rendering from `data/coordinates.json`
@@ -13,7 +14,7 @@ Features:
     - Synthetic Bullet Injection (Heuristic)
     - Font Weight Simulation (Micron-Stroke)
     - Date Alignment Correction
-    - Dark Blue Color Fidelity
+    - Interactive Hyperlink Injection
 
 Usage:
     python3 main.py
@@ -45,17 +46,14 @@ FONT_PATHS = {
     'TrebuchetMS': os.path.join(ASSETS_DIR, 'trebuc.ttf'),
     'TrebuchetMS-Bold': os.path.join(ASSETS_DIR, 'trebucbd.ttf'),
     'TrebuchetMS-Italic': os.path.join(ASSETS_DIR, 'trebucit.ttf'),
-    # Fallback to system font if needed, but we prefer local asset
     'AbyssinicaSIL-Regular': '/usr/share/fonts/truetype/abyssinica/AbyssinicaSIL-Regular.ttf'
 }
 
 # Precision Constants
-GLOBAL_X_OFFSET = 0.0
-GLOBAL_Y_OFFSET = 0.0
-BLUE_COLOR = (0.176, 0.451, 0.702) # Approx Base Blue
+BLUE_COLOR = (0.176, 0.451, 0.702) # Approx Base Blue for shape filtering
 
 def load_fonts():
-    """Registers fonts with ReportLab."""
+    """Registers TTF fonts with ReportLab."""
     loaded = []
     for name, path in FONT_PATHS.items():
         if os.path.exists(path):
@@ -64,19 +62,19 @@ def load_fonts():
                 loaded.append(name)
             except Exception as e:
                 print(f"⚠️ Warning: Could not load font {name}: {e}")
-        else:
-            # Try to load without path if it's a system font or just skip
-            pass
     return loaded
 
 def rgb_from_int(color_int):
-    """Converts integer color to normalized RGB tuple."""
+    """Converts integer color value to normalized RGB tuple (0.0-1.0)."""
     r = (color_int >> 16) & 0xFF
     g = (color_int >> 8) & 0xFF
     b = color_int & 0xFF
     return (r/255.0, g/255.0, b/255.0)
 
 class CVGenerator:
+    """
+    Main engine for generating the CV using high-precision coordinates.
+    """
     def __init__(self, coords_path, shapes_path, output_path):
         self.coords_path = coords_path
         self.shapes_path = shapes_path
@@ -84,94 +82,107 @@ class CVGenerator:
         self.elements = []
         self.shapes = []
         
-        # Load Data
         self._load_data()
         
     def _load_data(self):
-        with open(self.coords_path, 'r', encoding='utf-8') as f:
-            self.elements = json.load(f)
-        
-        if os.path.exists(self.shapes_path):
-            with open(self.shapes_path, 'r') as f:
-                self.shapes = json.load(f)
+        """Loads JSON data for text elements and geometric shapes."""
+        try:
+            with open(self.coords_path, 'r', encoding='utf-8') as f:
+                self.elements = json.load(f)
+            
+            if os.path.exists(self.shapes_path):
+                with open(self.shapes_path, 'r') as f:
+                    self.shapes = json.load(f)
+        except FileNotFoundError as e:
+            print(f"❌ Error: Could not find data file: {e}")
+            sys.exit(1)
 
     def generate(self):
+        """Executes the PDF generation process."""
         print(f"Generating CV to {self.output_path}...")
         
         # Ensure output directory exists
         os.makedirs(os.path.dirname(self.output_path), exist_ok=True)
         
         c = canvas.Canvas(self.output_path, pagesize=A4)
-        width, height = A4 # 595.27 x 841.89 pts
+        _, page_height = A4 # 595.27 x 841.89 pts
         
-        # 1. Draw Shapes (Backgrounds)
-        self._draw_shapes(c, height)
+        # 1. Render Background Shapes
+        self._draw_shapes(c, page_height)
         
-        # 2. Draw Text Elements
-        self._draw_elements(c, height)
+        # 2. Render Text Content
+        self._draw_elements(c, page_height)
         
         c.save()
         print("✅ CV Generation Complete.")
 
     def _draw_shapes(self, c, page_height):
-        """Draws geometric shapes (Blue Headers)."""
+        """Draws geometric shapes (e.g., Blue Headers) with coordinate transformation."""
         for shape in self.shapes:
             if shape['type'] == 'rect':
                 sc = shape.get('color', [])
                 if len(sc) != 3: continue
                 
-                # Filter for Blue-ish rectangles
+                # Filter for Blue-ish rectangles only
                 is_blue = (abs(sc[0] - BLUE_COLOR[0]) < 0.2 and
                            abs(sc[1] - BLUE_COLOR[1]) < 0.2 and
                            abs(sc[2] - BLUE_COLOR[2]) < 0.2)
                 
                 if is_blue:
-                    rect = shape['rect'] # [x0, y0, x1, y1]
+                    rect = shape['rect'] # [x0, y0, x1, y1] (PDF Top-down y1 is bottom)
                     x0, y0, x1, y1 = rect
                     
                     w = x1 - x0
                     h = y1 - y0
                     
-                    # Transform Y to ReportLab (Bottom-Left origin)
-                    # PDF Y is Top-Down. ReportLab Y is Bottom-Up.
-                    # y_rl = page_height - y_pdf_bottom
+                    # Convert PDF Y (Top-Down) to ReportLab Y (Bottom-Up)
+                    # Note: In PDF coords, y1 is the larger value (lower physically on page)
+                    # ReportLab y = Height - y1
                     y = page_height - y1 
                     
                     c.setFillColorRGB(*sc)
                     c.rect(x0, y, w, h, stroke=0, fill=1)
 
     def _draw_elements(self, c, page_height):
-        """Draws text elements with precision fixes."""
+        """
+        Draws text elements and applies Hyper-Precision logic:
+        - Font Weight Simulation
+        - Bullet Injection
+        - Alignment Correction
+        - Hyperlinking
+        """
         for elem in self.elements:
             text = elem['text']
             x = elem['x']
             y_orig = elem['y']
             
-            # Coordinate Transformation
+            # Coordinate Transformation (Top-Down -> Bottom-Up)
             y = page_height - y_orig
             
             # --- Hyper-Precision Fixes ---
             
             # 1. Date Alignment Fix
-            # Right-aligned dates (X > 380) in Right Column tend to drift right.
-            if x > 380 and y > (page_height - 750): # Roughly top half
-                 x -= 1.5 # Shift left
+            # Right-aligned dates (X > 380) in the Right Column tend to drift right by ~1.5px.
+            # We correct this to ensure perfect alignment with location text.
+            if x > 380 and y > (page_height - 750):
+                 x -= 1.5
             
             # 2. Bullet Point Injection (Heuristic)
-            # Right Column descriptions often miss bullets.
+            # The extracted data relies on indentation but often misses the actual bullet char.
+            # Logic: If Right Column AND Not Bold/Italic AND Starts with Uppercase -> Inject Bullet.
             is_right_col = (x > 215)
             is_bold = elem.get('bold', False)
             is_italic = elem.get('italic', False)
-            # Not bold/italic, right col, starts with Uppercase -> Candidate
+            
             if is_right_col and not is_bold and not is_italic:
                 clean_text = text.strip()
                 if clean_text and clean_text[0].isupper() and len(clean_text) > 3:
-                     # Filter out known non-bullets (Location text X > 500)
+                     # Filter out location text (X > 250)
                      if x < 250:
                          text = "• " + text
-                         x -= 6 # Shift left for bullet
+                         x -= 6 # Shift left to accommodate bullet
             
-            # 3. Font Selection & Configuration
+            # 3. Font Selection
             font_family = elem.get('font', 'TrebuchetMS')
             size = elem['size']
             
@@ -183,48 +194,74 @@ class CVGenerator:
             
             c.setFont(font_name, size)
             
-            # 4. Color Logic
+            # 4. Color Application
             color_int = elem.get('color', 0)
             rgb = rgb_from_int(color_int)
             c.setFillColorRGB(*rgb)
             
             # 5. Weight Boost (Digital Ink Spread Simulation)
-            # The objective text looks "thicker". We simulate this with a stroke.
+            # The objective PDF text has a slightly heavier rendering than standard vectors.
+            # We simulate this by applying a very thin stroke to all text.
             
-            # Check if Header (Standard Headers or Large Text on Left)
+            # Define if this is a "Heavy Header" (requires 0.3 stroke) or Body text (0.05 stroke)
             is_header = (size > 11 and x < 200) or (elem['text'].strip() in ['JOBSITY', 'DEUNA', 'SPOT'])
             
-            # Apply Stroke
+            # Apply Text Rendering Mode 2 (Fill + Stroke)
             if hasattr(c, 'setTextRenderMode'):
-                c.setTextRenderMode(2) # Fill + Stroke
+                c.setTextRenderMode(2) 
             else:
-                 c._code.append('2 Tr')
+                 c._code.append('2 Tr') # Raw PDF operator fallback
             
             c.setStrokeColorRGB(*rgb)
             
             if is_header:
-                c.setLineWidth(0.3) # Heavy stroke for headers
+                c.setLineWidth(0.3)
             else:
-                c.setLineWidth(0.05) # Micro stroke for body text
+                c.setLineWidth(0.05)
                 
-            # Draw
+            # 6. Hyperlink Injection
+            # Detects context-aware strings and applies clickable links.
+            url_target = None
+            clean_t = text.strip()
+            
+            if "nico.fredes.franco@gmail.com" in clean_t:
+                url_target = "mailto:nico.fredes.franco@gmail.com"
+            elif "DOI: 10.1109/ACCESS.2021.3094723" in clean_t:
+                url_target = "https://doi.org/10.1109/ACCESS.2021.3094723"
+            elif "nicofredesfranc" in clean_t:
+                url_target = "https://twitter.com/NicoFredesFranc"
+            elif "nicolasfredesfranco" in clean_t:
+                # Disambiguation: GitHub vs LinkedIn
+                # Both share the username text. We use Y-coordinate to distinguish.
+                # GitHub is near the top (Y_orig < 100), LinkedIn follows (Y_orig > 100).
+                if y_orig < 102:
+                     url_target = "https://github.com/nicolasfredesfranco"
+                else:
+                     url_target = "http://www.linkedin.com/in/nicolasfredesfranco"
+            
+            if url_target:
+                string_width = c.stringWidth(text, font_name, size)
+                # Define Hitbox: [x, y_bottom, x_right, y_top]
+                link_rect = (x, y - 2, x + string_width, y + size)
+                c.linkURL(url_target, link_rect, relative=0, thickness=0)
+
+            # Draw String
             try:
                 c.drawString(x, y, text)
             except Exception as e:
-                print(f"Error drawing '{text}': {e}")
+                print(f"⚠️ Error drawing '{text}': {e}")
                 
-            # Reset
+            # Reset Rendering Mode
             if hasattr(c, 'setTextRenderMode'):
-                c.setTextRenderMode(0)
+                c.setTextRenderMode(0) 
             else:
-                 c._code.append('0 Tr')
+                 c._code.append('0 Tr') 
             c.setLineWidth(1)
 
-
 if __name__ == "__main__":
-    print("🚀 Initializing CV Generator (Precision Mode)...")
+    print("🚀 Initializing Precision CV Engine...")
     fonts = load_fonts()
-    print(f"📚 Loaded Fonts: {len(fonts)}")
+    print(f"📚 Loaded {len(fonts)} Fonts.")
     
     generator = CVGenerator(COORDS_FILE, SHAPES_FILE, OUTPUT_PDF)
     generator.generate()
