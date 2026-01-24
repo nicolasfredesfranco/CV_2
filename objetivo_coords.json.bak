@@ -220,11 +220,21 @@
     "italic": false
   },
   {
-    "text": "Federico Santa Mar\u00eda",
+    "text": "Mar\u00eda Technical ",
+    "x": 143.66,
+    "y": 150.63,
+    "font": "TrebuchetMS-Bold",
+    "size": 14.01,
+    "color": 0,
+    "bold": true,
+    "italic": false
+  },
+  {
+    "text": "Federico Santa ",
     "x": 42.13,
     "y": 150.92,
     "font": "TrebuchetMS-Bold",
-    "size": 14.0,
+    "size": 14.01,
     "color": 0,
     "bold": true,
     "italic": false
@@ -250,11 +260,21 @@
     "italic": false
   },
   {
-    "text": "Technical University",
-    "x": 42.13,
-    "y": 166.92,
+    "text": "Mar\u00eda Technical ",
+    "x": 1.12,
+    "y": 166.06,
     "font": "TrebuchetMS-Bold",
-    "size": 14.0,
+    "size": 14.01,
+    "color": 0,
+    "bold": true,
+    "italic": false
+  },
+  {
+    "text": "University ",
+    "x": 106.33,
+    "y": 166.28,
+    "font": "TrebuchetMS-Bold",
+    "size": 14.01,
     "color": 0,
     "bold": true,
     "italic": false

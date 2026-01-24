@@ -36,6 +36,9 @@ class CVIterator:
             capture_output=True,
             text=True
         )
+        if result.returncode != 0:
+            print(f"❌ STDERR: {result.stderr}")
+            print(f"❌ STDOUT: {result.stdout}")
         return result.returncode == 0
     
     def run_comparison(self, cycle):
@@ -94,25 +97,22 @@ class CVIterator:
         deltas = report['section_deltas']
         score = report.get('global_score', 0.0)
         
-        # Learning rate adaptativo
-        if score > 0.99:
-            learning_rate = 0.005
-        elif score > 0.95:
-            learning_rate = 0.02
-        elif score > 0.90:
-            learning_rate = 0.05
-        elif score > 0.85:
-            learning_rate = 0.15
-        else:
-            learning_rate = 0.3
-        
-        # Clamp dinámico
-        if score > 0.95:
+        # Learning rate y Clamping adaptativo (SAFE MODE)
+        if score > 0.98:
+            learning_rate = 0.002
+            max_correction = 0.2
+        elif score > 0.94:
+            learning_rate = 0.01
             max_correction = 0.5
         elif score > 0.90:
+            learning_rate = 0.05
             max_correction = 1.0
+        elif score > 0.85:
+            learning_rate = 0.15
+            max_correction = 2.0
         else:
-            max_correction = 3.0
+            learning_rate = 0.3
+            max_correction = 5.0
             
         # Calcular correcciones por sección
         for section, delta_dict in deltas.items():
@@ -142,9 +142,11 @@ class CVIterator:
     def apply_corrections(self, corrections):
         """Aplica correcciones a la configuración (SOLO SECCIONES IZQUIERDAS)"""
         # Correcciones globales (mantenemos 0 por ahora para priorizar secciones)
-        self.config['x_offset'] += corrections['x_offset']
-        self.config['y_offset'] += corrections['y_offset']
-        self.config['scale'] += corrections['scale']
+        # En High Score Mode, ignoramos correcciones globales para evitar drift
+        if self.best_score < 0.94:
+             self.config['x_offset'] += corrections['x_offset']
+             self.config['y_offset'] += corrections['y_offset']
+             self.config['scale'] += corrections['scale']
         
         # Correcciones por sección (FILTRADO STRICTO)
         if 'sections' in corrections:
