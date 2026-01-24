@@ -1,0 +1,57 @@
+[
+  {
+    "page": 0,
+    "uri": "mailto:nico.fredes.franco@gmail.com",
+    "text_hint": "nico.fredes.franco@gmail.com",
+    "rect": [
+      34.20000076293945,
+      77.96002197265625,
+      174.27999877929688,
+      87.96002197265625
+    ]
+  },
+  {
+    "page": 0,
+    "uri": "https://github.com/nicolasfredesfranco",
+    "text_hint": "//  nicolasfredesfranco",
+    "rect": [
+      77.06999969482422,
+      88.96002197265625,
+      179.1300048828125,
+      98.96002197265625
+    ]
+  },
+  {
+    "page": 0,
+    "uri": "http://www.linkedin.com/in/nicolasfredesfranco",
+    "text_hint": "LinkedIn: //  nicolasfredesfranco",
+    "rect": [
+      34.20000076293945,
+      99.96002197265625,
+      179.1300048828125,
+      109.96002197265625
+    ]
+  },
+  {
+    "page": 0,
+    "uri": "https://twitter.com/NicoFredesFranc",
+    "text_hint": "Twitter: //  nicofredesfranc",
+    "rect": [
+      34.20000076293945,
+      110.96002197265625,
+      158.5,
+      120.96002197265625
+    ]
+  },
+  {
+    "page": 0,
+    "uri": "https://doi.org/10.1109/ACCESS.2021.3094723",
+    "text_hint": "DOI: 10.1109/ACCESS.2021.3094723",
+    "rect": [
+      430.1300048828125,
+      706.22998046875,
+      574.77001953125,
+      715.22998046875
+    ]
+  }
+]

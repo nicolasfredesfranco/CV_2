@@ -110,7 +110,7 @@ def generate_cv_from_coords(coords_file, output_pdf, config=None):
             rect = shape['rect'] # [x0, y0, x1, y1]
             x0, y0, x1, y1 = rect
             
-            if is_blue and x0 < 200:
+            if is_blue:
                 # Transformar coordenadas a ReportLab
                 # PyMuPDF: (0,0) es Top-Left. y1 es la parte de abajo del rect.
                 # ReportLab: (0,0) es Bottom-Left.
@@ -158,11 +158,6 @@ def generate_cv_from_coords(coords_file, output_pdf, config=None):
         # Coordenadas originales del JSON
         x_orig = elem['x']
         y_orig = elem['y']
-        
-        # FILTER: Strict Left Column Only (Temporary for Optimization)
-        # Prevents right column elements from bleeding into left view
-        if x_orig > 210:
-            continue
         
         # Transformación de coordenadas:
         # El JSON tiene coordenadas PDF estándar (origen arriba-izquierda, Y crece hacia abajo)
@@ -238,19 +233,48 @@ def generate_cv_from_coords(coords_file, output_pdf, config=None):
         
         # Emular 'Extra Bold' para el HEADER usando Stroke
         is_header = False
+        is_right_aligned_date = (x > 380 and y < 750) # Heuristic for dates in right col
+        
+        # Corrección de alineación para fechas (Right Aligned drift)
+        if is_right_aligned_date:
+            x -= 1.5 # Shift left to align with "Remote, USA"
+            
+        # BULLET POINT INJECTION
+        # Heuristic: Right Column, Regular Font, Starts with Uppercase -> Likely a Bullet List Item
+        is_right_col_desc = (x > 215 and not is_bold and not is_italic)
+        # Exclude specific non-bullet uppercase starts if any (e.g. "I" inside a sentence? rare at start)
+        # Check text length to avoid artifacts
+        clean_text = text.strip()
+        if is_right_col_desc and clean_text and clean_text[0].isupper() and len(clean_text) > 3:
+             # Exclude known non-bullets like "Remote, Mexico" (X=524)
+             # Description text is usually X ~ 220
+             if x < 250:
+                 text = "• " + text
+                 x -= 6 # Shift left to accommodate bullet
+        
+        # WEIGHT BOOST: El objetivo tiene un renderizado más "grueso"
+        # Aplicamos un stroke muy sutil a TODO el texto
+        
         if config and 'sections' in config:
             from cv_utils import classify_element
             if classify_element(elem) == 'HEADER':
                 is_header = True
-                # Usar operador PDF directo para Fill + Stroke (Texto render mode 2)
-                if hasattr(c, 'setTextRenderMode'):
-                     c.setTextRenderMode(2)
-                else:
-                     # Fallback seguro: inyectar operador PDF
-                     c._code.append('2 Tr')
-                
-                c.setLineWidth(0.3)     # Grosor del stroke para 'engordar' la letra
-                c.setStrokeColorRGB(*rgb) # Mismo color que el relleno
+                if hasattr(c, 'setTextRenderMode'): c.setTextRenderMode(2)
+                else: c._code.append('2 Tr')
+                c.setLineWidth(0.3)
+                c.setStrokeColorRGB(*rgb)
+            else:
+                # Normal text weight boost
+                if hasattr(c, 'setTextRenderMode'): c.setTextRenderMode(2)
+                else: c._code.append('2 Tr')
+                c.setLineWidth(0.05) # Subtle boost
+                c.setStrokeColorRGB(*rgb)
+        else:
+            # Fallback simple boost
+            if hasattr(c, 'setTextRenderMode'): c.setTextRenderMode(2)
+            else: c._code.append('2 Tr')
+            c.setLineWidth(0.05)
+            c.setStrokeColorRGB(*rgb)
 
         # Dibujar texto
         try:

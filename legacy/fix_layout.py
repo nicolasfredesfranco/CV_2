@@ -17,13 +17,13 @@ def fix_layout():
     headers = {}
     
     # Headers we care about
-    TARGET_HEADERS = ['EDUCATION', 'PAPERS & WORKSHOPS', 'SKILLS', 'LANGUAGES']
+    TARGET_HEADERS = ['EDUCATION', 'PAPERS & WORKSHOPS', 'SKILLS', 'LANGUAGES', 'EXPERIENCE', 'PROJECTS']
     
     for e in elements:
-        if e['x'] > 200: continue # Skip right col
+        # if e['x'] > 200: continue # Skip right col -> REMOVED to support Experience
         
         text = e['text'].strip()
-        if text in TARGET_HEADERS:
+        if text in TARGET_HEADERS or 'EXPERIENCE' in text:
             # Found a header
             # We need its geometric center. 
             # JSON has 'y' (top-left usually or baseline? pdfplumber is top)
@@ -48,6 +48,7 @@ def fix_layout():
             # Bot = 127.5 + 9 = 136.5.
             
             headers[text] = {
+                'x': e['x'],
                 'y': e['y'],
                 'size': e.get('size', 11.0), # Default to 11 if missing
                 'text': text
@@ -88,7 +89,12 @@ def fix_layout():
                 print(f"Adjusting Rect at y={y0:.1f} for Header '{closest_header['text']}'")
                 
                 # Desired Dimensions
-                TARGET_HEIGHT = 18.0
+                # Right Column (Experience, etc) = 14px (Thinner)
+                # Left Column (Education, Skills) = 18px (Standard)
+                if closest_header.get('x', 0) > 200:
+                    TARGET_HEIGHT = 14.0
+                else:
+                    TARGET_HEIGHT = 18.0
                 
                 # Desired internal alignment: Center
                 # Text Baseline = info['y']

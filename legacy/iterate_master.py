@@ -136,7 +136,15 @@ class CVIterator:
         'EDUCATION', # Left Column
         'PAPERS',    # Left Column
         'SKILLS',    # Left Column
-        'LANGUAGE'   # Left Column
+        'LANGUAGE',   # Left Column
+        'EXPERIENCE', # Right Column
+        'JOBSITY',
+        'ZENTA',
+        'DEUNA',
+        'SPOT',
+        'EPAM',
+        'WALMART',
+        'LAMNGEN'
     }
     
     def apply_corrections(self, corrections):

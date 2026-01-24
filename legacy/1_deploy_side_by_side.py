@@ -39,6 +39,9 @@ def deploy_side_by_side(generated_path, objective_path, output_path, zoom=3.0, r
         crop_box = (crop_start, 0, gen_img.width, gen_img.height)
         gen_img = gen_img.crop(crop_box)
         obj_img = obj_img.crop(crop_box)
+    elif region == 'full':
+        # No crop
+        pass
     
     # Crear composición
     margin = 60
@@ -95,7 +98,7 @@ if __name__ == "__main__":
     parser.add_argument('gen_pdf', nargs='?', default="Nicolas_Fredes_CV.pdf")
     parser.add_argument('obj_pdf', nargs='?', default="Objetivo_No_editar.pdf")
     parser.add_argument('out_img', nargs='?', default="comparison.png")
-    parser.add_argument('--region', choices=['left', 'right'], help='Region to crop')
+    parser.add_argument('--region', choices=['left', 'right', 'full'], help='Region to crop')
     
     args = parser.parse_args()
     
