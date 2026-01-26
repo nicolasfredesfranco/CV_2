@@ -1,4 +1,3 @@
-import json
 import os
 from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import A4
@@ -6,79 +5,81 @@ from pypdf import PdfWriter, PdfReader
 
 # Configuration
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DATA_DIR = os.path.join(BASE_DIR, 'data')
-COORDS_FILE = os.path.join(DATA_DIR, 'coordinates.json')
 INPUT_PDF = os.path.join(BASE_DIR, 'nueva_version_no_editar.pdf')
 OUTPUT_PDF = os.path.join(BASE_DIR, 'nueva_version_no_editar_2.pdf')
 OVERLAY_PDF = os.path.join(BASE_DIR, 'temp_overlay.pdf')
 
+# Extracted Coordinates from fitz (Top-Down: x0, y0, x1, y1)
+# We need to convert Y to Bottom-Up matching ReportLab.
+# Shape logic: 
+# Email: 1st block
+# GitHub: 2nd block
+# LinkedIn: 3rd block
+# Twitter: 4th block
+# DOI: 5th block (far down)
+
+LINK_MAP = [
+    {
+        "url": "mailto:nico.fredes.franco@gmail.com",
+        "rect": [45.38, 87.27, 181.09, 96.69]
+    },
+    {
+        "url": "https://github.com/nicolasfredesfranco",
+        "rect": [99.72, 98.27, 186.31, 105.74]
+    },
+    {
+        "url": "http://www.linkedin.com/in/nicolasfredesfranco",
+        "rect": [99.72, 109.28, 186.31, 116.75]
+    },
+    {
+        "url": "https://twitter.com/NicoFredesFranc",
+        "rect": [99.72, 120.29, 168.71, 127.75]
+    },
+    {
+        "url": "https://doi.org/10.1109/ACCESS.2021.3094723",
+        "rect": [44.72, 372.83, 188.80, 379.48]
+    }
+]
+
 def create_overlay():
-    """Generates a transparent PDF with only link annotations."""
-    print("Generating link overlay...")
+    print("Generating link overlay with pixel-perfect coordinates...")
     
-    # Load Coordinates
-    with open(COORDS_FILE, 'r') as f:
-        elements = json.load(f)
-
     c = canvas.Canvas(OVERLAY_PDF, pagesize=A4)
-    _, page_height = A4 # 595.27 x 841.89 pts
+    width_pts, height_pts = A4 # 595.27 x 841.89
 
-    count = 0
-    for elem in elements:
-        text = elem['text']
-        x = elem['x']
-        y_orig = elem['y']
+    for link in LINK_MAP:
+        url = link['url']
+        # Input rect is [x0, y0, x1, y1] (Top-Left Origin)
+        rx0, ry0, rx1, ry1 = link['rect']
         
-        # Coordinate Transformation (Top-Down -> Bottom-Up)
-        y = page_height - y_orig
+        # Convert to ReportLab (Bottom-Left Origin)
+        # RL_y = PageHeight - PDF_y
+        # RL y_bottom = PageHeight - ry1 (since ry1 is bigger/lower)
+        # RL y_top = PageHeight - ry0
         
-        url_target = None
-        clean_t = text.strip()
+        x = rx0
+        y = height_pts - ry1
+        w = rx1 - rx0
+        h = ry1 - ry0
         
-        # Logic from main.py
-        if "nico.fredes.franco@gmail.com" in clean_t:
-            url_target = "mailto:nico.fredes.franco@gmail.com"
-        elif "DOI: 10.1109/ACCESS.2021.3094723" in clean_t:
-            url_target = "https://doi.org/10.1109/ACCESS.2021.3094723"
-        elif "nicofredesfranc" in clean_t:
-            url_target = "https://twitter.com/NicoFredesFranc"
-        elif "nicolasfredesfranco" in clean_t:
-            # GitHub vs LinkedIn Logic
-            if y_orig < 102:
-                 url_target = "https://github.com/nicolasfredesfranco"
-            else:
-                 url_target = "http://www.linkedin.com/in/nicolasfredesfranco"
+        # Define Link Rect: [x1, y1, x2, y2] (ReportLab expects this)
+        # Actually linkURL takes (rect=...)
+        # reportlab rect is (x, y, x+w, y+h) usually
         
-        if url_target:
-            # Estimate width/height (approximate since we don't have font metrics loaded perfectly here, 
-            # but usually the bounding box in coords could be used if available. 
-            # main.py used stringWidth. We'll approximate or use a generic width based on char count for safety 
-            # OR better: use main.py logic if we loaded fonts.
-            # To be safe and simple: text length * approx width per char (e.g. 5) 
-            # But main.py uses exact fonts. Let's try to grab font size from elem.
-            
-            size = elem['size']
-            # Approximation: width ~ len * size * 0.5
-            width = len(text) * size * 0.5 
-            
-            # Corrections for specific links if needed, but this approx is usually fine for a hitbox
-            
-            # Define Hitbox: [x, y_bottom, x_right, y_top]
-            # y is the baseline. 
-            link_rect = (x, y - 2, x + width, y + size)
-            
-            c.linkURL(url_target, link_rect, relative=0, thickness=0)
-            count += 1
-            print(f"Added link: {url_target} at ({x}, {y})")
+        link_rect = (x, y, x + w, y + h)
+        
+        # Adjust slighly to ensure full coverage (+- 1pt)
+        # link_rect = (x - 1, y - 1, x + w + 2, y + h + 2)
+        
+        c.linkURL(url, link_rect, relative=0, thickness=0)
+        print(f"Added link: {url} at Rect: {link_rect}")
 
     # Force page creation
     c.showPage()
     c.save()
-    print(f"Overlay created with {count} links.")
-    return count
+    print(f"Overlay created with {len(LINK_MAP)} links.")
 
 def merge_pdfs():
-    """Merges the overlay onto the original PDF."""
     print("Merging PDFs...")
     
     if not os.path.exists(OVERLAY_PDF) or os.path.getsize(OVERLAY_PDF) == 0:
@@ -95,12 +96,13 @@ def merge_pdfs():
     if len(reader_overlay.pages) == 0:
          print("❌ Error: Overlay PDF has no pages.")
          return
-    page_overlay = reader_overlay.pages[0]
-    
-    page_base.merge_page(page_overlay)
+    # Use merge_page to overlay
+    page_base.merge_page(reader_overlay.pages[0])
     
     writer = PdfWriter()
     writer.add_page(page_base)
+    
+    # Add page 2 if exists (ignored for now based on context)
     
     with open(OUTPUT_PDF, 'wb') as f:
         writer.write(f)
