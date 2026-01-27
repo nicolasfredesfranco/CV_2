@@ -2,6 +2,7 @@ import os
 from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import A4
 from pypdf import PdfWriter, PdfReader
+import fitz
 
 # Configuration
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -9,15 +10,17 @@ INPUT_PDF = os.path.join(BASE_DIR, 'nueva_version_no_editar.pdf')
 OUTPUT_PDF = os.path.join(BASE_DIR, 'nueva_version_no_editar_2.pdf')
 OVERLAY_PDF = os.path.join(BASE_DIR, 'temp_overlay.pdf')
 
-# Extracted Coordinates from fitz (Top-Down: x0, y0, x1, y1)
-# We need to convert Y to Bottom-Up matching ReportLab.
-# Shape logic: 
-# Email: 1st block
-# GitHub: 2nd block
-# LinkedIn: 3rd block
-# Twitter: 4th block
-# DOI: 5th block (far down)
+# Get ACTUAL page size from the INPUT PDF
+doc = fitz.open(INPUT_PDF)
+page_rect = doc[0].rect
+ACTUAL_PAGE_WIDTH = page_rect.width
+ACTUAL_PAGE_HEIGHT = page_rect.height
+doc.close()
 
+print(f"Using actual page dimensions: {ACTUAL_PAGE_WIDTH} x {ACTUAL_PAGE_HEIGHT} pts")
+
+# Extracted Coordinates from fitz (Top-Down: x0, y0, x1, y1)
+# These are in PDF coordinate system (top-left origin)
 LINK_MAP = [
     {
         "url": "mailto:nico.fredes.franco@gmail.com",
@@ -42,45 +45,39 @@ LINK_MAP = [
 ]
 
 def create_overlay():
-    print("Generating link overlay with pixel-perfect coordinates...")
+    print("Generating link overlay with corrected page height...")
     
-    c = canvas.Canvas(OVERLAY_PDF, pagesize=A4)
-    width_pts, height_pts = A4 # 595.27 x 841.89
+    # Create canvas with ACTUAL page size (not A4!)
+    c = canvas.Canvas(OVERLAY_PDF, pagesize=(ACTUAL_PAGE_WIDTH, ACTUAL_PAGE_HEIGHT))
 
     for link in LINK_MAP:
         url = link['url']
-        # Input rect is [x0, y0, x1, y1] (Top-Left Origin)
+        # Input rect is [x0, y0, x1, y1] (Top-Left Origin from fitz)
         rx0, ry0, rx1, ry1 = link['rect']
         
         # Convert to ReportLab (Bottom-Left Origin)
-        # RL_y = PageHeight - PDF_y
-        # RL y_bottom = PageHeight - ry1 (since ry1 is bigger/lower)
-        # RL y_top = PageHeight - ry0
+        # RL_y_bottom = PageHeight - PDF_y1 (since y1 is the bottom edge in top-down)
+        # RL_y_top = PageHeight - PDF_y0 (since y0 is the top edge in top-down)
         
         x = rx0
-        y = height_pts - ry1
+        y = ACTUAL_PAGE_HEIGHT - ry1  # Bottom edge of rect
         w = rx1 - rx0
         h = ry1 - ry0
         
-        # Define Link Rect: [x1, y1, x2, y2] (ReportLab expects this)
-        # Actually linkURL takes (rect=...)
-        # reportlab rect is (x, y, x+w, y+h) usually
-        
         link_rect = (x, y, x + w, y + h)
         
-        # Adjust slighly to ensure full coverage (+- 1pt)
-        # link_rect = (x - 1, y - 1, x + w + 2, y + h + 2)
-        
         c.linkURL(url, link_rect, relative=0, thickness=0)
-        print(f"Added link: {url} at Rect: {link_rect}")
+        print(f"Added link: {url}")
+        print(f"  PDF coords (top-down):   [{rx0:.2f}, {ry0:.2f}, {rx1:.2f}, {ry1:.2f}]")
+        print(f"  ReportLab rect (bottom-up): ({x:.2f}, {y:.2f}, {x+w:.2f}, {y+h:.2f})")
 
     # Force page creation
     c.showPage()
     c.save()
-    print(f"Overlay created with {len(LINK_MAP)} links.")
+    print(f"\nOverlay created with {len(LINK_MAP)} links using page dimensions {ACTUAL_PAGE_WIDTH}x{ACTUAL_PAGE_HEIGHT}.")
 
 def merge_pdfs():
-    print("Merging PDFs...")
+    print("\nMerging PDFs...")
     
     if not os.path.exists(OVERLAY_PDF) or os.path.getsize(OVERLAY_PDF) == 0:
         print("❌ Error: Overlay PDF is empty or missing.")
@@ -96,13 +93,12 @@ def merge_pdfs():
     if len(reader_overlay.pages) == 0:
          print("❌ Error: Overlay PDF has no pages.")
          return
-    # Use merge_page to overlay
+    
+    # Merge the overlay
     page_base.merge_page(reader_overlay.pages[0])
     
     writer = PdfWriter()
     writer.add_page(page_base)
-    
-    # Add page 2 if exists (ignored for now based on context)
     
     with open(OUTPUT_PDF, 'wb') as f:
         writer.write(f)

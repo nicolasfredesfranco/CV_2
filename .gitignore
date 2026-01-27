@@ -1,20 +1,19 @@
 # Archivos temporales de iteración
 comparison_cycle_*.png
 iteration_*.txt
-detailed_analysis.txt
-offset_search*.txt
-test_comparison.png
 
-# Archivos generados (mantener en outputs/)
-Nicolas_Fredes_CV.pdf
-comparison_*.png
+# Archivos generados (ahora en ubicaciones específicas)
+outputs/Nicolas_Fredes_CV.pdf
+outputs/comparison_*.png
 
-# Historial de iteraciones
-iteration_history.json
-analysis_report.json
+# Archivos de análisis (ahora en analysis/ y archive/)
+analysis/gap_analysis_*.md
+archive/iteration_history.json
+archive/iteration.log
+archive/detailed_analysis.txt
 
-# Configuración temporal
-generation_config.json
+# Configuración temporal (ahora en config/)
+config/generation_config.json
 
 # Python
 __pycache__/

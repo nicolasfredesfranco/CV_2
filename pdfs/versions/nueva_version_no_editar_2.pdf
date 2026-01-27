@@ -47,7 +47,7 @@ endobj
 endobj
 5 0 obj
 <<
-/Length 2575877
+/Length 2575867
 >>
 stream
 q
@@ -39576,7 +39576,7 @@ Q
 Q
 
 q
-0.0 0.0 595.2756 841.8898 re
+0.0 0.0 623 806 re
 W
 n
 1 0 0 1 0 0 cm
@@ -39606,7 +39606,7 @@ endobj
 /URI (mailto\072nico\056fredes\056franco\100gmail\056com)
 >>
 /Border [ 0 0 0 ]
-/Rect [ 45.38 745.1998 181.09 754.6198 ]
+/Rect [ 45.38 709.31 181.09 718.73 ]
 /Subtype /Link
 /Type /Annot
 >>
@@ -39619,7 +39619,7 @@ endobj
 /URI (https\072\057\057github\056com\057nicolasfredesfranco)
 >>
 /Border [ 0 0 0 ]
-/Rect [ 99.72 736.1498 186.31 743.6198 ]
+/Rect [ 99.72 700.26 186.31 707.73 ]
 /Subtype /Link
 /Type /Annot
 >>
@@ -39632,7 +39632,7 @@ endobj
 /URI (http\072\057\057www\056linkedin\056com\057in\057nicolasfredesfranco)
 >>
 /Border [ 0 0 0 ]
-/Rect [ 99.72 725.1398 186.31 732.6098 ]
+/Rect [ 99.72 689.25 186.31 696.72 ]
 /Subtype /Link
 /Type /Annot
 >>
@@ -39645,7 +39645,7 @@ endobj
 /URI (https\072\057\057twitter\056com\057NicoFredesFranc)
 >>
 /Border [ 0 0 0 ]
-/Rect [ 99.72 714.1398 168.71 721.5998 ]
+/Rect [ 99.72 678.25 168.71 685.71 ]
 /Subtype /Link
 /Type /Annot
 >>
@@ -39658,7 +39658,7 @@ endobj
 /URI (https\072\057\057doi\056org\05710\0561109\057ACCESS\0562021\0563094723)
 >>
 /Border [ 0 0 0 ]
-/Rect [ 44.72 462.4098 188.8 469.0598 ]
+/Rect [ 44.72 426.52 188.8 433.17 ]
 /Subtype /Link
 /Type /Annot
 >>
@@ -39671,12 +39671,12 @@ xref
 0000000113 00000 n 
 0000000162 00000 n 
 0000000487 00000 n 
-0002576419 00000 n 
-0002576526 00000 n 
-0002576723 00000 n 
-0002576923 00000 n 
-0002577137 00000 n 
-0002577335 00000 n 
+0002576409 00000 n 
+0002576516 00000 n 
+0002576709 00000 n 
+0002576905 00000 n 
+0002577115 00000 n 
+0002577309 00000 n 
 trailer
 <<
 /Size 12
@@ -39684,5 +39684,5 @@ trailer
 /Info 1 0 R
 >>
 startxref
-2577552
+2577522
 %%EOF
