@@ -1,0 +1,25 @@
+{
+  "global_score": 0.47031168058714273,
+  "pixel_score": 0.9406233611742855,
+  "structural_score": 0.0,
+  "section_scores": {
+    "DEUNA": 0.0,
+    "EDUCATION": 0.0,
+    "EPAM": 0.0,
+    "EXPERIENCE": 0.0,
+    "HEADER": 0.0,
+    "JOBSITY": 0.0,
+    "LAMNGEN": 0.0,
+    "LANGUAGE": 0.0,
+    "PAPERS": 0.0,
+    "SKILLS": 0.0,
+    "SPOT": 0.0,
+    "WALMART": 0.0,
+    "ZENTA": 0.0
+  },
+  "section_deltas": {},
+  "element_counts": {
+    "generated": 157,
+    "objective": 0
+  }
+}

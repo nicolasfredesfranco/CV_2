@@ -199,25 +199,17 @@ class CVGenerator:
             rgb = rgb_from_int(color_int)
             c.setFillColorRGB(*rgb)
             
-            # 5. Weight Boost (Digital Ink Spread Simulation)
-            # The objective PDF text has a slightly heavier rendering than standard vectors.
-            # We simulate this by applying a very thin stroke to all text.
+            # 5. Text Rendering Mode
+            # UPDATED: Removed weight simulation entirely to match objective PDF
+            # The objective PDF uses clean, standard font rendering without stroke.
+            # Using standard fill-only mode (mode 0) for all text.
             
-            # Define if this is a "Heavy Header" (requires 0.3 stroke) or Body text (0.05 stroke)
-            is_header = (size > 11 and x < 200) or (elem['text'].strip() in ['JOBSITY', 'DEUNA', 'SPOT'])
-            
-            # Apply Text Rendering Mode 2 (Fill + Stroke)
+            # Ensure we're in standard fill mode
             if hasattr(c, 'setTextRenderMode'):
-                c.setTextRenderMode(2) 
+                c.setTextRenderMode(0)
             else:
-                 c._code.append('2 Tr') # Raw PDF operator fallback
-            
-            c.setStrokeColorRGB(*rgb)
-            
-            if is_header:
-                c.setLineWidth(0.3)
-            else:
-                c.setLineWidth(0.05)
+                 c._code.append('0 Tr')
+
                 
             # 6. Hyperlink Injection
             # Detects context-aware strings and applies clickable links.
