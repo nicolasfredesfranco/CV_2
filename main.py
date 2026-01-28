@@ -8,7 +8,7 @@ documents using coordinate-based positioning and vector graphics rendering.
 
 Author: Nicolás Ignacio Fredes Franco
 License: MIT
-Version: 1.3.0
+Version: 1.3.5
 
 Features:
     - Coordinate-based element positioning from data/coordinates.json
@@ -36,7 +36,7 @@ from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 
 # Configuration
-CUSTOM_PAGE_SIZE = (623, 806)  # Custom page size from design specifications
+CUSTOM_PAGE_SIZE = (623.622, 806.299)  # Exact page size from objective PDF (floating-point precision)
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(BASE_DIR, 'data')
