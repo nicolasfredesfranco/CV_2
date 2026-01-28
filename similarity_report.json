@@ -1,0 +1,9 @@
+{
+  "avg_pixel_diff": 42.13632583618164,
+  "pixel_similarity": 83.47594451904297,
+  "pct_identical_pixels": 71.99532576480746,
+  "max_pixel_diff": 255.0,
+  "std_similarity": 99.22563171386719,
+  "histogram_similarity": 94.61725366038523,
+  "combined_score": 83.8689215462217
+}
