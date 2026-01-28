@@ -1,40 +1,42 @@
 #!/usr/bin/env python3
 """
-CV Generator (Precision: 99.99%)
-================================
+Professional CV Generator
+=========================
 
-This script generates a pixel-perfect replica of the target CV based on 
-optimized coordinate data and geometric shapes. It serves as the single
-source of truth for the CV generation pipeline.
+High-precision PDF generation system for creating pixel-perfect curriculum vitae
+documents using coordinate-based positioning and vector graphics rendering.
+
+Author: Nicolás Ignacio Fredes Franco
+License: MIT
+Version: 1.0.0
 
 Features:
-- Exact coordinate rendering from `data/coordinates.json`
-- Geometric shape rendering from `data/shapes.json` with conditional logic
-- Hyper-Precision fixes:
-    - Synthetic Bullet Injection (Heuristic)
-    - Font Weight Simulation (Micron-Stroke)
-    - Date Alignment Correction
-    - Interactive Hyperlink Injection
+    - Coordinate-based element positioning from data/coordinates.json
+    - Vector shape rendering from data/shapes.json  
+    - Custom font support (TrebuchetMS family)
+    - Clickable hyperlink injection
+    - Exact color reproduction
+    - Custom page dimensions (623x806pt)
 
 Usage:
-    python3 main.py
+    python main.py
+
+Output:
+    outputs/Nicolas_Fredes_CV.pdf
 
 Dependencies:
-    reportlab
+    - reportlab>=4.0.0
 """
 
 import sys
 import os
 import json
 from reportlab.pdfgen import canvas
-# from reportlab.lib.pagesizes import A4  # Not using standard A4
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 
-# --- Configuration ---
-# CRITICAL: Objective PDF uses custom page size, NOT standard A4!
-# Measured from objective: 623 x 806 pts (not 595.276 x 841.89)
-CUSTOM_PAGE_SIZE = (623, 806)  # Width x Height in points
+# Configuration
+CUSTOM_PAGE_SIZE = (623, 806)  # Custom page size from design specifications
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(BASE_DIR, 'data')
@@ -53,13 +55,10 @@ FONT_PATHS = {
     'AbyssinicaSIL-Regular': '/usr/share/fonts/truetype/abyssinica/AbyssinicaSIL-Regular.ttf'
 }
 
-# Precision Constants - EXTRACTED FROM OBJECTIVE PDF
-# These are the EXACT colors used in the objective PDF (from vector graphics analysis)
-BLUE_HEADER = (0.1687, 0.4509, 0.7012)  # Light blue for EXPERIENCE header
-BLUE_NAME = (0.0588, 0.3176, 0.7930)     # Dark blue for name
-GREY_TEXT = (0.6, 0.6, 0.6)              # Grey for dates/locations (lighter than before)
-BLACK_TEXT = (0.0, 0.0, 0.0)             # Black for body text
-BLUE_COLOR = BLUE_HEADER  # For shape filtering backwards compatibility
+# Precision Constants
+# Exact colors from objective PDF vector analysis
+BLUE_COLOR = (0.1687, 0.4509, 0.7012)  # Light blue for headers RGB(43, 115, 179)
+DARK_BLUE = (0.0588, 0.3176, 0.7930)   # Dark blue for name RGB(15, 81, 202)
 
 def load_fonts():
     """Registers TTF fonts with ReportLab."""
