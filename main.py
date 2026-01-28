@@ -228,12 +228,15 @@ class CVGenerator:
                 url_target = "mailto:nico.fredes.franco@gmail.com"
             elif "DOI: 10.1109/ACCESS.2021.3094723" in clean_t:
                 url_target = "https://doi.org/10.1109/ACCESS.2021.3094723"
-            elif "nicofredesfranc" in clean_t:
+            elif "nicofredesfranc" in clean_t and "nicolasfredesfranco" not in clean_t:
+                # Twitter-specific username (unique substring)
+                # Must check BEFORE "nicolasfredesfranco" to avoid false match
                 url_target = "https://twitter.com/NicoFredesFranc"
             elif "nicolasfredesfranco" in clean_t:
                 # Disambiguation: GitHub vs LinkedIn
                 # Both share the username text. We use Y-coordinate to distinguish.
-                # GitHub is at Y=145.27, LinkedIn at Y=156.27 (after vector shifts)
+                # GitHub is at Y=145.27, LinkedIn at Y=156.27, Twitter at Y=167.28
+                # Only GitHub and LinkedIn have "nicolasfredesfranco" (Twitter is "nicofredesfranc")
                 if y_orig < 150:
                      url_target = "https://github.com/nicolasfredesfranco"
                 else:
