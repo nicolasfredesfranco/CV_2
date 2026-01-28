@@ -8,7 +8,7 @@ documents using coordinate-based positioning and vector graphics rendering.
 
 Author: Nicolás Ignacio Fredes Franco
 License: MIT
-Version: 1.0.0
+Version: 1.3.0
 
 Features:
     - Coordinate-based element positioning from data/coordinates.json
