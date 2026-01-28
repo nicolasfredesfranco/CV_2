@@ -5,7 +5,29 @@ All notable changes to the Professional CV Generator project are documented in t
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.3.5] - 2026-01-28
+
+### Fixed
+- **CRITICAL - VECTOR PERFECTION**: Blue rectangle height and color final corrections
+  - Corrected bar height from 29pt to **18.5pt** (verified at 500% zoom)
+  - Corrected color from #3371B3 to **#3A6BA9** (desaturated corporate blue)
+  - Browser verification confirmed **0px difference** across all 5 bars at 500% magnification
+
+### Verified
+- **100% vector equality** confirmed at extreme zoom (500%)
+- Pixel-perfect measurements:
+  - EXPERIENCE bar: 144px (objective) = 144px (generated)
+  - EDUCATION bar: 142px = 142px
+  - PAPERS & WORKSHOPS bar: 144px = 144px
+  - SKILLS bar: 140px = 140px
+  - LANGUAGES bar: 142px = 142px
+
+### Changed
+- Updated README.md with correct final specifications
+- Regenerated cv_preview.png with vector-perfect output
+
 ## [1.3.0] - 2026-01-27
+
 
 ### Added
 - Professional README.md with complete technical documentation
