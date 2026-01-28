@@ -133,8 +133,8 @@ Transformation: y_reportlab = page_height - y_pdf
 ### Custom Page Geometry
 
 ```python
-PAGE_WIDTH = 623.62    # pt
-PAGE_HEIGHT = 806.30   # pt
+PAGE_WIDTH = 623.622   # pt (exact floating-point precision)
+PAGE_HEIGHT = 806.299  # pt (exact floating-point precision)
 ```
 
 This non-standard geometry exactly matches the target PDF's dimensions.
@@ -252,7 +252,7 @@ CV/
    └── shapes.json      → Rectangles
 
 2. Initialize Canvas
-   ├── Custom page size (623.62 x 806.30 pt)
+   ├── Custom page size (623.622 x 806.299 pt)
    └── Register TrebuchetMS fonts
 
 3. Render Shapes
