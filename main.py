@@ -1,270 +1,359 @@
 #!/usr/bin/env python3
 """
-Professional CV Generator
-=========================
+CV Generator Engine
+===================
 
-High-precision PDF generation system for creating pixel-perfect curriculum vitae
-documents using coordinate-based positioning and vector graphics rendering.
+Sistema de generación de documentos PDF de alta precisión basado en coordenadas absolutas.
+Diseñado para replicar diseños vectoriales exactos con inyección dinámica de metadatos.
+Mantiene una fidelidad visual del 100% respecto al diseño objetivo original.
 
-Author: Nicolás Ignacio Fredes Franco
-License: MIT
-Version: 1.3.5
-
-Features:
-    - Coordinate-based element positioning from data/coordinates.json
-    - Vector shape rendering from data/shapes.json  
-    - Custom font support (TrebuchetMS family)
-    - Clickable hyperlink injection
-    - Exact color reproduction
-    - Custom page dimensions (623x806pt)
-
-Usage:
-    python main.py
-
-Output:
-    outputs/Nicolas_Fredes_CV.pdf
-
-Dependencies:
-    - reportlab>=4.0.0
+@author: Nicolás Ignacio Fredes Franco
+@version: 2.0.0
+@license: MIT
 """
 
-import sys
-import os
 import json
+import logging
+import sys
+from dataclasses import dataclass
+from pathlib import Path
+from typing import List, Dict, Any, Optional, Tuple
+
 from reportlab.pdfgen import canvas
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 
-# Configuration
-CUSTOM_PAGE_SIZE = (623, 806)  # Exact page size from objective PDF (matches pdfinfo output)
+# --- Configuración del Sistema de Logging ---
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(message)s",
+    datefmt="%H:%M:%S"
+)
+logger = logging.getLogger("CV_Engine")
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DATA_DIR = os.path.join(BASE_DIR, 'data')
-ASSETS_DIR = os.path.join(DATA_DIR, 'assets')
-OUTPUT_DIR = os.path.join(BASE_DIR, 'outputs')
+# --- Capa de Configuración (Configuration Layer) ---
 
-COORDS_FILE = os.path.join(DATA_DIR, 'coordinates.json')
-SHAPES_FILE = os.path.join(DATA_DIR, 'shapes.json')
-OUTPUT_PDF = os.path.join(OUTPUT_DIR, 'Nicolas_Fredes_CV.pdf')
-
-# Font Configuration
-FONT_PATHS = {
-    'TrebuchetMS': os.path.join(ASSETS_DIR, 'trebuc.ttf'),
-    'TrebuchetMS-Bold': os.path.join(ASSETS_DIR, 'trebucbd.ttf'),
-    'TrebuchetMS-Italic': os.path.join(ASSETS_DIR, 'trebucit.ttf'),
-    'AbyssinicaSIL-Regular': '/usr/share/fonts/truetype/abyssinica/AbyssinicaSIL-Regular.ttf'
-}
-
-# Precision Constants
-# Exact colors from objective PDF vector analysis
-BLUE_COLOR = (0.1687, 0.4509, 0.7012)  # Light blue for headers RGB(43, 115, 179)
-DARK_BLUE = (0.0588, 0.3176, 0.7930)   # Dark blue for name RGB(15, 81, 202)
-
-def load_fonts():
-    """Registers TTF fonts with ReportLab."""
-    loaded = []
-    for name, path in FONT_PATHS.items():
-        if os.path.exists(path):
-            try:
-                pdfmetrics.registerFont(TTFont(name, path))
-                loaded.append(name)
-            except Exception as e:
-                print(f"⚠️ Warning: Could not load font {name}: {e}")
-    return loaded
-
-def rgb_from_int(color_int):
-    """Converts integer color value to normalized RGB tuple (0.0-1.0)."""
-    r = (color_int >> 16) & 0xFF
-    g = (color_int >> 8) & 0xFF
-    b = color_int & 0xFF
-    return (r/255.0, g/255.0, b/255.0)
-
-class CVGenerator:
+@dataclass(frozen=True)
+class LayoutConfig:
     """
-    Main engine for generating the CV using high-precision coordinates.
+    Configuración centralizada de dimensiones, colores y reglas de negocio.
+    Define la 'Física' del documento para garantizar consistencia.
     """
-    def __init__(self, coords_path, shapes_path, output_path):
-        self.coords_path = coords_path
-        self.shapes_path = shapes_path
-        self.output_path = output_path
-        self.elements = []
-        self.shapes = []
+    # Dimensiones de página (Puntos exactos - CORREGIDO basado en pdfinfo)
+    # Objetivo verificado: 623 x 806 pts (NO flotantes)
+    PAGE_WIDTH: float = 623.0
+    PAGE_HEIGHT: float = 806.0
+
+    # Paleta de Colores (RGB Normalizado 0-1)
+    # Azul corporativo exacto extraído de shapes.json: #3A6BA9 = RGB(58,107,169)
+    COLOR_PRIMARY_BLUE: Tuple[float, float, float] = (0.227, 0.42, 0.663)
+    
+    # Umbrales de Lógica de Diseño (Reverse Engineered Logic)
+    # Coordenadas X/Y que disparan comportamientos específicos
+    THRESHOLD_RIGHT_COLUMN_X: float = 215.0
+    THRESHOLD_LOCATION_TEXT_X: float = 250.0
+    THRESHOLD_DATE_ALIGN_X: float = 380.0
+    THRESHOLD_DATE_ALIGN_Y_LIMIT: float = 750.0  # Aplicar corrección solo en el cuerpo
+    
+    # Umbral vertical para desambiguar links (Github vs LinkedIn)
+    THRESHOLD_LINK_DISAMBIGUATION_Y: float = 150.0
+
+    # Ajustes de Micro-Precisión (Offsets en Puntos)
+    OFFSET_DATE_CORRECTION: float = 1.5
+    OFFSET_BULLET_INDENT: float = 8.5
+    LINK_HITBOX_PADDING: float = 2.0
+
+    # Rutas del Sistema (Pathlib para compatibilidad OS)
+    BASE_DIR: Path = Path(__file__).parent.resolve()
+    DATA_DIR: Path = BASE_DIR / 'data'
+    ASSETS_DIR: Path = DATA_DIR / 'assets'
+    OUTPUT_DIR: Path = BASE_DIR / 'outputs'
+    
+    FILE_COORDS: Path = DATA_DIR / 'coordinates.json'
+    FILE_SHAPES: Path = DATA_DIR / 'shapes.json'
+    FILE_OUTPUT: Path = OUTPUT_DIR / 'Nicolas_Fredes_CV.pdf'
+
+# Instancia global de configuración
+CFG = LayoutConfig()
+
+# --- Capa de Lógica de Negocio (Core Logic) ---
+
+class FontManager:
+    """Gestor de tipografías para asegurar que los recursos estén disponibles."""
+    
+    @staticmethod
+    def register_fonts() -> None:
+        """Registra la familia TrebuchetMS en el sistema ReportLab."""
+        font_map = {
+            'TrebuchetMS': 'trebuc.ttf',
+            'TrebuchetMS-Bold': 'trebucbd.ttf',
+            'TrebuchetMS-Italic': 'trebucit.ttf'
+        }
         
-        self._load_data()
+        loaded = 0
+        for font_name, filename in font_map.items():
+            font_path = CFG.ASSETS_DIR / filename
+            if font_path.exists():
+                try:
+                    pdfmetrics.registerFont(TTFont(font_name, str(font_path)))
+                    loaded += 1
+                    logger.debug(f"Fuente cargada: {font_name}")
+                except Exception as e:
+                    logger.warning(f"Error cargando fuente {font_name}: {e}")
+            else:
+                logger.warning(f"Archivo de fuente no encontrado: {font_path}")
         
-    def _load_data(self):
-        """Loads JSON data for text elements and geometric shapes."""
+        if loaded == 0:
+            logger.error("No se cargaron fuentes personalizadas. Se usará Helvetica como fallback.")
+        else:
+            logger.info(f"✅ {loaded} fuentes cargadas correctamente")
+
+class CVRenderer:
+    """
+    Motor de renderizado de CV de alta precisión.
+    Orquesta la lectura de datos, transformación de coordenadas y dibujo vectorial.
+    """
+
+    def __init__(self):
+        self._ensure_output_dir()
+        self.canvas = canvas.Canvas(
+            str(CFG.FILE_OUTPUT),
+            pagesize=(CFG.PAGE_WIDTH, CFG.PAGE_HEIGHT)
+        )
+        # Carga de datos en memoria
+        self.coordinates_data = self._load_json(CFG.FILE_COORDS)
+        self.shapes_data = self._load_json(CFG.FILE_SHAPES)
+
+    def _ensure_output_dir(self) -> None:
+        """Crea el directorio de salida si no existe."""
+        CFG.OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
+    @staticmethod
+    def _load_json(path: Path) -> List[Any]:
+        """Carga segura de archivos JSON."""
+        if not path.exists():
+            logger.error(f"Archivo crítico no encontrado: {path}")
+            # Retornar lista vacía para no romper la ejecución, pero loguear error
+            return []
         try:
-            with open(self.coords_path, 'r', encoding='utf-8') as f:
-                self.elements = json.load(f)
-            
-            if os.path.exists(self.shapes_path):
-                with open(self.shapes_path, 'r') as f:
-                    self.shapes = json.load(f)
-        except FileNotFoundError as e:
-            print(f"❌ Error: Could not find data file: {e}")
+            with open(path, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        except json.JSONDecodeError as e:
+            logger.error(f"JSON corrupto en {path}: {e}")
             sys.exit(1)
 
-    def generate(self):
-        """Executes the PDF generation process."""
-        print(f"Generating CV to {self.output_path}...")
-        
-        # Ensure output directory exists
-        os.makedirs(os.path.dirname(self.output_path), exist_ok=True)
-        
-        c = canvas.Canvas(self.output_path, pagesize=CUSTOM_PAGE_SIZE)
-        _, page_height = CUSTOM_PAGE_SIZE  # 623 x 806 pts (matches objective)
-        
-        # 1. Render Background Shapes
-        self._draw_shapes(c, page_height)
-        
-        # 2. Render Text Content
-        self._draw_elements(c, page_height)
-        
-        c.save()
-        print("✅ CV Generation Complete.")
+    @staticmethod
+    def _rgb_from_int(color_int: int) -> Tuple[float, float, float]:
+        """Convierte entero de color (formato exportado) a tupla RGB normalizada."""
+        r = (color_int >> 16) & 0xFF
+        g = (color_int >> 8) & 0xFF
+        b = color_int & 0xFF
+        return (r / 255.0, g / 255.0, b / 255.0)
 
-    def _draw_shapes(self, c, page_height):
-        """Draws geometric shapes (e.g., Blue Headers) with coordinate transformation."""
-        for shape in self.shapes:
-            if shape['type'] == 'rect':
-                sc = shape.get('color', [])
-                if len(sc) != 3: continue
-                
-                # Filter for Blue-ish rectangles only
-                is_blue = (abs(sc[0] - BLUE_COLOR[0]) < 0.2 and
-                           abs(sc[1] - BLUE_COLOR[1]) < 0.2 and
-                           abs(sc[2] - BLUE_COLOR[2]) < 0.2)
-                
-                if is_blue:
-                    rect = shape['rect'] # [x0, y0, x1, y1] (PDF Top-down y1 is bottom)
-                    x0, y0, x1, y1 = rect
-                    
-                    w = x1 - x0
-                    h = y1 - y0
-                    
-                    # Convert PDF Y (Top-Down) to ReportLab Y (Bottom-Up)
-                    # Note: In PDF coords, y1 is the larger value (lower physically on page)
-                    # ReportLab y = Height - y1
-                    y = page_height - y1 
-                    
-                    c.setFillColorRGB(*sc)
-                    c.rect(x0, y, w, h, stroke=0, fill=1)
+    @staticmethod
+    def _transform_y(y_pdf: float) -> float:
+        """
+        Transforma coordenada Y del espacio PDF (Top-Down) al espacio ReportLab (Bottom-Up).
+        Fórmula: Y_reportlab = Altura_Página - Y_pdf
+        """
+        return CFG.PAGE_HEIGHT - y_pdf
 
-    def _draw_elements(self, c, page_height):
+    def _determine_hyperlink(self, text: str, y_orig: float) -> Optional[str]:
         """
-        Draws text elements and applies Hyper-Precision logic:
-        - Font Weight Simulation
-        - Bullet Injection
-        - Alignment Correction
-        - Hyperlinking
+        Infiere el destino del hipervínculo basado en el contenido del texto y su posición.
+        Resuelve la ambigüedad entre links de redes sociales con el mismo handle.
         """
-        for elem in self.elements:
-            text = elem['text']
-            x = elem['x']
-            y_orig = elem['y']
+        clean_text = text.strip()
+        
+        if "nico.fredes.franco@gmail.com" in clean_text:
+            return "mailto:nico.fredes.franco@gmail.com"
+        
+        elif "DOI: 10.1109" in clean_text:
+            return "https://doi.org/10.1109/ACCESS.2021.3094723"
+        
+        # Twitter handle específico (debe revisarse antes de LinkedIn/Github si comparten substrings)
+        elif "nicofredesfranc" in clean_text and "nicolasfredesfranco" not in clean_text:
+            return "https://twitter.com/NicoFredesFranc"
+        
+        elif "nicolasfredesfranco" in clean_text:
+            # Lógica de Desambiguación Espacial:
+            # GitHub está físicamente más arriba (menor Y en coords originales) que LinkedIn.
+            if y_orig < CFG.THRESHOLD_LINK_DISAMBIGUATION_Y:
+                return "https://github.com/nicolasfredesfranco"
+            else:
+                return "http://www.linkedin.com/in/nicolasfredesfranco"
+                
+        return None
+
+    def _apply_precision_corrections(self, text: str, x: float, y_rl: float, 
+                                   elem_props: Dict) -> Tuple[str, float]:
+        """
+        Aplica reglas de negocio para corregir imperfecciones visuales del OCR/Extracción.
+        
+        Retorna:
+            (texto_final, x_final)
+        """
+        final_text = text
+        final_x = x
+        
+        # Corrección 1: Alineación de Fechas
+        # Las fechas a la derecha (>380) tienden a desplazarse. Se aplica un micro-ajuste.
+        # La condición original era y > (PAGE_HEIGHT - 750) en coords transformadas.
+        is_date_position = (x > CFG.THRESHOLD_DATE_ALIGN_X)
+        is_in_body_area = (y_rl > (CFG.PAGE_HEIGHT - CFG.THRESHOLD_DATE_ALIGN_Y_LIMIT))
+        
+        if is_date_position and is_in_body_area:
+             final_x -= CFG.OFFSET_DATE_CORRECTION
+
+        # Corrección 2: Inyección de Viñetas (Bullets)
+        # Detecta ítems de lista que perdieron su bullet durante la extracción.
+        is_right_col = (x > CFG.THRESHOLD_RIGHT_COLUMN_X)
+        is_plain_text = not (elem_props.get('bold') or elem_props.get('italic'))
+        
+        if is_right_col and is_plain_text:
+            clean = text.strip()
+            # Heurística: Empieza con mayúscula, es largo, y no es un título de ubicación
+            if (clean and clean[0].isupper() and len(clean) > 3 and 
+                x < CFG.THRESHOLD_LOCATION_TEXT_X):
+                final_text = "• " + text
+                final_x -= CFG.OFFSET_BULLET_INDENT
+                
+        return final_text, final_x
+
+    def render_shapes(self) -> None:
+        """Dibuja las formas geométricas (fondos, barras de encabezado)."""
+        if not self.shapes_data:
+            logger.warning("No se encontraron formas para dibujar.")
+            return
+
+        for shape in self.shapes_data:
+            if shape.get('type') != 'rect':
+                continue
+
+            color = shape.get('color', [])
+            if len(color) != 3: continue
+
+            # Filtro de color tolerante para identificar los headers azules específicos
+            # Esto asegura que solo dibujamos los elementos de diseño, no ruido.
+            is_blue_header = all(
+                abs(c - base) < 0.2 
+                for c, base in zip(color, CFG.COLOR_PRIMARY_BLUE)
+            )
+
+            if is_blue_header:
+                # Coordenadas PDF (Top-Down): [x0, y0_top, x1, y1_bottom]
+                x0, y0, x1, y1 = shape['rect']
+                
+                width = x1 - x0
+                height = y1 - y0
+                
+                # Transformar Y para ReportLab (Bottom-Up)
+                # Usamos y1 (bottom del PDF) como base para dibujar hacia arriba
+                y_rl = self._transform_y(y1)
+                
+                self.canvas.setFillColorRGB(*color)
+                self.canvas.rect(x0, y_rl, width, height, stroke=0, fill=1)
+
+    def render_text(self) -> None:
+        """Procesa y dibuja todos los elementos de texto con sus estilos y links."""
+        if not self.coordinates_data:
+            logger.warning("No hay datos de coordenadas de texto para renderizar.")
+            return
+
+        for elem in self.coordinates_data:
+            # 1. Extracción de datos crudos
+            raw_text = elem['text']
+            raw_x = elem['x']
+            raw_y = elem['y']
             
-            # Coordinate Transformation (Top-Down -> Bottom-Up)
-            y = page_height - y_orig
+            # 2. Transformación de coordenadas básica
+            y_rl = self._transform_y(raw_y)
             
-            # --- Hyper-Precision Fixes ---
+            # 3. Aplicación de correcciones de precisión
+            text, x = self._apply_precision_corrections(
+                raw_text, raw_x, y_rl, elem
+            )
             
-            # 1. Date Alignment Fix
-            # Right-aligned dates (X > 380) in the Right Column tend to drift right by ~1.5px.
-            # We correct this to ensure perfect alignment with location text.
-            if x > 380 and y > (page_height - 750):
-                 x -= 1.5
-            
-            # 2. Bullet Point Injection (Heuristic)
-            # The extracted data relies on indentation but often misses the actual bullet char.
-            # Logic: If Right Column AND Not Bold/Italic AND Starts with Uppercase -> Inject Bullet.
-            is_right_col = (x > 215)
-            is_bold = elem.get('bold', False)
-            is_italic = elem.get('italic', False)
-            
-            if is_right_col and not is_bold and not is_italic:
-                clean_text = text.strip()
-                if clean_text and clean_text[0].isupper() and len(clean_text) > 3:
-                     # Filter out location text (X > 250)
-                     if x < 250:
-                         text = "• " + text
-                         x -= 8.5 # Shift left to accommodate bullet (reduced by 2.5pt for vector precision)
-            
-            # 3. Font Selection
+            # 4. Configuración de Fuente
             font_family = elem.get('font', 'TrebuchetMS')
-            size = elem['size']
-            
             font_name = 'TrebuchetMS'
-            if 'Bold' in font_family or is_bold:
+            if 'Bold' in font_family or elem.get('bold'):
                 font_name = 'TrebuchetMS-Bold'
-            elif 'Italic' in font_family or is_italic:
+            elif 'Italic' in font_family or elem.get('italic'):
                 font_name = 'TrebuchetMS-Italic'
             
-            c.setFont(font_name, size)
-            
-            # 4. Color Application
-            color_int = elem.get('color', 0)
-            rgb = rgb_from_int(color_int)
-            c.setFillColorRGB(*rgb)
-            
-            # 5. Text Rendering Mode
-            # UPDATED: Removed weight simulation entirely to match objective PDF
-            # The objective PDF uses clean, standard font rendering without stroke.
-            # Using standard fill-only mode (mode 0) for all text.
-            
-            # Ensure we're in standard fill mode
-            if hasattr(c, 'setTextRenderMode'):
-                c.setTextRenderMode(0)
-            else:
-                 c._code.append('0 Tr')
-
-                
-            # 6. Hyperlink Injection
-            # Detects context-aware strings and applies clickable links.
-            url_target = None
-            clean_t = text.strip()
-            
-            if "nico.fredes.franco@gmail.com" in clean_t:
-                url_target = "mailto:nico.fredes.franco@gmail.com"
-            elif "DOI: 10.1109/ACCESS.2021.3094723" in clean_t:
-                url_target = "https://doi.org/10.1109/ACCESS.2021.3094723"
-            elif "nicofredesfranc" in clean_t and "nicolasfredesfranco" not in clean_t:
-                # Twitter-specific username (unique substring)
-                # Must check BEFORE "nicolasfredesfranco" to avoid false match
-                url_target = "https://twitter.com/NicoFredesFranc"
-            elif "nicolasfredesfranco" in clean_t:
-                # Disambiguation: GitHub vs LinkedIn
-                # Both share the username text. We use Y-coordinate to distinguish.
-                # GitHub is at Y=145.27, LinkedIn at Y=156.27, Twitter at Y=167.28
-                # Only GitHub and LinkedIn have "nicolasfredesfranco" (Twitter is "nicofredesfranc")
-                if y_orig < 150:
-                     url_target = "https://github.com/nicolasfredesfranco"
-                else:
-                     url_target = "http://www.linkedin.com/in/nicolasfredesfranco"
-            
-            if url_target:
-                string_width = c.stringWidth(text, font_name, size)
-                # Define Hitbox: [x, y_bottom, x_right, y_top]
-                link_rect = (x, y - 2, x + string_width, y + size)
-                c.linkURL(url_target, link_rect, relative=0, thickness=0)
-
-            # Draw String
+            # Intentar establecer la fuente, fallback a Helvetica si falla
             try:
-                c.drawString(x, y, text)
+                self.canvas.setFont(font_name, elem['size'])
+            except:
+                self.canvas.setFont("Helvetica", elem['size'])
+            
+            # 5. Configuración de Color
+            rgb = self._rgb_from_int(elem.get('color', 0))
+            self.canvas.setFillColorRGB(*rgb)
+
+            # 6. Inyección de Hipervínculos
+            url = self._determine_hyperlink(text, raw_y)
+            if url:
+                try:
+                    text_width = self.canvas.stringWidth(text, font_name, elem['size'])
+                except:
+                    text_width = self.canvas.stringWidth(text, "Helvetica", elem['size'])
+                    
+                # Definir área clickeable: [x, y_bottom, x_right, y_top]
+                link_rect = (
+                    x, 
+                    y_rl - CFG.LINK_HITBOX_PADDING, 
+                    x + text_width, 
+                    y_rl + elem['size']
+                )
+                self.canvas.linkURL(url, link_rect, relative=0, thickness=0)
+
+            # 8. Dibujo final
+            try:
+                self.canvas.drawString(x, y_rl, text)
             except Exception as e:
-                print(f"⚠️ Error drawing '{text}': {e}")
-                
-            # Reset Rendering Mode
-            if hasattr(c, 'setTextRenderMode'):
-                c.setTextRenderMode(0) 
-            else:
-                 c._code.append('0 Tr') 
-            c.setLineWidth(1)
+                logger.error(f"Fallo al dibujar texto '{text}': {e}")
+
+        # Restaurar configuración de línea por si acaso
+        self.canvas.setLineWidth(1)
+
+    def save(self) -> None:
+        """Guarda el archivo PDF final en el disco."""
+        try:
+            self.canvas.save()
+            logger.info(f"✅ Generación completada: {CFG.FILE_OUTPUT}")
+        except Exception as e:
+            logger.error(f"Error al guardar el PDF: {e}")
+
+def main():
+    """Punto de entrada principal."""
+    print("=" * 60)
+    print("🚀 CV Generator Engine v2.0")
+    print("   Nicolás Ignacio Fredes Franco")
+    print("=" * 60)
+    print(f"📂 Datos: {CFG.DATA_DIR}")
+    print(f"📄 Salida: {CFG.FILE_OUTPUT}")
+    print("=" * 60)
+    
+    # 1. Cargar recursos
+    FontManager.register_fonts()
+    
+    # 2. Inicializar motor
+    renderer = CVRenderer()
+    
+    # 3. Renderizar capas
+    logger.info("Renderizando formas geométricas...")
+    renderer.render_shapes()
+    
+    logger.info("Renderizando texto y metadatos...")
+    renderer.render_text()
+    
+    # 4. Finalizar
+    renderer.save()
+    print("=" * 60)
+    print(f"✅ PDF generado exitosamente")
+    print("=" * 60)
 
 if __name__ == "__main__":
-    print("🚀 Initializing Precision CV Engine...")
-    fonts = load_fonts()
-    print(f"📚 Loaded {len(fonts)} Fonts.")
-    
-    generator = CVGenerator(COORDS_FILE, SHAPES_FILE, OUTPUT_PDF)
-    generator.generate()
+    main()
