@@ -2,7 +2,7 @@
 
 A high-precision PDF generation system that produces a pixel-perfect, vector-identical resume using coordinate-based rendering. This system achieves 100% visual equality with a target PDF through absolute positioning and geometric transformation.
 
-![Architecture](file://${PWD}/.github/architecture_diagram.png)
+![Architecture](.github/architecture_diagram.png)
 
 ## Author
 
@@ -10,6 +10,14 @@ A high-precision PDF generation system that produces a pixel-perfect, vector-ide
 - Email: nico.fredes.franco@gmail.com
 - GitHub: [nicolasfredesfranco](https://github.com/nicolasfredesfranco)
 - LinkedIn: [nicolasfredesfranco](https://www.linkedin.com/in/nicolasfredesfranco)
+
+## Generated CV Preview
+
+![CV Preview](.github/cv_preview.png)
+
+**Download:**
+- 📄 [Generated CV (Nicolas_Fredes_CV.pdf)](outputs/Nicolas_Fredes_CV.pdf) - 100% vector-perfect output
+- 🎯 [Objective CV (Reference)](pdfs/objective/Objetivo_No_editar.pdf) - Target PDF used for alignment verification
 
 ## Features
 
