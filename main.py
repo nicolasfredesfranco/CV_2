@@ -233,8 +233,8 @@ class CVGenerator:
             elif "nicolasfredesfranco" in clean_t:
                 # Disambiguation: GitHub vs LinkedIn
                 # Both share the username text. We use Y-coordinate to distinguish.
-                # GitHub is near the top (Y_orig < 100), LinkedIn follows (Y_orig > 100).
-                if y_orig < 102:
+                # GitHub is at Y=145.27, LinkedIn at Y=156.27 (after vector shifts)
+                if y_orig < 150:
                      url_target = "https://github.com/nicolasfredesfranco"
                 else:
                      url_target = "http://www.linkedin.com/in/nicolasfredesfranco"
