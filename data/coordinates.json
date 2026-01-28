@@ -552,7 +552,7 @@
   {
     "text": "DOI: 10.1109/ACCESS.2021.3094723",
     "x": 50.92,
-    "y": 403.57,
+    "y": 413.42,
     "font": "TrebuchetMS-Italic",
     "size": 9.0,
     "color": 1070028,
@@ -612,7 +612,7 @@
   {
     "text": "July 2021 ",
     "x": 158.04,
-    "y": 413.42,
+    "y": 403.97,
     "font": "TrebuchetMS-Italic",
     "size": 9.0,
     "color": 0,
@@ -622,7 +622,7 @@
   {
     "text": "Adversarial Network\".",
     "x": 50.8,
-    "y": 403.97999999999996,
+    "y": 403.97,
     "font": "TrebuchetMS",
     "size": 10.0,
     "color": 0,
