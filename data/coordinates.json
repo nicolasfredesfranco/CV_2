@@ -1,6 +1,6 @@
 [
   {
-    "text": "Nicol\u00e1s Ignacio Fredes Franco",
+    "text": "Nicolás Ignacio Fredes Franco",
     "x": 231.63,
     "y": 83.94,
     "font": "TrebuchetMS-Bold",
@@ -10,7 +10,7 @@
     "italic": false
   },
   {
-    "text": "Nicol\u00e1s Fredes ",
+    "text": "Nicolás Fredes ",
     "x": 88.47,
     "y": 89.24000000000001,
     "font": "TrebuchetMS-Bold",
@@ -30,7 +30,7 @@
     "italic": false
   },
   {
-    "text": "Vi\u00f1a del Mar, Chile ",
+    "text": "Viña del Mar, Chile ",
     "x": 79.8,
     "y": 110.25,
     "font": "TrebuchetMS",
@@ -220,7 +220,7 @@
     "italic": false
   },
   {
-    "text": "Federico Santa Mar\u00eda",
+    "text": "Federico Santa María",
     "x": 47.13,
     "y": 199.92,
     "font": "TrebuchetMS-Bold",
@@ -280,7 +280,7 @@
     "italic": true
   },
   {
-    "text": "Valpara\u00edso, Chile ",
+    "text": "Valparaíso, Chile ",
     "x": 47.13,
     "y": 230.32,
     "font": "TrebuchetMS",
@@ -310,7 +310,7 @@
     "italic": false
   },
   {
-    "text": " voice-integrated system at CMPC Brazil (Gua\u00edba plant), reducing end-to-end",
+    "text": " voice-integrated system at CMPC Brazil (Guaíba plant), reducing end-to-end",
     "x": 224.67,
     "y": 244.53,
     "font": "TrebuchetMS",
@@ -450,7 +450,7 @@
     "italic": false
   },
   {
-    "text": "minutes, 1 day, and 1 week. In each case, achieving results with an R\u00b2",
+    "text": "minutes, 1 day, and 1 week. In each case, achieving results with an R²",
     "x": 220.66,
     "y": 330.62,
     "font": "TrebuchetMS",
@@ -750,7 +750,7 @@
     "italic": false
   },
   {
-    "text": "\u2022 Python  \u2022 C  \u2022 C++",
+    "text": "• Python  • C  • C++",
     "x": 48.63,
     "y": 491.12,
     "font": "TrebuchetMS",
@@ -770,7 +770,7 @@
     "italic": false
   },
   {
-    "text": "\u2022 MySQL  \u2022 SQL",
+    "text": "• MySQL  • SQL",
     "x": 48.63,
     "y": 504.12,
     "font": "TrebuchetMS",
@@ -820,7 +820,7 @@
     "italic": false
   },
   {
-    "text": "\u2022 PyTorch  \u2022 TensorFlow  \u2022 Keras",
+    "text": "• PyTorch  • TensorFlow  • Keras",
     "x": 48.63,
     "y": 532.39,
     "font": "TrebuchetMS",
@@ -850,7 +850,7 @@
     "italic": false
   },
   {
-    "text": "\u2022 Threading  \u2022 OpenCV  \u2022 Pandas",
+    "text": "• Threading  • OpenCV  • Pandas",
     "x": 48.63,
     "y": 545.39,
     "font": "TrebuchetMS",
@@ -873,16 +873,6 @@
     "text": "Optimized the product prices for TBC Corporation across both physical",
     "x": 219.43,
     "y": 557.38,
-    "font": "TrebuchetMS",
-    "size": 10.0,
-    "color": 0,
-    "bold": false,
-    "italic": false
-  },
-  {
-    "text": "\u2022 Threading  \u2022 OpenCV",
-    "x": 48.63,
-    "y": 558.39,
     "font": "TrebuchetMS",
     "size": 10.0,
     "color": 0,
@@ -980,7 +970,7 @@
     "italic": false
   },
   {
-    "text": "\u2022 NVIDIA Deepstream",
+    "text": "• NVIDIA Deepstream",
     "x": 48.63,
     "y": 571.39,
     "font": "TrebuchetMS",
@@ -1000,7 +990,7 @@
     "italic": false
   },
   {
-    "text": "\u2022 Vertex AI Agent Engine",
+    "text": "• Vertex AI Agent Engine",
     "x": 48.63,
     "y": 584.39,
     "font": "TrebuchetMS",
@@ -1020,7 +1010,7 @@
     "italic": false
   },
   {
-    "text": "\u2022 Google-ADK  \u2022 LangChain",
+    "text": "• Google-ADK  • LangChain",
     "x": 48.63,
     "y": 597.39,
     "font": "TrebuchetMS",
@@ -1080,7 +1070,7 @@
     "italic": false
   },
   {
-    "text": "\u2022 AWS  \u2022 Snowflake  \u2022 GCP",
+    "text": "• AWS  • Snowflake  • GCP",
     "x": 48.63,
     "y": 627.11,
     "font": "TrebuchetMS",
@@ -1120,7 +1110,7 @@
     "italic": false
   },
   {
-    "text": "\u2022 Machine Learning",
+    "text": "• Machine Learning",
     "x": 48.63,
     "y": 655.07,
     "font": "TrebuchetMS",
@@ -1140,7 +1130,7 @@
     "italic": false
   },
   {
-    "text": "\u2022 Computer Vision",
+    "text": "• Computer Vision",
     "x": 48.63,
     "y": 668.07,
     "font": "TrebuchetMS",
@@ -1160,7 +1150,7 @@
     "italic": false
   },
   {
-    "text": "\u2022 Natural Language Processing",
+    "text": "• Natural Language Processing",
     "x": 48.63,
     "y": 681.07,
     "font": "TrebuchetMS",
@@ -1270,7 +1260,7 @@
     "italic": false
   },
   {
-    "text": "\u2022 IoT  \u2022 Forecasting",
+    "text": "• IoT  • Forecasting",
     "x": 48.63,
     "y": 694.07,
     "font": "TrebuchetMS",
@@ -1380,7 +1370,7 @@
     "italic": false
   },
   {
-    "text": "\u2022 Object-Oriented Programming",
+    "text": "• Object-Oriented Programming",
     "x": 48.63,
     "y": 707.07,
     "font": "TrebuchetMS",
@@ -1400,7 +1390,7 @@
     "italic": false
   },
   {
-    "text": "\u2022 Parallel Computing",
+    "text": "• Parallel Computing",
     "x": 48.63,
     "y": 720.07,
     "font": "TrebuchetMS",
@@ -1420,7 +1410,7 @@
     "italic": false
   },
   {
-    "text": "Valpara\u00edso, Chile ",
+    "text": "Valparaíso, Chile ",
     "x": 518.15,
     "y": 732.6,
     "font": "TrebuchetMS",
@@ -1430,7 +1420,7 @@
     "italic": false
   },
   {
-    "text": "\u2022 GPU-Accelerated Computing",
+    "text": "• GPU-Accelerated Computing",
     "x": 48.63,
     "y": 733.07,
     "font": "TrebuchetMS",
@@ -1450,7 +1440,7 @@
     "italic": false
   },
   {
-    "text": "\u2022 Generative AI",
+    "text": "• Generative AI",
     "x": 48.63,
     "y": 746.07,
     "font": "TrebuchetMS",
