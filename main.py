@@ -36,7 +36,7 @@ from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 
 # Configuration
-CUSTOM_PAGE_SIZE = (623.622, 806.299)  # Exact page size from objective PDF (floating-point precision)
+CUSTOM_PAGE_SIZE = (623, 806)  # Exact page size from objective PDF (matches pdfinfo output)
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(BASE_DIR, 'data')
