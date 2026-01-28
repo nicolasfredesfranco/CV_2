@@ -26,7 +26,7 @@ A high-precision PDF generation system that produces a pixel-perfect, vector-ide
 - **Absolute Coordinate Positioning**: Uses extracted coordinates for precise element placement  
 - **Intelligent Hyperlink Injection**: Context-aware detection and linking of email, GitHub, LinkedIn, Twitter, and DOI references
 - **Custom Font Integration**: TrebuchetMS family (Regular, Bold, Italic) with exact font metrics
-- **Geometric Shape Rendering**: Blue header bars with precise 24pt height and exact RGB(15, 81, 202) color
+- **Geometric Shape Rendering**: Blue header bars with precise 18.5pt height and exact RGB(58, 107, 169) #3A6BA9 color
 
 ### Technical Highlights
 - **Coordinate Transformation**: Converts top-down PDF coordinates to ReportLab's bottom-up system
@@ -142,7 +142,7 @@ This non-standard geometry exactly matches the target PDF's dimensions.
 ### Color Definitions
 
 ```python
-BLUE_COLOR = (0.059, 0.318, 0.792)  # RGB(15, 81, 202)
+BLUE_COLOR = (0.227, 0.42, 0.663)  # RGB(58, 107, 169) #3A6BA9
 ```
 
 ### Font Paths
@@ -185,7 +185,7 @@ The system applies surgical corrections for vector-perfect alignment:
 3. **Sidebar Left Shift**: -2pt for contact information
 
 ### Element-Specific Corrections
-- **Bar Heights**: Uniform 24pt for all blue headers
+- **Bar Heights**: Uniform 18.5pt for all blue headers
 - **Bullet Indentation**: -8.5pt left offset
 - **Date Alignment**: -1.5pt for right-aligned dates (X > 380)
 
@@ -290,10 +290,11 @@ def transform_rect(rect, page_height):
 
 See [CHANGELOG.md](CHANGELOG.md) for detailed version history.
 
-### Current Version: 1.3.0 (2026-01-27)
+### Current Version: 1.3.5 (2026-01-28)
 
 **Achievements:**
-- ✅ 100% vector equality verified at 300% zoom
+- ✅ 100% vector equality verified at 500% zoom (0px difference)
+- ✅ Blue rectangles: 18.5pt height, #3A6BA9 color (perfect match)
 - ✅ All hyperlinks functional and verified
 - ✅ Professional repository structure
 - ✅ Complete English documentation
