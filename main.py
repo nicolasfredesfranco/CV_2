@@ -188,7 +188,7 @@ class CVGenerator:
                      # Filter out location text (X > 250)
                      if x < 250:
                          text = "• " + text
-                         x -= 6 # Shift left to accommodate bullet
+                         x -= 8.5 # Shift left to accommodate bullet (reduced by 2.5pt for vector precision)
             
             # 3. Font Selection
             font_family = elem.get('font', 'TrebuchetMS')
