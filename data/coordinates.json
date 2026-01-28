@@ -100,7 +100,7 @@
     "italic": false
   },
   {
-    "text": "//",
+    "text": "// ",
     "x": 88.1,
     "y": 145.26999999999998,
     "font": "TrebuchetMS",
@@ -110,7 +110,7 @@
     "italic": false
   },
   {
-    "text": " nicolasfredesfranco ",
+    "text": "nicolasfredesfranco ",
     "x": 96.55,
     "y": 145.26999999999998,
     "font": "TrebuchetMS",
@@ -820,7 +820,7 @@
     "italic": false
   },
   {
-    "text": "\u2022 PyTorch  \u2022 TensorFlow",
+    "text": "\u2022 PyTorch  \u2022 TensorFlow  \u2022 Keras",
     "x": 48.63,
     "y": 532.39,
     "font": "TrebuchetMS",
@@ -850,7 +850,7 @@
     "italic": false
   },
   {
-    "text": "\u2022 Keras  \u2022 Pandas",
+    "text": "\u2022 Threading  \u2022 OpenCV  \u2022 Pandas",
     "x": 48.63,
     "y": 545.39,
     "font": "TrebuchetMS",
