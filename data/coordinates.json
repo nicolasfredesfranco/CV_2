@@ -552,7 +552,7 @@
   {
     "text": "DOI: 10.1109/ACCESS.2021.3094723",
     "x": 50.92,
-    "y": 392.93,
+    "y": 403.57,
     "font": "TrebuchetMS-Italic",
     "size": 9.0,
     "color": 1070028,
@@ -572,7 +572,7 @@
   {
     "text": " \"",
     "x": 45.82,
-    "y": 403.57,
+    "y": 392.93,
     "font": "TrebuchetMS",
     "size": 10.0,
     "color": 0,
@@ -582,7 +582,7 @@
   {
     "text": "HGAN:",
     "x": 52.73,
-    "y": 403.85,
+    "y": 392.93,
     "font": "TrebuchetMS-Bold",
     "size": 10.0,
     "color": 0,
@@ -592,7 +592,7 @@
   {
     "text": " Hyperbolic Generative",
     "x": 80.87,
-    "y": 404.16,
+    "y": 393.24,
     "font": "TrebuchetMS",
     "size": 10.0,
     "color": 0,
@@ -622,7 +622,7 @@
   {
     "text": "Adversarial Network\".",
     "x": 50.8,
-    "y": 414.9,
+    "y": 403.97999999999996,
     "font": "TrebuchetMS",
     "size": 10.0,
     "color": 0,
