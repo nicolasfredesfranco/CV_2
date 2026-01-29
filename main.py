@@ -16,6 +16,7 @@ import json
 import logging
 import sys
 from dataclasses import dataclass
+from functools import lru_cache
 from pathlib import Path
 from typing import List, Dict, Any, Optional, Tuple
 
@@ -47,6 +48,11 @@ class LayoutConfig:
     # Paleta de Colores (RGB Normalizado 0-1)
     # Azul corporativo exacto extraído de shapes.json: #3A6BA9 = RGB(58,107,169)
     COLOR_PRIMARY_BLUE: Tuple[float, float, float] = (0.227, 0.42, 0.663)
+    
+    # Ajuste de Offset Vertical Global (Puntos)
+    # Corrige diferencias entre motor Ghostscript (objetivo) y ReportLab (generado)
+    # Valor positivo mueve contenido ARRIBA, negativo ABAJO
+    Y_GLOBAL_OFFSET: float = 32.0  # Ajustado empíricamente para alineación perfecta
     
     # Umbrales de Lógica de Diseño (Reverse Engineered Logic)
     # Coordenadas X/Y que disparan comportamientos específicos
@@ -123,6 +129,15 @@ class CVRenderer:
         # Carga de datos en memoria
         self.coordinates_data = self._load_json(CFG.FILE_COORDS)
         self.shapes_data = self._load_json(CFG.FILE_SHAPES)
+        
+        # Validación de datos cargados
+        if not self._validate_coordinates_data(self.coordinates_data):
+            logger.error("❌ Validación de coordenadas falló. No se puede continuar.")
+            sys.exit(1)
+        
+        if not self._validate_shapes_data(self.shapes_data):
+            logger.error("❌ Validación de formas falló. No se puede continuar.")
+            sys.exit(1)
 
     def _ensure_output_dir(self) -> None:
         """Crea el directorio de salida si no existe."""
@@ -133,7 +148,6 @@ class CVRenderer:
         """Carga segura de archivos JSON."""
         if not path.exists():
             logger.error(f"Archivo crítico no encontrado: {path}")
-            # Retornar lista vacía para no romper la ejecución, pero loguear error
             return []
         try:
             with open(path, 'r', encoding='utf-8') as f:
@@ -143,6 +157,74 @@ class CVRenderer:
             sys.exit(1)
 
     @staticmethod
+    def _validate_coordinates_data(data: List[Dict[str, Any]]) -> bool:
+        """
+        Valida que los datos de coordenadas tengan todos los campos requeridos.
+        Retorna True si válido, False y registra errores si inválido.
+        """
+        if not data:
+            logger.error("Datos de coordenadas vacíos")
+            return False
+        
+        required_fields = ['text', 'x', 'y', 'size']
+        optional_fields = ['font', 'color', 'bold', 'italic']
+        
+        for idx, elem in enumerate(data):
+            # Validar campos requeridos
+            missing = [f for f in required_fields if f not in elem]
+            if missing:
+                logger.error(f"Elemento {idx} falta campos: {missing}. Elemento: {elem}")
+                return False
+            
+            # Validar tipos de datos
+            if not isinstance(elem['text'], str):
+                logger.error(f"Elemento {idx}: 'text' debe ser string")
+                return False
+            if not isinstance(elem['x'], (int, float)):
+                logger.error(f"Elemento {idx}: 'x' debe ser número")
+                return False
+            if not isinstance(elem['y'], (int, float)):
+                logger.error(f"Elemento {idx}: 'y' debe ser número")
+                return False
+            if not isinstance(elem['size'], (int, float)):
+                logger.error(f"Elemento {idx}: 'size' debe ser número")
+                return False
+        
+        logger.info(f"✅ Validación de coordenadas: {len(data)} elementos válidos")
+        return True
+
+    @staticmethod
+    def _validate_shapes_data(data: List[Dict[str, Any]]) -> bool:
+        """
+        Valida que los datos de formas tengan estructura correcta.
+        Retorna True si válido, False y registra errores si inválido.
+        """
+        if not data:
+            logger.warning("Datos de formas vacíos (no crítico)")
+            return True  # Las formas son opcionales
+        
+        for idx, shape in enumerate(data):
+            # Validar tipo
+            if 'type' not in shape:
+                logger.error(f"Forma {idx}: falta campo 'type'")
+                return False
+            
+            # Validar rectángulos
+            if shape['type'] == 'rect':
+                if 'rect' not in shape or 'color' not in shape:
+                    logger.error(f"Rectángulo {idx}: falta 'rect' o 'color'")
+                    return False
+                if not isinstance(shape['rect'], list) or len(shape['rect']) != 4:
+                    logger.error(f"Rectángulo {idx}: 'rect' debe ser lista de 4 números")
+                    return False
+                if not isinstance(shape['color'], list) or len(shape['color']) != 3:
+                    logger.error(f"Rectángulo {idx}: 'color' debe ser lista RGB de 3 números")
+                    return False
+        
+        logger.info(f"✅ Validación de formas: {len(data)} elementos válidos")
+        return True
+
+    @staticmethod
     def _rgb_from_int(color_int: int) -> Tuple[float, float, float]:
         """Convierte entero de color (formato exportado) a tupla RGB normalizada."""
         r = (color_int >> 16) & 0xFF
@@ -150,40 +232,57 @@ class CVRenderer:
         b = color_int & 0xFF
         return (r / 255.0, g / 255.0, b / 255.0)
 
+    @lru_cache(maxsize=1000)
+    def _get_text_width(self, text: str, font_name: str, size: float) -> float:
+        """
+        Calcula el ancho de un texto en puntos PDF con caché para performance.
+        Evita recalcular el mismo texto/fuente/tamaño múltiples veces.
+        """
+        try:
+            return self.canvas.stringWidth(text, font_name, size)
+        except:
+            # Fallback a Helvetica si la fuente no está disponible
+            return self.canvas.stringWidth(text, "Helvetica", size)
+
     @staticmethod
     def _transform_y(y_pdf: float) -> float:
         """
         Transforma coordenada Y del espacio PDF (Top-Down) al espacio ReportLab (Bottom-Up).
-        Fórmula: Y_reportlab = Altura_Página - Y_pdf
+        Aplica offset global para corregir diferencias entre motores PDF.
+        Fórmula: Y_reportlab = Altura_Página - Y_pdf + Offset_Global
         """
-        return CFG.PAGE_HEIGHT - y_pdf
+        return CFG.PAGE_HEIGHT - y_pdf + CFG.Y_GLOBAL_OFFSET
 
     def _determine_hyperlink(self, text: str, y_orig: float) -> Optional[str]:
         """
         Infiere el destino del hipervínculo basado en el contenido del texto y su posición.
         Resuelve la ambigüedad entre links de redes sociales con el mismo handle.
         """
-        clean_text = text.strip()
-        
-        if "nico.fredes.franco@gmail.com" in clean_text:
-            return "mailto:nico.fredes.franco@gmail.com"
-        
-        elif "DOI: 10.1109" in clean_text:
-            return "https://doi.org/10.1109/ACCESS.2021.3094723"
-        
-        # Twitter handle específico (debe revisarse antes de LinkedIn/Github si comparten substrings)
-        elif "nicofredesfranc" in clean_text and "nicolasfredesfranco" not in clean_text:
-            return "https://twitter.com/NicoFredesFranc"
-        
-        elif "nicolasfredesfranco" in clean_text:
-            # Lógica de Desambiguación Espacial:
-            # GitHub está físicamente más arriba (menor Y en coords originales) que LinkedIn.
-            if y_orig < CFG.THRESHOLD_LINK_DISAMBIGUATION_Y:
-                return "https://github.com/nicolasfredesfranco"
-            else:
-                return "http://www.linkedin.com/in/nicolasfredesfranco"
-                
-        return None
+        try:
+            clean_text = text.strip()
+            
+            if "nico.fredes.franco@gmail.com" in clean_text:
+                return "mailto:nico.fredes.franco@gmail.com"
+            
+            elif "DOI: 10.1109" in clean_text:
+                return "https://doi.org/10.1109/ACCESS.2021.3094723"
+            
+            # Twitter handle específico (debe revisarse antes de LinkedIn/Github si comparten substrings)
+            elif "nicofredesfranc" in clean_text and "nicolasfredesfranco" not in clean_text:
+                return "https://twitter.com/NicoFredesFranc"
+            
+            elif "nicolasfredesfranco" in clean_text:
+                # Lógica de Desambiguación Espacial:
+                # GitHub está físicamente más arriba (menor Y en coords originales) que LinkedIn.
+                if y_orig < CFG.THRESHOLD_LINK_DISAMBIGUATION_Y:
+                    return "https://github.com/nicolasfredesfranco"
+                else:
+                    return "http://www.linkedin.com/in/nicolasfredesfranco"
+                    
+            return None
+        except Exception as e:
+            logger.warning(f"Error detectando hyperlink en texto '{text[:30]}...': {e}")
+            return None
 
     def _apply_precision_corrections(self, text: str, x: float, y_rl: float, 
                                    elem_props: Dict) -> Tuple[str, float]:
@@ -295,10 +394,7 @@ class CVRenderer:
             # 6. Inyección de Hipervínculos
             url = self._determine_hyperlink(text, raw_y)
             if url:
-                try:
-                    text_width = self.canvas.stringWidth(text, font_name, elem['size'])
-                except:
-                    text_width = self.canvas.stringWidth(text, "Helvetica", elem['size'])
+                text_width = self._get_text_width(text, font_name, elem['size'])
                     
                 # Definir área clickeable: [x, y_bottom, x_right, y_top]
                 link_rect = (
