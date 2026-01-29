@@ -44,7 +44,7 @@ class LayoutConfig:
     # Positive value moves content UP, negative moves DOWN
     # Global Y-axis offset for fine-tuning vertical alignment
     # Optimized through iterative visual analysis
-    Y_GLOBAL_OFFSET: float = 39.30
+    Y_GLOBAL_OFFSET: float = 40.84
     
     # Layout Logic Thresholds (Reverse Engineered)
     # X/Y coordinates that trigger specific behaviors
