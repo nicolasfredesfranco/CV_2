@@ -105,22 +105,21 @@ class CVRenderer:
         """
         Render background geometric shapes (rectangles, decorations).
         
-        Processes shapes data and draws each shape with correct color and position.
+        Shapes come from PDF extraction with correct coordinates.
+        NO transformation needed - draw directly.
         """
         logger.info("Rendering background shapes...")
         
         for shape in self.shapes_data:
             if shape['type'] == 'rect':
-                # Use x, y, width, height format (matches validator)
+                # Shapes already in correct ReportLab coordinates from PDF
                 x = shape['x']
                 y = shape['y']
                 width = shape['width']
                 height = shape['height']
                 r, g, b = shape['fill_color']
                 
-                # Color filter: Only draw blue headers (matching v2.2)
-                # This ensures we only draw design elements, not noise
-                # Widened tolerance to 0.25 to accept all blue variations
+                # Color filter: Only draw blue headers
                 is_blue_header = all(
                     abs(c - base) < 0.25
                     for c, base in zip([r, g, b], CONFIG.COLOR_PRIMARY_BLUE)
@@ -129,13 +128,10 @@ class CVRenderer:
                 if not is_blue_header:
                     continue  # Skip non-blue shapes
                 
-                # Apply Y transformation to bottom of rectangle
-                y_transformed = CoordinateTransformer.transform_y(y + height)
-                
-                # Draw rectangle with EXACT objetivo blue color from CONFIG
-                # Use CONFIG color instead of shape color to ensure perfect match
+                # Draw directly - shapes already have correct coordinates
+                # No transformation needed!
                 self.canvas.setFillColorRGB(*CONFIG.COLOR_PRIMARY_BLUE)
-                self.canvas.rect(x, y_transformed, width, height, fill=1, stroke=0)
+                self.canvas.rect(x, y, width, height, fill=1, stroke=0)
     
     def render_text_elements(self) -> None:
         """
