@@ -1,8 +1,0 @@
-  File "/home/nicofredes/Desktop/code/CV/smart_visual_corrector.py", line 262
-    print(f"={'="*90}")
-                    ^
-SyntaxError: closing parenthesis '}' does not match opening parenthesis '('
-  File "/home/nicofredes/Desktop/code/CV/smart_visual_corrector.py", line 262
-    print(f"={'="*90}")
-                    ^
-SyntaxError: closing parenthesis '}' does not match opening parenthesis '('
