@@ -118,8 +118,9 @@ class CVRenderer:
                 
                 # Color filter: Only draw blue headers (matching v2.2)
                 # This ensures we only draw design elements, not noise
+                # Widened tolerance to 0.25 to accept all blue variations
                 is_blue_header = all(
-                    abs(c - base) < 0.2
+                    abs(c - base) < 0.25
                     for c, base in zip([r, g, b], CONFIG.COLOR_PRIMARY_BLUE)
                 )
                 
@@ -133,8 +134,9 @@ class CVRenderer:
                 # Apply Y transformation (use y1 as base, same as v2.2)
                 y_transformed = CoordinateTransformer.transform_y(y1)
                 
-                # Draw rectangle
-                self.canvas.setFillColorRGB(r, g, b)
+                # Draw rectangle with EXACT objetivo blue color from CONFIG
+                # Use CONFIG color instead of shape color to ensure perfect match
+                self.canvas.setFillColorRGB(*CONFIG.COLOR_PRIMARY_BLUE)
                 self.canvas.rect(x0, y_transformed, width, height, fill=1, stroke=0)
     
     def render_text_elements(self) -> None:
