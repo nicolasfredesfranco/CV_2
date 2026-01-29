@@ -1,117 +1,235 @@
 # Contributing to Professional CV Generator
 
-Thank you for your interest in contributing to this project! This document provides guidelines and instructions for contributing.
+Thank you for your interest in contributing! This document provides guidelines for contributing to the project.
 
-## 🌟 Ways to Contribute
+## Table of Contents
 
-- 🐛 Report bugs and issues
-- 💡 Suggest new features or enhancements
-- 📝 Improve documentation
-- 🧪 Add or improve tests
-- 💻 Submit code improvements
+- [Code of Conduct](#code-of-conduct)
+- [How Can I Contribute?](#how-can-i-contribute)
+- [Development Setup](#development-setup)
+- [Pull Request Process](#pull-request-process)
+- [Coding Standards](#coding-standards)
+- [Testing Guidelines](#testing-guidelines)
 
-## 🚀 Development Setup
+---
 
-### Prerequisites
+## Code of Conduct
 
-- Python 3.11 or higher
-- Git
-- pip
+This project adheres to a code of conduct that all contributors are expected to follow. Please be respectful and constructive in all interactions.
 
-### Setup Instructions
+---
+
+## How Can I Contribute?
+
+### Reporting Bugs
+
+Before creating bug reports, please check existing issues. When creating a bug report, include:
+
+- **Clear title and description**
+- **Steps to reproduce** the problem
+- **Expected vs actual behavior**
+- **Python version** and operating system
+- **Screenshots** if applicable
+
+### Suggesting Enhancements
+
+Enhancement suggestions are tracked as GitHub issues. When creating an enhancement suggestion, include:
+
+- **Clear title and description**
+- **Use case** - why would this be useful?
+- **Proposed solution** (if you have one)
+- **Examples** from other projects (if relevant)
+
+### Pull Requests
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Make your changes
+4. Run tests (`pytest test_main.py -v`)
+5. Commit with meaningful messages
+6. Push to your fork
+7. Open a Pull Request
+
+---
+
+## Development Setup
 
 ```bash
-# Fork and clone the repository
-git clone https://github.com/YOUR_USERNAME/CV.git
-cd CV
-
-# Create a virtual environment
-python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+# Clone your fork
+git clone https://github.com/YOUR_USERNAME/CV_2.git
+cd CV_2
 
 # Install dependencies
 pip install -r requirements.txt
-pip install -r requirements-dev.txt
 
-# Run tests to ensure everything works
-pytest test_main.py -v
+# Install development dependencies
+pip install pytest pytest-cov black flake8
 ```
 
-## 📋 Code Style Guidelines
+---
 
-### Python Code Style
+## Pull Request Process
 
-- **Follow PEP 8** for code formatting
-- **Use type hints** for function signatures
-- **Write docstrings** for all public functions and classes (Google style)
-- **Keep functions focused** - single responsibility principle
-- **Use meaningful names** - descriptive variable and function names
+1. **Ensure all tests pass**
+   ```bash
+   pytest test_main.py -v
+   ```
 
-### Example
+2. **Update documentation**
+   - Update README.md if adding features
+   - Add docstrings to new functions
+   - Update CHANGELOG.md
 
-```python
-from typing import Tuple
+3. **Verify CV output unchanged** (if not intentional)
+   ```bash
+   python main.py
+   # Check that generated PDF matches expected output
+   ```
 
-def transform_coordinates(x: float, y: float, offset: float = 32.0) -> Tuple[float, float]:
-    """
-    Transform PDF coordinates to ReportLab canvas coordinates.
-    
-    Args:
-        x: X-coordinate in PDF space
-        y: Y-coordinate in PDF space (top-down)
-        offset: Global Y offset for alignment correction
-        
-    Returns:
-        Tuple of (x_transformed, y_transformed) in ReportLab space
-        
-    Raises:
-        ValueError: If coordinates are negative
-    """
-    if x < 0 or y < 0:
-        raise ValueError("Coordinates must be non-negative")
-        
-    y_transformed = CONFIG.PAGE_HEIGHT - y + offset
-    return x, y_transformed
-```
+4. **Code formatting**
+   ```bash
+   black src/ test_main.py main.py
+   flake8 src/ test_main.py main.py
+   ```
 
-### Documentation Standards
+5. **Meaningful commit messages**
+   - Use present tense ("Add feature" not "Added feature")
+   - Reference issues when applicable
+   - Keep first line under 50 characters
 
-- **All documentation in English**
-- **Use clear, concise language**
-- **Include code examples** where helpful
-- **Keep README.md up to date**
+---
 
-## 🧪 Testing Requirements
+## Coding Standards
 
-All contributions must include appropriate tests:
+### Python Style
 
-```bash
-# Run full test suite
-pytest test_main.py -v
+- Follow [PEP 8](https://pep8.org/)
+- Use 4 spaces for indentation
+- Maximum line length: 100 characters
+- Use type hints where beneficial
 
-# Check test coverage
-pytest test_main.py --cov=src --cov-report=term-missing
+### Documentation
 
-# Aim for >90% coverage on new code
-```
+- Add docstrings to all public functions
+- Use Google-style docstrings:
+  ```python
+  def example_function(param1: str, param2: int) -> bool:
+      """Brief description of function.
+      
+      Args:
+          param1: Description of param1
+          param2: Description of param2
+          
+      Returns:
+          Description of return value
+          
+      Raises:
+          ValueError: When param2 is negative
+      """
+      pass
+  ```
+
+### File Organization
+
+- Keep modules focused and single-purpose
+- Place utility functions in `src/` modules
+- Keep configuration in `src/config.py`
+- Store data files in `data/`
+
+---
+
+## Testing Guidelines
 
 ### Writing Tests
 
+- Write tests for all new features
+- Aim for >80% code coverage
+- Use descriptive test names
+- Group related tests in classes
+
 ```python
-def test_coordinate_transformation():
-    """Test PDF to ReportLab coordinate transformation."""
-    x_result, y_result = CoordinateTransformer.transform_coordinates(100, 200)
-    
-    assert x_result == 100
-    assert y_result == CONFIG.PAGE_HEIGHT - 200 + CONFIG.Y_GLOBAL_OFFSET
+class TestNewFeature:
+    def test_basic_functionality(self):
+        """Test description here."""
+        # Arrange
+        expected = "something"
+        
+        # Act
+        result = my_function()
+        
+        # Assert
+        assert result == expected
 ```
 
-## 📝 Commit Message Guidelines
+### Running Tests
 
-Follow conventional commits format:
+```bash
+# Run all tests
+pytest test_main.py -v
+
+# Run specific test
+pytest test_main.py::TestClassName::test_method_name -v
+
+# Generate coverage report
+pytest --cov=src --cov-report=html test_main.py
+```
+
+### Test Categories
+
+- **Unit tests**: Test individual functions
+- **Integration tests**: Test component interactions
+- **Visual tests**: Verify PDF output quality
+
+---
+
+## Adding New Features
+
+### Example: Adding a New Section
+
+1. **Create data file** (`data/certifications.json`):
+   ```json
+   [
+     {
+       "name": "Certification Name",
+       "issuer": "Issuing Organization",
+       "date": "Month YYYY"
+     }
+   ]
+   ```
+
+2. **Update data loader** (`src/data_loader.py`):
+   ```python
+   def load_certifications() -> List[Dict]:
+       """Load certifications data from JSON file."""
+       return load_json_file(CONFIG.DATA_DIR / 'certifications.json')
+   ```
+
+3. **Add rendering logic** (`src/generator.py`):
+   ```python
+   def render_certifications(self, certifications: List[Dict]):
+       """Render certifications section on the CV."""
+       # Implementation here
+       pass
+   ```
+
+4. **Add tests** (`test_main.py`):
+   ```python
+   def test_certifications_rendering(self):
+       """Test that certifications render correctly."""
+       # Test implementation
+       pass
+   ```
+
+5. **Update documentation**:
+   - Add section to README.md
+   - Document in CHANGELOG.md
+
+---
+
+## Commit Message Format
 
 ```
-<type>(<scope>): <subject>
+<type>: <subject>
 
 <body>
 
@@ -123,172 +241,34 @@ Follow conventional commits format:
 - **feat**: New feature
 - **fix**: Bug fix
 - **docs**: Documentation changes
-- **style**: Code style changes (formatting, no logic change)
+- **style**: Code formatting (no logic change)
 - **refactor**: Code refactoring
 - **test**: Adding or updating tests
 - **chore**: Maintenance tasks
 
-### Examples
+### Example
 
 ```
-feat(renderer): add support for custom fonts
+feat: Add certifications section
 
-Implemented dynamic font loading from data/assets directory.
-Users can now add custom TTF fonts without code changes.
+- Created certifications.json data file
+- Implemented rendering logic in generator.py
+- Added tests for certification rendering
+- Updated README with customization guide
 
 Closes #42
 ```
 
-```
-fix(shapes): correct rectangle coordinate interpretation
+---
 
-Changed shape['rect'] unpacking from [x,y,w,h] to [x0,y0,x1,y1].
-This fixes the sidebar rendering bug that caused 33% similarity loss.
+## Questions?
 
-Fixes #38
-```
+If you have questions about contributing:
 
-## 🔄 Pull Request Process
-
-1. **Create a feature branch**
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
-
-2. **Make your changes**
-   - Write clean, documented code
-   - Add/update tests
-   - Update documentation
-
-3. **Test your changes**
-   ```bash
-   pytest test_main.py -v
-   python main.py --validate-only
-   python main.py  # Generate PDF
-   ```
-
-4. **Commit your changes**
-   ```bash
-   git add .
-   git commit -m "feat(scope): your descriptive message"
-   ```
-
-5. **Push to your fork**
-   ```bash
-   git push origin feature/your-feature-name
-   ```
-
-6. **Create Pull Request**
-   - Go to GitHub and create a PR
-   - Fill in the PR template
-   - Link related issues
-   - Request review
-
-### PR Checklist
-
-- [ ] Tests pass locally (`pytest test_main.py -v`)
-- [ ] Code follows style guidelines
-- [ ] Documentation updated (README, docstrings)
-- [ ] CHANGELOG.md updated
-- [ ] Commit messages follow conventions
-- [ ] No merge conflicts
-- [ ] PR description explains changes clearly
-
-## 🐛 Bug Reports
-
-When filing a bug report, please include:
-
-### Required Information
-
-- **Python version**: `python --version`
-- **OS and version**: e.g., Ubuntu 22.04, macOS 14.0, Windows 11
-- **Steps to reproduce**: Detailed steps
-- **Expected behavior**: What should happen
-- **Actual behavior**: What actually happens
-- **Error messages**: Full stack trace if applicable
-- **Screenshot**: If visual issue
-
-### Issue Template
-
-```markdown
-## Bug Description
-Brief description of the bug
-
-## Environment
-- Python version: 3.11.5
-- OS: Ubuntu 22.04
-- Branch/Commit: main@abc1234
-
-## Steps to Reproduce
-1. Run `python main.py`
-2. Observe output in outputs/
-3. See error
-
-## Expected Behavior
-Should generate PDF without errors
-
-## Actual Behavior
-Raises ValueError on line 142
-
-## Error Message
-```
-Traceback...
-```
-
-## Additional Context
-- Happens only with custom fonts
-- Works fine on macOS
-```
-
-## 💡 Feature Requests
-
-For feature requests, please:
-
-1. **Search existing issues** to avoid duplicates
-2. **Describe the problem** this feature would solve
-3. **Propose a solution** if you have one in mind
-4. **Consider alternatives** you've thought about
-
-## 🏗️ Architecture Guidelines
-
-### Module Responsibilities
-
-- **`config.py`**: Constants and configuration only
-- **`fonts.py`**: Font registration and management
-- **`validators.py`**: JSON schema validation
-- **`transformations.py`**: Coordinate transformations
-- **`hyperlinks.py`**: URL detection and generation
-- **`renderer.py`**: PDF canvas operations
-
-### Adding New Modules
-
-If adding a new module to `src/`:
-
-1. Create module with clear purpose
-2. Add `__init__.py` imports
-3. Write comprehensive docstring
-4. Add unit tests in `test_main.py`
-5. Update architecture diagram in README
-
-## 📚 Resources
-
-- [ReportLab Documentation](https://www.reportlab.com/docs/reportlab-userguide.pdf)
-- [Python Type Hints](https://docs.python.org/3/library/typing.html)
-- [pytest Documentation](https://docs.pytest.org/en/stable/)
-- [Conventional Commits](https://www.conventionalcommits.org/)
-
-## 📞 Getting Help
-
-- **GitHub Issues**: For bugs and feature requests
-- **GitHub Discussions**: For questions and general discussion
-- **Email**: nicolas.fredes@example.com (for private inquiries)
-
-## 🙏 Recognition
-
-Contributors will be acknowledged in:
-- README.md (Contributors section)
-- CHANGELOG.md (for significant contributions)
+1. Check existing [documentation](README.md)
+2. Search [existing issues](https://github.com/nicolasfredesfranco/CV_2/issues)
+3. Create a [new issue](https://github.com/nicolasfredesfranco/CV_2/issues/new)
 
 ---
 
-**Thank you for contributing!** Every improvement, no matter how small, makes this project better. 🎉
+**Thank you for contributing!** 🙏

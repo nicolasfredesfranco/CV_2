@@ -97,8 +97,8 @@ class TestLayoutConfig:
     def test_y_global_offset(self):
         """Y offset should be configured for alignment (optimized value)."""
         assert isinstance(CONFIG.Y_GLOBAL_OFFSET, float)
-        # Optimized value from smart visual corrector
-        assert 32.0 <= CONFIG.Y_GLOBAL_OFFSET <= 33.0
+        # Optimized value from comprehensive optimization (77.62% visual similarity)
+        assert 39.0 <= CONFIG.Y_GLOBAL_OFFSET <= 40.0
 
 
 # ========== COORDINATE TRANSFORMATION TESTS ==========

@@ -1,0 +1,9 @@
+{
+  "name": "Jane Doe",
+  "title": "Senior Software Engineer",
+  "phone": "+1-555-123-4567",
+  "email": "jane.doe@example.com",
+  "location": "San Francisco, CA",
+  "linkedin": "janedoe",
+  "github": "janedoe-dev"
+}

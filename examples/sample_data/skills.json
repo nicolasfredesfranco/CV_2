@@ -1,0 +1,25 @@
+{
+  "programming_languages": [
+    "Python",
+    "JavaScript", 
+    "TypeScript",
+    "Java"
+  ],
+  "frameworks": [
+    "React",
+    "Node.js",
+    "Django",
+    "TensorFlow"
+  ],
+  "tools": [
+    "Git",
+    "Docker",
+    "Kubernetes",
+    "AWS"
+  ],
+  "languages": [
+    "English (Native)",
+    "Spanish (Professional)",
+    "French (Conversational)"
+  ]
+}

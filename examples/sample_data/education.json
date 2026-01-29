@@ -1,0 +1,17 @@
+[  
+  {
+    "degree": "M.S. in Computer Science",
+    "institution": "Stanford University",
+    "location": "Stanford, USA",
+    "graduation": "June 2018",
+    "thesis": "Machine Learning for Natural Language Understanding",
+    "gpa": "3.9/4.0"
+  },
+  {
+    "degree": "B.S. in Software Engineering",
+    "institution": "MIT",
+    "location": "Cambridge, USA",
+    "graduation": "May 2016",
+    "gpa": "3.8/4.0"
+  }
+]

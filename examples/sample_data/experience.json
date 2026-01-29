@@ -1,0 +1,16 @@
+[
+  {
+    "position": "Senior Software Engineer",
+    "company": "Tech Giants Inc",
+    "location": "San Francisco, USA",
+    "dates": "Jan 2021 - Present",
+    "description": "Led development of cloud-native microservices serving 10M+ users. Implemented CI/CD pipelines reducing deployment time by 60%. Mentored team of 5 junior engineers."
+  },
+  {
+    "position": "Software Engineer",
+    "company": "Innovative Startup",
+    "location": "Remote",
+    "dates": "Jun 2018 - Dec 2020",
+    "description": "Developed full-stack web applications using React and Django. Designed and implemented REST APIs used by mobile apps. Improved application performance by 40%."
+  }
+]
