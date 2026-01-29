@@ -36,8 +36,8 @@ class LayoutConfig:
     PAGE_HEIGHT: float = 806.0
 
     # Color Palette (Normalized RGB 0-1)
-    # Corporate blue extracted from shapes.json: #3A6BA9 = RGB(58,107,169)
-    COLOR_PRIMARY_BLUE: Tuple[float, float, float] = (0.227, 0.42, 0.663)
+    # Corporate blue EXACT match to objetivo PDF: RGB(43,115,179)
+    COLOR_PRIMARY_BLUE: Tuple[float, float, float] = (0.168627, 0.450980, 0.701961)
     
     # Global Y-Axis Offset (PDF Points)
     # Corrects differences between Ghostscript (objective) and ReportLab (generated)
