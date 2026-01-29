@@ -1,23 +1,28 @@
-# CV Generator - Production Ready
+# Professional CV Generator
 
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
-[![Tests](https://img.shields.io/badge/tests-25%2F25%20passing-success.svg)](test_main.py)
-[![Visual Similarity](https://img.shields.io/badge/visual%20similarity-73.70%25-yellow.svg)](#visual-fidelity)
-[![Code Style](https://img.shields.io/badge/code%20style-professional-brightgreen.svg)](#)
+[![Tests](https://img.shields.io/badge/tests-passing-success.svg)](test_main.py)
+[![License](https://img.shields.io/badge/license-Proprietary-red.svg)](#)
 
-**Professional CV Generator** with pixel-perfect rendering, automated visual optimization, and modular architecture.
+**Automated CV/Resume Generator** with vector-perfect PDF output, modular architecture, and professional quality rendering.
 
-![CV Preview](examples/sample_output.png)
+<p align="center">
+  <img src="examples/cv_preview.png" alt="Generated CV Preview" width="600">
+</p>
+
+<p align="center">
+  <a href="outputs/Nicolas_Fredes_CV.pdf">📄 Download Latest CV (PDF)</a>
+</p>
 
 ---
 
-## 🎯 Features
+## ✨ Features
 
-✅ **Vector PDF Output** - Searchable text, clickable hyperlinks, 91% smaller filesize  
-✅ **Automated Visual Optimization** - Intelligent system iteratively adjusts parameters  
-✅ **Modular Architecture** - 7 specialized modules, fully parameterized  
-✅ **Professional Testing** - 25/25 tests passing with pytest  
-✅ **GitHub Ready** - Complete documentation, CONTRIBUTING guide, clean structure  
+- **Vector PDF Output** - Searchable text, clickable hyperlinks, perfect zoom quality
+- **Modular Architecture** - Clean separation: config, rendering, validation, transformations  
+- **Automated Testing** - Comprehensive test suite ensuring reliability
+- **Professional Quality** - Production-ready output suitable for job applications
+- **Easy Customization** - JSON-based data, centralized configuration
 
 ---
 
@@ -28,7 +33,7 @@
 git clone https://github.com/nicolasfredesfranco/CV.git
 cd CV
 
-# Install dependencies
+# Install dependencies  
 pip install -r requirements.txt
 
 # Generate CV
@@ -39,80 +44,47 @@ python main.py
 
 ---
 
-## 📊 Visual Fidelity
-
-The generator achieves **73.70% visual similarity** with the objective reference PDF when comparing rendered screenshots at screen resolution (150 DPI). This represents the **maximum achievable similarity** when comparing:
-
-- **Objetivo PDF**: Rasterized text/graphics (Ghostscript-rendered, 779 KB)
-- **Generated PDF**: Vector-based with TrueType fonts (ReportLab, 68 KB)
-
-The 26.30% difference is due to fundamental rendering engine differences (antialiasing, font hinting, subpixel rendering), **not positioning or color errors**.
-
-### Visual Comparison
-
-![Final Comparison](outputs/FINAL_COMPARISON_200DPI.png)
-
-### Generated PDF Advantages
-
-| Feature | Objetivo | Generated |
-|---------|----------|-----------|
-| File Size | 779 KB | 68 KB ✅ (91% smaller) |
-| Searchable Text | ❌ | ✅ |
-| Clickable Links | ❌ | ✅ |
-| Print Quality | Good | Excellent ✅ |
-| Zoom Quality | Pixelated | Perfect  ✅ |
-| Editable Source | ❌ | ✅ (Python code) |
-
----
-
-## 🏗️ Architecture
+##  📁 Project Structure
 
 ```
 CV/
-├── src/                      # Modular source code
-│   ├── config.py            # Configuration & constants
-│   ├── transformer.py       # Coordinate transformations
-│   ├── validator.py         # Data validation
-│   ├── renderer.py          # PDF rendering engine
-│   ├── font_manager.py      # Font loading & caching
-│   ├── hyperlink_handler.py # Hyperlink management
-│   └── logger.py            # Structured logging
-│
-├── data/                     # Input data
-│   ├── coordinates.json     # Text positioning
-│   ├── shapes.json          # Background shapes
-│   └── fonts/               # TrueType fonts
-│
-├── outputs/                  # Generated PDFs
-├── examples/                 # Sample outputs
-├── tools/                    # Analysis utilities
-│   ├── compare_precise.py   # Pixel-perfect comparison
-│   └── visual_human_compare.py  # Human-eye analysis
-│
-├── main.py                   # CLI entry point
-├── test_main.py             # Full test suite (25 tests)
-├── smart_visual_corrector.py # Automated optimizer
-├── README.md                # This file
-└── CONTRIBUTING.md          # Development guidelines
+├── main.py                # Entry point - generates CV
+├── src/                   # Source code modules
+│   ├── config.py         # Configuration & constants
+│   ├── renderer.py       # PDF rendering engine
+│   ├── transformer.py    # Coordinate transformations
+│   ├── validator.py      # Data validation
+│   ├── font_manager.py   # Font loading & caching
+│   ├── hyperlink_handler.py  # Link management
+│   └── logger.py         # Structured logging
+├── data/                  # Input data
+│   ├── coordinates.json  # Text positions & content
+│   ├── shapes.json       # Background shapes
+│   └── fonts/            # TrueType fonts
+├── outputs/               # Generated PDFs
+├── examples/              # Sample outputs & previews
+├── tools/                 # Analysis & optimization utilities
+├── test_main.py          # Test suite
+└── README.md             # This file
 ```
 
 ---
 
 ## 🔧 Configuration
 
-All parameters are centralized in [`src/config.py`](src/config.py):
+All parameters centralized in [`src/config.py`](src/config.py):
 
 ```python
 class CVConfig:
-    # Page dimensions (PDF points)
+    # Page dimensions
     PAGE_WIDTH: float = 623.0
     PAGE_HEIGHT: float = 806.0
     
-    # Corporate blue (exact match to objetivo)
-    COLOR_PRIMARY_BLUE = (0.168627, 0.450980, 0.701961)  # RGB(43,115,179)
+    # Corporate blue
+    COLOR_PRIMARY_BLUE = (0.168627, 0.450980, 0.701961)
     
-    # Global Y-axis offset (optimized)
-    Y_GLOBAL_OFFSET: float = 32.5  # Empirically calibrated
+    # Global Y-axis offset
+    Y_GLOBAL_OFFSET: float = 32.6
 ```
 
 ---
@@ -121,104 +93,119 @@ class CVConfig:
 
 ```bash
 # Install dev dependencies
-pip install -r requirements-dev.txt
+pip install pytest
 
 # Run all tests
 pytest test_main.py -v
 
-# Expected result: 25/25 PASSED
+# Expected: 25 passed, 1 skipped
 ```
-
-**Test Coverage:**
-- ✅ Configuration validation
-- ✅ Data loading & validation
-- ✅ Coordinate transformations
-- ✅ PDF generation
-- ✅ Font management
-- ✅ Hyperlink handling
 
 ---
 
-## 🎨 Visual Optimization
+## 📊 Technical Specifications
 
-The project includes an **intelligent visual optimizer** that automatically adjusts parameters:
+| Feature | Specification |
+|---------|--------------|
+| **Output Format** | PDF 1.4 (Vector) |
+| **File Size** | ~68 KB |
+| **Page Size** | Letter (8.66" x 11.22") |
+| **Fonts** | TrueType (embedded) |
+| **Links** | Fully clickable |
+| **Text** | Searchable & selectable |
+| **Generation Time** | < 1 second |
+
+---
+
+## 🎨 Customization
+
+### Update Content
+
+Edit [`data/coordinates.json`](data/coordinates.json):
+
+```json
+{
+  "text": "Your Name",
+  "x": 100.0,
+  "y": 50.0,
+  "fontname": "OpenSans-Bold",
+  "fontsize": 24.0
+}
+```
+
+### Modify Colors
+
+Update [`src/config.py`](src/config.py):
+
+```python
+COLOR_PRIMARY_BLUE = (0.168627, 0.450980, 0.701961)  # RGB(43,115,179)
+```
+
+### Adjust Layout
+
+Modify global offset in [`src/config.py`](src/config.py):
+
+```python
+Y_GLOBAL_OFFSET: float = 32.6  # Fine-tune vertical alignment
+```
+
+---
+
+## 🛠️ Development
 
 ```bash
-# Run automated visual optimization
-python smart_visual_corrector.py
+# Install development dependencies
+pip install -r requirements-dev.txt
 
-# Iterates up to 100 times, auto-adjusting:
-# - Y_GLOBAL_OFFSET
-# - Vertical positioning
-# - Analyzing visual gradients
+# Run tests with coverage
+pytest test_main.py -v --cov=src
+
+# Format code
+black src/ main.py
+
+# Type checking
+mypy src/
 ```
 
-The optimizer:
-1. Generates PDF → Converts to PNG
-2. Compares with objetivo PNG (pixel-by-pixel)
-3. Detects vertical positioning gradients
-4. Auto-adjusts `Y_GLOBAL_OFFSET`
-5. Repeats until convergence or 99% similarity
+---
 
-**Result**: Converged at **73.70% similarity** after 68 iterations, confirming this is the maximum achievable given rendering engine limitations.
+## 📝 Documentation
+
+- **[CONTRIBUTING.md](CONTRIBUTING.md)** - Development guidelines & workflow
+- **[CHANGELOG.md](CHANGELOG.md)** - Version history & release notes
+- **[tools/](tools/)** - Analysis & optimization utilities
 
 ---
 
-## 📈 Performance
+## 🔗 Author
 
-- **Generation Time**: ~0.5 seconds
-- **File Size**: 68 KB (vs 779 KB objetivo)
-- **Memory Usage**: < 50 MB
-- **PDF Quality**: Vector-perfect, infinite zoom
+**Nicolás Ignacio Fredes Franco**
 
----
-
-## 🤝 Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for:
-- Code style guidelines
-- Development workflow
-- Testing requirements
-- Pull request process
+- 📧 Email: nicofredesfranco@gmail.com
+- 💼 LinkedIn: [nicolasfredesfranco](https://www.linkedin.com/in/nicolasfredesfranco/)
+- 🐙 GitHub: [nicolasfredesfranco](https://github.com/nicolasfredesfranco)
 
 ---
 
 ## 📄 License
 
-This project is proprietary software for Nicolás Ignacio Fredes Franco.
+This project is proprietary software created by and for Nicolás Ignacio Fredes Franco.
 
 ---
 
-## 🔗 Links
+## 🙏 Acknowledgments
 
-- **Author**: Nicolás Ignacio Fredes Franco
-- **LinkedIn**: [nicolasfredesfranco](https://www.linkedin.com/in/nicolasfredesfranco/)
-- **GitHub**: [nicolasfredesfranco](https://github.com/nicolasfredesfranco)
-
----
-
-## 📝 Technical Notes
-
-### Why not 100% pixel-perfect?
-
-The 73.70% similarity is the **theoretical maximum** when comparing:
-- Rasterized PDF (objetivo): Text and graphics rendered to pixels by Ghostscript
-- Vector PDF (generated): Mathematical fonts and shapes rendered by ReportLab
-
-Differences arise from:
-1. **Antialiasing algorithms** (different smoothing)
-2. **Font hinting** (different subpixel positioning)
-3. **Rendering engines** (Ghostscript vs ReportLab)
-
-**This is NOT a bug** - it's a fundamental limitation of comparing different PDF technologies.
-
-### To achieve 100% match
-
-Three options:
-1. **Accept current output** (recommended) - Superior functionality, visually indistinguishable
-2. **Change objetivo** - Use generated PDF as new reference
-3. **Rasterize generated PDF** - Sacrifice functionality (searchability, links) to match pixel-for-pixel
+Built with:
+- [ReportLab](https://www.reportlab.com/) - PDF generation
+- [pdf2image](https://github.com/Belval/pdf2image) - PDF rendering  
+- [Pillow](https://python-pillow.org/) - Image processing
 
 ---
 
-<p align="center">Made with ❤️ for professional CV generation</p>
+<p align="center">
+  Made with ❤️ by Nicolás Fredes Franco
+</p>
+
+<p align="center">
+  <a href="outputs/Nicolas_Fredes_CV.pdf">📥 Download My CV</a>
+</p>
