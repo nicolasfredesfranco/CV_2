@@ -1,0 +1,7228 @@
+{
+  "metadata": {
+    "source_file": "outputs/Nicolas_Fredes_CV.pdf",
+    "total_elements": 656,
+    "page_dimensions": {
+      "width": 623.0,
+      "height": 806.0
+    }
+  },
+  "dictionary": [
+    {
+      "text": "Nicol\u00e1s",
+      "location": {
+        "x0": 231.63,
+        "top": 25.855,
+        "x1": 310.911,
+        "bottom": 49.865,
+        "centroid_x": 271.2705,
+        "centroid_y": 37.86
+      }
+    },
+    {
+      "text": "Ignacio",
+      "location": {
+        "x0": 318.138,
+        "top": 25.855,
+        "x1": 396.8668,
+        "bottom": 49.865,
+        "centroid_x": 357.5024,
+        "centroid_y": 37.86
+      }
+    },
+    {
+      "text": "Fredes",
+      "location": {
+        "x0": 404.0938,
+        "top": 25.855,
+        "x1": 480.2535,
+        "bottom": 49.865,
+        "centroid_x": 442.1737,
+        "centroid_y": 37.86
+      }
+    },
+    {
+      "text": "Franco",
+      "location": {
+        "x0": 487.4805,
+        "top": 25.855,
+        "x1": 564.5766,
+        "bottom": 49.865,
+        "centroid_x": 526.0286,
+        "centroid_y": 37.86
+      }
+    },
+    {
+      "text": "Nicol\u00e1s",
+      "location": {
+        "x0": 88.47,
+        "top": 42.1162,
+        "x1": 121.49,
+        "bottom": 52.1162,
+        "centroid_x": 104.98,
+        "centroid_y": 47.1162
+      }
+    },
+    {
+      "text": "Fredes",
+      "location": {
+        "x0": 124.5,
+        "top": 42.1162,
+        "x1": 156.22,
+        "bottom": 52.1162,
+        "centroid_x": 140.36,
+        "centroid_y": 47.1162
+      }
+    },
+    {
+      "text": "22",
+      "location": {
+        "x0": 75.85,
+        "top": 53.1162,
+        "x1": 86.33,
+        "bottom": 63.1162,
+        "centroid_x": 81.09,
+        "centroid_y": 58.1162
+      }
+    },
+    {
+      "text": "norte",
+      "location": {
+        "x0": 89.34,
+        "top": 53.1162,
+        "x1": 113.47,
+        "bottom": 63.1162,
+        "centroid_x": 101.405,
+        "centroid_y": 58.1162
+      }
+    },
+    {
+      "text": "1125",
+      "location": {
+        "x0": 116.48,
+        "top": 53.1162,
+        "x1": 137.44,
+        "bottom": 63.1162,
+        "centroid_x": 126.96,
+        "centroid_y": 58.1162
+      }
+    },
+    {
+      "text": "F-602,",
+      "location": {
+        "x0": 140.45,
+        "top": 53.1162,
+        "x1": 168.76,
+        "bottom": 63.1162,
+        "centroid_x": 154.605,
+        "centroid_y": 58.1162
+      }
+    },
+    {
+      "text": "Vi\u00f1a",
+      "location": {
+        "x0": 79.8,
+        "top": 63.1262,
+        "x1": 99.23,
+        "bottom": 73.1262,
+        "centroid_x": 89.515,
+        "centroid_y": 68.1262
+      }
+    },
+    {
+      "text": "del",
+      "location": {
+        "x0": 102.24,
+        "top": 63.1262,
+        "x1": 116.21,
+        "bottom": 73.1262,
+        "centroid_x": 109.225,
+        "centroid_y": 68.1262
+      }
+    },
+    {
+      "text": "Mar,",
+      "location": {
+        "x0": 119.22,
+        "top": 63.1262,
+        "x1": 139.12,
+        "bottom": 73.1262,
+        "centroid_x": 129.17,
+        "centroid_y": 68.1262
+      }
+    },
+    {
+      "text": "Chile",
+      "location": {
+        "x0": 142.13,
+        "top": 63.1262,
+        "x1": 164.82,
+        "bottom": 73.1262,
+        "centroid_x": 153.475,
+        "centroid_y": 68.1262
+      }
+    },
+    {
+      "text": "EXPERIENCE",
+      "location": {
+        "x0": 364.32,
+        "top": 65.2436,
+        "x1": 431.9603,
+        "bottom": 77.2536,
+        "centroid_x": 398.1402,
+        "centroid_y": 71.2486
+      }
+    },
+    {
+      "text": "(569)",
+      "location": {
+        "x0": 86.81,
+        "top": 76.1362,
+        "x1": 109.87,
+        "bottom": 86.1362,
+        "centroid_x": 98.34,
+        "centroid_y": 81.1362
+      }
+    },
+    {
+      "text": "9899",
+      "location": {
+        "x0": 112.88,
+        "top": 76.1362,
+        "x1": 133.84,
+        "bottom": 86.1362,
+        "centroid_x": 123.36,
+        "centroid_y": 81.1362
+      }
+    },
+    {
+      "text": "1704",
+      "location": {
+        "x0": 136.85,
+        "top": 76.1362,
+        "x1": 157.81,
+        "bottom": 86.1362,
+        "centroid_x": 147.33,
+        "centroid_y": 81.1362
+      }
+    },
+    {
+      "text": "JOBSITY",
+      "location": {
+        "x0": 213.08,
+        "top": 81.4288,
+        "x1": 266.9485,
+        "bottom": 95.4388,
+        "centroid_x": 240.0142,
+        "centroid_y": 88.4338
+      }
+    },
+    {
+      "text": "nico.fredes.franco@gmail.com",
+      "location": {
+        "x0": 45.23,
+        "top": 87.1362,
+        "x1": 182.3,
+        "bottom": 97.1362,
+        "centroid_x": 113.765,
+        "centroid_y": 92.1362
+      }
+    },
+    {
+      "text": "Remote,",
+      "location": {
+        "x0": 532.98,
+        "top": 92.8609,
+        "x1": 563.396,
+        "bottom": 100.8609,
+        "centroid_x": 548.188,
+        "centroid_y": 96.8609
+      }
+    },
+    {
+      "text": "USA",
+      "location": {
+        "x0": 565.804,
+        "top": 92.8609,
+        "x1": 579.556,
+        "bottom": 100.8609,
+        "centroid_x": 572.68,
+        "centroid_y": 96.8609
+      }
+    },
+    {
+      "text": "Github:",
+      "location": {
+        "x0": 45.23,
+        "top": 98.1461,
+        "x1": 78.96,
+        "bottom": 108.1461,
+        "centroid_x": 62.095,
+        "centroid_y": 103.1461
+      }
+    },
+    {
+      "text": "//",
+      "location": {
+        "x0": 88.1,
+        "top": 98.1461,
+        "x1": 98.58,
+        "bottom": 108.1461,
+        "centroid_x": 93.34,
+        "centroid_y": 103.1461
+      }
+    },
+    {
+      "text": "nicolasfredesfranco",
+      "location": {
+        "x0": 96.55,
+        "top": 98.1461,
+        "x1": 184.16,
+        "bottom": 108.1461,
+        "centroid_x": 140.355,
+        "centroid_y": 103.1461
+      }
+    },
+    {
+      "text": "Lead",
+      "location": {
+        "x0": 214.27,
+        "top": 98.2112,
+        "x1": 243.4384,
+        "bottom": 111.2212,
+        "centroid_x": 228.8542,
+        "centroid_y": 104.7162
+      }
+    },
+    {
+      "text": "Artificial",
+      "location": {
+        "x0": 247.3544,
+        "top": 98.2112,
+        "x1": 300.175,
+        "bottom": 111.2212,
+        "centroid_x": 273.7647,
+        "centroid_y": 104.7162
+      }
+    },
+    {
+      "text": "Intelligence",
+      "location": {
+        "x0": 304.0911,
+        "top": 98.2112,
+        "x1": 375.3989,
+        "bottom": 111.2212,
+        "centroid_x": 339.745,
+        "centroid_y": 104.7162
+      }
+    },
+    {
+      "text": "Engineer",
+      "location": {
+        "x0": 379.3149,
+        "top": 98.2112,
+        "x1": 432.9941,
+        "bottom": 111.2212,
+        "centroid_x": 406.1545,
+        "centroid_y": 104.7162
+      }
+    },
+    {
+      "text": "Since",
+      "location": {
+        "x0": 502.78,
+        "top": 103.6086,
+        "x1": 523.759,
+        "bottom": 112.6086,
+        "centroid_x": 513.2695,
+        "centroid_y": 108.1086
+      }
+    },
+    {
+      "text": "January",
+      "location": {
+        "x0": 526.468,
+        "top": 103.6086,
+        "x1": 558.328,
+        "bottom": 112.6086,
+        "centroid_x": 542.398,
+        "centroid_y": 108.1086
+      }
+    },
+    {
+      "text": "2026",
+      "location": {
+        "x0": 561.037,
+        "top": 103.6086,
+        "x1": 579.901,
+        "bottom": 112.6086,
+        "centroid_x": 570.469,
+        "centroid_y": 108.1086
+      }
+    },
+    {
+      "text": "LinkedIn:",
+      "location": {
+        "x0": 45.23,
+        "top": 109.1461,
+        "x1": 86.57,
+        "bottom": 119.1461,
+        "centroid_x": 65.9,
+        "centroid_y": 114.1461
+      }
+    },
+    {
+      "text": "//",
+      "location": {
+        "x0": 89.58,
+        "top": 109.1461,
+        "x1": 100.06,
+        "bottom": 119.1461,
+        "centroid_x": 94.82,
+        "centroid_y": 114.1461
+      }
+    },
+    {
+      "text": "nicolasfredesfranco",
+      "location": {
+        "x0": 99.56,
+        "top": 109.1461,
+        "x1": 187.17,
+        "bottom": 119.1461,
+        "centroid_x": 143.365,
+        "centroid_y": 114.1461
+      }
+    },
+    {
+      "text": "\u2022",
+      "location": {
+        "x0": 210.49,
+        "top": 114.8162,
+        "x1": 215.73,
+        "bottom": 124.8162,
+        "centroid_x": 213.11,
+        "centroid_y": 119.8162
+      }
+    },
+    {
+      "text": "Architecting",
+      "location": {
+        "x0": 221.75,
+        "top": 114.8162,
+        "x1": 276.45,
+        "bottom": 124.8162,
+        "centroid_x": 249.1,
+        "centroid_y": 119.8162
+      }
+    },
+    {
+      "text": "a",
+      "location": {
+        "x0": 279.46,
+        "top": 114.8162,
+        "x1": 284.71,
+        "bottom": 124.8162,
+        "centroid_x": 282.085,
+        "centroid_y": 119.8162
+      }
+    },
+    {
+      "text": "high-scale",
+      "location": {
+        "x0": 287.72,
+        "top": 114.8162,
+        "x1": 332.83,
+        "bottom": 124.8162,
+        "centroid_x": 310.275,
+        "centroid_y": 119.8162
+      }
+    },
+    {
+      "text": "Agentic",
+      "location": {
+        "x0": 335.84,
+        "top": 114.8162,
+        "x1": 369.43,
+        "bottom": 124.8162,
+        "centroid_x": 352.635,
+        "centroid_y": 119.8162
+      }
+    },
+    {
+      "text": "System",
+      "location": {
+        "x0": 372.44,
+        "top": 114.8162,
+        "x1": 403.94,
+        "bottom": 124.8162,
+        "centroid_x": 388.19,
+        "centroid_y": 119.8162
+      }
+    },
+    {
+      "text": "on",
+      "location": {
+        "x0": 406.95,
+        "top": 114.8162,
+        "x1": 417.78,
+        "bottom": 124.8162,
+        "centroid_x": 412.365,
+        "centroid_y": 119.8162
+      }
+    },
+    {
+      "text": "Vertex",
+      "location": {
+        "x0": 420.79,
+        "top": 114.8162,
+        "x1": 450.42,
+        "bottom": 124.8162,
+        "centroid_x": 435.605,
+        "centroid_y": 119.8162
+      }
+    },
+    {
+      "text": "AI",
+      "location": {
+        "x0": 453.4301,
+        "top": 114.8162,
+        "x1": 462.11,
+        "bottom": 124.8162,
+        "centroid_x": 457.7701,
+        "centroid_y": 119.8162
+      }
+    },
+    {
+      "text": "to",
+      "location": {
+        "x0": 465.1201,
+        "top": 114.8162,
+        "x1": 474.45,
+        "bottom": 124.8162,
+        "centroid_x": 469.785,
+        "centroid_y": 119.8162
+      }
+    },
+    {
+      "text": "intelligently",
+      "location": {
+        "x0": 477.4601,
+        "top": 114.8162,
+        "x1": 531.7001,
+        "bottom": 124.8162,
+        "centroid_x": 504.5801,
+        "centroid_y": 119.8162
+      }
+    },
+    {
+      "text": "match",
+      "location": {
+        "x0": 534.7101,
+        "top": 114.8162,
+        "x1": 562.6302,
+        "bottom": 124.8162,
+        "centroid_x": 548.6702,
+        "centroid_y": 119.8162
+      }
+    },
+    {
+      "text": "8",
+      "location": {
+        "x0": 565.6402,
+        "top": 114.8162,
+        "x1": 570.8802,
+        "bottom": 124.8162,
+        "centroid_x": 568.2602,
+        "centroid_y": 119.8162
+      }
+    },
+    {
+      "text": "Twitter:",
+      "location": {
+        "x0": 45.23,
+        "top": 120.1561,
+        "x1": 82.26,
+        "bottom": 130.1561,
+        "centroid_x": 63.745,
+        "centroid_y": 125.1561
+      }
+    },
+    {
+      "text": "//",
+      "location": {
+        "x0": 85.27,
+        "top": 120.1561,
+        "x1": 95.75,
+        "bottom": 130.1561,
+        "centroid_x": 90.51,
+        "centroid_y": 125.1561
+      }
+    },
+    {
+      "text": "nicofredesfranc",
+      "location": {
+        "x0": 99.56,
+        "top": 120.1561,
+        "x1": 169.55,
+        "bottom": 130.1561,
+        "centroid_x": 134.555,
+        "centroid_y": 125.1561
+      }
+    },
+    {
+      "text": "million",
+      "location": {
+        "x0": 221.77,
+        "top": 127.7562,
+        "x1": 252.5,
+        "bottom": 137.7562,
+        "centroid_x": 237.135,
+        "centroid_y": 132.7562
+      }
+    },
+    {
+      "text": "LATAM",
+      "location": {
+        "x0": 255.51,
+        "top": 127.7562,
+        "x1": 285.27,
+        "bottom": 137.7562,
+        "centroid_x": 270.39,
+        "centroid_y": 132.7562
+      }
+    },
+    {
+      "text": "talents",
+      "location": {
+        "x0": 288.28,
+        "top": 127.7562,
+        "x1": 319.36,
+        "bottom": 137.7562,
+        "centroid_x": 303.82,
+        "centroid_y": 132.7562
+      }
+    },
+    {
+      "text": "with",
+      "location": {
+        "x0": 322.37,
+        "top": 127.7562,
+        "x1": 342.08,
+        "bottom": 137.7562,
+        "centroid_x": 332.225,
+        "centroid_y": 132.7562
+      }
+    },
+    {
+      "text": "job",
+      "location": {
+        "x0": 345.09,
+        "top": 127.7562,
+        "x1": 359.7,
+        "bottom": 137.7562,
+        "centroid_x": 352.395,
+        "centroid_y": 132.7562
+      }
+    },
+    {
+      "text": "opportunities,",
+      "location": {
+        "x0": 362.71,
+        "top": 127.7562,
+        "x1": 426.19,
+        "bottom": 137.7562,
+        "centroid_x": 394.45,
+        "centroid_y": 132.7562
+      }
+    },
+    {
+      "text": "using",
+      "location": {
+        "x0": 429.2,
+        "top": 127.7562,
+        "x1": 452.04,
+        "bottom": 137.7562,
+        "centroid_x": 440.62,
+        "centroid_y": 132.7562
+      }
+    },
+    {
+      "text": "LangChain",
+      "location": {
+        "x0": 455.05,
+        "top": 127.7562,
+        "x1": 500.84,
+        "bottom": 137.7562,
+        "centroid_x": 477.945,
+        "centroid_y": 132.7562
+      }
+    },
+    {
+      "text": "and",
+      "location": {
+        "x0": 503.85,
+        "top": 127.7562,
+        "x1": 520.13,
+        "bottom": 137.7562,
+        "centroid_x": 511.99,
+        "centroid_y": 132.7562
+      }
+    },
+    {
+      "text": "Google-ADK,",
+      "location": {
+        "x0": 523.14,
+        "top": 127.7562,
+        "x1": 579.1901,
+        "bottom": 137.7562,
+        "centroid_x": 551.165,
+        "centroid_y": 132.7562
+      }
+    },
+    {
+      "text": "EDUCATION",
+      "location": {
+        "x0": 92.63,
+        "top": 133.6736,
+        "x1": 157.4239,
+        "bottom": 145.6836,
+        "centroid_x": 125.027,
+        "centroid_y": 139.6786
+      }
+    },
+    {
+      "text": "deployed",
+      "location": {
+        "x0": 221.77,
+        "top": 140.4162,
+        "x1": 262.63,
+        "bottom": 150.4162,
+        "centroid_x": 242.2,
+        "centroid_y": 145.4162
+      }
+    },
+    {
+      "text": "via",
+      "location": {
+        "x0": 265.64,
+        "top": 140.4162,
+        "x1": 278.64,
+        "bottom": 150.4162,
+        "centroid_x": 272.14,
+        "centroid_y": 145.4162
+      }
+    },
+    {
+      "text": "Agent",
+      "location": {
+        "x0": 281.6501,
+        "top": 140.4162,
+        "x1": 307.44,
+        "bottom": 150.4162,
+        "centroid_x": 294.545,
+        "centroid_y": 145.4162
+      }
+    },
+    {
+      "text": "Engine",
+      "location": {
+        "x0": 310.45,
+        "top": 140.4162,
+        "x1": 340.05,
+        "bottom": 150.4162,
+        "centroid_x": 325.25,
+        "centroid_y": 145.4162
+      }
+    },
+    {
+      "text": "to",
+      "location": {
+        "x0": 343.06,
+        "top": 140.4162,
+        "x1": 352.39,
+        "bottom": 150.4162,
+        "centroid_x": 347.725,
+        "centroid_y": 145.4162
+      }
+    },
+    {
+      "text": "orchestrate",
+      "location": {
+        "x0": 355.4,
+        "top": 140.4162,
+        "x1": 407.08,
+        "bottom": 150.4162,
+        "centroid_x": 381.24,
+        "centroid_y": 145.4162
+      }
+    },
+    {
+      "text": "complex",
+      "location": {
+        "x0": 410.0901,
+        "top": 140.4162,
+        "x1": 447.6901,
+        "bottom": 150.4162,
+        "centroid_x": 428.8901,
+        "centroid_y": 145.4162
+      }
+    },
+    {
+      "text": "industrial",
+      "location": {
+        "x0": 450.7001,
+        "top": 140.4162,
+        "x1": 492.9901,
+        "bottom": 150.4162,
+        "centroid_x": 471.8451,
+        "centroid_y": 145.4162
+      }
+    },
+    {
+      "text": "workflows.",
+      "location": {
+        "x0": 496.0001,
+        "top": 140.4162,
+        "x1": 544.9201,
+        "bottom": 150.4162,
+        "centroid_x": 520.4601,
+        "centroid_y": 145.4162
+      }
+    },
+    {
+      "text": "Federico",
+      "location": {
+        "x0": 47.13,
+        "top": 149.6666,
+        "x1": 104.768,
+        "bottom": 163.6666,
+        "centroid_x": 75.949,
+        "centroid_y": 156.6666
+      }
+    },
+    {
+      "text": "Santa",
+      "location": {
+        "x0": 108.982,
+        "top": 149.6666,
+        "x1": 144.864,
+        "bottom": 163.6666,
+        "centroid_x": 126.923,
+        "centroid_y": 156.6666
+      }
+    },
+    {
+      "text": "Mar\u00eda",
+      "location": {
+        "x0": 149.078,
+        "top": 149.6666,
+        "x1": 184.582,
+        "bottom": 163.6666,
+        "centroid_x": 166.83,
+        "centroid_y": 156.6666
+      }
+    },
+    {
+      "text": "ZENTA",
+      "location": {
+        "x0": 215.97,
+        "top": 151.0688,
+        "x1": 258.5744,
+        "bottom": 165.0788,
+        "centroid_x": 237.2722,
+        "centroid_y": 158.0738
+      }
+    },
+    {
+      "text": "GROUP",
+      "location": {
+        "x0": 262.7914,
+        "top": 151.0688,
+        "x1": 308.3239,
+        "bottom": 165.0788,
+        "centroid_x": 285.5577,
+        "centroid_y": 158.0738
+      }
+    },
+    {
+      "text": "Las",
+      "location": {
+        "x0": 516.3,
+        "top": 159.9009,
+        "x1": 527.788,
+        "bottom": 167.9009,
+        "centroid_x": 522.044,
+        "centroid_y": 163.9009
+      }
+    },
+    {
+      "text": "Condes,",
+      "location": {
+        "x0": 530.196,
+        "top": 159.9009,
+        "x1": 558.6359,
+        "bottom": 167.9009,
+        "centroid_x": 544.416,
+        "centroid_y": 163.9009
+      }
+    },
+    {
+      "text": "Chile",
+      "location": {
+        "x0": 561.0439,
+        "top": 159.9009,
+        "x1": 579.1959,
+        "bottom": 167.9009,
+        "centroid_x": 570.1199,
+        "centroid_y": 163.9009
+      }
+    },
+    {
+      "text": "Technical",
+      "location": {
+        "x0": 47.13,
+        "top": 165.6666,
+        "x1": 110.41,
+        "bottom": 179.6666,
+        "centroid_x": 78.77,
+        "centroid_y": 172.6666
+      }
+    },
+    {
+      "text": "University",
+      "location": {
+        "x0": 114.624,
+        "top": 165.6666,
+        "x1": 181.18,
+        "bottom": 179.6666,
+        "centroid_x": 147.902,
+        "centroid_y": 172.6666
+      }
+    },
+    {
+      "text": "Senior",
+      "location": {
+        "x0": 217.16,
+        "top": 167.8612,
+        "x1": 255.7607,
+        "bottom": 180.8712,
+        "centroid_x": 236.4603,
+        "centroid_y": 174.3662
+      }
+    },
+    {
+      "text": "Machine",
+      "location": {
+        "x0": 259.6767,
+        "top": 167.8612,
+        "x1": 309.7132,
+        "bottom": 180.8712,
+        "centroid_x": 284.6949,
+        "centroid_y": 174.3662
+      }
+    },
+    {
+      "text": "Learning",
+      "location": {
+        "x0": 313.6292,
+        "top": 167.8612,
+        "x1": 366.5538,
+        "bottom": 180.8712,
+        "centroid_x": 340.0915,
+        "centroid_y": 174.3662
+      }
+    },
+    {
+      "text": "Engineer",
+      "location": {
+        "x0": 370.4698,
+        "top": 167.8612,
+        "x1": 424.1491,
+        "bottom": 180.8712,
+        "centroid_x": 397.3095,
+        "centroid_y": 174.3662
+      }
+    },
+    {
+      "text": "November",
+      "location": {
+        "x0": 454.65,
+        "top": 174.7485,
+        "x1": 495.537,
+        "bottom": 183.7485,
+        "centroid_x": 475.0935,
+        "centroid_y": 179.2485
+      }
+    },
+    {
+      "text": "2025",
+      "location": {
+        "x0": 498.246,
+        "top": 174.7485,
+        "x1": 517.11,
+        "bottom": 183.7485,
+        "centroid_x": 507.678,
+        "centroid_y": 179.2485
+      }
+    },
+    {
+      "text": "-",
+      "location": {
+        "x0": 519.819,
+        "top": 174.7485,
+        "x1": 523.122,
+        "bottom": 183.7485,
+        "centroid_x": 521.4705,
+        "centroid_y": 179.2485
+      }
+    },
+    {
+      "text": "January",
+      "location": {
+        "x0": 525.831,
+        "top": 174.7485,
+        "x1": 557.691,
+        "bottom": 183.7485,
+        "centroid_x": 541.761,
+        "centroid_y": 179.2485
+      }
+    },
+    {
+      "text": "2026",
+      "location": {
+        "x0": 560.4,
+        "top": 174.7485,
+        "x1": 579.264,
+        "bottom": 183.7485,
+        "centroid_x": 569.832,
+        "centroid_y": 179.2485
+      }
+    },
+    {
+      "text": "Valpara\u00edso,",
+      "location": {
+        "x0": 47.13,
+        "top": 183.1962,
+        "x1": 97.1,
+        "bottom": 193.1962,
+        "centroid_x": 72.115,
+        "centroid_y": 188.1962
+      }
+    },
+    {
+      "text": "Chile",
+      "location": {
+        "x0": 100.11,
+        "top": 183.1962,
+        "x1": 122.8,
+        "bottom": 193.1962,
+        "centroid_x": 111.455,
+        "centroid_y": 188.1962
+      }
+    },
+    {
+      "text": "\u2022",
+      "location": {
+        "x0": 213.39,
+        "top": 184.4661,
+        "x1": 218.63,
+        "bottom": 194.4661,
+        "centroid_x": 216.01,
+        "centroid_y": 189.4661
+      }
+    },
+    {
+      "text": "Refactored",
+      "location": {
+        "x0": 224.65,
+        "top": 184.4661,
+        "x1": 274.06,
+        "bottom": 194.4661,
+        "centroid_x": 249.355,
+        "centroid_y": 189.4661
+      }
+    },
+    {
+      "text": "the",
+      "location": {
+        "x0": 277.07,
+        "top": 184.4661,
+        "x1": 291.94,
+        "bottom": 194.4661,
+        "centroid_x": 284.505,
+        "centroid_y": 189.4661
+      }
+    },
+    {
+      "text": "post-speech",
+      "location": {
+        "x0": 294.95,
+        "top": 184.4661,
+        "x1": 348.5001,
+        "bottom": 194.4661,
+        "centroid_x": 321.7251,
+        "centroid_y": 189.4661
+      }
+    },
+    {
+      "text": "processing",
+      "location": {
+        "x0": 351.5101,
+        "top": 184.4661,
+        "x1": 398.1701,
+        "bottom": 194.4661,
+        "centroid_x": 374.8401,
+        "centroid_y": 189.4661
+      }
+    },
+    {
+      "text": "architecture",
+      "location": {
+        "x0": 401.1801,
+        "top": 184.4661,
+        "x1": 456.7001,
+        "bottom": 194.4661,
+        "centroid_x": 428.9401,
+        "centroid_y": 189.4661
+      }
+    },
+    {
+      "text": "for",
+      "location": {
+        "x0": 459.7101,
+        "top": 184.4661,
+        "x1": 472.6702,
+        "bottom": 194.4661,
+        "centroid_x": 466.1902,
+        "centroid_y": 189.4661
+      }
+    },
+    {
+      "text": "an",
+      "location": {
+        "x0": 475.6802,
+        "top": 184.4661,
+        "x1": 486.3902,
+        "bottom": 194.4661,
+        "centroid_x": 481.0352,
+        "centroid_y": 189.4661
+      }
+    },
+    {
+      "text": "agentic",
+      "location": {
+        "x0": 489.4002,
+        "top": 184.4661,
+        "x1": 522.3401,
+        "bottom": 194.4661,
+        "centroid_x": 505.8702,
+        "centroid_y": 189.4661
+      }
+    },
+    {
+      "text": "B.S.",
+      "location": {
+        "x0": 47.13,
+        "top": 193.0288,
+        "x1": 72.9084,
+        "bottom": 207.0388,
+        "centroid_x": 60.0192,
+        "centroid_y": 200.0338
+      }
+    },
+    {
+      "text": "in",
+      "location": {
+        "x0": 77.1254,
+        "top": 193.0288,
+        "x1": 89.5663,
+        "bottom": 207.0388,
+        "centroid_x": 83.3459,
+        "centroid_y": 200.0338
+      }
+    },
+    {
+      "text": "Electronic",
+      "location": {
+        "x0": 93.7833,
+        "top": 193.0288,
+        "x1": 160.1907,
+        "bottom": 207.0388,
+        "centroid_x": 126.987,
+        "centroid_y": 200.0338
+      }
+    },
+    {
+      "text": "voice-integrated",
+      "location": {
+        "x0": 227.68,
+        "top": 197.4061,
+        "x1": 301.73,
+        "bottom": 207.4061,
+        "centroid_x": 264.705,
+        "centroid_y": 202.4061
+      }
+    },
+    {
+      "text": "system",
+      "location": {
+        "x0": 304.74,
+        "top": 197.4061,
+        "x1": 335.4799,
+        "bottom": 207.4061,
+        "centroid_x": 320.11,
+        "centroid_y": 202.4061
+      }
+    },
+    {
+      "text": "at",
+      "location": {
+        "x0": 338.49,
+        "top": 197.4061,
+        "x1": 347.7,
+        "bottom": 207.4061,
+        "centroid_x": 343.095,
+        "centroid_y": 202.4061
+      }
+    },
+    {
+      "text": "CMPC",
+      "location": {
+        "x0": 350.71,
+        "top": 197.4061,
+        "x1": 375.34,
+        "bottom": 207.4061,
+        "centroid_x": 363.025,
+        "centroid_y": 202.4061
+      }
+    },
+    {
+      "text": "Brazil",
+      "location": {
+        "x0": 378.35,
+        "top": 197.4061,
+        "x1": 403.7,
+        "bottom": 207.4061,
+        "centroid_x": 391.025,
+        "centroid_y": 202.4061
+      }
+    },
+    {
+      "text": "(Gua\u00edba",
+      "location": {
+        "x0": 406.71,
+        "top": 197.4061,
+        "x1": 441.5201,
+        "bottom": 207.4061,
+        "centroid_x": 424.115,
+        "centroid_y": 202.4061
+      }
+    },
+    {
+      "text": "plant),",
+      "location": {
+        "x0": 444.5301,
+        "top": 197.4061,
+        "x1": 475.0601,
+        "bottom": 207.4061,
+        "centroid_x": 459.7951,
+        "centroid_y": 202.4061
+      }
+    },
+    {
+      "text": "reducing",
+      "location": {
+        "x0": 478.0701,
+        "top": 197.4061,
+        "x1": 516.7202,
+        "bottom": 207.4061,
+        "centroid_x": 497.3951,
+        "centroid_y": 202.4061
+      }
+    },
+    {
+      "text": "end-to-end",
+      "location": {
+        "x0": 519.7302,
+        "top": 197.4061,
+        "x1": 569.3602,
+        "bottom": 207.4061,
+        "centroid_x": 544.5452,
+        "centroid_y": 202.4061
+      }
+    },
+    {
+      "text": "response",
+      "location": {
+        "x0": 227.68,
+        "top": 210.0562,
+        "x1": 266.97,
+        "bottom": 220.0562,
+        "centroid_x": 247.325,
+        "centroid_y": 215.0562
+      }
+    },
+    {
+      "text": "latency",
+      "location": {
+        "x0": 269.98,
+        "top": 210.0562,
+        "x1": 302.93,
+        "bottom": 220.0562,
+        "centroid_x": 286.455,
+        "centroid_y": 215.0562
+      }
+    },
+    {
+      "text": "by",
+      "location": {
+        "x0": 305.94,
+        "top": 210.0562,
+        "x1": 316.44,
+        "bottom": 220.0562,
+        "centroid_x": 311.19,
+        "centroid_y": 215.0562
+      }
+    },
+    {
+      "text": "85%",
+      "location": {
+        "x0": 319.45,
+        "top": 210.0562,
+        "x1": 335.93,
+        "bottom": 220.0562,
+        "centroid_x": 327.69,
+        "centroid_y": 215.0562
+      }
+    },
+    {
+      "text": "(from",
+      "location": {
+        "x0": 338.94,
+        "top": 210.0562,
+        "x1": 363.8701,
+        "bottom": 220.0562,
+        "centroid_x": 351.405,
+        "centroid_y": 215.0562
+      }
+    },
+    {
+      "text": "13s",
+      "location": {
+        "x0": 366.8801,
+        "top": 210.0562,
+        "x1": 381.41,
+        "bottom": 220.0562,
+        "centroid_x": 374.1451,
+        "centroid_y": 215.0562
+      }
+    },
+    {
+      "text": "to",
+      "location": {
+        "x0": 384.42,
+        "top": 210.0562,
+        "x1": 393.75,
+        "bottom": 220.0562,
+        "centroid_x": 389.085,
+        "centroid_y": 215.0562
+      }
+    },
+    {
+      "text": "2s).",
+      "location": {
+        "x0": 396.76,
+        "top": 210.0562,
+        "x1": 413.39,
+        "bottom": 220.0562,
+        "centroid_x": 405.075,
+        "centroid_y": 215.0562
+      }
+    },
+    {
+      "text": "Engineering",
+      "location": {
+        "x0": 47.13,
+        "top": 209.0388,
+        "x1": 124.4092,
+        "bottom": 223.0488,
+        "centroid_x": 85.7696,
+        "centroid_y": 216.0438
+      }
+    },
+    {
+      "text": "DEUNA",
+      "location": {
+        "x0": 214.71,
+        "top": 218.5388,
+        "x1": 259.4019,
+        "bottom": 232.5488,
+        "centroid_x": 237.056,
+        "centroid_y": 225.5438
+      }
+    },
+    {
+      "text": "Remote,",
+      "location": {
+        "x0": 522.78,
+        "top": 225.8709,
+        "x1": 553.196,
+        "bottom": 233.8709,
+        "centroid_x": 537.988,
+        "centroid_y": 229.8709
+      }
+    },
+    {
+      "text": "Mexico",
+      "location": {
+        "x0": 555.6041,
+        "top": 225.8709,
+        "x1": 580.1801,
+        "bottom": 233.8709,
+        "centroid_x": 567.8921,
+        "centroid_y": 229.8709
+      }
+    },
+    {
+      "text": "M.S.",
+      "location": {
+        "x0": 47.13,
+        "top": 230.3488,
+        "x1": 75.0099,
+        "bottom": 244.3588,
+        "centroid_x": 61.07,
+        "centroid_y": 237.3538
+      }
+    },
+    {
+      "text": "in",
+      "location": {
+        "x0": 79.2269,
+        "top": 230.3488,
+        "x1": 91.6678,
+        "bottom": 244.3588,
+        "centroid_x": 85.4474,
+        "centroid_y": 237.3538
+      }
+    },
+    {
+      "text": "Electronic",
+      "location": {
+        "x0": 95.8848,
+        "top": 230.3488,
+        "x1": 162.2922,
+        "bottom": 244.3588,
+        "centroid_x": 129.0885,
+        "centroid_y": 237.3538
+      }
+    },
+    {
+      "text": "Lead",
+      "location": {
+        "x0": 214.71,
+        "top": 233.3212,
+        "x1": 243.8784,
+        "bottom": 246.3312,
+        "centroid_x": 229.2942,
+        "centroid_y": 239.8262
+      }
+    },
+    {
+      "text": "Data",
+      "location": {
+        "x0": 247.7944,
+        "top": 233.3212,
+        "x1": 275.1805,
+        "bottom": 246.3312,
+        "centroid_x": 261.4874,
+        "centroid_y": 239.8262
+      }
+    },
+    {
+      "text": "Scientist",
+      "location": {
+        "x0": 279.0965,
+        "top": 233.3212,
+        "x1": 331.2275,
+        "bottom": 246.3312,
+        "centroid_x": 305.162,
+        "centroid_y": 239.8262
+      }
+    },
+    {
+      "text": "September",
+      "location": {
+        "x0": 451.73,
+        "top": 238.7085,
+        "x1": 495.587,
+        "bottom": 247.7085,
+        "centroid_x": 473.6585,
+        "centroid_y": 243.2085
+      }
+    },
+    {
+      "text": "2024",
+      "location": {
+        "x0": 498.2961,
+        "top": 238.7085,
+        "x1": 517.16,
+        "bottom": 247.7085,
+        "centroid_x": 507.728,
+        "centroid_y": 243.2085
+      }
+    },
+    {
+      "text": "-",
+      "location": {
+        "x0": 519.869,
+        "top": 238.7085,
+        "x1": 523.172,
+        "bottom": 247.7085,
+        "centroid_x": 521.5205,
+        "centroid_y": 243.2085
+      }
+    },
+    {
+      "text": "October",
+      "location": {
+        "x0": 525.881,
+        "top": 238.7085,
+        "x1": 558.299,
+        "bottom": 247.7085,
+        "centroid_x": 542.09,
+        "centroid_y": 243.2085
+      }
+    },
+    {
+      "text": "2025",
+      "location": {
+        "x0": 561.008,
+        "top": 238.7085,
+        "x1": 579.872,
+        "bottom": 247.7085,
+        "centroid_x": 570.44,
+        "centroid_y": 243.2085
+      }
+    },
+    {
+      "text": "Engineering",
+      "location": {
+        "x0": 47.13,
+        "top": 246.3588,
+        "x1": 124.4092,
+        "bottom": 260.3688,
+        "centroid_x": 85.7696,
+        "centroid_y": 253.3638
+      }
+    },
+    {
+      "text": "\u2022",
+      "location": {
+        "x0": 212.16,
+        "top": 250.4862,
+        "x1": 217.4,
+        "bottom": 260.4862,
+        "centroid_x": 214.78,
+        "centroid_y": 255.4862
+      }
+    },
+    {
+      "text": "Implementation",
+      "location": {
+        "x0": 220.41,
+        "top": 250.4862,
+        "x1": 291.52,
+        "bottom": 260.4862,
+        "centroid_x": 255.965,
+        "centroid_y": 255.4862
+      }
+    },
+    {
+      "text": "of",
+      "location": {
+        "x0": 294.53,
+        "top": 250.4862,
+        "x1": 303.6,
+        "bottom": 260.4862,
+        "centroid_x": 299.065,
+        "centroid_y": 255.4862
+      }
+    },
+    {
+      "text": "a",
+      "location": {
+        "x0": 306.61,
+        "top": 250.4862,
+        "x1": 311.86,
+        "bottom": 260.4862,
+        "centroid_x": 309.235,
+        "centroid_y": 255.4862
+      }
+    },
+    {
+      "text": "transformer-based",
+      "location": {
+        "x0": 314.87,
+        "top": 250.4862,
+        "x1": 397.6401,
+        "bottom": 260.4862,
+        "centroid_x": 356.2551,
+        "centroid_y": 255.4862
+      }
+    },
+    {
+      "text": "forecasting",
+      "location": {
+        "x0": 400.6501,
+        "top": 250.4862,
+        "x1": 450.6001,
+        "bottom": 260.4862,
+        "centroid_x": 425.6251,
+        "centroid_y": 255.4862
+      }
+    },
+    {
+      "text": "algorithm",
+      "location": {
+        "x0": 453.6101,
+        "top": 250.4862,
+        "x1": 496.6601,
+        "bottom": 260.4862,
+        "centroid_x": 475.1351,
+        "centroid_y": 255.4862
+      }
+    },
+    {
+      "text": "for",
+      "location": {
+        "x0": 499.6701,
+        "top": 250.4862,
+        "x1": 512.6301,
+        "bottom": 260.4862,
+        "centroid_x": 506.1501,
+        "centroid_y": 255.4862
+      }
+    },
+    {
+      "text": "predicting",
+      "location": {
+        "x0": 515.6401,
+        "top": 250.4862,
+        "x1": 561.2102,
+        "bottom": 260.4862,
+        "centroid_x": 538.4252,
+        "centroid_y": 255.4862
+      }
+    },
+    {
+      "text": "transactional",
+      "location": {
+        "x0": 220.66,
+        "top": 261.4862,
+        "x1": 279.31,
+        "bottom": 271.4862,
+        "centroid_x": 249.985,
+        "centroid_y": 266.4862
+      }
+    },
+    {
+      "text": "volume",
+      "location": {
+        "x0": 282.32,
+        "top": 261.4862,
+        "x1": 314.75,
+        "bottom": 271.4862,
+        "centroid_x": 298.535,
+        "centroid_y": 266.4862
+      }
+    },
+    {
+      "text": "time",
+      "location": {
+        "x0": 317.76,
+        "top": 261.4862,
+        "x1": 338.32,
+        "bottom": 271.4862,
+        "centroid_x": 328.04,
+        "centroid_y": 266.4862
+      }
+    },
+    {
+      "text": "series",
+      "location": {
+        "x0": 341.33,
+        "top": 261.4862,
+        "x1": 367.0701,
+        "bottom": 271.4862,
+        "centroid_x": 354.2001,
+        "centroid_y": 266.4862
+      }
+    },
+    {
+      "text": "at",
+      "location": {
+        "x0": 370.0801,
+        "top": 261.4862,
+        "x1": 379.2901,
+        "bottom": 271.4862,
+        "centroid_x": 374.6851,
+        "centroid_y": 266.4862
+      }
+    },
+    {
+      "text": "multiple",
+      "location": {
+        "x0": 382.3001,
+        "top": 261.4862,
+        "x1": 419.7901,
+        "bottom": 271.4862,
+        "centroid_x": 401.0451,
+        "centroid_y": 266.4862
+      }
+    },
+    {
+      "text": "levels",
+      "location": {
+        "x0": 422.8001,
+        "top": 261.4862,
+        "x1": 448.5501,
+        "bottom": 271.4862,
+        "centroid_x": 435.6751,
+        "centroid_y": 266.4862
+      }
+    },
+    {
+      "text": "of",
+      "location": {
+        "x0": 451.5602,
+        "top": 261.4862,
+        "x1": 460.6302,
+        "bottom": 271.4862,
+        "centroid_x": 456.0952,
+        "centroid_y": 266.4862
+      }
+    },
+    {
+      "text": "temporal",
+      "location": {
+        "x0": 463.6402,
+        "top": 261.4862,
+        "x1": 504.3802,
+        "bottom": 271.4862,
+        "centroid_x": 484.0102,
+        "centroid_y": 266.4862
+      }
+    },
+    {
+      "text": "granularity.",
+      "location": {
+        "x0": 507.3902,
+        "top": 261.4862,
+        "x1": 559.9703,
+        "bottom": 271.4862,
+        "centroid_x": 533.6802,
+        "centroid_y": 266.4862
+      }
+    },
+    {
+      "text": "This",
+      "location": {
+        "x0": 562.9803,
+        "top": 261.4862,
+        "x1": 581.1503,
+        "bottom": 271.4862,
+        "centroid_x": 572.0653,
+        "centroid_y": 266.4862
+      }
+    },
+    {
+      "text": "GPA:",
+      "location": {
+        "x0": 47.13,
+        "top": 265.2362,
+        "x1": 69.04,
+        "bottom": 275.2362,
+        "centroid_x": 58.085,
+        "centroid_y": 270.2362
+      }
+    },
+    {
+      "text": "92%",
+      "location": {
+        "x0": 72.05,
+        "top": 265.2362,
+        "x1": 88.53,
+        "bottom": 275.2362,
+        "centroid_x": 80.29,
+        "centroid_y": 270.2362
+      }
+    },
+    {
+      "text": "solution",
+      "location": {
+        "x0": 220.66,
+        "top": 272.4962,
+        "x1": 256.13,
+        "bottom": 282.4962,
+        "centroid_x": 238.395,
+        "centroid_y": 277.4962
+      }
+    },
+    {
+      "text": "generates",
+      "location": {
+        "x0": 259.14,
+        "top": 272.4962,
+        "x1": 303.12,
+        "bottom": 282.4962,
+        "centroid_x": 281.13,
+        "centroid_y": 277.4962
+      }
+    },
+    {
+      "text": "forecasts",
+      "location": {
+        "x0": 306.13,
+        "top": 272.4962,
+        "x1": 346.8,
+        "bottom": 282.4962,
+        "centroid_x": 326.465,
+        "centroid_y": 277.4962
+      }
+    },
+    {
+      "text": "up",
+      "location": {
+        "x0": 349.8101,
+        "top": 272.4962,
+        "x1": 360.8401,
+        "bottom": 282.4962,
+        "centroid_x": 355.3251,
+        "centroid_y": 277.4962
+      }
+    },
+    {
+      "text": "to",
+      "location": {
+        "x0": 363.8501,
+        "top": 272.4962,
+        "x1": 373.1801,
+        "bottom": 282.4962,
+        "centroid_x": 368.5151,
+        "centroid_y": 277.4962
+      }
+    },
+    {
+      "text": "two",
+      "location": {
+        "x0": 376.1901,
+        "top": 272.4962,
+        "x1": 392.9601,
+        "bottom": 282.4962,
+        "centroid_x": 384.5751,
+        "centroid_y": 277.4962
+      }
+    },
+    {
+      "text": "weeks",
+      "location": {
+        "x0": 395.9701,
+        "top": 272.4962,
+        "x1": 423.4001,
+        "bottom": 282.4962,
+        "centroid_x": 409.6851,
+        "centroid_y": 277.4962
+      }
+    },
+    {
+      "text": "in",
+      "location": {
+        "x0": 426.4101,
+        "top": 272.4962,
+        "x1": 434.7201,
+        "bottom": 282.4962,
+        "centroid_x": 430.5651,
+        "centroid_y": 277.4962
+      }
+    },
+    {
+      "text": "advance",
+      "location": {
+        "x0": 437.7301,
+        "top": 272.4962,
+        "x1": 474.5601,
+        "bottom": 282.4962,
+        "centroid_x": 456.1451,
+        "centroid_y": 277.4962
+      }
+    },
+    {
+      "text": "for",
+      "location": {
+        "x0": 477.5701,
+        "top": 272.4962,
+        "x1": 490.5302,
+        "bottom": 282.4962,
+        "centroid_x": 484.0501,
+        "centroid_y": 277.4962
+      }
+    },
+    {
+      "text": "intervals",
+      "location": {
+        "x0": 493.5402,
+        "top": 272.4962,
+        "x1": 532.3002,
+        "bottom": 282.4962,
+        "centroid_x": 512.9202,
+        "centroid_y": 277.4962
+      }
+    },
+    {
+      "text": "of",
+      "location": {
+        "x0": 535.3102,
+        "top": 272.4962,
+        "x1": 544.3802,
+        "bottom": 282.4962,
+        "centroid_x": 539.8452,
+        "centroid_y": 277.4962
+      }
+    },
+    {
+      "text": "15",
+      "location": {
+        "x0": 547.3902,
+        "top": 272.4962,
+        "x1": 557.8702,
+        "bottom": 282.4962,
+        "centroid_x": 552.6302,
+        "centroid_y": 277.4962
+      }
+    },
+    {
+      "text": "Specialty:",
+      "location": {
+        "x0": 47.13,
+        "top": 276.3462,
+        "x1": 91.52,
+        "bottom": 286.3462,
+        "centroid_x": 69.325,
+        "centroid_y": 281.3462
+      }
+    },
+    {
+      "text": "Machine",
+      "location": {
+        "x0": 94.53,
+        "top": 276.3462,
+        "x1": 131.04,
+        "bottom": 286.3462,
+        "centroid_x": 112.785,
+        "centroid_y": 281.3462
+      }
+    },
+    {
+      "text": "Learning.",
+      "location": {
+        "x0": 134.05,
+        "top": 276.3462,
+        "x1": 176.16,
+        "bottom": 286.3462,
+        "centroid_x": 155.105,
+        "centroid_y": 281.3462
+      }
+    },
+    {
+      "text": "minutes,",
+      "location": {
+        "x0": 220.66,
+        "top": 283.4962,
+        "x1": 259.86,
+        "bottom": 293.4962,
+        "centroid_x": 240.26,
+        "centroid_y": 288.4962
+      }
+    },
+    {
+      "text": "1",
+      "location": {
+        "x0": 262.8701,
+        "top": 283.4962,
+        "x1": 268.11,
+        "bottom": 293.4962,
+        "centroid_x": 265.4901,
+        "centroid_y": 288.4962
+      }
+    },
+    {
+      "text": "day,",
+      "location": {
+        "x0": 271.1201,
+        "top": 283.4962,
+        "x1": 290.5401,
+        "bottom": 293.4962,
+        "centroid_x": 280.8301,
+        "centroid_y": 288.4962
+      }
+    },
+    {
+      "text": "and",
+      "location": {
+        "x0": 293.5501,
+        "top": 283.4962,
+        "x1": 309.8301,
+        "bottom": 293.4962,
+        "centroid_x": 301.6901,
+        "centroid_y": 288.4962
+      }
+    },
+    {
+      "text": "1",
+      "location": {
+        "x0": 312.8401,
+        "top": 283.4962,
+        "x1": 318.0801,
+        "bottom": 293.4962,
+        "centroid_x": 315.4601,
+        "centroid_y": 288.4962
+      }
+    },
+    {
+      "text": "week.",
+      "location": {
+        "x0": 321.0901,
+        "top": 283.4962,
+        "x1": 348.1401,
+        "bottom": 293.4962,
+        "centroid_x": 334.6151,
+        "centroid_y": 288.4962
+      }
+    },
+    {
+      "text": "In",
+      "location": {
+        "x0": 351.1501,
+        "top": 283.4962,
+        "x1": 359.3901,
+        "bottom": 293.4962,
+        "centroid_x": 355.2701,
+        "centroid_y": 288.4962
+      }
+    },
+    {
+      "text": "each",
+      "location": {
+        "x0": 362.4001,
+        "top": 283.4962,
+        "x1": 383.5102,
+        "bottom": 293.4962,
+        "centroid_x": 372.9552,
+        "centroid_y": 288.4962
+      }
+    },
+    {
+      "text": "case,",
+      "location": {
+        "x0": 386.5202,
+        "top": 283.4962,
+        "x1": 409.8902,
+        "bottom": 293.4962,
+        "centroid_x": 398.2052,
+        "centroid_y": 288.4962
+      }
+    },
+    {
+      "text": "achieving",
+      "location": {
+        "x0": 412.9002,
+        "top": 283.4962,
+        "x1": 455.0902,
+        "bottom": 293.4962,
+        "centroid_x": 433.9952,
+        "centroid_y": 288.4962
+      }
+    },
+    {
+      "text": "results",
+      "location": {
+        "x0": 458.1002,
+        "top": 283.4962,
+        "x1": 487.9102,
+        "bottom": 293.4962,
+        "centroid_x": 473.0052,
+        "centroid_y": 288.4962
+      }
+    },
+    {
+      "text": "with",
+      "location": {
+        "x0": 490.9202,
+        "top": 283.4962,
+        "x1": 510.6302,
+        "bottom": 293.4962,
+        "centroid_x": 500.7752,
+        "centroid_y": 288.4962
+      }
+    },
+    {
+      "text": "an",
+      "location": {
+        "x0": 513.6402,
+        "top": 283.4962,
+        "x1": 524.3502,
+        "bottom": 293.4962,
+        "centroid_x": 518.9952,
+        "centroid_y": 288.4962
+      }
+    },
+    {
+      "text": "R\u00b2",
+      "location": {
+        "x0": 527.3602,
+        "top": 283.4962,
+        "x1": 537.6902,
+        "bottom": 293.4962,
+        "centroid_x": 532.5252,
+        "centroid_y": 288.4962
+      }
+    },
+    {
+      "text": "Thesis:",
+      "location": {
+        "x0": 47.13,
+        "top": 287.3462,
+        "x1": 78.47,
+        "bottom": 297.3462,
+        "centroid_x": 62.8,
+        "centroid_y": 292.3462
+      }
+    },
+    {
+      "text": "\"Protein",
+      "location": {
+        "x0": 81.48,
+        "top": 287.3462,
+        "x1": 117.29,
+        "bottom": 297.3462,
+        "centroid_x": 99.385,
+        "centroid_y": 292.3462
+      }
+    },
+    {
+      "text": "functions",
+      "location": {
+        "x0": 120.3,
+        "top": 287.3462,
+        "x1": 161.56,
+        "bottom": 297.3462,
+        "centroid_x": 140.93,
+        "centroid_y": 292.3462
+      }
+    },
+    {
+      "text": "metric",
+      "location": {
+        "x0": 220.66,
+        "top": 294.5062,
+        "x1": 250.06,
+        "bottom": 304.5062,
+        "centroid_x": 235.36,
+        "centroid_y": 299.5062
+      }
+    },
+    {
+      "text": "above",
+      "location": {
+        "x0": 253.07,
+        "top": 294.5062,
+        "x1": 279.61,
+        "bottom": 304.5062,
+        "centroid_x": 266.34,
+        "centroid_y": 299.5062
+      }
+    },
+    {
+      "text": "0.9.",
+      "location": {
+        "x0": 282.62,
+        "top": 294.5062,
+        "x1": 300.44,
+        "bottom": 304.5062,
+        "centroid_x": 291.53,
+        "centroid_y": 299.5062
+      }
+    },
+    {
+      "text": "prediction",
+      "location": {
+        "x0": 47.13,
+        "top": 298.3562,
+        "x1": 93.05,
+        "bottom": 308.3562,
+        "centroid_x": 70.09,
+        "centroid_y": 303.3562
+      }
+    },
+    {
+      "text": "using",
+      "location": {
+        "x0": 96.06,
+        "top": 298.3562,
+        "x1": 118.9,
+        "bottom": 308.3562,
+        "centroid_x": 107.48,
+        "centroid_y": 303.3562
+      }
+    },
+    {
+      "text": "Deep",
+      "location": {
+        "x0": 121.91,
+        "top": 298.3562,
+        "x1": 144.51,
+        "bottom": 308.3562,
+        "centroid_x": 133.21,
+        "centroid_y": 303.3562
+      }
+    },
+    {
+      "text": "Learning.\"",
+      "location": {
+        "x0": 147.52,
+        "top": 298.3562,
+        "x1": 192.88,
+        "bottom": 308.3562,
+        "centroid_x": 170.2,
+        "centroid_y": 303.3562
+      }
+    },
+    {
+      "text": "\u2022",
+      "location": {
+        "x0": 212.16,
+        "top": 305.6062,
+        "x1": 217.4,
+        "bottom": 315.6062,
+        "centroid_x": 214.78,
+        "centroid_y": 310.6062
+      }
+    },
+    {
+      "text": "Ideated,",
+      "location": {
+        "x0": 220.41,
+        "top": 305.6062,
+        "x1": 258.11,
+        "bottom": 315.6062,
+        "centroid_x": 239.26,
+        "centroid_y": 310.6062
+      }
+    },
+    {
+      "text": "designed,",
+      "location": {
+        "x0": 261.12,
+        "top": 305.6062,
+        "x1": 304.2101,
+        "bottom": 315.6062,
+        "centroid_x": 282.665,
+        "centroid_y": 310.6062
+      }
+    },
+    {
+      "text": "and",
+      "location": {
+        "x0": 307.2201,
+        "top": 305.6062,
+        "x1": 323.5001,
+        "bottom": 315.6062,
+        "centroid_x": 315.3601,
+        "centroid_y": 310.6062
+      }
+    },
+    {
+      "text": "implemented",
+      "location": {
+        "x0": 326.5101,
+        "top": 305.6062,
+        "x1": 385.8201,
+        "bottom": 315.6062,
+        "centroid_x": 356.1651,
+        "centroid_y": 310.6062
+      }
+    },
+    {
+      "text": "a",
+      "location": {
+        "x0": 388.8301,
+        "top": 305.6062,
+        "x1": 394.0801,
+        "bottom": 315.6062,
+        "centroid_x": 391.4551,
+        "centroid_y": 310.6062
+      }
+    },
+    {
+      "text": "correlation-based",
+      "location": {
+        "x0": 397.0901,
+        "top": 305.6062,
+        "x1": 476.0402,
+        "bottom": 315.6062,
+        "centroid_x": 436.5652,
+        "centroid_y": 310.6062
+      }
+    },
+    {
+      "text": "model",
+      "location": {
+        "x0": 479.0502,
+        "top": 305.6062,
+        "x1": 506.6902,
+        "bottom": 315.6062,
+        "centroid_x": 492.8702,
+        "centroid_y": 310.6062
+      }
+    },
+    {
+      "text": "(leveraging",
+      "location": {
+        "x0": 509.7002,
+        "top": 305.6062,
+        "x1": 559.6104,
+        "bottom": 315.6062,
+        "centroid_x": 534.6553,
+        "centroid_y": 310.6062
+      }
+    },
+    {
+      "text": "mutual",
+      "location": {
+        "x0": 220.66,
+        "top": 316.6162,
+        "x1": 252.04,
+        "bottom": 326.6162,
+        "centroid_x": 236.35,
+        "centroid_y": 321.6162
+      }
+    },
+    {
+      "text": "information",
+      "location": {
+        "x0": 255.05,
+        "top": 316.6162,
+        "x1": 307.51,
+        "bottom": 326.6162,
+        "centroid_x": 281.28,
+        "centroid_y": 321.6162
+      }
+    },
+    {
+      "text": "among",
+      "location": {
+        "x0": 310.52,
+        "top": 316.6162,
+        "x1": 339.92,
+        "bottom": 326.6162,
+        "centroid_x": 325.22,
+        "centroid_y": 321.6162
+      }
+    },
+    {
+      "text": "commercial",
+      "location": {
+        "x0": 342.93,
+        "top": 316.6162,
+        "x1": 395.19,
+        "bottom": 326.6162,
+        "centroid_x": 369.06,
+        "centroid_y": 321.6162
+      }
+    },
+    {
+      "text": "transaction",
+      "location": {
+        "x0": 398.2,
+        "top": 316.6162,
+        "x1": 448.65,
+        "bottom": 326.6162,
+        "centroid_x": 423.425,
+        "centroid_y": 321.6162
+      }
+    },
+    {
+      "text": "time",
+      "location": {
+        "x0": 451.66,
+        "top": 316.6162,
+        "x1": 472.22,
+        "bottom": 326.6162,
+        "centroid_x": 461.94,
+        "centroid_y": 321.6162
+      }
+    },
+    {
+      "text": "series)",
+      "location": {
+        "x0": 475.23,
+        "top": 316.6162,
+        "x1": 504.6401,
+        "bottom": 326.6162,
+        "centroid_x": 489.9351,
+        "centroid_y": 321.6162
+      }
+    },
+    {
+      "text": "to",
+      "location": {
+        "x0": 507.6501,
+        "top": 316.6162,
+        "x1": 516.9801,
+        "bottom": 326.6162,
+        "centroid_x": 512.3151,
+        "centroid_y": 321.6162
+      }
+    },
+    {
+      "text": "identify",
+      "location": {
+        "x0": 519.9901,
+        "top": 316.6162,
+        "x1": 554.7601,
+        "bottom": 326.6162,
+        "centroid_x": 537.3751,
+        "centroid_y": 321.6162
+      }
+    },
+    {
+      "text": "PAPERS",
+      "location": {
+        "x0": 72.33,
+        "top": 316.3898,
+        "x1": 109.6187,
+        "bottom": 327.0498,
+        "centroid_x": 90.9743,
+        "centroid_y": 321.7198
+      }
+    },
+    {
+      "text": "&",
+      "location": {
+        "x0": 112.8273,
+        "top": 316.3898,
+        "x1": 120.3533,
+        "bottom": 327.0498,
+        "centroid_x": 116.5903,
+        "centroid_y": 321.7198
+      }
+    },
+    {
+      "text": "WORKSHOPS",
+      "location": {
+        "x0": 123.562,
+        "top": 316.3898,
+        "x1": 185.5072,
+        "bottom": 327.0498,
+        "centroid_x": 154.5346,
+        "centroid_y": 321.7198
+      }
+    },
+    {
+      "text": "quantifiable",
+      "location": {
+        "x0": 220.66,
+        "top": 327.6162,
+        "x1": 274.9801,
+        "bottom": 337.6162,
+        "centroid_x": 247.82,
+        "centroid_y": 332.6162
+      }
+    },
+    {
+      "text": "relationships",
+      "location": {
+        "x0": 277.9901,
+        "top": 327.6162,
+        "x1": 335.1501,
+        "bottom": 337.6162,
+        "centroid_x": 306.5701,
+        "centroid_y": 332.6162
+      }
+    },
+    {
+      "text": "for",
+      "location": {
+        "x0": 338.1601,
+        "top": 327.6162,
+        "x1": 351.1201,
+        "bottom": 337.6162,
+        "centroid_x": 344.6401,
+        "centroid_y": 332.6162
+      }
+    },
+    {
+      "text": "\"Athia,\"",
+      "location": {
+        "x0": 354.1301,
+        "top": 327.6162,
+        "x1": 387.7201,
+        "bottom": 337.6162,
+        "centroid_x": 370.9251,
+        "centroid_y": 332.6162
+      }
+    },
+    {
+      "text": "a",
+      "location": {
+        "x0": 390.7301,
+        "top": 327.6162,
+        "x1": 395.9801,
+        "bottom": 337.6162,
+        "centroid_x": 393.3551,
+        "centroid_y": 332.6162
+      }
+    },
+    {
+      "text": "multimodal",
+      "location": {
+        "x0": 398.9901,
+        "top": 327.6162,
+        "x1": 449.9501,
+        "bottom": 337.6162,
+        "centroid_x": 424.4701,
+        "centroid_y": 332.6162
+      }
+    },
+    {
+      "text": "generative",
+      "location": {
+        "x0": 452.9601,
+        "top": 327.6162,
+        "x1": 500.6402,
+        "bottom": 337.6162,
+        "centroid_x": 476.8002,
+        "centroid_y": 332.6162
+      }
+    },
+    {
+      "text": "LLM.",
+      "location": {
+        "x0": 503.6502,
+        "top": 327.6162,
+        "x1": 524.5302,
+        "bottom": 337.6162,
+        "centroid_x": 514.0902,
+        "centroid_y": 332.6162
+      }
+    },
+    {
+      "text": "This",
+      "location": {
+        "x0": 527.5402,
+        "top": 327.6162,
+        "x1": 545.7102,
+        "bottom": 337.6162,
+        "centroid_x": 536.6252,
+        "centroid_y": 332.6162
+      }
+    },
+    {
+      "text": "Journal",
+      "location": {
+        "x0": 48.61,
+        "top": 333.4162,
+        "x1": 83.96,
+        "bottom": 343.4162,
+        "centroid_x": 66.285,
+        "centroid_y": 338.4162
+      }
+    },
+    {
+      "text": "Paper",
+      "location": {
+        "x0": 86.97,
+        "top": 333.4162,
+        "x1": 114.02,
+        "bottom": 343.4162,
+        "centroid_x": 100.495,
+        "centroid_y": 338.4162
+      }
+    },
+    {
+      "text": "in",
+      "location": {
+        "x0": 117.03,
+        "top": 333.4162,
+        "x1": 125.91,
+        "bottom": 343.4162,
+        "centroid_x": 121.47,
+        "centroid_y": 338.4162
+      }
+    },
+    {
+      "text": "IEEE",
+      "location": {
+        "x0": 128.92,
+        "top": 333.4162,
+        "x1": 148.77,
+        "bottom": 343.4162,
+        "centroid_x": 138.845,
+        "centroid_y": 338.4162
+      }
+    },
+    {
+      "text": "ACCESS",
+      "location": {
+        "x0": 151.78,
+        "top": 333.4162,
+        "x1": 186.26,
+        "bottom": 343.4162,
+        "centroid_x": 169.02,
+        "centroid_y": 338.4162
+      }
+    },
+    {
+      "text": "solution",
+      "location": {
+        "x0": 220.66,
+        "top": 338.6262,
+        "x1": 256.13,
+        "bottom": 348.6262,
+        "centroid_x": 238.395,
+        "centroid_y": 343.6262
+      }
+    },
+    {
+      "text": "provided",
+      "location": {
+        "x0": 259.14,
+        "top": 338.6262,
+        "x1": 298.3101,
+        "bottom": 348.6262,
+        "centroid_x": 278.725,
+        "centroid_y": 343.6262
+      }
+    },
+    {
+      "text": "data-driven",
+      "location": {
+        "x0": 301.3201,
+        "top": 338.6262,
+        "x1": 353.1401,
+        "bottom": 348.6262,
+        "centroid_x": 327.2301,
+        "centroid_y": 343.6262
+      }
+    },
+    {
+      "text": "\"reasoning",
+      "location": {
+        "x0": 356.1501,
+        "top": 338.6262,
+        "x1": 402.2001,
+        "bottom": 348.6262,
+        "centroid_x": 379.1751,
+        "centroid_y": 343.6262
+      }
+    },
+    {
+      "text": "seeds\"",
+      "location": {
+        "x0": 405.2101,
+        "top": 338.6262,
+        "x1": 433.0301,
+        "bottom": 348.6262,
+        "centroid_x": 419.1201,
+        "centroid_y": 343.6262
+      }
+    },
+    {
+      "text": "for",
+      "location": {
+        "x0": 436.0401,
+        "top": 338.6262,
+        "x1": 449.0002,
+        "bottom": 348.6262,
+        "centroid_x": 442.5201,
+        "centroid_y": 343.6262
+      }
+    },
+    {
+      "text": "AI",
+      "location": {
+        "x0": 452.0102,
+        "top": 338.6262,
+        "x1": 460.6902,
+        "bottom": 348.6262,
+        "centroid_x": 456.3502,
+        "centroid_y": 343.6262
+      }
+    },
+    {
+      "text": "agents",
+      "location": {
+        "x0": 463.7002,
+        "top": 338.6262,
+        "x1": 492.8901,
+        "bottom": 348.6262,
+        "centroid_x": 478.2952,
+        "centroid_y": 343.6262
+      }
+    },
+    {
+      "text": "to",
+      "location": {
+        "x0": 495.9001,
+        "top": 338.6262,
+        "x1": 505.2301,
+        "bottom": 348.6262,
+        "centroid_x": 500.5651,
+        "centroid_y": 343.6262
+      }
+    },
+    {
+      "text": "explain",
+      "location": {
+        "x0": 508.2401,
+        "top": 338.6262,
+        "x1": 540.7802,
+        "bottom": 348.6262,
+        "centroid_x": 524.5101,
+        "centroid_y": 343.6262
+      }
+    },
+    {
+      "text": "variable",
+      "location": {
+        "x0": 543.7902,
+        "top": 338.6262,
+        "x1": 579.9002,
+        "bottom": 348.6262,
+        "centroid_x": 561.8452,
+        "centroid_y": 343.6262
+      }
+    },
+    {
+      "text": "DOI:",
+      "location": {
+        "x0": 50.92,
+        "top": 367.0786,
+        "x1": 68.308,
+        "bottom": 376.0786,
+        "centroid_x": 59.614,
+        "centroid_y": 371.5786
+      }
+    },
+    {
+      "text": "10.1109/ACCESS.2021.3094723",
+      "location": {
+        "x0": 71.017,
+        "top": 367.0786,
+        "x1": 195.5591,
+        "bottom": 376.0786,
+        "centroid_x": 133.288,
+        "centroid_y": 371.5786
+      }
+    },
+    {
+      "text": "behaviors,",
+      "location": {
+        "x0": 220.66,
+        "top": 349.6262,
+        "x1": 267.12,
+        "bottom": 359.6262,
+        "centroid_x": 243.89,
+        "centroid_y": 354.6262
+      }
+    },
+    {
+      "text": "using",
+      "location": {
+        "x0": 270.13,
+        "top": 349.6262,
+        "x1": 292.97,
+        "bottom": 359.6262,
+        "centroid_x": 281.55,
+        "centroid_y": 354.6262
+      }
+    },
+    {
+      "text": "multi-threading",
+      "location": {
+        "x0": 295.98,
+        "top": 349.6262,
+        "x1": 366.08,
+        "bottom": 359.6262,
+        "centroid_x": 331.03,
+        "centroid_y": 354.6262
+      }
+    },
+    {
+      "text": "and",
+      "location": {
+        "x0": 369.09,
+        "top": 349.6262,
+        "x1": 385.37,
+        "bottom": 359.6262,
+        "centroid_x": 377.23,
+        "centroid_y": 354.6262
+      }
+    },
+    {
+      "text": "GPU-based",
+      "location": {
+        "x0": 388.38,
+        "top": 349.6262,
+        "x1": 436.7601,
+        "bottom": 359.6262,
+        "centroid_x": 412.5701,
+        "centroid_y": 354.6262
+      }
+    },
+    {
+      "text": "processing.",
+      "location": {
+        "x0": 439.7701,
+        "top": 349.6262,
+        "x1": 490.1001,
+        "bottom": 359.6262,
+        "centroid_x": 464.9351,
+        "centroid_y": 354.6262
+      }
+    },
+    {
+      "text": "It",
+      "location": {
+        "x0": 493.1101,
+        "top": 349.6262,
+        "x1": 499.8501,
+        "bottom": 359.6262,
+        "centroid_x": 496.4801,
+        "centroid_y": 354.6262
+      }
+    },
+    {
+      "text": "processed",
+      "location": {
+        "x0": 502.8601,
+        "top": 349.6262,
+        "x1": 547.2101,
+        "bottom": 359.6262,
+        "centroid_x": 525.0351,
+        "centroid_y": 354.6262
+      }
+    },
+    {
+      "text": "data",
+      "location": {
+        "x0": 550.2202,
+        "top": 349.6262,
+        "x1": 570.2502,
+        "bottom": 359.6262,
+        "centroid_x": 560.2352,
+        "centroid_y": 354.6262
+      }
+    },
+    {
+      "text": "\"HGAN:",
+      "location": {
+        "x0": 48.83,
+        "top": 345.8062,
+        "x1": 82.95,
+        "bottom": 355.8062,
+        "centroid_x": 65.89,
+        "centroid_y": 350.8062
+      }
+    },
+    {
+      "text": "Hyperbolic",
+      "location": {
+        "x0": 83.88,
+        "top": 346.1162,
+        "x1": 131.95,
+        "bottom": 356.1162,
+        "centroid_x": 107.915,
+        "centroid_y": 351.1162
+      }
+    },
+    {
+      "text": "Generative",
+      "location": {
+        "x0": 134.96,
+        "top": 346.1162,
+        "x1": 184.38,
+        "bottom": 356.1162,
+        "centroid_x": 159.67,
+        "centroid_y": 351.1162
+      }
+    },
+    {
+      "text": "from",
+      "location": {
+        "x0": 220.66,
+        "top": 360.6362,
+        "x1": 241.92,
+        "bottom": 370.6362,
+        "centroid_x": 231.29,
+        "centroid_y": 365.6362
+      }
+    },
+    {
+      "text": "15+",
+      "location": {
+        "x0": 244.93,
+        "top": 360.6362,
+        "x1": 260.65,
+        "bottom": 370.6362,
+        "centroid_x": 252.79,
+        "centroid_y": 365.6362
+      }
+    },
+    {
+      "text": "variables",
+      "location": {
+        "x0": 263.66,
+        "top": 360.6362,
+        "x1": 303.82,
+        "bottom": 370.6362,
+        "centroid_x": 283.74,
+        "centroid_y": 365.6362
+      }
+    },
+    {
+      "text": "for",
+      "location": {
+        "x0": 306.83,
+        "top": 360.6362,
+        "x1": 319.7901,
+        "bottom": 370.6362,
+        "centroid_x": 313.3101,
+        "centroid_y": 365.6362
+      }
+    },
+    {
+      "text": "KFC",
+      "location": {
+        "x0": 322.8001,
+        "top": 360.6362,
+        "x1": 339.7901,
+        "bottom": 370.6362,
+        "centroid_x": 331.2951,
+        "centroid_y": 365.6362
+      }
+    },
+    {
+      "text": "Ecuador",
+      "location": {
+        "x0": 342.8001,
+        "top": 360.6362,
+        "x1": 378.6501,
+        "bottom": 370.6362,
+        "centroid_x": 360.7251,
+        "centroid_y": 365.6362
+      }
+    },
+    {
+      "text": "in",
+      "location": {
+        "x0": 381.6601,
+        "top": 360.6362,
+        "x1": 389.9701,
+        "bottom": 370.6362,
+        "centroid_x": 385.8151,
+        "centroid_y": 365.6362
+      }
+    },
+    {
+      "text": "around",
+      "location": {
+        "x0": 392.9801,
+        "top": 360.6362,
+        "x1": 423.9801,
+        "bottom": 370.6362,
+        "centroid_x": 408.4801,
+        "centroid_y": 365.6362
+      }
+    },
+    {
+      "text": "10",
+      "location": {
+        "x0": 426.9901,
+        "top": 360.6362,
+        "x1": 437.4701,
+        "bottom": 370.6362,
+        "centroid_x": 432.2301,
+        "centroid_y": 365.6362
+      }
+    },
+    {
+      "text": "seconds.",
+      "location": {
+        "x0": 440.4801,
+        "top": 360.6362,
+        "x1": 479.0501,
+        "bottom": 370.6362,
+        "centroid_x": 459.7651,
+        "centroid_y": 365.6362
+      }
+    },
+    {
+      "text": "July",
+      "location": {
+        "x0": 158.04,
+        "top": 357.6286,
+        "x1": 174.663,
+        "bottom": 366.6286,
+        "centroid_x": 166.3515,
+        "centroid_y": 362.1286
+      }
+    },
+    {
+      "text": "2021",
+      "location": {
+        "x0": 177.372,
+        "top": 357.6286,
+        "x1": 196.236,
+        "bottom": 366.6286,
+        "centroid_x": 186.804,
+        "centroid_y": 362.1286
+      }
+    },
+    {
+      "text": "Adversarial",
+      "location": {
+        "x0": 50.8,
+        "top": 356.8462,
+        "x1": 100.75,
+        "bottom": 366.8462,
+        "centroid_x": 75.775,
+        "centroid_y": 361.8462
+      }
+    },
+    {
+      "text": "Network\".",
+      "location": {
+        "x0": 103.76,
+        "top": 356.8462,
+        "x1": 148.21,
+        "bottom": 366.8462,
+        "centroid_x": 125.985,
+        "centroid_y": 361.8462
+      }
+    },
+    {
+      "text": "SPOT",
+      "location": {
+        "x0": 214.71,
+        "top": 368.9588,
+        "x1": 248.5161,
+        "bottom": 382.9688,
+        "centroid_x": 231.6131,
+        "centroid_y": 375.9638
+      }
+    },
+    {
+      "text": "Santiago,",
+      "location": {
+        "x0": 523.31,
+        "top": 377.7909,
+        "x1": 556.6221,
+        "bottom": 385.7909,
+        "centroid_x": 539.966,
+        "centroid_y": 381.7909
+      }
+    },
+    {
+      "text": "Chile",
+      "location": {
+        "x0": 559.0301,
+        "top": 377.7909,
+        "x1": 577.1821,
+        "bottom": 385.7909,
+        "centroid_x": 568.1061,
+        "centroid_y": 381.7909
+      }
+    },
+    {
+      "text": "Workshop",
+      "location": {
+        "x0": 48.61,
+        "top": 384.2462,
+        "x1": 94.59,
+        "bottom": 394.2462,
+        "centroid_x": 71.6,
+        "centroid_y": 389.2462
+      }
+    },
+    {
+      "text": "LatinX",
+      "location": {
+        "x0": 97.6,
+        "top": 384.2462,
+        "x1": 127.31,
+        "bottom": 394.2462,
+        "centroid_x": 112.455,
+        "centroid_y": 389.2462
+      }
+    },
+    {
+      "text": "in",
+      "location": {
+        "x0": 130.32,
+        "top": 384.2462,
+        "x1": 139.2,
+        "bottom": 394.2462,
+        "centroid_x": 134.76,
+        "centroid_y": 389.2462
+      }
+    },
+    {
+      "text": "AI",
+      "location": {
+        "x0": 142.21,
+        "top": 384.2462,
+        "x1": 151.32,
+        "bottom": 394.2462,
+        "centroid_x": 146.765,
+        "centroid_y": 389.2462
+      }
+    },
+    {
+      "text": "at",
+      "location": {
+        "x0": 154.33,
+        "top": 384.2462,
+        "x1": 163.62,
+        "bottom": 394.2462,
+        "centroid_x": 158.975,
+        "centroid_y": 389.2462
+      }
+    },
+    {
+      "text": "NeurIPS",
+      "location": {
+        "x0": 166.63,
+        "top": 384.2462,
+        "x1": 202.99,
+        "bottom": 394.2462,
+        "centroid_x": 184.81,
+        "centroid_y": 389.2462
+      }
+    },
+    {
+      "text": "Computer",
+      "location": {
+        "x0": 214.71,
+        "top": 385.2412,
+        "x1": 274.6731,
+        "bottom": 398.2512,
+        "centroid_x": 244.6916,
+        "centroid_y": 391.7462
+      }
+    },
+    {
+      "text": "Vision",
+      "location": {
+        "x0": 278.5891,
+        "top": 385.2412,
+        "x1": 315.0822,
+        "bottom": 398.2512,
+        "centroid_x": 296.8356,
+        "centroid_y": 391.7462
+      }
+    },
+    {
+      "text": "Engineer",
+      "location": {
+        "x0": 318.9982,
+        "top": 385.2412,
+        "x1": 372.6774,
+        "bottom": 398.2512,
+        "centroid_x": 345.8378,
+        "centroid_y": 391.7462
+      }
+    },
+    {
+      "text": "February",
+      "location": {
+        "x0": 444.85,
+        "top": 392.1286,
+        "x1": 481.102,
+        "bottom": 401.1286,
+        "centroid_x": 462.976,
+        "centroid_y": 396.6286
+      }
+    },
+    {
+      "text": "2024",
+      "location": {
+        "x0": 483.811,
+        "top": 392.1286,
+        "x1": 502.675,
+        "bottom": 401.1286,
+        "centroid_x": 493.243,
+        "centroid_y": 396.6286
+      }
+    },
+    {
+      "text": "-",
+      "location": {
+        "x0": 505.3841,
+        "top": 392.1286,
+        "x1": 508.6871,
+        "bottom": 401.1286,
+        "centroid_x": 507.0356,
+        "centroid_y": 396.6286
+      }
+    },
+    {
+      "text": "September",
+      "location": {
+        "x0": 511.3961,
+        "top": 392.1286,
+        "x1": 555.2531,
+        "bottom": 401.1286,
+        "centroid_x": 533.3246,
+        "centroid_y": 396.6286
+      }
+    },
+    {
+      "text": "2024",
+      "location": {
+        "x0": 557.9621,
+        "top": 392.1286,
+        "x1": 576.8261,
+        "bottom": 401.1286,
+        "centroid_x": 567.3941,
+        "centroid_y": 396.6286
+      }
+    },
+    {
+      "text": "December",
+      "location": {
+        "x0": 51.15,
+        "top": 394.9686,
+        "x1": 91.542,
+        "bottom": 403.9686,
+        "centroid_x": 71.346,
+        "centroid_y": 399.4686
+      }
+    },
+    {
+      "text": "2019",
+      "location": {
+        "x0": 94.251,
+        "top": 394.9686,
+        "x1": 113.115,
+        "bottom": 403.9686,
+        "centroid_x": 103.683,
+        "centroid_y": 399.4686
+      }
+    },
+    {
+      "text": "in",
+      "location": {
+        "x0": 115.824,
+        "top": 394.9686,
+        "x1": 123.501,
+        "bottom": 403.9686,
+        "centroid_x": 119.6625,
+        "centroid_y": 399.4686
+      }
+    },
+    {
+      "text": "Vancouver,",
+      "location": {
+        "x0": 126.21,
+        "top": 394.9686,
+        "x1": 171.417,
+        "bottom": 403.9686,
+        "centroid_x": 148.8135,
+        "centroid_y": 399.4686
+      }
+    },
+    {
+      "text": "Canada",
+      "location": {
+        "x0": 174.126,
+        "top": 394.9686,
+        "x1": 203.61,
+        "bottom": 403.9686,
+        "centroid_x": 188.868,
+        "centroid_y": 399.4686
+      }
+    },
+    {
+      "text": "\u2022",
+      "location": {
+        "x0": 212.16,
+        "top": 402.4062,
+        "x1": 217.4,
+        "bottom": 412.4062,
+        "centroid_x": 214.78,
+        "centroid_y": 407.4062
+      }
+    },
+    {
+      "text": "Developed",
+      "location": {
+        "x0": 220.41,
+        "top": 402.4062,
+        "x1": 267.25,
+        "bottom": 412.4062,
+        "centroid_x": 243.83,
+        "centroid_y": 407.4062
+      }
+    },
+    {
+      "text": "an",
+      "location": {
+        "x0": 270.26,
+        "top": 402.4062,
+        "x1": 280.97,
+        "bottom": 412.4062,
+        "centroid_x": 275.615,
+        "centroid_y": 407.4062
+      }
+    },
+    {
+      "text": "algorithm",
+      "location": {
+        "x0": 283.98,
+        "top": 402.4062,
+        "x1": 327.03,
+        "bottom": 412.4062,
+        "centroid_x": 305.505,
+        "centroid_y": 407.4062
+      }
+    },
+    {
+      "text": "(Deepstream)",
+      "location": {
+        "x0": 330.04,
+        "top": 402.4062,
+        "x1": 390.8801,
+        "bottom": 412.4062,
+        "centroid_x": 360.46,
+        "centroid_y": 407.4062
+      }
+    },
+    {
+      "text": "to",
+      "location": {
+        "x0": 393.8901,
+        "top": 402.4062,
+        "x1": 403.2201,
+        "bottom": 412.4062,
+        "centroid_x": 398.5551,
+        "centroid_y": 407.4062
+      }
+    },
+    {
+      "text": "analyze",
+      "location": {
+        "x0": 406.2301,
+        "top": 402.4062,
+        "x1": 440.2701,
+        "bottom": 412.4062,
+        "centroid_x": 423.2501,
+        "centroid_y": 407.4062
+      }
+    },
+    {
+      "text": "security",
+      "location": {
+        "x0": 443.2801,
+        "top": 402.4062,
+        "x1": 478.8201,
+        "bottom": 412.4062,
+        "centroid_x": 461.0501,
+        "centroid_y": 407.4062
+      }
+    },
+    {
+      "text": "cameras",
+      "location": {
+        "x0": 481.8301,
+        "top": 402.4062,
+        "x1": 518.9702,
+        "bottom": 412.4062,
+        "centroid_x": 500.4001,
+        "centroid_y": 407.4062
+      }
+    },
+    {
+      "text": "in",
+      "location": {
+        "x0": 521.9802,
+        "top": 402.4062,
+        "x1": 530.2902,
+        "bottom": 412.4062,
+        "centroid_x": 526.1352,
+        "centroid_y": 407.4062
+      }
+    },
+    {
+      "text": "self-",
+      "location": {
+        "x0": 533.3002,
+        "top": 402.4062,
+        "x1": 553.1202,
+        "bottom": 412.4062,
+        "centroid_x": 543.2102,
+        "centroid_y": 407.4062
+      }
+    },
+    {
+      "text": "SKILLS",
+      "location": {
+        "x0": 108.37,
+        "top": 409.3736,
+        "x1": 144.6762,
+        "bottom": 421.3836,
+        "centroid_x": 126.5231,
+        "centroid_y": 415.3786
+      }
+    },
+    {
+      "text": "checkout",
+      "location": {
+        "x0": 220.66,
+        "top": 413.4062,
+        "x1": 261.3,
+        "bottom": 423.4062,
+        "centroid_x": 240.98,
+        "centroid_y": 418.4062
+      }
+    },
+    {
+      "text": "areas",
+      "location": {
+        "x0": 264.31,
+        "top": 413.4062,
+        "x1": 288.2,
+        "bottom": 423.4062,
+        "centroid_x": 276.255,
+        "centroid_y": 418.4062
+      }
+    },
+    {
+      "text": "for",
+      "location": {
+        "x0": 291.21,
+        "top": 413.4062,
+        "x1": 304.17,
+        "bottom": 423.4062,
+        "centroid_x": 297.69,
+        "centroid_y": 418.4062
+      }
+    },
+    {
+      "text": "retailers",
+      "location": {
+        "x0": 307.1801,
+        "top": 413.4062,
+        "x1": 344.9201,
+        "bottom": 423.4062,
+        "centroid_x": 326.0501,
+        "centroid_y": 418.4062
+      }
+    },
+    {
+      "text": "such",
+      "location": {
+        "x0": 347.9301,
+        "top": 413.4062,
+        "x1": 367.8501,
+        "bottom": 423.4062,
+        "centroid_x": 357.8901,
+        "centroid_y": 418.4062
+      }
+    },
+    {
+      "text": "as",
+      "location": {
+        "x0": 370.8601,
+        "top": 413.4062,
+        "x1": 380.1601,
+        "bottom": 423.4062,
+        "centroid_x": 375.5101,
+        "centroid_y": 418.4062
+      }
+    },
+    {
+      "text": "Walmart",
+      "location": {
+        "x0": 383.1701,
+        "top": 413.4062,
+        "x1": 421.2901,
+        "bottom": 423.4062,
+        "centroid_x": 402.2301,
+        "centroid_y": 418.4062
+      }
+    },
+    {
+      "text": "Mexico",
+      "location": {
+        "x0": 424.3001,
+        "top": 413.4062,
+        "x1": 455.0201,
+        "bottom": 423.4062,
+        "centroid_x": 439.6601,
+        "centroid_y": 418.4062
+      }
+    },
+    {
+      "text": "and",
+      "location": {
+        "x0": 458.0302,
+        "top": 413.4062,
+        "x1": 474.3102,
+        "bottom": 423.4062,
+        "centroid_x": 466.1702,
+        "centroid_y": 418.4062
+      }
+    },
+    {
+      "text": "OXXO.",
+      "location": {
+        "x0": 477.3202,
+        "top": 413.4062,
+        "x1": 505.6102,
+        "bottom": 423.4062,
+        "centroid_x": 491.4652,
+        "centroid_y": 418.4062
+      }
+    },
+    {
+      "text": "The",
+      "location": {
+        "x0": 508.6202,
+        "top": 413.4062,
+        "x1": 525.3402,
+        "bottom": 423.4062,
+        "centroid_x": 516.9802,
+        "centroid_y": 418.4062
+      }
+    },
+    {
+      "text": "algorithm",
+      "location": {
+        "x0": 528.3502,
+        "top": 413.4062,
+        "x1": 571.4003,
+        "bottom": 423.4062,
+        "centroid_x": 549.8752,
+        "centroid_y": 418.4062
+      }
+    },
+    {
+      "text": "generates",
+      "location": {
+        "x0": 220.66,
+        "top": 424.4162,
+        "x1": 264.64,
+        "bottom": 434.4162,
+        "centroid_x": 242.65,
+        "centroid_y": 429.4162
+      }
+    },
+    {
+      "text": "alerts",
+      "location": {
+        "x0": 267.65,
+        "top": 424.4162,
+        "x1": 293.2,
+        "bottom": 434.4162,
+        "centroid_x": 280.425,
+        "centroid_y": 429.4162
+      }
+    },
+    {
+      "text": "for",
+      "location": {
+        "x0": 296.2101,
+        "top": 424.4162,
+        "x1": 309.1701,
+        "bottom": 434.4162,
+        "centroid_x": 302.6901,
+        "centroid_y": 429.4162
+      }
+    },
+    {
+      "text": "possible",
+      "location": {
+        "x0": 312.1801,
+        "top": 424.4162,
+        "x1": 348.0401,
+        "bottom": 434.4162,
+        "centroid_x": 330.1101,
+        "centroid_y": 429.4162
+      }
+    },
+    {
+      "text": "theft",
+      "location": {
+        "x0": 351.0501,
+        "top": 424.4162,
+        "x1": 373.5801,
+        "bottom": 434.4162,
+        "centroid_x": 362.3151,
+        "centroid_y": 429.4162
+      }
+    },
+    {
+      "text": "situations,",
+      "location": {
+        "x0": 376.5901,
+        "top": 424.4162,
+        "x1": 423.5201,
+        "bottom": 434.4162,
+        "centroid_x": 400.0551,
+        "centroid_y": 429.4162
+      }
+    },
+    {
+      "text": "such",
+      "location": {
+        "x0": 426.5301,
+        "top": 424.4162,
+        "x1": 446.4501,
+        "bottom": 434.4162,
+        "centroid_x": 436.4901,
+        "centroid_y": 429.4162
+      }
+    },
+    {
+      "text": "as",
+      "location": {
+        "x0": 449.4601,
+        "top": 424.4162,
+        "x1": 458.7601,
+        "bottom": 434.4162,
+        "centroid_x": 454.1101,
+        "centroid_y": 429.4162
+      }
+    },
+    {
+      "text": "people",
+      "location": {
+        "x0": 461.7701,
+        "top": 424.4162,
+        "x1": 492.1301,
+        "bottom": 434.4162,
+        "centroid_x": 476.9501,
+        "centroid_y": 429.4162
+      }
+    },
+    {
+      "text": "paying",
+      "location": {
+        "x0": 495.1401,
+        "top": 424.4162,
+        "x1": 524.2202,
+        "bottom": 434.4162,
+        "centroid_x": 509.6801,
+        "centroid_y": 429.4162
+      }
+    },
+    {
+      "text": "for",
+      "location": {
+        "x0": 527.2302,
+        "top": 424.4162,
+        "x1": 540.1902,
+        "bottom": 434.4162,
+        "centroid_x": 533.7102,
+        "centroid_y": 429.4162
+      }
+    },
+    {
+      "text": "only",
+      "location": {
+        "x0": 543.2002,
+        "top": 424.4162,
+        "x1": 561.9102,
+        "bottom": 434.4162,
+        "centroid_x": 552.5552,
+        "centroid_y": 429.4162
+      }
+    },
+    {
+      "text": "a",
+      "location": {
+        "x0": 564.9202,
+        "top": 424.4162,
+        "x1": 570.1702,
+        "bottom": 434.4162,
+        "centroid_x": 567.5452,
+        "centroid_y": 429.4162
+      }
+    },
+    {
+      "text": "PROGRAMMING",
+      "location": {
+        "x0": 48.63,
+        "top": 428.2138,
+        "x1": 124.772,
+        "bottom": 439.2138,
+        "centroid_x": 86.701,
+        "centroid_y": 433.7138
+      }
+    },
+    {
+      "text": "LANGUAGES",
+      "location": {
+        "x0": 128.083,
+        "top": 428.2138,
+        "x1": 189.529,
+        "bottom": 439.2138,
+        "centroid_x": 158.806,
+        "centroid_y": 433.7138
+      }
+    },
+    {
+      "text": "portion",
+      "location": {
+        "x0": 220.66,
+        "top": 435.4162,
+        "x1": 253.13,
+        "bottom": 445.4162,
+        "centroid_x": 236.895,
+        "centroid_y": 440.4162
+      }
+    },
+    {
+      "text": "of",
+      "location": {
+        "x0": 256.14,
+        "top": 435.4162,
+        "x1": 265.21,
+        "bottom": 445.4162,
+        "centroid_x": 260.675,
+        "centroid_y": 440.4162
+      }
+    },
+    {
+      "text": "their",
+      "location": {
+        "x0": 268.22,
+        "top": 435.4162,
+        "x1": 289.83,
+        "bottom": 445.4162,
+        "centroid_x": 279.025,
+        "centroid_y": 440.4162
+      }
+    },
+    {
+      "text": "products",
+      "location": {
+        "x0": 292.8401,
+        "top": 435.4162,
+        "x1": 331.6601,
+        "bottom": 445.4162,
+        "centroid_x": 312.2501,
+        "centroid_y": 440.4162
+      }
+    },
+    {
+      "text": "or",
+      "location": {
+        "x0": 334.6701,
+        "top": 435.4162,
+        "x1": 343.9301,
+        "bottom": 445.4162,
+        "centroid_x": 339.3001,
+        "centroid_y": 440.4162
+      }
+    },
+    {
+      "text": "passing",
+      "location": {
+        "x0": 346.9401,
+        "top": 435.4162,
+        "x1": 379.1901,
+        "bottom": 445.4162,
+        "centroid_x": 363.0651,
+        "centroid_y": 440.4162
+      }
+    },
+    {
+      "text": "by",
+      "location": {
+        "x0": 382.2001,
+        "top": 435.4162,
+        "x1": 392.7001,
+        "bottom": 445.4162,
+        "centroid_x": 387.4501,
+        "centroid_y": 440.4162
+      }
+    },
+    {
+      "text": "without",
+      "location": {
+        "x0": 395.7101,
+        "top": 435.4162,
+        "x1": 430.2101,
+        "bottom": 445.4162,
+        "centroid_x": 412.9601,
+        "centroid_y": 440.4162
+      }
+    },
+    {
+      "text": "paying.",
+      "location": {
+        "x0": 433.2201,
+        "top": 435.4162,
+        "x1": 465.9701,
+        "bottom": 445.4162,
+        "centroid_x": 449.5951,
+        "centroid_y": 440.4162
+      }
+    },
+    {
+      "text": "It",
+      "location": {
+        "x0": 468.9801,
+        "top": 435.4162,
+        "x1": 475.7201,
+        "bottom": 445.4162,
+        "centroid_x": 472.3501,
+        "centroid_y": 440.4162
+      }
+    },
+    {
+      "text": "was",
+      "location": {
+        "x0": 478.7301,
+        "top": 435.4162,
+        "x1": 495.4701,
+        "bottom": 445.4162,
+        "centroid_x": 487.1001,
+        "centroid_y": 440.4162
+      }
+    },
+    {
+      "text": "capable",
+      "location": {
+        "x0": 498.4801,
+        "top": 435.4162,
+        "x1": 533.4701,
+        "bottom": 445.4162,
+        "centroid_x": 515.9751,
+        "centroid_y": 440.4162
+      }
+    },
+    {
+      "text": "of",
+      "location": {
+        "x0": 536.4801,
+        "top": 435.4162,
+        "x1": 545.5501,
+        "bottom": 445.4162,
+        "centroid_x": 541.0151,
+        "centroid_y": 440.4162
+      }
+    },
+    {
+      "text": "\u2022",
+      "location": {
+        "x0": 48.63,
+        "top": 443.9962,
+        "x1": 53.87,
+        "bottom": 453.9962,
+        "centroid_x": 51.25,
+        "centroid_y": 448.9962
+      }
+    },
+    {
+      "text": "Python",
+      "location": {
+        "x0": 56.88,
+        "top": 443.9962,
+        "x1": 87.64,
+        "bottom": 453.9962,
+        "centroid_x": 72.26,
+        "centroid_y": 448.9962
+      }
+    },
+    {
+      "text": "\u2022",
+      "location": {
+        "x0": 93.66,
+        "top": 443.9962,
+        "x1": 98.9,
+        "bottom": 453.9962,
+        "centroid_x": 96.28,
+        "centroid_y": 448.9962
+      }
+    },
+    {
+      "text": "C",
+      "location": {
+        "x0": 101.91,
+        "top": 443.9962,
+        "x1": 107.89,
+        "bottom": 453.9962,
+        "centroid_x": 104.9,
+        "centroid_y": 448.9962
+      }
+    },
+    {
+      "text": "\u2022",
+      "location": {
+        "x0": 113.91,
+        "top": 443.9962,
+        "x1": 119.15,
+        "bottom": 453.9962,
+        "centroid_x": 116.53,
+        "centroid_y": 448.9962
+      }
+    },
+    {
+      "text": "C++",
+      "location": {
+        "x0": 122.16,
+        "top": 443.9962,
+        "x1": 138.62,
+        "bottom": 453.9962,
+        "centroid_x": 130.39,
+        "centroid_y": 448.9962
+      }
+    },
+    {
+      "text": "processing",
+      "location": {
+        "x0": 220.66,
+        "top": 446.4262,
+        "x1": 267.32,
+        "bottom": 456.4262,
+        "centroid_x": 243.99,
+        "centroid_y": 451.4262
+      }
+    },
+    {
+      "text": "up",
+      "location": {
+        "x0": 270.33,
+        "top": 446.4262,
+        "x1": 281.36,
+        "bottom": 456.4262,
+        "centroid_x": 275.845,
+        "centroid_y": 451.4262
+      }
+    },
+    {
+      "text": "to",
+      "location": {
+        "x0": 284.37,
+        "top": 446.4262,
+        "x1": 293.7,
+        "bottom": 456.4262,
+        "centroid_x": 289.035,
+        "centroid_y": 451.4262
+      }
+    },
+    {
+      "text": "10",
+      "location": {
+        "x0": 296.71,
+        "top": 446.4262,
+        "x1": 307.19,
+        "bottom": 456.4262,
+        "centroid_x": 301.95,
+        "centroid_y": 451.4262
+      }
+    },
+    {
+      "text": "cameras",
+      "location": {
+        "x0": 310.2,
+        "top": 446.4262,
+        "x1": 347.34,
+        "bottom": 456.4262,
+        "centroid_x": 328.77,
+        "centroid_y": 451.4262
+      }
+    },
+    {
+      "text": "in",
+      "location": {
+        "x0": 350.35,
+        "top": 446.4262,
+        "x1": 358.66,
+        "bottom": 456.4262,
+        "centroid_x": 354.505,
+        "centroid_y": 451.4262
+      }
+    },
+    {
+      "text": "real",
+      "location": {
+        "x0": 361.67,
+        "top": 446.4262,
+        "x1": 379.2101,
+        "bottom": 456.4262,
+        "centroid_x": 370.44,
+        "centroid_y": 451.4262
+      }
+    },
+    {
+      "text": "time",
+      "location": {
+        "x0": 382.2201,
+        "top": 446.4262,
+        "x1": 402.7801,
+        "bottom": 456.4262,
+        "centroid_x": 392.5001,
+        "centroid_y": 451.4262
+      }
+    },
+    {
+      "text": "per",
+      "location": {
+        "x0": 405.7901,
+        "top": 446.4262,
+        "x1": 420.7001,
+        "bottom": 456.4262,
+        "centroid_x": 413.2451,
+        "centroid_y": 451.4262
+      }
+    },
+    {
+      "text": "Nvidia",
+      "location": {
+        "x0": 423.7101,
+        "top": 446.4262,
+        "x1": 451.5101,
+        "bottom": 456.4262,
+        "centroid_x": 437.6101,
+        "centroid_y": 451.4262
+      }
+    },
+    {
+      "text": "Jetson",
+      "location": {
+        "x0": 454.5201,
+        "top": 446.4262,
+        "x1": 483.5801,
+        "bottom": 456.4262,
+        "centroid_x": 469.0501,
+        "centroid_y": 451.4262
+      }
+    },
+    {
+      "text": "Xavier,",
+      "location": {
+        "x0": 486.5901,
+        "top": 446.4262,
+        "x1": 518.1701,
+        "bottom": 456.4262,
+        "centroid_x": 502.3801,
+        "centroid_y": 451.4262
+      }
+    },
+    {
+      "text": "with",
+      "location": {
+        "x0": 521.1801,
+        "top": 446.4262,
+        "x1": 540.8901,
+        "bottom": 456.4262,
+        "centroid_x": 531.0351,
+        "centroid_y": 451.4262
+      }
+    },
+    {
+      "text": "each",
+      "location": {
+        "x0": 543.9001,
+        "top": 446.4262,
+        "x1": 565.0102,
+        "bottom": 456.4262,
+        "centroid_x": 554.4552,
+        "centroid_y": 451.4262
+      }
+    },
+    {
+      "text": "\u2022",
+      "location": {
+        "x0": 48.63,
+        "top": 456.9962,
+        "x1": 53.87,
+        "bottom": 466.9962,
+        "centroid_x": 51.25,
+        "centroid_y": 461.9962
+      }
+    },
+    {
+      "text": "MySQL",
+      "location": {
+        "x0": 56.88,
+        "top": 456.9962,
+        "x1": 85.53,
+        "bottom": 466.9962,
+        "centroid_x": 71.205,
+        "centroid_y": 461.9962
+      }
+    },
+    {
+      "text": "\u2022",
+      "location": {
+        "x0": 91.55,
+        "top": 456.9962,
+        "x1": 96.79,
+        "bottom": 466.9962,
+        "centroid_x": 94.17,
+        "centroid_y": 461.9962
+      }
+    },
+    {
+      "text": "SQL",
+      "location": {
+        "x0": 99.8,
+        "top": 456.9962,
+        "x1": 116.43,
+        "bottom": 466.9962,
+        "centroid_x": 108.115,
+        "centroid_y": 461.9962
+      }
+    },
+    {
+      "text": "camera",
+      "location": {
+        "x0": 220.66,
+        "top": 457.4262,
+        "x1": 253.75,
+        "bottom": 467.4262,
+        "centroid_x": 237.205,
+        "centroid_y": 462.4262
+      }
+    },
+    {
+      "text": "operating",
+      "location": {
+        "x0": 256.76,
+        "top": 457.4262,
+        "x1": 299.58,
+        "bottom": 467.4262,
+        "centroid_x": 278.17,
+        "centroid_y": 462.4262
+      }
+    },
+    {
+      "text": "at",
+      "location": {
+        "x0": 302.59,
+        "top": 457.4262,
+        "x1": 311.8,
+        "bottom": 467.4262,
+        "centroid_x": 307.195,
+        "centroid_y": 462.4262
+      }
+    },
+    {
+      "text": "around",
+      "location": {
+        "x0": 314.81,
+        "top": 457.4262,
+        "x1": 345.81,
+        "bottom": 467.4262,
+        "centroid_x": 330.31,
+        "centroid_y": 462.4262
+      }
+    },
+    {
+      "text": "5",
+      "location": {
+        "x0": 348.82,
+        "top": 457.4262,
+        "x1": 354.06,
+        "bottom": 467.4262,
+        "centroid_x": 351.44,
+        "centroid_y": 462.4262
+      }
+    },
+    {
+      "text": "FPS.",
+      "location": {
+        "x0": 357.07,
+        "top": 457.4262,
+        "x1": 376.38,
+        "bottom": 467.4262,
+        "centroid_x": 366.725,
+        "centroid_y": 462.4262
+      }
+    },
+    {
+      "text": "Additionally,",
+      "location": {
+        "x0": 379.39,
+        "top": 457.4262,
+        "x1": 436.6701,
+        "bottom": 467.4262,
+        "centroid_x": 408.0301,
+        "centroid_y": 462.4262
+      }
+    },
+    {
+      "text": "the",
+      "location": {
+        "x0": 439.6801,
+        "top": 457.4262,
+        "x1": 454.5501,
+        "bottom": 467.4262,
+        "centroid_x": 447.1151,
+        "centroid_y": 462.4262
+      }
+    },
+    {
+      "text": "alert",
+      "location": {
+        "x0": 457.5601,
+        "top": 457.4262,
+        "x1": 479.0601,
+        "bottom": 467.4262,
+        "centroid_x": 468.3101,
+        "centroid_y": 462.4262
+      }
+    },
+    {
+      "text": "delay",
+      "location": {
+        "x0": 482.0701,
+        "top": 457.4262,
+        "x1": 506.2202,
+        "bottom": 467.4262,
+        "centroid_x": 494.1451,
+        "centroid_y": 462.4262
+      }
+    },
+    {
+      "text": "time",
+      "location": {
+        "x0": 509.2302,
+        "top": 457.4262,
+        "x1": 529.7902,
+        "bottom": 467.4262,
+        "centroid_x": 519.5102,
+        "centroid_y": 462.4262
+      }
+    },
+    {
+      "text": "on",
+      "location": {
+        "x0": 532.8002,
+        "top": 457.4262,
+        "x1": 543.6302,
+        "bottom": 467.4262,
+        "centroid_x": 538.2152,
+        "centroid_y": 462.4262
+      }
+    },
+    {
+      "text": "the",
+      "location": {
+        "x0": 546.6402,
+        "top": 457.4262,
+        "x1": 561.5103,
+        "bottom": 467.4262,
+        "centroid_x": 554.0752,
+        "centroid_y": 462.4262
+      }
+    },
+    {
+      "text": "platform",
+      "location": {
+        "x0": 220.66,
+        "top": 468.4362,
+        "x1": 259.65,
+        "bottom": 478.4362,
+        "centroid_x": 240.155,
+        "centroid_y": 473.4362
+      }
+    },
+    {
+      "text": "was",
+      "location": {
+        "x0": 262.66,
+        "top": 468.4362,
+        "x1": 279.4,
+        "bottom": 478.4362,
+        "centroid_x": 271.03,
+        "centroid_y": 473.4362
+      }
+    },
+    {
+      "text": "less",
+      "location": {
+        "x0": 282.41,
+        "top": 468.4362,
+        "x1": 298.91,
+        "bottom": 478.4362,
+        "centroid_x": 290.66,
+        "centroid_y": 473.4362
+      }
+    },
+    {
+      "text": "than",
+      "location": {
+        "x0": 301.92,
+        "top": 468.4362,
+        "x1": 322.05,
+        "bottom": 478.4362,
+        "centroid_x": 311.985,
+        "centroid_y": 473.4362
+      }
+    },
+    {
+      "text": "10",
+      "location": {
+        "x0": 325.06,
+        "top": 468.4362,
+        "x1": 335.54,
+        "bottom": 478.4362,
+        "centroid_x": 330.3,
+        "centroid_y": 473.4362
+      }
+    },
+    {
+      "text": "seconds.",
+      "location": {
+        "x0": 338.55,
+        "top": 468.4362,
+        "x1": 377.12,
+        "bottom": 478.4362,
+        "centroid_x": 357.835,
+        "centroid_y": 473.4362
+      }
+    },
+    {
+      "text": "FRAMEWORKS",
+      "location": {
+        "x0": 48.63,
+        "top": 469.4838,
+        "x1": 119.767,
+        "bottom": 480.4838,
+        "centroid_x": 84.1985,
+        "centroid_y": 474.9838
+      }
+    },
+    {
+      "text": "EPAM",
+      "location": {
+        "x0": 214.71,
+        "top": 477.2088,
+        "x1": 250.2114,
+        "bottom": 491.2188,
+        "centroid_x": 232.4607,
+        "centroid_y": 484.2138
+      }
+    },
+    {
+      "text": "Systems",
+      "location": {
+        "x0": 254.4284,
+        "top": 477.2088,
+        "x1": 306.7838,
+        "bottom": 491.2188,
+        "centroid_x": 280.6061,
+        "centroid_y": 484.2138
+      }
+    },
+    {
+      "text": "\u2022",
+      "location": {
+        "x0": 48.63,
+        "top": 485.2662,
+        "x1": 53.87,
+        "bottom": 495.2662,
+        "centroid_x": 51.25,
+        "centroid_y": 490.2662
+      }
+    },
+    {
+      "text": "PyTorch",
+      "location": {
+        "x0": 56.88,
+        "top": 485.2662,
+        "x1": 92.87,
+        "bottom": 495.2662,
+        "centroid_x": 74.875,
+        "centroid_y": 490.2662
+      }
+    },
+    {
+      "text": "\u2022",
+      "location": {
+        "x0": 98.89,
+        "top": 485.2662,
+        "x1": 104.13,
+        "bottom": 495.2662,
+        "centroid_x": 101.51,
+        "centroid_y": 490.2662
+      }
+    },
+    {
+      "text": "TensorFlow",
+      "location": {
+        "x0": 107.14,
+        "top": 485.2662,
+        "x1": 158.18,
+        "bottom": 495.2662,
+        "centroid_x": 132.66,
+        "centroid_y": 490.2662
+      }
+    },
+    {
+      "text": "\u2022",
+      "location": {
+        "x0": 164.2,
+        "top": 485.2662,
+        "x1": 169.44,
+        "bottom": 495.2662,
+        "centroid_x": 166.82,
+        "centroid_y": 490.2662
+      }
+    },
+    {
+      "text": "Keras",
+      "location": {
+        "x0": 172.45,
+        "top": 485.2662,
+        "x1": 196.85,
+        "bottom": 495.2662,
+        "centroid_x": 184.65,
+        "centroid_y": 490.2662
+      }
+    },
+    {
+      "text": "Remote,",
+      "location": {
+        "x0": 530.61,
+        "top": 487.5409,
+        "x1": 561.026,
+        "bottom": 495.5409,
+        "centroid_x": 545.818,
+        "centroid_y": 491.5409
+      }
+    },
+    {
+      "text": "USA",
+      "location": {
+        "x0": 563.434,
+        "top": 487.5409,
+        "x1": 577.186,
+        "bottom": 495.5409,
+        "centroid_x": 570.31,
+        "centroid_y": 491.5409
+      }
+    },
+    {
+      "text": "Senior",
+      "location": {
+        "x0": 214.71,
+        "top": 493.0912,
+        "x1": 253.3107,
+        "bottom": 506.1012,
+        "centroid_x": 234.0103,
+        "centroid_y": 499.5962
+      }
+    },
+    {
+      "text": "Data",
+      "location": {
+        "x0": 257.2267,
+        "top": 493.0912,
+        "x1": 284.6127,
+        "bottom": 506.1012,
+        "centroid_x": 270.9197,
+        "centroid_y": 499.5962
+      }
+    },
+    {
+      "text": "Scientist",
+      "location": {
+        "x0": 288.5287,
+        "top": 493.0912,
+        "x1": 340.6598,
+        "bottom": 506.1012,
+        "centroid_x": 314.5942,
+        "centroid_y": 499.5962
+      }
+    },
+    {
+      "text": "\u2022",
+      "location": {
+        "x0": 48.63,
+        "top": 498.2662,
+        "x1": 53.87,
+        "bottom": 508.2662,
+        "centroid_x": 51.25,
+        "centroid_y": 503.2662
+      }
+    },
+    {
+      "text": "Threading",
+      "location": {
+        "x0": 56.88,
+        "top": 498.2662,
+        "x1": 101.64,
+        "bottom": 508.2662,
+        "centroid_x": 79.26,
+        "centroid_y": 503.2662
+      }
+    },
+    {
+      "text": "\u2022",
+      "location": {
+        "x0": 107.66,
+        "top": 498.2662,
+        "x1": 112.9,
+        "bottom": 508.2662,
+        "centroid_x": 110.28,
+        "centroid_y": 503.2662
+      }
+    },
+    {
+      "text": "OpenCV",
+      "location": {
+        "x0": 115.91,
+        "top": 498.2662,
+        "x1": 150.98,
+        "bottom": 508.2662,
+        "centroid_x": 133.445,
+        "centroid_y": 503.2662
+      }
+    },
+    {
+      "text": "\u2022",
+      "location": {
+        "x0": 157.0,
+        "top": 498.2662,
+        "x1": 162.24,
+        "bottom": 508.2662,
+        "centroid_x": 159.62,
+        "centroid_y": 503.2662
+      }
+    },
+    {
+      "text": "Pandas",
+      "location": {
+        "x0": 165.25,
+        "top": 498.2662,
+        "x1": 196.41,
+        "bottom": 508.2662,
+        "centroid_x": 180.83,
+        "centroid_y": 503.2662
+      }
+    },
+    {
+      "text": "May",
+      "location": {
+        "x0": 476.54,
+        "top": 499.9785,
+        "x1": 492.551,
+        "bottom": 508.9785,
+        "centroid_x": 484.5455,
+        "centroid_y": 504.4785
+      }
+    },
+    {
+      "text": "2023",
+      "location": {
+        "x0": 495.26,
+        "top": 499.9785,
+        "x1": 514.124,
+        "bottom": 508.9785,
+        "centroid_x": 504.692,
+        "centroid_y": 504.4785
+      }
+    },
+    {
+      "text": "-",
+      "location": {
+        "x0": 516.833,
+        "top": 499.9785,
+        "x1": 520.136,
+        "bottom": 508.9785,
+        "centroid_x": 518.4845,
+        "centroid_y": 504.4785
+      }
+    },
+    {
+      "text": "October",
+      "location": {
+        "x0": 522.845,
+        "top": 499.9785,
+        "x1": 555.263,
+        "bottom": 508.9785,
+        "centroid_x": 539.054,
+        "centroid_y": 504.4785
+      }
+    },
+    {
+      "text": "2023",
+      "location": {
+        "x0": 557.972,
+        "top": 499.9785,
+        "x1": 576.836,
+        "bottom": 508.9785,
+        "centroid_x": 567.404,
+        "centroid_y": 504.4785
+      }
+    },
+    {
+      "text": "\u2022",
+      "location": {
+        "x0": 210.93,
+        "top": 510.2561,
+        "x1": 216.17,
+        "bottom": 520.2561,
+        "centroid_x": 213.55,
+        "centroid_y": 515.2561
+      }
+    },
+    {
+      "text": "Optimized",
+      "location": {
+        "x0": 219.18,
+        "top": 510.2561,
+        "x1": 265.22,
+        "bottom": 520.2561,
+        "centroid_x": 242.2,
+        "centroid_y": 515.2561
+      }
+    },
+    {
+      "text": "the",
+      "location": {
+        "x0": 268.23,
+        "top": 510.2561,
+        "x1": 283.1,
+        "bottom": 520.2561,
+        "centroid_x": 275.665,
+        "centroid_y": 515.2561
+      }
+    },
+    {
+      "text": "product",
+      "location": {
+        "x0": 286.11,
+        "top": 510.2561,
+        "x1": 320.8801,
+        "bottom": 520.2561,
+        "centroid_x": 303.4951,
+        "centroid_y": 515.2561
+      }
+    },
+    {
+      "text": "prices",
+      "location": {
+        "x0": 323.8901,
+        "top": 510.2561,
+        "x1": 350.6501,
+        "bottom": 520.2561,
+        "centroid_x": 337.2701,
+        "centroid_y": 515.2561
+      }
+    },
+    {
+      "text": "for",
+      "location": {
+        "x0": 353.6601,
+        "top": 510.2561,
+        "x1": 366.6201,
+        "bottom": 520.2561,
+        "centroid_x": 360.1401,
+        "centroid_y": 515.2561
+      }
+    },
+    {
+      "text": "TBC",
+      "location": {
+        "x0": 369.6302,
+        "top": 510.2561,
+        "x1": 387.0802,
+        "bottom": 520.2561,
+        "centroid_x": 378.3552,
+        "centroid_y": 515.2561
+      }
+    },
+    {
+      "text": "Corporation",
+      "location": {
+        "x0": 390.0902,
+        "top": 510.2561,
+        "x1": 443.0502,
+        "bottom": 520.2561,
+        "centroid_x": 416.5702,
+        "centroid_y": 515.2561
+      }
+    },
+    {
+      "text": "across",
+      "location": {
+        "x0": 446.0602,
+        "top": 510.2561,
+        "x1": 473.6202,
+        "bottom": 520.2561,
+        "centroid_x": 459.8402,
+        "centroid_y": 515.2561
+      }
+    },
+    {
+      "text": "both",
+      "location": {
+        "x0": 476.6302,
+        "top": 510.2561,
+        "x1": 496.9902,
+        "bottom": 520.2561,
+        "centroid_x": 486.8102,
+        "centroid_y": 515.2561
+      }
+    },
+    {
+      "text": "physical",
+      "location": {
+        "x0": 500.0002,
+        "top": 510.2561,
+        "x1": 536.0102,
+        "bottom": 520.2561,
+        "centroid_x": 518.0052,
+        "centroid_y": 515.2561
+      }
+    },
+    {
+      "text": "and",
+      "location": {
+        "x0": 219.43,
+        "top": 523.1862,
+        "x1": 235.71,
+        "bottom": 533.1862,
+        "centroid_x": 227.57,
+        "centroid_y": 528.1862
+      }
+    },
+    {
+      "text": "digital",
+      "location": {
+        "x0": 248.33,
+        "top": 523.1862,
+        "x1": 276.78,
+        "bottom": 533.1862,
+        "centroid_x": 262.555,
+        "centroid_y": 528.1862
+      }
+    },
+    {
+      "text": "outlets",
+      "location": {
+        "x0": 289.39,
+        "top": 523.1862,
+        "x1": 320.59,
+        "bottom": 533.1862,
+        "centroid_x": 304.99,
+        "centroid_y": 528.1862
+      }
+    },
+    {
+      "text": "by",
+      "location": {
+        "x0": 333.18,
+        "top": 523.1862,
+        "x1": 343.68,
+        "bottom": 533.1862,
+        "centroid_x": 338.43,
+        "centroid_y": 528.1862
+      }
+    },
+    {
+      "text": "leveraging",
+      "location": {
+        "x0": 356.29,
+        "top": 523.1862,
+        "x1": 402.53,
+        "bottom": 533.1862,
+        "centroid_x": 379.41,
+        "centroid_y": 528.1862
+      }
+    },
+    {
+      "text": "data",
+      "location": {
+        "x0": 413.62,
+        "top": 523.1862,
+        "x1": 433.65,
+        "bottom": 533.1862,
+        "centroid_x": 423.635,
+        "centroid_y": 528.1862
+      }
+    },
+    {
+      "text": "analysis,",
+      "location": {
+        "x0": 446.26,
+        "top": 523.1862,
+        "x1": 484.72,
+        "bottom": 533.1862,
+        "centroid_x": 465.49,
+        "centroid_y": 528.1862
+      }
+    },
+    {
+      "text": "estimating",
+      "location": {
+        "x0": 497.32,
+        "top": 523.1862,
+        "x1": 544.47,
+        "bottom": 533.1862,
+        "centroid_x": 520.895,
+        "centroid_y": 528.1862
+      }
+    },
+    {
+      "text": "cross",
+      "location": {
+        "x0": 557.33,
+        "top": 523.1862,
+        "x1": 579.64,
+        "bottom": 533.1862,
+        "centroid_x": 568.485,
+        "centroid_y": 528.1862
+      }
+    },
+    {
+      "text": "\u2022",
+      "location": {
+        "x0": 48.63,
+        "top": 524.2661,
+        "x1": 53.87,
+        "bottom": 534.2661,
+        "centroid_x": 51.25,
+        "centroid_y": 529.2661
+      }
+    },
+    {
+      "text": "NVIDIA",
+      "location": {
+        "x0": 56.88,
+        "top": 524.2661,
+        "x1": 86.72,
+        "bottom": 534.2661,
+        "centroid_x": 71.8,
+        "centroid_y": 529.2661
+      }
+    },
+    {
+      "text": "Deepstream",
+      "location": {
+        "x0": 89.73,
+        "top": 524.2661,
+        "x1": 143.23,
+        "bottom": 534.2661,
+        "centroid_x": 116.48,
+        "centroid_y": 529.2661
+      }
+    },
+    {
+      "text": "elasticities,",
+      "location": {
+        "x0": 219.43,
+        "top": 536.1862,
+        "x1": 271.72,
+        "bottom": 546.1862,
+        "centroid_x": 245.575,
+        "centroid_y": 541.1862
+      }
+    },
+    {
+      "text": "and",
+      "location": {
+        "x0": 274.73,
+        "top": 536.1862,
+        "x1": 291.01,
+        "bottom": 546.1862,
+        "centroid_x": 282.87,
+        "centroid_y": 541.1862
+      }
+    },
+    {
+      "text": "developing",
+      "location": {
+        "x0": 294.0201,
+        "top": 536.1862,
+        "x1": 342.6101,
+        "bottom": 546.1862,
+        "centroid_x": 318.3151,
+        "centroid_y": 541.1862
+      }
+    },
+    {
+      "text": "a",
+      "location": {
+        "x0": 345.6201,
+        "top": 536.1862,
+        "x1": 350.8701,
+        "bottom": 546.1862,
+        "centroid_x": 348.2451,
+        "centroid_y": 541.1862
+      }
+    },
+    {
+      "text": "decision",
+      "location": {
+        "x0": 353.8801,
+        "top": 536.1862,
+        "x1": 390.4301,
+        "bottom": 546.1862,
+        "centroid_x": 372.1551,
+        "centroid_y": 541.1862
+      }
+    },
+    {
+      "text": "algorithm",
+      "location": {
+        "x0": 393.4401,
+        "top": 536.1862,
+        "x1": 436.4901,
+        "bottom": 546.1862,
+        "centroid_x": 414.9651,
+        "centroid_y": 541.1862
+      }
+    },
+    {
+      "text": "for",
+      "location": {
+        "x0": 439.5001,
+        "top": 536.1862,
+        "x1": 452.4601,
+        "bottom": 546.1862,
+        "centroid_x": 445.9801,
+        "centroid_y": 541.1862
+      }
+    },
+    {
+      "text": "their",
+      "location": {
+        "x0": 455.4702,
+        "top": 536.1862,
+        "x1": 477.0802,
+        "bottom": 546.1862,
+        "centroid_x": 466.2752,
+        "centroid_y": 541.1862
+      }
+    },
+    {
+      "text": "price",
+      "location": {
+        "x0": 480.0902,
+        "top": 536.1862,
+        "x1": 502.8002,
+        "bottom": 546.1862,
+        "centroid_x": 491.4452,
+        "centroid_y": 541.1862
+      }
+    },
+    {
+      "text": "strategy.",
+      "location": {
+        "x0": 505.8102,
+        "top": 536.1862,
+        "x1": 545.9903,
+        "bottom": 546.1862,
+        "centroid_x": 525.9003,
+        "centroid_y": 541.1862
+      }
+    },
+    {
+      "text": "\u2022",
+      "location": {
+        "x0": 48.63,
+        "top": 537.2661,
+        "x1": 53.87,
+        "bottom": 547.2661,
+        "centroid_x": 51.25,
+        "centroid_y": 542.2661
+      }
+    },
+    {
+      "text": "Vertex",
+      "location": {
+        "x0": 56.88,
+        "top": 537.2661,
+        "x1": 86.51,
+        "bottom": 547.2661,
+        "centroid_x": 71.695,
+        "centroid_y": 542.2661
+      }
+    },
+    {
+      "text": "AI",
+      "location": {
+        "x0": 89.52,
+        "top": 537.2661,
+        "x1": 98.2,
+        "bottom": 547.2661,
+        "centroid_x": 93.86,
+        "centroid_y": 542.2661
+      }
+    },
+    {
+      "text": "Agent",
+      "location": {
+        "x0": 101.21,
+        "top": 537.2661,
+        "x1": 127.0,
+        "bottom": 547.2661,
+        "centroid_x": 114.105,
+        "centroid_y": 542.2661
+      }
+    },
+    {
+      "text": "Engine",
+      "location": {
+        "x0": 130.01,
+        "top": 537.2661,
+        "x1": 159.61,
+        "bottom": 547.2661,
+        "centroid_x": 144.81,
+        "centroid_y": 542.2661
+      }
+    },
+    {
+      "text": "WALMART",
+      "location": {
+        "x0": 213.52,
+        "top": 545.5188,
+        "x1": 278.9607,
+        "bottom": 559.5288,
+        "centroid_x": 246.2404,
+        "centroid_y": 552.5238
+      }
+    },
+    {
+      "text": "Chile",
+      "location": {
+        "x0": 283.1777,
+        "top": 545.5188,
+        "x1": 316.4235,
+        "bottom": 559.5288,
+        "centroid_x": 299.8006,
+        "centroid_y": 552.5238
+      }
+    },
+    {
+      "text": "\u2022",
+      "location": {
+        "x0": 48.63,
+        "top": 550.2661,
+        "x1": 53.87,
+        "bottom": 560.2661,
+        "centroid_x": 51.25,
+        "centroid_y": 555.2661
+      }
+    },
+    {
+      "text": "Google-ADK",
+      "location": {
+        "x0": 56.88,
+        "top": 550.2661,
+        "x1": 109.26,
+        "bottom": 560.2661,
+        "centroid_x": 83.07,
+        "centroid_y": 555.2661
+      }
+    },
+    {
+      "text": "\u2022",
+      "location": {
+        "x0": 115.28,
+        "top": 550.2661,
+        "x1": 120.52,
+        "bottom": 560.2661,
+        "centroid_x": 117.9,
+        "centroid_y": 555.2661
+      }
+    },
+    {
+      "text": "LangChain",
+      "location": {
+        "x0": 123.53,
+        "top": 550.2661,
+        "x1": 169.32,
+        "bottom": 560.2661,
+        "centroid_x": 146.425,
+        "centroid_y": 555.2661
+      }
+    },
+    {
+      "text": "Quilicura,",
+      "location": {
+        "x0": 521.35,
+        "top": 554.3509,
+        "x1": 556.622,
+        "bottom": 562.3509,
+        "centroid_x": 538.986,
+        "centroid_y": 558.3509
+      }
+    },
+    {
+      "text": "Chile",
+      "location": {
+        "x0": 559.03,
+        "top": 554.3509,
+        "x1": 577.182,
+        "bottom": 562.3509,
+        "centroid_x": 568.106,
+        "centroid_y": 558.3509
+      }
+    },
+    {
+      "text": "Senior",
+      "location": {
+        "x0": 214.71,
+        "top": 562.3011,
+        "x1": 253.3107,
+        "bottom": 575.3112,
+        "centroid_x": 234.0103,
+        "centroid_y": 568.8062
+      }
+    },
+    {
+      "text": "Data",
+      "location": {
+        "x0": 257.2267,
+        "top": 562.3011,
+        "x1": 284.6127,
+        "bottom": 575.3112,
+        "centroid_x": 270.9197,
+        "centroid_y": 568.8062
+      }
+    },
+    {
+      "text": "Scientist",
+      "location": {
+        "x0": 288.5287,
+        "top": 562.3011,
+        "x1": 340.6598,
+        "bottom": 575.3112,
+        "centroid_x": 314.5942,
+        "centroid_y": 568.8062
+      }
+    },
+    {
+      "text": "CLOUD",
+      "location": {
+        "x0": 48.63,
+        "top": 564.2038,
+        "x1": 83.709,
+        "bottom": 575.2038,
+        "centroid_x": 66.1695,
+        "centroid_y": 569.7038
+      }
+    },
+    {
+      "text": "November",
+      "location": {
+        "x0": 443.19,
+        "top": 569.1885,
+        "x1": 484.077,
+        "bottom": 578.1885,
+        "centroid_x": 463.6335,
+        "centroid_y": 573.6885
+      }
+    },
+    {
+      "text": "2021",
+      "location": {
+        "x0": 486.786,
+        "top": 569.1885,
+        "x1": 505.6501,
+        "bottom": 578.1885,
+        "centroid_x": 496.218,
+        "centroid_y": 573.6885
+      }
+    },
+    {
+      "text": "-",
+      "location": {
+        "x0": 508.3591,
+        "top": 569.1885,
+        "x1": 511.6621,
+        "bottom": 578.1885,
+        "centroid_x": 510.0106,
+        "centroid_y": 573.6885
+      }
+    },
+    {
+      "text": "November",
+      "location": {
+        "x0": 514.3711,
+        "top": 569.1885,
+        "x1": 555.2581,
+        "bottom": 578.1885,
+        "centroid_x": 534.8146,
+        "centroid_y": 573.6885
+      }
+    },
+    {
+      "text": "2022",
+      "location": {
+        "x0": 557.967,
+        "top": 569.1885,
+        "x1": 576.8311,
+        "bottom": 578.1885,
+        "centroid_x": 567.399,
+        "centroid_y": 573.6885
+      }
+    },
+    {
+      "text": "\u2022",
+      "location": {
+        "x0": 210.93,
+        "top": 578.9061,
+        "x1": 216.17,
+        "bottom": 588.9061,
+        "centroid_x": 213.55,
+        "centroid_y": 583.9061
+      }
+    },
+    {
+      "text": "Developed",
+      "location": {
+        "x0": 222.19,
+        "top": 578.9061,
+        "x1": 269.03,
+        "bottom": 588.9061,
+        "centroid_x": 245.61,
+        "centroid_y": 583.9061
+      }
+    },
+    {
+      "text": "an",
+      "location": {
+        "x0": 272.04,
+        "top": 578.9061,
+        "x1": 282.75,
+        "bottom": 588.9061,
+        "centroid_x": 277.395,
+        "centroid_y": 583.9061
+      }
+    },
+    {
+      "text": "autonomous",
+      "location": {
+        "x0": 285.76,
+        "top": 578.9061,
+        "x1": 339.8099,
+        "bottom": 588.9061,
+        "centroid_x": 312.785,
+        "centroid_y": 583.9061
+      }
+    },
+    {
+      "text": "algorithm",
+      "location": {
+        "x0": 342.8199,
+        "top": 578.9061,
+        "x1": 385.8699,
+        "bottom": 588.9061,
+        "centroid_x": 364.3449,
+        "centroid_y": 583.9061
+      }
+    },
+    {
+      "text": "(SQL",
+      "location": {
+        "x0": 388.8799,
+        "top": 578.9061,
+        "x1": 409.18,
+        "bottom": 588.9061,
+        "centroid_x": 399.03,
+        "centroid_y": 583.9061
+      }
+    },
+    {
+      "text": "&",
+      "location": {
+        "x0": 412.19,
+        "top": 578.9061,
+        "x1": 419.25,
+        "bottom": 588.9061,
+        "centroid_x": 415.72,
+        "centroid_y": 583.9061
+      }
+    },
+    {
+      "text": "Python)",
+      "location": {
+        "x0": 422.26,
+        "top": 578.9061,
+        "x1": 456.6899,
+        "bottom": 588.9061,
+        "centroid_x": 439.475,
+        "centroid_y": 583.9061
+      }
+    },
+    {
+      "text": "for",
+      "location": {
+        "x0": 459.7,
+        "top": 578.9061,
+        "x1": 472.66,
+        "bottom": 588.9061,
+        "centroid_x": 466.18,
+        "centroid_y": 583.9061
+      }
+    },
+    {
+      "text": "e-commerce",
+      "location": {
+        "x0": 475.67,
+        "top": 578.9061,
+        "x1": 531.45,
+        "bottom": 588.9061,
+        "centroid_x": 503.56,
+        "centroid_y": 583.9061
+      }
+    },
+    {
+      "text": "products",
+      "location": {
+        "x0": 534.46,
+        "top": 578.9061,
+        "x1": 573.2801,
+        "bottom": 588.9061,
+        "centroid_x": 553.8701,
+        "centroid_y": 583.9061
+      }
+    },
+    {
+      "text": "\u2022",
+      "location": {
+        "x0": 48.63,
+        "top": 579.9861,
+        "x1": 53.87,
+        "bottom": 589.9861,
+        "centroid_x": 51.25,
+        "centroid_y": 584.9861
+      }
+    },
+    {
+      "text": "AWS",
+      "location": {
+        "x0": 56.88,
+        "top": 579.9861,
+        "x1": 76.11,
+        "bottom": 589.9861,
+        "centroid_x": 66.495,
+        "centroid_y": 584.9861
+      }
+    },
+    {
+      "text": "\u2022",
+      "location": {
+        "x0": 82.13,
+        "top": 579.9861,
+        "x1": 87.37,
+        "bottom": 589.9861,
+        "centroid_x": 84.75,
+        "centroid_y": 584.9861
+      }
+    },
+    {
+      "text": "Snowflake",
+      "location": {
+        "x0": 90.38,
+        "top": 579.9861,
+        "x1": 135.85,
+        "bottom": 589.9861,
+        "centroid_x": 113.115,
+        "centroid_y": 584.9861
+      }
+    },
+    {
+      "text": "\u2022",
+      "location": {
+        "x0": 141.87,
+        "top": 579.9861,
+        "x1": 147.11,
+        "bottom": 589.9861,
+        "centroid_x": 144.49,
+        "centroid_y": 584.9861
+      }
+    },
+    {
+      "text": "GCP",
+      "location": {
+        "x0": 150.12,
+        "top": 579.9861,
+        "x1": 168.44,
+        "bottom": 589.9861,
+        "centroid_x": 159.28,
+        "centroid_y": 584.9861
+      }
+    },
+    {
+      "text": "prices",
+      "location": {
+        "x0": 222.21,
+        "top": 591.8461,
+        "x1": 248.97,
+        "bottom": 601.8461,
+        "centroid_x": 235.59,
+        "centroid_y": 596.8461
+      }
+    },
+    {
+      "text": "recommendation.",
+      "location": {
+        "x0": 251.98,
+        "top": 591.8461,
+        "x1": 331.28,
+        "bottom": 601.8461,
+        "centroid_x": 291.63,
+        "centroid_y": 596.8461
+      }
+    },
+    {
+      "text": "Switching",
+      "location": {
+        "x0": 334.29,
+        "top": 591.8461,
+        "x1": 377.09,
+        "bottom": 601.8461,
+        "centroid_x": 355.69,
+        "centroid_y": 596.8461
+      }
+    },
+    {
+      "text": "from",
+      "location": {
+        "x0": 380.1,
+        "top": 591.8461,
+        "x1": 401.36,
+        "bottom": 601.8461,
+        "centroid_x": 390.73,
+        "centroid_y": 596.8461
+      }
+    },
+    {
+      "text": "a",
+      "location": {
+        "x0": 404.37,
+        "top": 591.8461,
+        "x1": 409.62,
+        "bottom": 601.8461,
+        "centroid_x": 406.995,
+        "centroid_y": 596.8461
+      }
+    },
+    {
+      "text": "manual",
+      "location": {
+        "x0": 412.63,
+        "top": 591.8461,
+        "x1": 445.3,
+        "bottom": 601.8461,
+        "centroid_x": 428.965,
+        "centroid_y": 596.8461
+      }
+    },
+    {
+      "text": "system",
+      "location": {
+        "x0": 448.31,
+        "top": 591.8461,
+        "x1": 479.05,
+        "bottom": 601.8461,
+        "centroid_x": 463.68,
+        "centroid_y": 596.8461
+      }
+    },
+    {
+      "text": "with",
+      "location": {
+        "x0": 482.06,
+        "top": 591.8461,
+        "x1": 501.77,
+        "bottom": 601.8461,
+        "centroid_x": 491.915,
+        "centroid_y": 596.8461
+      }
+    },
+    {
+      "text": "a",
+      "location": {
+        "x0": 504.78,
+        "top": 591.8461,
+        "x1": 510.03,
+        "bottom": 601.8461,
+        "centroid_x": 507.405,
+        "centroid_y": 596.8461
+      }
+    },
+    {
+      "text": "latency",
+      "location": {
+        "x0": 513.04,
+        "top": 591.8461,
+        "x1": 545.9901,
+        "bottom": 601.8461,
+        "centroid_x": 529.515,
+        "centroid_y": 596.8461
+      }
+    },
+    {
+      "text": "of",
+      "location": {
+        "x0": 549.0001,
+        "top": 591.8461,
+        "x1": 558.0701,
+        "bottom": 601.8461,
+        "centroid_x": 553.5351,
+        "centroid_y": 596.8461
+      }
+    },
+    {
+      "text": "up",
+      "location": {
+        "x0": 561.0801,
+        "top": 591.8461,
+        "x1": 572.1101,
+        "bottom": 601.8461,
+        "centroid_x": 566.5951,
+        "centroid_y": 596.8461
+      }
+    },
+    {
+      "text": "CONCEPTS",
+      "location": {
+        "x0": 48.63,
+        "top": 592.1638,
+        "x1": 102.233,
+        "bottom": 603.1638,
+        "centroid_x": 75.4315,
+        "centroid_y": 597.6638
+      }
+    },
+    {
+      "text": "to",
+      "location": {
+        "x0": 222.21,
+        "top": 604.4962,
+        "x1": 231.54,
+        "bottom": 614.4962,
+        "centroid_x": 226.875,
+        "centroid_y": 609.4962
+      }
+    },
+    {
+      "text": "6",
+      "location": {
+        "x0": 234.55,
+        "top": 604.4962,
+        "x1": 239.79,
+        "bottom": 614.4962,
+        "centroid_x": 237.17,
+        "centroid_y": 609.4962
+      }
+    },
+    {
+      "text": "months",
+      "location": {
+        "x0": 242.8,
+        "top": 604.4962,
+        "x1": 275.4,
+        "bottom": 614.4962,
+        "centroid_x": 259.1,
+        "centroid_y": 609.4962
+      }
+    },
+    {
+      "text": "to",
+      "location": {
+        "x0": 278.41,
+        "top": 604.4962,
+        "x1": 287.74,
+        "bottom": 614.4962,
+        "centroid_x": 283.075,
+        "centroid_y": 609.4962
+      }
+    },
+    {
+      "text": "daily",
+      "location": {
+        "x0": 290.75,
+        "top": 604.4962,
+        "x1": 312.3,
+        "bottom": 614.4962,
+        "centroid_x": 301.525,
+        "centroid_y": 609.4962
+      }
+    },
+    {
+      "text": "price",
+      "location": {
+        "x0": 315.31,
+        "top": 604.4962,
+        "x1": 338.0201,
+        "bottom": 614.4962,
+        "centroid_x": 326.665,
+        "centroid_y": 609.4962
+      }
+    },
+    {
+      "text": "changes.",
+      "location": {
+        "x0": 341.0301,
+        "top": 604.4962,
+        "x1": 380.3401,
+        "bottom": 614.4962,
+        "centroid_x": 360.6851,
+        "centroid_y": 609.4962
+      }
+    },
+    {
+      "text": "\u2022",
+      "location": {
+        "x0": 48.63,
+        "top": 607.9462,
+        "x1": 53.87,
+        "bottom": 617.9462,
+        "centroid_x": 51.25,
+        "centroid_y": 612.9462
+      }
+    },
+    {
+      "text": "Machine",
+      "location": {
+        "x0": 56.88,
+        "top": 607.9462,
+        "x1": 93.39,
+        "bottom": 617.9462,
+        "centroid_x": 75.135,
+        "centroid_y": 612.9462
+      }
+    },
+    {
+      "text": "Learning",
+      "location": {
+        "x0": 96.4,
+        "top": 607.9462,
+        "x1": 134.84,
+        "bottom": 617.9462,
+        "centroid_x": 115.62,
+        "centroid_y": 612.9462
+      }
+    },
+    {
+      "text": "\u2022",
+      "location": {
+        "x0": 210.93,
+        "top": 617.0261,
+        "x1": 216.17,
+        "bottom": 627.0261,
+        "centroid_x": 213.55,
+        "centroid_y": 622.0261
+      }
+    },
+    {
+      "text": "Implemented",
+      "location": {
+        "x0": 222.19,
+        "top": 617.0261,
+        "x1": 281.43,
+        "bottom": 627.0261,
+        "centroid_x": 251.81,
+        "centroid_y": 622.0261
+      }
+    },
+    {
+      "text": "Machine",
+      "location": {
+        "x0": 284.44,
+        "top": 617.0261,
+        "x1": 320.95,
+        "bottom": 627.0261,
+        "centroid_x": 302.695,
+        "centroid_y": 622.0261
+      }
+    },
+    {
+      "text": "Learning",
+      "location": {
+        "x0": 323.96,
+        "top": 617.0261,
+        "x1": 362.4,
+        "bottom": 627.0261,
+        "centroid_x": 343.18,
+        "centroid_y": 622.0261
+      }
+    },
+    {
+      "text": "(Python)",
+      "location": {
+        "x0": 365.41,
+        "top": 617.0261,
+        "x1": 403.51,
+        "bottom": 627.0261,
+        "centroid_x": 384.46,
+        "centroid_y": 622.0261
+      }
+    },
+    {
+      "text": "models",
+      "location": {
+        "x0": 406.52,
+        "top": 617.0261,
+        "x1": 438.21,
+        "bottom": 627.0261,
+        "centroid_x": 422.365,
+        "centroid_y": 622.0261
+      }
+    },
+    {
+      "text": "to",
+      "location": {
+        "x0": 441.22,
+        "top": 617.0261,
+        "x1": 450.55,
+        "bottom": 627.0261,
+        "centroid_x": 445.885,
+        "centroid_y": 622.0261
+      }
+    },
+    {
+      "text": "evaluate",
+      "location": {
+        "x0": 453.56,
+        "top": 617.0261,
+        "x1": 492.23,
+        "bottom": 627.0261,
+        "centroid_x": 472.895,
+        "centroid_y": 622.0261
+      }
+    },
+    {
+      "text": "the",
+      "location": {
+        "x0": 495.2401,
+        "top": 617.0261,
+        "x1": 510.11,
+        "bottom": 627.0261,
+        "centroid_x": 502.675,
+        "centroid_y": 622.0261
+      }
+    },
+    {
+      "text": "annual",
+      "location": {
+        "x0": 513.1201,
+        "top": 617.0261,
+        "x1": 542.9501,
+        "bottom": 627.0261,
+        "centroid_x": 528.0351,
+        "centroid_y": 622.0261
+      }
+    },
+    {
+      "text": "change",
+      "location": {
+        "x0": 545.9601,
+        "top": 617.0261,
+        "x1": 577.5502,
+        "bottom": 627.0261,
+        "centroid_x": 561.7552,
+        "centroid_y": 622.0261
+      }
+    },
+    {
+      "text": "\u2022",
+      "location": {
+        "x0": 48.63,
+        "top": 620.9462,
+        "x1": 53.87,
+        "bottom": 630.9462,
+        "centroid_x": 51.25,
+        "centroid_y": 625.9462
+      }
+    },
+    {
+      "text": "Computer",
+      "location": {
+        "x0": 56.88,
+        "top": 620.9462,
+        "x1": 100.86,
+        "bottom": 630.9462,
+        "centroid_x": 78.87,
+        "centroid_y": 625.9462
+      }
+    },
+    {
+      "text": "Vision",
+      "location": {
+        "x0": 103.87,
+        "top": 620.9462,
+        "x1": 130.32,
+        "bottom": 630.9462,
+        "centroid_x": 117.095,
+        "centroid_y": 625.9462
+      }
+    },
+    {
+      "text": "in",
+      "location": {
+        "x0": 222.21,
+        "top": 629.9661,
+        "x1": 230.52,
+        "bottom": 639.9661,
+        "centroid_x": 226.365,
+        "centroid_y": 634.9661
+      }
+    },
+    {
+      "text": "the",
+      "location": {
+        "x0": 233.53,
+        "top": 629.9661,
+        "x1": 248.4,
+        "bottom": 639.9661,
+        "centroid_x": 240.965,
+        "centroid_y": 634.9661
+      }
+    },
+    {
+      "text": "product",
+      "location": {
+        "x0": 251.41,
+        "top": 629.9661,
+        "x1": 286.18,
+        "bottom": 639.9661,
+        "centroid_x": 268.795,
+        "centroid_y": 634.9661
+      }
+    },
+    {
+      "text": "assortment,",
+      "location": {
+        "x0": 289.19,
+        "top": 629.9661,
+        "x1": 342.6,
+        "bottom": 639.9661,
+        "centroid_x": 315.895,
+        "centroid_y": 634.9661
+      }
+    },
+    {
+      "text": "increasing",
+      "location": {
+        "x0": 345.61,
+        "top": 629.9661,
+        "x1": 390.84,
+        "bottom": 639.9661,
+        "centroid_x": 368.225,
+        "centroid_y": 634.9661
+      }
+    },
+    {
+      "text": "the",
+      "location": {
+        "x0": 393.85,
+        "top": 629.9661,
+        "x1": 408.72,
+        "bottom": 639.9661,
+        "centroid_x": 401.285,
+        "centroid_y": 634.9661
+      }
+    },
+    {
+      "text": "range",
+      "location": {
+        "x0": 411.73,
+        "top": 629.9661,
+        "x1": 436.8,
+        "bottom": 639.9661,
+        "centroid_x": 424.265,
+        "centroid_y": 634.9661
+      }
+    },
+    {
+      "text": "of",
+      "location": {
+        "x0": 439.8101,
+        "top": 629.9661,
+        "x1": 448.8801,
+        "bottom": 639.9661,
+        "centroid_x": 444.3451,
+        "centroid_y": 634.9661
+      }
+    },
+    {
+      "text": "products",
+      "location": {
+        "x0": 451.8901,
+        "top": 629.9661,
+        "x1": 490.7101,
+        "bottom": 639.9661,
+        "centroid_x": 471.3001,
+        "centroid_y": 634.9661
+      }
+    },
+    {
+      "text": "considered",
+      "location": {
+        "x0": 493.7201,
+        "top": 629.9661,
+        "x1": 542.3301,
+        "bottom": 639.9661,
+        "centroid_x": 518.0251,
+        "centroid_y": 634.9661
+      }
+    },
+    {
+      "text": "by",
+      "location": {
+        "x0": 545.3401,
+        "top": 629.9661,
+        "x1": 555.8401,
+        "bottom": 639.9661,
+        "centroid_x": 550.5901,
+        "centroid_y": 634.9661
+      }
+    },
+    {
+      "text": "200%.",
+      "location": {
+        "x0": 558.8502,
+        "top": 629.9661,
+        "x1": 584.2401,
+        "bottom": 639.9661,
+        "centroid_x": 571.5451,
+        "centroid_y": 634.9661
+      }
+    },
+    {
+      "text": "\u2022",
+      "location": {
+        "x0": 48.63,
+        "top": 633.9462,
+        "x1": 53.87,
+        "bottom": 643.9462,
+        "centroid_x": 51.25,
+        "centroid_y": 638.9462
+      }
+    },
+    {
+      "text": "Natural",
+      "location": {
+        "x0": 56.88,
+        "top": 633.9462,
+        "x1": 90.02,
+        "bottom": 643.9462,
+        "centroid_x": 73.45,
+        "centroid_y": 638.9462
+      }
+    },
+    {
+      "text": "Language",
+      "location": {
+        "x0": 93.03,
+        "top": 633.9462,
+        "x1": 135.0,
+        "bottom": 643.9462,
+        "centroid_x": 114.015,
+        "centroid_y": 638.9462
+      }
+    },
+    {
+      "text": "Processing",
+      "location": {
+        "x0": 138.01,
+        "top": 633.9462,
+        "x1": 184.68,
+        "bottom": 643.9462,
+        "centroid_x": 161.345,
+        "centroid_y": 638.9462
+      }
+    },
+    {
+      "text": "\u2022",
+      "location": {
+        "x0": 210.93,
+        "top": 642.5361,
+        "x1": 216.17,
+        "bottom": 652.5361,
+        "centroid_x": 213.55,
+        "centroid_y": 647.5361
+      }
+    },
+    {
+      "text": "Optimized",
+      "location": {
+        "x0": 219.18,
+        "top": 642.5361,
+        "x1": 265.22,
+        "bottom": 652.5361,
+        "centroid_x": 242.2,
+        "centroid_y": 647.5361
+      }
+    },
+    {
+      "text": "a",
+      "location": {
+        "x0": 275.03,
+        "top": 642.5361,
+        "x1": 280.28,
+        "bottom": 652.5361,
+        "centroid_x": 277.655,
+        "centroid_y": 647.5361
+      }
+    },
+    {
+      "text": "code",
+      "location": {
+        "x0": 289.83,
+        "top": 642.5361,
+        "x1": 311.17,
+        "bottom": 652.5361,
+        "centroid_x": 300.5,
+        "centroid_y": 647.5361
+      }
+    },
+    {
+      "text": "(SQL",
+      "location": {
+        "x0": 320.72,
+        "top": 642.5361,
+        "x1": 341.02,
+        "bottom": 652.5361,
+        "centroid_x": 330.87,
+        "centroid_y": 647.5361
+      }
+    },
+    {
+      "text": "&",
+      "location": {
+        "x0": 350.56,
+        "top": 642.5361,
+        "x1": 357.62,
+        "bottom": 652.5361,
+        "centroid_x": 354.09,
+        "centroid_y": 647.5361
+      }
+    },
+    {
+      "text": "Python)",
+      "location": {
+        "x0": 367.17,
+        "top": 642.5361,
+        "x1": 401.6,
+        "bottom": 652.5361,
+        "centroid_x": 384.385,
+        "centroid_y": 647.5361
+      }
+    },
+    {
+      "text": "for",
+      "location": {
+        "x0": 409.65,
+        "top": 642.5361,
+        "x1": 422.61,
+        "bottom": 652.5361,
+        "centroid_x": 416.13,
+        "centroid_y": 647.5361
+      }
+    },
+    {
+      "text": "competitors'",
+      "location": {
+        "x0": 432.14,
+        "top": 642.5361,
+        "x1": 487.46,
+        "bottom": 652.5361,
+        "centroid_x": 459.8,
+        "centroid_y": 647.5361
+      }
+    },
+    {
+      "text": "promotions",
+      "location": {
+        "x0": 496.99,
+        "top": 642.5361,
+        "x1": 547.18,
+        "bottom": 652.5361,
+        "centroid_x": 522.085,
+        "centroid_y": 647.5361
+      }
+    },
+    {
+      "text": "price",
+      "location": {
+        "x0": 556.7,
+        "top": 642.5361,
+        "x1": 579.41,
+        "bottom": 652.5361,
+        "centroid_x": 568.055,
+        "centroid_y": 647.5361
+      }
+    },
+    {
+      "text": "\u2022",
+      "location": {
+        "x0": 48.63,
+        "top": 646.9462,
+        "x1": 53.87,
+        "bottom": 656.9462,
+        "centroid_x": 51.25,
+        "centroid_y": 651.9462
+      }
+    },
+    {
+      "text": "IoT",
+      "location": {
+        "x0": 56.88,
+        "top": 646.9462,
+        "x1": 70.84,
+        "bottom": 656.9462,
+        "centroid_x": 63.86,
+        "centroid_y": 651.9462
+      }
+    },
+    {
+      "text": "\u2022",
+      "location": {
+        "x0": 76.86,
+        "top": 646.9462,
+        "x1": 82.1,
+        "bottom": 656.9462,
+        "centroid_x": 79.48,
+        "centroid_y": 651.9462
+      }
+    },
+    {
+      "text": "Forecasting",
+      "location": {
+        "x0": 85.11,
+        "top": 646.9462,
+        "x1": 136.61,
+        "bottom": 656.9462,
+        "centroid_x": 110.86,
+        "centroid_y": 651.9462
+      }
+    },
+    {
+      "text": "recognition,",
+      "location": {
+        "x0": 219.43,
+        "top": 655.4761,
+        "x1": 273.73,
+        "bottom": 665.4761,
+        "centroid_x": 246.58,
+        "centroid_y": 660.4761
+      }
+    },
+    {
+      "text": "making",
+      "location": {
+        "x0": 284.28,
+        "top": 655.4761,
+        "x1": 316.2,
+        "bottom": 665.4761,
+        "centroid_x": 300.24,
+        "centroid_y": 660.4761
+      }
+    },
+    {
+      "text": "it",
+      "location": {
+        "x0": 326.77,
+        "top": 655.4761,
+        "x1": 333.58,
+        "bottom": 665.4761,
+        "centroid_x": 330.175,
+        "centroid_y": 660.4761
+      }
+    },
+    {
+      "text": "12",
+      "location": {
+        "x0": 344.14,
+        "top": 655.4761,
+        "x1": 354.62,
+        "bottom": 665.4761,
+        "centroid_x": 349.38,
+        "centroid_y": 660.4761
+      }
+    },
+    {
+      "text": "times",
+      "location": {
+        "x0": 365.19,
+        "top": 655.4761,
+        "x1": 389.8,
+        "bottom": 665.4761,
+        "centroid_x": 377.495,
+        "centroid_y": 660.4761
+      }
+    },
+    {
+      "text": "faster",
+      "location": {
+        "x0": 398.87,
+        "top": 655.4761,
+        "x1": 425.17,
+        "bottom": 665.4761,
+        "centroid_x": 412.02,
+        "centroid_y": 660.4761
+      }
+    },
+    {
+      "text": "and",
+      "location": {
+        "x0": 435.71,
+        "top": 655.4761,
+        "x1": 451.99,
+        "bottom": 665.4761,
+        "centroid_x": 443.85,
+        "centroid_y": 660.4761
+      }
+    },
+    {
+      "text": "increasing",
+      "location": {
+        "x0": 462.56,
+        "top": 655.4761,
+        "x1": 507.79,
+        "bottom": 665.4761,
+        "centroid_x": 485.175,
+        "centroid_y": 660.4761
+      }
+    },
+    {
+      "text": "its",
+      "location": {
+        "x0": 518.35,
+        "top": 655.4761,
+        "x1": 529.21,
+        "bottom": 665.4761,
+        "centroid_x": 523.78,
+        "centroid_y": 660.4761
+      }
+    },
+    {
+      "text": "accuracy",
+      "location": {
+        "x0": 539.77,
+        "top": 655.4761,
+        "x1": 579.4001,
+        "bottom": 665.4761,
+        "centroid_x": 559.5851,
+        "centroid_y": 660.4761
+      }
+    },
+    {
+      "text": "\u2022",
+      "location": {
+        "x0": 48.63,
+        "top": 659.9462,
+        "x1": 53.87,
+        "bottom": 669.9462,
+        "centroid_x": 51.25,
+        "centroid_y": 664.9462
+      }
+    },
+    {
+      "text": "Object-Oriented",
+      "location": {
+        "x0": 56.88,
+        "top": 659.9462,
+        "x1": 130.26,
+        "bottom": 669.9462,
+        "centroid_x": 93.57,
+        "centroid_y": 664.9462
+      }
+    },
+    {
+      "text": "Programming",
+      "location": {
+        "x0": 133.27,
+        "top": 659.9462,
+        "x1": 192.2,
+        "bottom": 669.9462,
+        "centroid_x": 162.735,
+        "centroid_y": 664.9462
+      }
+    },
+    {
+      "text": "from",
+      "location": {
+        "x0": 219.43,
+        "top": 668.1262,
+        "x1": 240.69,
+        "bottom": 678.1262,
+        "centroid_x": 230.06,
+        "centroid_y": 673.1262
+      }
+    },
+    {
+      "text": "50%",
+      "location": {
+        "x0": 243.7,
+        "top": 668.1262,
+        "x1": 260.18,
+        "bottom": 678.1262,
+        "centroid_x": 251.94,
+        "centroid_y": 673.1262
+      }
+    },
+    {
+      "text": "to",
+      "location": {
+        "x0": 263.19,
+        "top": 668.1262,
+        "x1": 272.52,
+        "bottom": 678.1262,
+        "centroid_x": 267.855,
+        "centroid_y": 673.1262
+      }
+    },
+    {
+      "text": "80%.",
+      "location": {
+        "x0": 275.53,
+        "top": 668.1262,
+        "x1": 295.68,
+        "bottom": 678.1262,
+        "centroid_x": 285.605,
+        "centroid_y": 673.1262
+      }
+    },
+    {
+      "text": "\u2022",
+      "location": {
+        "x0": 48.63,
+        "top": 672.9462,
+        "x1": 53.87,
+        "bottom": 682.9462,
+        "centroid_x": 51.25,
+        "centroid_y": 677.9462
+      }
+    },
+    {
+      "text": "Parallel",
+      "location": {
+        "x0": 56.88,
+        "top": 672.9462,
+        "x1": 91.15,
+        "bottom": 682.9462,
+        "centroid_x": 74.015,
+        "centroid_y": 677.9462
+      }
+    },
+    {
+      "text": "Computing",
+      "location": {
+        "x0": 94.16,
+        "top": 672.9462,
+        "x1": 142.13,
+        "bottom": 682.9462,
+        "centroid_x": 118.145,
+        "centroid_y": 677.9462
+      }
+    },
+    {
+      "text": "LAMNGEN",
+      "location": {
+        "x0": 214.71,
+        "top": 676.7088,
+        "x1": 277.825,
+        "bottom": 690.7188,
+        "centroid_x": 246.2675,
+        "centroid_y": 683.7138
+      }
+    },
+    {
+      "text": "Ltda.",
+      "location": {
+        "x0": 282.0421,
+        "top": 676.7088,
+        "x1": 316.0864,
+        "bottom": 690.7188,
+        "centroid_x": 299.0642,
+        "centroid_y": 683.7138
+      }
+    },
+    {
+      "text": "Valpara\u00edso,",
+      "location": {
+        "x0": 516.65,
+        "top": 687.0409,
+        "x1": 556.626,
+        "bottom": 695.0409,
+        "centroid_x": 536.638,
+        "centroid_y": 691.0409
+      }
+    },
+    {
+      "text": "Chile",
+      "location": {
+        "x0": 559.0341,
+        "top": 687.0409,
+        "x1": 577.186,
+        "bottom": 695.0409,
+        "centroid_x": 568.11,
+        "centroid_y": 691.0409
+      }
+    },
+    {
+      "text": "\u2022",
+      "location": {
+        "x0": 48.63,
+        "top": 685.9462,
+        "x1": 53.87,
+        "bottom": 695.9462,
+        "centroid_x": 51.25,
+        "centroid_y": 690.9462
+      }
+    },
+    {
+      "text": "GPU-Accelerated",
+      "location": {
+        "x0": 56.88,
+        "top": 685.9462,
+        "x1": 133.14,
+        "bottom": 695.9462,
+        "centroid_x": 95.01,
+        "centroid_y": 690.9462
+      }
+    },
+    {
+      "text": "Computing",
+      "location": {
+        "x0": 136.15,
+        "top": 685.9462,
+        "x1": 184.12,
+        "bottom": 695.9462,
+        "centroid_x": 160.135,
+        "centroid_y": 690.9462
+      }
+    },
+    {
+      "text": "Artificial",
+      "location": {
+        "x0": 214.71,
+        "top": 694.4812,
+        "x1": 267.5306,
+        "bottom": 707.4912,
+        "centroid_x": 241.1203,
+        "centroid_y": 700.9862
+      }
+    },
+    {
+      "text": "Intelligence",
+      "location": {
+        "x0": 271.4466,
+        "top": 694.4812,
+        "x1": 342.7544,
+        "bottom": 707.4912,
+        "centroid_x": 307.1005,
+        "centroid_y": 700.9862
+      }
+    },
+    {
+      "text": "Specialist",
+      "location": {
+        "x0": 346.6704,
+        "top": 694.4812,
+        "x1": 404.3307,
+        "bottom": 707.4912,
+        "centroid_x": 375.5006,
+        "centroid_y": 700.9862
+      }
+    },
+    {
+      "text": "\u2022",
+      "location": {
+        "x0": 48.63,
+        "top": 698.9462,
+        "x1": 53.87,
+        "bottom": 708.9462,
+        "centroid_x": 51.25,
+        "centroid_y": 703.9462
+      }
+    },
+    {
+      "text": "Generative",
+      "location": {
+        "x0": 56.88,
+        "top": 698.9462,
+        "x1": 106.3,
+        "bottom": 708.9462,
+        "centroid_x": 81.59,
+        "centroid_y": 703.9462
+      }
+    },
+    {
+      "text": "AI",
+      "location": {
+        "x0": 109.31,
+        "top": 698.9462,
+        "x1": 117.99,
+        "bottom": 708.9462,
+        "centroid_x": 113.65,
+        "centroid_y": 703.9462
+      }
+    },
+    {
+      "text": "January",
+      "location": {
+        "x0": 452.22,
+        "top": 701.3785,
+        "x1": 484.08,
+        "bottom": 710.3785,
+        "centroid_x": 468.15,
+        "centroid_y": 705.8785
+      }
+    },
+    {
+      "text": "2020",
+      "location": {
+        "x0": 486.789,
+        "top": 701.3785,
+        "x1": 505.653,
+        "bottom": 710.3785,
+        "centroid_x": 496.221,
+        "centroid_y": 705.8785
+      }
+    },
+    {
+      "text": "-",
+      "location": {
+        "x0": 508.3621,
+        "top": 701.3785,
+        "x1": 511.6651,
+        "bottom": 710.3785,
+        "centroid_x": 510.0136,
+        "centroid_y": 705.8785
+      }
+    },
+    {
+      "text": "November",
+      "location": {
+        "x0": 514.3741,
+        "top": 701.3785,
+        "x1": 555.261,
+        "bottom": 710.3785,
+        "centroid_x": 534.8176,
+        "centroid_y": 705.8785
+      }
+    },
+    {
+      "text": "2021",
+      "location": {
+        "x0": 557.97,
+        "top": 701.3785,
+        "x1": 576.834,
+        "bottom": 710.3785,
+        "centroid_x": 567.402,
+        "centroid_y": 705.8785
+      }
+    },
+    {
+      "text": "\u2022",
+      "location": {
+        "x0": 210.93,
+        "top": 713.6561,
+        "x1": 216.17,
+        "bottom": 723.6561,
+        "centroid_x": 213.55,
+        "centroid_y": 718.6561
+      }
+    },
+    {
+      "text": "Developed",
+      "location": {
+        "x0": 219.18,
+        "top": 713.6561,
+        "x1": 266.02,
+        "bottom": 723.6561,
+        "centroid_x": 242.6,
+        "centroid_y": 718.6561
+      }
+    },
+    {
+      "text": "an",
+      "location": {
+        "x0": 269.03,
+        "top": 713.6561,
+        "x1": 279.74,
+        "bottom": 723.6561,
+        "centroid_x": 274.385,
+        "centroid_y": 718.6561
+      }
+    },
+    {
+      "text": "AI",
+      "location": {
+        "x0": 282.75,
+        "top": 713.6561,
+        "x1": 291.43,
+        "bottom": 723.6561,
+        "centroid_x": 287.09,
+        "centroid_y": 718.6561
+      }
+    },
+    {
+      "text": "algorithm",
+      "location": {
+        "x0": 294.44,
+        "top": 713.6561,
+        "x1": 337.49,
+        "bottom": 723.6561,
+        "centroid_x": 315.965,
+        "centroid_y": 718.6561
+      }
+    },
+    {
+      "text": "(Python)",
+      "location": {
+        "x0": 340.5,
+        "top": 713.6561,
+        "x1": 378.6,
+        "bottom": 723.6561,
+        "centroid_x": 359.55,
+        "centroid_y": 718.6561
+      }
+    },
+    {
+      "text": "in",
+      "location": {
+        "x0": 381.61,
+        "top": 713.6561,
+        "x1": 389.92,
+        "bottom": 723.6561,
+        "centroid_x": 385.765,
+        "centroid_y": 718.6561
+      }
+    },
+    {
+      "text": "IoT",
+      "location": {
+        "x0": 392.93,
+        "top": 713.6561,
+        "x1": 406.89,
+        "bottom": 723.6561,
+        "centroid_x": 399.91,
+        "centroid_y": 718.6561
+      }
+    },
+    {
+      "text": "devices",
+      "location": {
+        "x0": 409.9,
+        "top": 713.6561,
+        "x1": 443.12,
+        "bottom": 723.6561,
+        "centroid_x": 426.51,
+        "centroid_y": 718.6561
+      }
+    },
+    {
+      "text": "to",
+      "location": {
+        "x0": 446.13,
+        "top": 713.6561,
+        "x1": 455.46,
+        "bottom": 723.6561,
+        "centroid_x": 450.795,
+        "centroid_y": 718.6561
+      }
+    },
+    {
+      "text": "replace",
+      "location": {
+        "x0": 458.47,
+        "top": 713.6561,
+        "x1": 491.9801,
+        "bottom": 723.6561,
+        "centroid_x": 475.2251,
+        "centroid_y": 718.6561
+      }
+    },
+    {
+      "text": "the",
+      "location": {
+        "x0": 494.9901,
+        "top": 713.6561,
+        "x1": 509.8601,
+        "bottom": 723.6561,
+        "centroid_x": 502.4251,
+        "centroid_y": 718.6561
+      }
+    },
+    {
+      "text": "fault",
+      "location": {
+        "x0": 512.8701,
+        "top": 713.6561,
+        "x1": 534.1902,
+        "bottom": 723.6561,
+        "centroid_x": 523.5302,
+        "centroid_y": 718.6561
+      }
+    },
+    {
+      "text": "LANGUAGES",
+      "location": {
+        "x0": 92.97,
+        "top": 717.7136,
+        "x1": 160.0579,
+        "bottom": 729.7236,
+        "centroid_x": 126.5139,
+        "centroid_y": 723.7186
+      }
+    },
+    {
+      "text": "detection",
+      "location": {
+        "x0": 219.43,
+        "top": 724.6561,
+        "x1": 262.45,
+        "bottom": 734.6561,
+        "centroid_x": 240.94,
+        "centroid_y": 729.6561
+      }
+    },
+    {
+      "text": "system",
+      "location": {
+        "x0": 265.46,
+        "top": 724.6561,
+        "x1": 296.2,
+        "bottom": 734.6561,
+        "centroid_x": 280.83,
+        "centroid_y": 729.6561
+      }
+    },
+    {
+      "text": "of",
+      "location": {
+        "x0": 299.21,
+        "top": 724.6561,
+        "x1": 308.28,
+        "bottom": 734.6561,
+        "centroid_x": 303.745,
+        "centroid_y": 729.6561
+      }
+    },
+    {
+      "text": "a",
+      "location": {
+        "x0": 311.29,
+        "top": 724.6561,
+        "x1": 316.54,
+        "bottom": 734.6561,
+        "centroid_x": 313.915,
+        "centroid_y": 729.6561
+      }
+    },
+    {
+      "text": "Torre",
+      "location": {
+        "x0": 319.55,
+        "top": 724.6561,
+        "x1": 343.9601,
+        "bottom": 734.6561,
+        "centroid_x": 331.755,
+        "centroid_y": 729.6561
+      }
+    },
+    {
+      "text": "S.A.",
+      "location": {
+        "x0": 367.8,
+        "top": 724.6561,
+        "x1": 385.85,
+        "bottom": 734.6561,
+        "centroid_x": 376.825,
+        "centroid_y": 729.6561
+      }
+    },
+    {
+      "text": "production",
+      "location": {
+        "x0": 388.86,
+        "top": 724.6561,
+        "x1": 437.31,
+        "bottom": 734.6561,
+        "centroid_x": 413.085,
+        "centroid_y": 729.6561
+      }
+    },
+    {
+      "text": "line.",
+      "location": {
+        "x0": 440.32,
+        "top": 724.6561,
+        "x1": 460.7001,
+        "bottom": 734.6561,
+        "centroid_x": 450.5101,
+        "centroid_y": 729.6561
+      }
+    },
+    {
+      "text": "Switching",
+      "location": {
+        "x0": 463.7101,
+        "top": 724.6561,
+        "x1": 506.5101,
+        "bottom": 734.6561,
+        "centroid_x": 485.1101,
+        "centroid_y": 729.6561
+      }
+    },
+    {
+      "text": "from",
+      "location": {
+        "x0": 509.5201,
+        "top": 724.6561,
+        "x1": 530.7801,
+        "bottom": 734.6561,
+        "centroid_x": 520.1501,
+        "centroid_y": 729.6561
+      }
+    },
+    {
+      "text": "faulty",
+      "location": {
+        "x0": 533.7901,
+        "top": 724.6561,
+        "x1": 560.0402,
+        "bottom": 734.6561,
+        "centroid_x": 546.9151,
+        "centroid_y": 729.6561
+      }
+    },
+    {
+      "text": "manual",
+      "location": {
+        "x0": 219.43,
+        "top": 735.6661,
+        "x1": 252.1,
+        "bottom": 745.6661,
+        "centroid_x": 235.765,
+        "centroid_y": 740.6661
+      }
+    },
+    {
+      "text": "registration",
+      "location": {
+        "x0": 255.11,
+        "top": 735.6661,
+        "x1": 307.11,
+        "bottom": 745.6661,
+        "centroid_x": 281.11,
+        "centroid_y": 740.6661
+      }
+    },
+    {
+      "text": "with",
+      "location": {
+        "x0": 310.12,
+        "top": 735.6661,
+        "x1": 329.83,
+        "bottom": 745.6661,
+        "centroid_x": 319.975,
+        "centroid_y": 740.6661
+      }
+    },
+    {
+      "text": "10-minute",
+      "location": {
+        "x0": 332.84,
+        "top": 735.6661,
+        "x1": 378.47,
+        "bottom": 745.6661,
+        "centroid_x": 355.655,
+        "centroid_y": 740.6661
+      }
+    },
+    {
+      "text": "delays",
+      "location": {
+        "x0": 381.48,
+        "top": 735.6661,
+        "x1": 409.68,
+        "bottom": 745.6661,
+        "centroid_x": 395.58,
+        "centroid_y": 740.6661
+      }
+    },
+    {
+      "text": "to",
+      "location": {
+        "x0": 412.69,
+        "top": 735.6661,
+        "x1": 422.02,
+        "bottom": 745.6661,
+        "centroid_x": 417.355,
+        "centroid_y": 740.6661
+      }
+    },
+    {
+      "text": "an",
+      "location": {
+        "x0": 425.03,
+        "top": 735.6661,
+        "x1": 435.74,
+        "bottom": 745.6661,
+        "centroid_x": 430.385,
+        "centroid_y": 740.6661
+      }
+    },
+    {
+      "text": "automated",
+      "location": {
+        "x0": 438.75,
+        "top": 735.6661,
+        "x1": 487.32,
+        "bottom": 745.6661,
+        "centroid_x": 463.035,
+        "centroid_y": 740.6661
+      }
+    },
+    {
+      "text": "method",
+      "location": {
+        "x0": 490.33,
+        "top": 735.6661,
+        "x1": 524.44,
+        "bottom": 745.6661,
+        "centroid_x": 507.385,
+        "centroid_y": 740.6661
+      }
+    },
+    {
+      "text": "of",
+      "location": {
+        "x0": 527.45,
+        "top": 735.6661,
+        "x1": 536.52,
+        "bottom": 745.6661,
+        "centroid_x": 531.985,
+        "centroid_y": 740.6661
+      }
+    },
+    {
+      "text": "vision",
+      "location": {
+        "x0": 539.53,
+        "top": 735.6661,
+        "x1": 565.01,
+        "bottom": 745.6661,
+        "centroid_x": 552.27,
+        "centroid_y": 740.6661
+      }
+    },
+    {
+      "text": "Spanish",
+      "location": {
+        "x0": 48.63,
+        "top": 737.7261,
+        "x1": 84.02,
+        "bottom": 747.7261,
+        "centroid_x": 66.325,
+        "centroid_y": 742.7261
+      }
+    },
+    {
+      "text": "Native",
+      "location": {
+        "x0": 97.52,
+        "top": 737.7261,
+        "x1": 126.31,
+        "bottom": 747.7261,
+        "centroid_x": 111.915,
+        "centroid_y": 742.7261
+      }
+    },
+    {
+      "text": "Speaker",
+      "location": {
+        "x0": 129.32,
+        "top": 737.7261,
+        "x1": 164.78,
+        "bottom": 747.7261,
+        "centroid_x": 147.05,
+        "centroid_y": 742.7261
+      }
+    },
+    {
+      "text": "algorithms",
+      "location": {
+        "x0": 219.43,
+        "top": 746.6661,
+        "x1": 266.53,
+        "bottom": 756.6661,
+        "centroid_x": 242.98,
+        "centroid_y": 751.6661
+      }
+    },
+    {
+      "text": "connected",
+      "location": {
+        "x0": 269.54,
+        "top": 746.6661,
+        "x1": 316.16,
+        "bottom": 756.6661,
+        "centroid_x": 292.85,
+        "centroid_y": 751.6661
+      }
+    },
+    {
+      "text": "to",
+      "location": {
+        "x0": 319.17,
+        "top": 746.6661,
+        "x1": 328.5,
+        "bottom": 756.6661,
+        "centroid_x": 323.835,
+        "centroid_y": 751.6661
+      }
+    },
+    {
+      "text": "a",
+      "location": {
+        "x0": 331.51,
+        "top": 746.6661,
+        "x1": 336.76,
+        "bottom": 756.6661,
+        "centroid_x": 334.135,
+        "centroid_y": 751.6661
+      }
+    },
+    {
+      "text": "unified",
+      "location": {
+        "x0": 339.7701,
+        "top": 746.6661,
+        "x1": 371.1101,
+        "bottom": 756.6661,
+        "centroid_x": 355.4401,
+        "centroid_y": 751.6661
+      }
+    },
+    {
+      "text": "database",
+      "location": {
+        "x0": 374.1201,
+        "top": 746.6661,
+        "x1": 414.4701,
+        "bottom": 756.6661,
+        "centroid_x": 394.2951,
+        "centroid_y": 751.6661
+      }
+    },
+    {
+      "text": "with",
+      "location": {
+        "x0": 417.4801,
+        "top": 746.6661,
+        "x1": 437.1901,
+        "bottom": 756.6661,
+        "centroid_x": 427.3351,
+        "centroid_y": 751.6661
+      }
+    },
+    {
+      "text": "real-time",
+      "location": {
+        "x0": 440.2001,
+        "top": 746.6661,
+        "x1": 481.9702,
+        "bottom": 756.6661,
+        "centroid_x": 461.0851,
+        "centroid_y": 751.6661
+      }
+    },
+    {
+      "text": "data",
+      "location": {
+        "x0": 484.9802,
+        "top": 746.6661,
+        "x1": 505.0102,
+        "bottom": 756.6661,
+        "centroid_x": 494.9952,
+        "centroid_y": 751.6661
+      }
+    },
+    {
+      "text": "availability",
+      "location": {
+        "x0": 508.0202,
+        "top": 746.6661,
+        "x1": 557.5802,
+        "bottom": 756.6661,
+        "centroid_x": 532.8002,
+        "centroid_y": 751.6661
+      }
+    },
+    {
+      "text": "English",
+      "location": {
+        "x0": 50.13,
+        "top": 750.8262,
+        "x1": 82.91,
+        "bottom": 760.8262,
+        "centroid_x": 66.52,
+        "centroid_y": 755.8262
+      }
+    },
+    {
+      "text": "Level",
+      "location": {
+        "x0": 98.05,
+        "top": 750.8262,
+        "x1": 121.86,
+        "bottom": 760.8262,
+        "centroid_x": 109.955,
+        "centroid_y": 755.8262
+      }
+    },
+    {
+      "text": "CEFR",
+      "location": {
+        "x0": 124.87,
+        "top": 750.8262,
+        "x1": 147.28,
+        "bottom": 760.8262,
+        "centroid_x": 136.075,
+        "centroid_y": 755.8262
+      }
+    },
+    {
+      "text": "C1",
+      "location": {
+        "x0": 150.29,
+        "top": 750.8262,
+        "x1": 161.51,
+        "bottom": 760.8262,
+        "centroid_x": 155.9,
+        "centroid_y": 755.8262
+      }
+    },
+    {
+      "text": "with",
+      "location": {
+        "x0": 219.43,
+        "top": 757.6761,
+        "x1": 239.14,
+        "bottom": 767.6761,
+        "centroid_x": 229.285,
+        "centroid_y": 762.6761
+      }
+    },
+    {
+      "text": "a",
+      "location": {
+        "x0": 242.15,
+        "top": 757.6761,
+        "x1": 247.4,
+        "bottom": 767.6761,
+        "centroid_x": 244.775,
+        "centroid_y": 762.6761
+      }
+    },
+    {
+      "text": "maximum",
+      "location": {
+        "x0": 250.41,
+        "top": 757.6761,
+        "x1": 293.88,
+        "bottom": 767.6761,
+        "centroid_x": 272.145,
+        "centroid_y": 762.6761
+      }
+    },
+    {
+      "text": "delay",
+      "location": {
+        "x0": 296.89,
+        "top": 757.6761,
+        "x1": 321.04,
+        "bottom": 767.6761,
+        "centroid_x": 308.965,
+        "centroid_y": 762.6761
+      }
+    },
+    {
+      "text": "of",
+      "location": {
+        "x0": 324.05,
+        "top": 757.6761,
+        "x1": 333.12,
+        "bottom": 767.6761,
+        "centroid_x": 328.585,
+        "centroid_y": 762.6761
+      }
+    },
+    {
+      "text": "1",
+      "location": {
+        "x0": 336.13,
+        "top": 757.6761,
+        "x1": 341.37,
+        "bottom": 767.6761,
+        "centroid_x": 338.75,
+        "centroid_y": 762.6761
+      }
+    },
+    {
+      "text": "second",
+      "location": {
+        "x0": 344.38,
+        "top": 757.6761,
+        "x1": 375.23,
+        "bottom": 767.6761,
+        "centroid_x": 359.805,
+        "centroid_y": 762.6761
+      }
+    },
+    {
+      "text": "and",
+      "location": {
+        "x0": 378.2401,
+        "top": 757.6761,
+        "x1": 394.5201,
+        "bottom": 767.6761,
+        "centroid_x": 386.3801,
+        "centroid_y": 762.6761
+      }
+    },
+    {
+      "text": "95%",
+      "location": {
+        "x0": 397.5301,
+        "top": 757.6761,
+        "x1": 414.01,
+        "bottom": 767.6761,
+        "centroid_x": 405.7701,
+        "centroid_y": 762.6761
+      }
+    },
+    {
+      "text": "accuracy.",
+      "location": {
+        "x0": 417.0201,
+        "top": 757.6761,
+        "x1": 460.3201,
+        "bottom": 767.6761,
+        "centroid_x": 438.6701,
+        "centroid_y": 762.6761
+      }
+    }
+  ]
+}
