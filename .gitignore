@@ -1,26 +1,20 @@
-# Archivos temporales de iteración
-comparison_cycle_*.png
-iteration_*.txt
-
-# Archivos generados (ahora en ubicaciones específicas)
-outputs/Nicolas_Fredes_CV.pdf
-outputs/comparison_*.png
-
-# Archivos de análisis (ahora en analysis/ y archive/)
-analysis/gap_analysis_*.md
-archive/iteration_history.json
-archive/iteration.log
-archive/detailed_analysis.txt
-
-# Configuración temporal (ahora en config/)
-config/generation_config.json
-
 # Python
 __pycache__/
 *.py[cod]
 *$py.class
-.Python
 *.so
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
 
 # IDEs
 .vscode/
@@ -28,7 +22,34 @@ __pycache__/
 *.swp
 *.swo
 *~
+.DS_Store
 
 # OS
-.DS_Store
 Thumbs.db
+.directory
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+.hypothesis/
+
+# Outputs (keep directory structure, ignore generated files)
+outputs/*.pdf
+outputs/*.png
+outputs/*.json
+outputs/main_backup_*.py
+!outputs/.gitkeep
+
+# Temporary analysis files
+tools/output_*.json
+tools/analysis_*.txt
+
+# Logs
+*.log
+*.log.*
+
+# Data extraction (temporary)
+data/*_extracted.json
+data/*_analysis.json
