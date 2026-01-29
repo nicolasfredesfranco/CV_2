@@ -5,11 +5,7 @@
     "y": 83.94,
     "font": "TrebuchetMS-Bold",
     "size": 24.01,
-    "color": [
-      0,
-      0,
-      0
-    ],
+    "color": 0,
     "bold": true,
     "italic": false
   },
@@ -19,11 +15,7 @@
     "y": 89.24000000000001,
     "font": "TrebuchetMS-Bold",
     "size": 10.0,
-    "color": [
-      0,
-      0,
-      0
-    ],
+    "color": 0,
     "bold": true,
     "italic": false
   },
@@ -53,11 +45,7 @@
     "y": 113.94,
     "font": "TrebuchetMS-Bold",
     "size": 12.01,
-    "color": [
-      0,
-      0,
-      0
-    ],
+    "color": 0,
     "bold": true,
     "italic": false
   },
@@ -77,11 +65,7 @@
     "y": 131.69,
     "font": "TrebuchetMS-Bold",
     "size": 14.01,
-    "color": [
-      0,
-      0,
-      0
-    ],
+    "color": 0,
     "bold": true,
     "italic": false
   },
@@ -141,11 +125,7 @@
     "y": 147.69,
     "font": "TrebuchetMS-Bold",
     "size": 13.01,
-    "color": [
-      0.0,
-      0.0,
-      0.0
-    ],
+    "color": 0,
     "bold": true,
     "italic": false
   },
@@ -225,11 +205,7 @@
     "y": 182.37,
     "font": "TrebuchetMS-Bold",
     "size": 12.01,
-    "color": [
-      0,
-      0,
-      0
-    ],
+    "color": 0,
     "bold": true,
     "italic": false
   },
@@ -249,11 +225,7 @@
     "y": 199.92,
     "font": "TrebuchetMS-Bold",
     "size": 14.0,
-    "color": [
-      0,
-      0,
-      0
-    ],
+    "color": 0,
     "bold": true,
     "italic": false
   },
@@ -263,11 +235,7 @@
     "y": 201.33,
     "font": "TrebuchetMS-Bold",
     "size": 14.01,
-    "color": [
-      0,
-      0,
-      0
-    ],
+    "color": 0,
     "bold": true,
     "italic": false
   },
@@ -287,11 +255,7 @@
     "y": 215.92,
     "font": "TrebuchetMS-Bold",
     "size": 14.0,
-    "color": [
-      0,
-      0,
-      0
-    ],
+    "color": 0,
     "bold": true,
     "italic": false
   },
@@ -301,11 +265,7 @@
     "y": 217.34,
     "font": "TrebuchetMS-Bold",
     "size": 13.01,
-    "color": [
-      0.0,
-      0.0,
-      0.0
-    ],
+    "color": 0,
     "bold": true,
     "italic": false
   },
@@ -345,11 +305,7 @@
     "y": 243.29,
     "font": "TrebuchetMS-Bold",
     "size": 14.01,
-    "color": [
-      0,
-      0,
-      0
-    ],
+    "color": 0,
     "bold": true,
     "italic": false
   },
@@ -379,11 +335,7 @@
     "y": 259.3,
     "font": "TrebuchetMS-Bold",
     "size": 14.01,
-    "color": [
-      0,
-      0,
-      0
-    ],
+    "color": 0,
     "bold": true,
     "italic": false
   },
@@ -393,11 +345,7 @@
     "y": 268.8,
     "font": "TrebuchetMS-Bold",
     "size": 14.01,
-    "color": [
-      0,
-      0,
-      0
-    ],
+    "color": 0,
     "bold": true,
     "italic": false
   },
@@ -417,11 +365,7 @@
     "y": 280.61,
     "font": "TrebuchetMS-Bold",
     "size": 14.01,
-    "color": [
-      0,
-      0,
-      0
-    ],
+    "color": 0,
     "bold": true,
     "italic": false
   },
@@ -431,11 +375,7 @@
     "y": 282.8,
     "font": "TrebuchetMS-Bold",
     "size": 13.01,
-    "color": [
-      0.0,
-      0.0,
-      0.0
-    ],
+    "color": 0,
     "bold": true,
     "italic": false
   },
@@ -455,11 +395,7 @@
     "y": 296.62,
     "font": "TrebuchetMS-Bold",
     "size": 14.01,
-    "color": [
-      0,
-      0,
-      0
-    ],
+    "color": 0,
     "bold": true,
     "italic": false
   },
@@ -509,11 +445,7 @@
     "y": 323.47,
     "font": "TrebuchetMS",
     "size": 10.0,
-    "color": [
-      0.0,
-      0.0,
-      0.0
-    ],
+    "color": 0,
     "bold": false,
     "italic": false
   },
@@ -583,11 +515,7 @@
     "y": 364.03,
     "font": "TrebuchetMS-Bold",
     "size": 10.66,
-    "color": [
-      0,
-      0,
-      0
-    ],
+    "color": 0,
     "bold": true,
     "italic": false
   },
@@ -607,11 +535,7 @@
     "y": 380.54,
     "font": "TrebuchetMS-Bold",
     "size": 10.0,
-    "color": [
-      0,
-      0,
-      0
-    ],
+    "color": 0,
     "bold": true,
     "italic": false
   },
@@ -661,11 +585,7 @@
     "y": 392.93,
     "font": "TrebuchetMS-Bold",
     "size": 10.0,
-    "color": [
-      0,
-      0,
-      0
-    ],
+    "color": 0,
     "bold": true,
     "italic": false
   },
@@ -715,11 +635,7 @@
     "y": 419.22,
     "font": "TrebuchetMS-Bold",
     "size": 14.01,
-    "color": [
-      0,
-      0,
-      0
-    ],
+    "color": 0,
     "bold": true,
     "italic": false
   },
@@ -739,11 +655,7 @@
     "y": 431.37,
     "font": "TrebuchetMS-Bold",
     "size": 10.0,
-    "color": [
-      0,
-      0,
-      0
-    ],
+    "color": 0,
     "bold": true,
     "italic": false
   },
@@ -753,11 +665,7 @@
     "y": 434.72,
     "font": "TrebuchetMS-Bold",
     "size": 13.01,
-    "color": [
-      0.0,
-      0.0,
-      0.0
-    ],
+    "color": 0,
     "bold": true,
     "italic": false
   },
@@ -797,11 +705,7 @@
     "y": 458.07,
     "font": "TrebuchetMS-Bold",
     "size": 12.01,
-    "color": [
-      0,
-      0,
-      0
-    ],
+    "color": 0,
     "bold": true,
     "italic": false
   },
@@ -831,11 +735,7 @@
     "y": 476.12,
     "font": "TrebuchetMS-Bold",
     "size": 11.0,
-    "color": [
-      0,
-      0,
-      0
-    ],
+    "color": 0,
     "bold": true,
     "italic": false
   },
@@ -905,11 +805,7 @@
     "y": 517.39,
     "font": "TrebuchetMS-Bold",
     "size": 11.0,
-    "color": [
-      0,
-      0,
-      0
-    ],
+    "color": 0,
     "bold": true,
     "italic": false
   },
@@ -919,11 +815,7 @@
     "y": 527.47,
     "font": "TrebuchetMS-Bold",
     "size": 14.01,
-    "color": [
-      0,
-      0,
-      0
-    ],
+    "color": 0,
     "bold": true,
     "italic": false
   },
@@ -953,11 +845,7 @@
     "y": 542.5699999999999,
     "font": "TrebuchetMS-Bold",
     "size": 13.01,
-    "color": [
-      0.0,
-      0.0,
-      0.0
-    ],
+    "color": 0,
     "bold": true,
     "italic": false
   },
@@ -1047,11 +935,7 @@
     "y": 570.31,
     "font": "TrebuchetMS",
     "size": 10.0,
-    "color": [
-      0.0,
-      0.0,
-      0.0
-    ],
+    "color": 0,
     "bold": false,
     "italic": false
   },
@@ -1121,11 +1005,7 @@
     "y": 595.78,
     "font": "TrebuchetMS-Bold",
     "size": 14.01,
-    "color": [
-      0,
-      0,
-      0
-    ],
+    "color": 0,
     "bold": true,
     "italic": false
   },
@@ -1155,11 +1035,7 @@
     "y": 611.78,
     "font": "TrebuchetMS-Bold",
     "size": 13.01,
-    "color": [
-      0.0,
-      0.0,
-      0.0
-    ],
+    "color": 0,
     "bold": true,
     "italic": false
   },
@@ -1169,11 +1045,7 @@
     "y": 612.11,
     "font": "TrebuchetMS-Bold",
     "size": 11.0,
-    "color": [
-      0,
-      0,
-      0
-    ],
+    "color": 0,
     "bold": true,
     "italic": false
   },
@@ -1223,11 +1095,7 @@
     "y": 640.07,
     "font": "TrebuchetMS-Bold",
     "size": 11.0,
-    "color": [
-      0,
-      0,
-      0
-    ],
+    "color": 0,
     "bold": true,
     "italic": false
   },
@@ -1247,11 +1115,7 @@
     "y": 655.07,
     "font": "TrebuchetMS",
     "size": 10.0,
-    "color": [
-      0.0,
-      0.0,
-      0.0
-    ],
+    "color": 0,
     "bold": false,
     "italic": false
   },
@@ -1261,11 +1125,7 @@
     "y": 664.15,
     "font": "TrebuchetMS",
     "size": 10.0,
-    "color": [
-      0.0,
-      0.0,
-      0.0
-    ],
+    "color": 0,
     "bold": false,
     "italic": false
   },
@@ -1275,11 +1135,7 @@
     "y": 668.07,
     "font": "TrebuchetMS",
     "size": 10.0,
-    "color": [
-      0.0,
-      0.0,
-      0.0
-    ],
+    "color": 0,
     "bold": false,
     "italic": false
   },
@@ -1319,11 +1175,7 @@
     "y": 689.66,
     "font": "TrebuchetMS",
     "size": 10.0,
-    "color": [
-      0.0,
-      0.0,
-      0.0
-    ],
+    "color": 0,
     "bold": false,
     "italic": false
   },
@@ -1553,11 +1405,7 @@
     "y": 726.97,
     "font": "TrebuchetMS-Bold",
     "size": 14.01,
-    "color": [
-      0,
-      0,
-      0
-    ],
+    "color": 0,
     "bold": true,
     "italic": false
   },
@@ -1587,11 +1435,7 @@
     "y": 743.96,
     "font": "TrebuchetMS-Bold",
     "size": 13.01,
-    "color": [
-      0.0,
-      0.0,
-      0.0
-    ],
+    "color": 0,
     "bold": true,
     "italic": false
   },
@@ -1631,11 +1475,7 @@
     "y": 766.41,
     "font": "TrebuchetMS-Bold",
     "size": 12.01,
-    "color": [
-      0,
-      0,
-      0
-    ],
+    "color": 0,
     "bold": true,
     "italic": false
   },
@@ -1675,11 +1515,7 @@
     "y": 784.85,
     "font": "TrebuchetMS-Bold",
     "size": 10.0,
-    "color": [
-      0,
-      0,
-      0
-    ],
+    "color": 0,
     "bold": true,
     "italic": false
   },
@@ -1709,11 +1545,7 @@
     "y": 797.95,
     "font": "TrebuchetMS-Bold",
     "size": 10.0,
-    "color": [
-      0,
-      0,
-      0
-    ],
+    "color": 0,
     "bold": true,
     "italic": false
   },

@@ -111,10 +111,12 @@ class CVRenderer:
         
         for shape in self.shapes_data:
             if shape['type'] == 'rect':
-                # shape['rect'] format: [x0, y0_top, x1, y1_bottom] (PDF coordinates)
-                # NOT [x, y, width, height]!
-                x0, y0, x1, y1 = shape['rect']
-                r, g, b = shape['color']
+                # Use x, y, width, height format (matches validator)
+                x = shape['x']
+                y = shape['y']
+                width = shape['width']
+                height = shape['height']
+                r, g, b = shape['fill_color']
                 
                 # Color filter: Only draw blue headers (matching v2.2)
                 # This ensures we only draw design elements, not noise
@@ -127,17 +129,13 @@ class CVRenderer:
                 if not is_blue_header:
                     continue  # Skip non-blue shapes
                 
-                # Calculate dimensions
-                width = x1 - x0
-                height = y1 - y0
-                
-                # Apply Y transformation (use y1 as base, same as v2.2)
-                y_transformed = CoordinateTransformer.transform_y(y1)
+                # Apply Y transformation to bottom of rectangle
+                y_transformed = CoordinateTransformer.transform_y(y + height)
                 
                 # Draw rectangle with EXACT objetivo blue color from CONFIG
                 # Use CONFIG color instead of shape color to ensure perfect match
                 self.canvas.setFillColorRGB(*CONFIG.COLOR_PRIMARY_BLUE)
-                self.canvas.rect(x0, y_transformed, width, height, fill=1, stroke=0)
+                self.canvas.rect(x, y_transformed, width, height, fill=1, stroke=0)
     
     def render_text_elements(self) -> None:
         """
