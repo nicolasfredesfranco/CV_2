@@ -93,14 +93,14 @@ class DataValidator:
             
             # Validate rectangles
             if shape['type'] == 'rect':
-                if 'rect' not in shape or 'color' not in shape:
-                    logger.error(f"Rectangle {idx}: missing 'rect' or 'color'")
+                # Check for actual format used in shapes.json
+                required = ['x', 'y', 'width', 'height', 'fill_color']
+                missing = [f for f in required if f not in shape]
+                if missing:
+                    logger.error(f"Rectangle {idx}: missing fields {missing}")
                     return False
-                if not isinstance(shape['rect'], list) or len(shape['rect']) != 4:
-                    logger.error(f"Rectangle {idx}: 'rect' must be list of 4 numbers")
-                    return False
-                if not isinstance(shape['color'], list) or len(shape['color']) != 3:
-                    logger.error(f"Rectangle {idx}: 'color' must be RGB list of 3 numbers")
+                if not isinstance(shape['fill_color'], list) or len(shape['fill_color']) != 3:
+                    logger.error(f"Rectangle {idx}: 'fill_color' must be RGB list of 3 numbers")
                     return False
         
         logger.info(f"✅ Shapes validation passed: {len(data)} elements")

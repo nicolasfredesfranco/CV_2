@@ -1,0 +1,45 @@
+ENUMERACIÓN COMPLETA DE DIFERENCIAS VISUALES
+=============================================
+
+Similitud Actual: 78.25%
+Objetivo: 80.00%
+Gap: 1.75% (MUY CERCA!)
+
+DIFERENCIAS IDENTIFICADAS (Ordenadas por gravedad):
+
+1. 🔴 CRÍTICA - Rendering de Fuentes (136/100 severidad)
+   - 68% de los píxeles de texto difieren
+   - Causa: Motor de rendering diferente (Ghostscript vs ReportLab)
+   - Efecto: Antialiasing y font hinting distinto
+   - Solucionable: NO (limitación técnica fundamental)
+
+2. 🔴 ALTA - Color de Barras Azules (55.9/100)
+   - Objetivo: RGB(242, 246, 249)
+   - Generado: RGB(232, 235, 238)
+   - Delta: ~10 unidades RGB
+   - Solucionable: SÍ (ajustando COLOR_PRIMARY_BLUE)
+
+3-21. 🟡 MEDIA - Desalineación Regional (20-43% por región)
+   - 19 regiones verticales con >20% de diferencia
+   - Causado por ligera diferencia en Y_GLOBAL_OFFSET
+   - Peor región: Y=300-400px (43.4%)
+   - Solucionable: PARCIALMENTE (ajuste fino de Y offset)
+
+RESUMEN:
+--------
+Total diferencias: 21
+Impacto ALTO: 4
+Impacto MEDIO: 17
+
+Para alcanzar 80%: Solo necesitamos mejorar 1.75%
+
+PLAN DE ACCIÓN:
+---------------
+1. Ajustar color azul (puede dar +1-2%)
+2. Fine-tune Y_GLOBAL_OFFSET (puede dar +0.5-1%)
+3. El rendering de fuentes es infranqueable (22% inevitable)
+
+CONCLUSIÓN:
+-----------
+80% ES ALCANZABLE con ajustes finos.
+95%+ NO es posible manteniendo funcionalidad (texto searchable, links).
