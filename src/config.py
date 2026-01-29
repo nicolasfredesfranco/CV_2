@@ -42,8 +42,9 @@ class LayoutConfig:
     # Global Y-Axis Offset (PDF Points)
     # Corrects differences between Ghostscript (objective) and ReportLab (generated)
     # Positive value moves content UP, negative moves DOWN
-    # RESTORED from v2.2 - DO NOT CHANGE (empirically calibrated for objective PDF)
-    Y_GLOBAL_OFFSET: float = 36.70000000000006  # Empirically adjusted for perfect alignment
+    # Global Y-axis offset for fine-tuning vertical alignment
+    # Optimized through iterative visual analysis
+    Y_GLOBAL_OFFSET: float = 36.7
     
     # Layout Logic Thresholds (Reverse Engineered)
     # X/Y coordinates that trigger specific behaviors
