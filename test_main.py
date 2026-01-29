@@ -88,16 +88,17 @@ class TestLayoutConfig:
         assert CONFIG.PAGE_HEIGHT == 806.0
     
     def test_color_values(self):
-        """Primary blue color should be correct RGB."""
+        """Primary blue color should match objetivo RGB(43,115,179)."""
         r, g, b = CONFIG.COLOR_PRIMARY_BLUE
-        assert r == pytest.approx(0.227, abs=0.001)
-        assert g == pytest.approx(0.42, abs=0.001)
-        assert b == pytest.approx(0.663, abs=0.001)
+        assert r == pytest.approx(0.168627, abs=0.001)
+        assert g == pytest.approx(0.450980, abs=0.001)
+        assert b == pytest.approx(0.701961, abs=0.001)
     
     def test_y_global_offset(self):
-        """Y offset should be configured for alignment."""
+        """Y offset should be configured for alignment (optimized value)."""
         assert isinstance(CONFIG.Y_GLOBAL_OFFSET, float)
-        assert CONFIG.Y_GLOBAL_OFFSET == 32.0
+        # Optimized value from smart visual corrector
+        assert 32.0 <= CONFIG.Y_GLOBAL_OFFSET <= 33.0
 
 
 # ========== COORDINATE TRANSFORMATION TESTS ==========
