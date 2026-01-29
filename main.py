@@ -259,6 +259,9 @@ class CVRenderer:
         Resuelve la ambigüedad entre links de redes sociales con el mismo handle.
         """
         try:
+            if not text:
+                return None
+            
             clean_text = text.strip()
             
             if "nico.fredes.franco@gmail.com" in clean_text:
@@ -281,7 +284,8 @@ class CVRenderer:
                     
             return None
         except Exception as e:
-            logger.warning(f"Error detectando hyperlink en texto '{text[:30]}...': {e}")
+            text_preview = str(text)[:30] if text else "None"
+            logger.warning(f"Error detectando hyperlink en texto '{text_preview}...': {e}")
             return None
 
     def _apply_precision_corrections(self, text: str, x: float, y_rl: float, 
