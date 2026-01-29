@@ -142,9 +142,9 @@
     "font": "TrebuchetMS-Bold",
     "size": 13.01,
     "color": [
-      0,
-      0,
-      0
+      0.0,
+      0.0,
+      0.0
     ],
     "bold": true,
     "italic": false
@@ -302,9 +302,9 @@
     "font": "TrebuchetMS-Bold",
     "size": 13.01,
     "color": [
-      0,
-      0,
-      0
+      0.0,
+      0.0,
+      0.0
     ],
     "bold": true,
     "italic": false
@@ -432,9 +432,9 @@
     "font": "TrebuchetMS-Bold",
     "size": 13.01,
     "color": [
-      0,
-      0,
-      0
+      0.0,
+      0.0,
+      0.0
     ],
     "bold": true,
     "italic": false
@@ -750,9 +750,9 @@
     "font": "TrebuchetMS-Bold",
     "size": 13.01,
     "color": [
-      0,
-      0,
-      0
+      0.0,
+      0.0,
+      0.0
     ],
     "bold": true,
     "italic": false
@@ -1299,7 +1299,11 @@
     "y": 689.66,
     "font": "TrebuchetMS",
     "size": 10.0,
-    "color": 0,
+    "color": [
+      0.0,
+      0.0,
+      0.0
+    ],
     "bold": false,
     "italic": false
   },
