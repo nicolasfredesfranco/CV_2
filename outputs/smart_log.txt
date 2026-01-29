@@ -1,0 +1,1032 @@
+==========================================================================================
+INTELLIGENT VISUAL CORRECTOR - Auto-adjusting until 100% match
+==========================================================================================
+Target: 99.0%
+Max iterations: 100
+==========================================================================================
+
+📸 Creating objetivo reference...
+
+==========================================================================================
+ITERATION 1/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.7059%
+   Perceptible diff: 573,380 pixels
+   Current Y_offset: 32.5
+   Vertical gradient: -0.59
+   ✅ New best: 73.7059%
+🔧 Calculating adjustment...
+   Vertical gradient: -0.59
+   Adjusting Y_offset: 32.5 → 32.6
+
+==========================================================================================
+ITERATION 2/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.6996%
+   Perceptible diff: 573,518 pixels
+   Current Y_offset: 32.6
+   Vertical gradient: -0.53
+🔧 Calculating adjustment...
+   Vertical gradient: -0.53
+   Adjusting Y_offset: 32.6 → 32.5
+
+==========================================================================================
+ITERATION 3/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.7059%
+   Perceptible diff: 573,380 pixels
+   Current Y_offset: 32.5
+   Vertical gradient: -0.59
+🔧 Calculating adjustment...
+   Vertical gradient: -0.59
+   Adjusting Y_offset: 32.5 → 32.6
+
+==========================================================================================
+ITERATION 4/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.6996%
+   Perceptible diff: 573,518 pixels
+   Current Y_offset: 32.6
+   Vertical gradient: -0.53
+🔧 Calculating adjustment...
+   Vertical gradient: -0.53
+   Adjusting Y_offset: 32.6 → 32.5
+
+==========================================================================================
+ITERATION 5/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.7059%
+   Perceptible diff: 573,380 pixels
+   Current Y_offset: 32.5
+   Vertical gradient: -0.59
+🔧 Calculating adjustment...
+   Vertical gradient: -0.59
+   Adjusting Y_offset: 32.5 → 32.6
+
+==========================================================================================
+ITERATION 6/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.7059%
+   Perceptible diff: 573,380 pixels
+   Current Y_offset: 32.6
+   Vertical gradient: -0.59
+🔧 Calculating adjustment...
+   Vertical gradient: -0.59
+   Adjusting Y_offset: 32.6 → 32.5
+
+==========================================================================================
+ITERATION 7/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.7059%
+   Perceptible diff: 573,380 pixels
+   Current Y_offset: 32.5
+   Vertical gradient: -0.59
+🔧 Calculating adjustment...
+   Vertical gradient: -0.59
+   Adjusting Y_offset: 32.5 → 32.6
+
+==========================================================================================
+ITERATION 8/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.6996%
+   Perceptible diff: 573,518 pixels
+   Current Y_offset: 32.6
+   Vertical gradient: -0.53
+🔧 Calculating adjustment...
+   Vertical gradient: -0.53
+   Adjusting Y_offset: 32.6 → 32.5
+
+==========================================================================================
+ITERATION 9/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.7059%
+   Perceptible diff: 573,380 pixels
+   Current Y_offset: 32.5
+   Vertical gradient: -0.59
+🔧 Calculating adjustment...
+   Vertical gradient: -0.59
+   Adjusting Y_offset: 32.5 → 32.6
+
+==========================================================================================
+ITERATION 10/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.6996%
+   Perceptible diff: 573,518 pixels
+   Current Y_offset: 32.6
+   Vertical gradient: -0.53
+🔧 Calculating adjustment...
+   Vertical gradient: -0.53
+   Adjusting Y_offset: 32.6 → 32.5
+
+==========================================================================================
+ITERATION 11/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.6996%
+   Perceptible diff: 573,518 pixels
+   Current Y_offset: 32.5
+   Vertical gradient: -0.53
+🔧 Calculating adjustment...
+   Vertical gradient: -0.53
+   Adjusting Y_offset: 32.5 → 32.6
+
+==========================================================================================
+ITERATION 12/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.6996%
+   Perceptible diff: 573,518 pixels
+   Current Y_offset: 32.6
+   Vertical gradient: -0.53
+🔧 Calculating adjustment...
+   Vertical gradient: -0.53
+   Adjusting Y_offset: 32.6 → 32.5
+
+==========================================================================================
+ITERATION 13/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.7059%
+   Perceptible diff: 573,380 pixels
+   Current Y_offset: 32.5
+   Vertical gradient: -0.59
+🔧 Calculating adjustment...
+   Vertical gradient: -0.59
+   Adjusting Y_offset: 32.5 → 32.6
+
+==========================================================================================
+ITERATION 14/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.6996%
+   Perceptible diff: 573,518 pixels
+   Current Y_offset: 32.6
+   Vertical gradient: -0.53
+🔧 Calculating adjustment...
+   Vertical gradient: -0.53
+   Adjusting Y_offset: 32.6 → 32.5
+
+==========================================================================================
+ITERATION 15/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.7059%
+   Perceptible diff: 573,380 pixels
+   Current Y_offset: 32.5
+   Vertical gradient: -0.59
+🔧 Calculating adjustment...
+   Vertical gradient: -0.59
+   Adjusting Y_offset: 32.5 → 32.6
+
+==========================================================================================
+ITERATION 16/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.7059%
+   Perceptible diff: 573,380 pixels
+   Current Y_offset: 32.6
+   Vertical gradient: -0.59
+🔧 Calculating adjustment...
+   Vertical gradient: -0.59
+   Adjusting Y_offset: 32.6 → 32.5
+
+==========================================================================================
+ITERATION 17/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.7059%
+   Perceptible diff: 573,380 pixels
+   Current Y_offset: 32.5
+   Vertical gradient: -0.59
+🔧 Calculating adjustment...
+   Vertical gradient: -0.59
+   Adjusting Y_offset: 32.5 → 32.6
+
+==========================================================================================
+ITERATION 18/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.6996%
+   Perceptible diff: 573,518 pixels
+   Current Y_offset: 32.6
+   Vertical gradient: -0.53
+🔧 Calculating adjustment...
+   Vertical gradient: -0.53
+   Adjusting Y_offset: 32.6 → 32.5
+
+==========================================================================================
+ITERATION 19/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.7059%
+   Perceptible diff: 573,380 pixels
+   Current Y_offset: 32.5
+   Vertical gradient: -0.59
+🔧 Calculating adjustment...
+   Vertical gradient: -0.59
+   Adjusting Y_offset: 32.5 → 32.6
+
+==========================================================================================
+ITERATION 20/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.6996%
+   Perceptible diff: 573,518 pixels
+   Current Y_offset: 32.6
+   Vertical gradient: -0.53
+🔧 Calculating adjustment...
+   Vertical gradient: -0.53
+   Adjusting Y_offset: 32.6 → 32.5
+
+==========================================================================================
+ITERATION 21/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.7059%
+   Perceptible diff: 573,380 pixels
+   Current Y_offset: 32.5
+   Vertical gradient: -0.59
+🔧 Calculating adjustment...
+   Vertical gradient: -0.59
+   Adjusting Y_offset: 32.5 → 32.6
+
+==========================================================================================
+ITERATION 22/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.7059%
+   Perceptible diff: 573,380 pixels
+   Current Y_offset: 32.6
+   Vertical gradient: -0.59
+🔧 Calculating adjustment...
+   Vertical gradient: -0.59
+   Adjusting Y_offset: 32.6 → 32.5
+
+==========================================================================================
+ITERATION 23/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.7059%
+   Perceptible diff: 573,380 pixels
+   Current Y_offset: 32.5
+   Vertical gradient: -0.59
+🔧 Calculating adjustment...
+   Vertical gradient: -0.59
+   Adjusting Y_offset: 32.5 → 32.6
+
+==========================================================================================
+ITERATION 24/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.6996%
+   Perceptible diff: 573,518 pixels
+   Current Y_offset: 32.6
+   Vertical gradient: -0.53
+🔧 Calculating adjustment...
+   Vertical gradient: -0.53
+   Adjusting Y_offset: 32.6 → 32.5
+
+==========================================================================================
+ITERATION 25/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.7059%
+   Perceptible diff: 573,380 pixels
+   Current Y_offset: 32.5
+   Vertical gradient: -0.59
+🔧 Calculating adjustment...
+   Vertical gradient: -0.59
+   Adjusting Y_offset: 32.5 → 32.6
+
+==========================================================================================
+ITERATION 26/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.6996%
+   Perceptible diff: 573,518 pixels
+   Current Y_offset: 32.6
+   Vertical gradient: -0.53
+🔧 Calculating adjustment...
+   Vertical gradient: -0.53
+   Adjusting Y_offset: 32.6 → 32.5
+
+==========================================================================================
+ITERATION 27/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.6996%
+   Perceptible diff: 573,518 pixels
+   Current Y_offset: 32.5
+   Vertical gradient: -0.53
+🔧 Calculating adjustment...
+   Vertical gradient: -0.53
+   Adjusting Y_offset: 32.5 → 32.6
+
+==========================================================================================
+ITERATION 28/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.6996%
+   Perceptible diff: 573,518 pixels
+   Current Y_offset: 32.6
+   Vertical gradient: -0.53
+🔧 Calculating adjustment...
+   Vertical gradient: -0.53
+   Adjusting Y_offset: 32.6 → 32.5
+
+==========================================================================================
+ITERATION 29/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.7059%
+   Perceptible diff: 573,380 pixels
+   Current Y_offset: 32.5
+   Vertical gradient: -0.59
+🔧 Calculating adjustment...
+   Vertical gradient: -0.59
+   Adjusting Y_offset: 32.5 → 32.6
+
+==========================================================================================
+ITERATION 30/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.6996%
+   Perceptible diff: 573,518 pixels
+   Current Y_offset: 32.6
+   Vertical gradient: -0.53
+🔧 Calculating adjustment...
+   Vertical gradient: -0.53
+   Adjusting Y_offset: 32.6 → 32.5
+
+==========================================================================================
+ITERATION 31/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.7059%
+   Perceptible diff: 573,380 pixels
+   Current Y_offset: 32.5
+   Vertical gradient: -0.59
+🔧 Calculating adjustment...
+   Vertical gradient: -0.59
+   Adjusting Y_offset: 32.5 → 32.6
+
+==========================================================================================
+ITERATION 32/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.7059%
+   Perceptible diff: 573,380 pixels
+   Current Y_offset: 32.6
+   Vertical gradient: -0.59
+🔧 Calculating adjustment...
+   Vertical gradient: -0.59
+   Adjusting Y_offset: 32.6 → 32.5
+
+==========================================================================================
+ITERATION 33/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.7059%
+   Perceptible diff: 573,380 pixels
+   Current Y_offset: 32.5
+   Vertical gradient: -0.59
+🔧 Calculating adjustment...
+   Vertical gradient: -0.59
+   Adjusting Y_offset: 32.5 → 32.6
+
+==========================================================================================
+ITERATION 34/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.6996%
+   Perceptible diff: 573,518 pixels
+   Current Y_offset: 32.6
+   Vertical gradient: -0.53
+🔧 Calculating adjustment...
+   Vertical gradient: -0.53
+   Adjusting Y_offset: 32.6 → 32.5
+
+==========================================================================================
+ITERATION 35/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.7059%
+   Perceptible diff: 573,380 pixels
+   Current Y_offset: 32.5
+   Vertical gradient: -0.59
+🔧 Calculating adjustment...
+   Vertical gradient: -0.59
+   Adjusting Y_offset: 32.5 → 32.6
+
+==========================================================================================
+ITERATION 36/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.6996%
+   Perceptible diff: 573,518 pixels
+   Current Y_offset: 32.6
+   Vertical gradient: -0.53
+🔧 Calculating adjustment...
+   Vertical gradient: -0.53
+   Adjusting Y_offset: 32.6 → 32.5
+
+==========================================================================================
+ITERATION 37/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.7059%
+   Perceptible diff: 573,380 pixels
+   Current Y_offset: 32.5
+   Vertical gradient: -0.59
+🔧 Calculating adjustment...
+   Vertical gradient: -0.59
+   Adjusting Y_offset: 32.5 → 32.6
+
+==========================================================================================
+ITERATION 38/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.6996%
+   Perceptible diff: 573,518 pixels
+   Current Y_offset: 32.6
+   Vertical gradient: -0.53
+🔧 Calculating adjustment...
+   Vertical gradient: -0.53
+   Adjusting Y_offset: 32.6 → 32.5
+
+==========================================================================================
+ITERATION 39/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.7059%
+   Perceptible diff: 573,380 pixels
+   Current Y_offset: 32.5
+   Vertical gradient: -0.59
+🔧 Calculating adjustment...
+   Vertical gradient: -0.59
+   Adjusting Y_offset: 32.5 → 32.6
+
+==========================================================================================
+ITERATION 40/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.6996%
+   Perceptible diff: 573,518 pixels
+   Current Y_offset: 32.6
+   Vertical gradient: -0.53
+🔧 Calculating adjustment...
+   Vertical gradient: -0.53
+   Adjusting Y_offset: 32.6 → 32.5
+
+==========================================================================================
+ITERATION 41/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.6996%
+   Perceptible diff: 573,518 pixels
+   Current Y_offset: 32.5
+   Vertical gradient: -0.53
+🔧 Calculating adjustment...
+   Vertical gradient: -0.53
+   Adjusting Y_offset: 32.5 → 32.6
+
+==========================================================================================
+ITERATION 42/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.6996%
+   Perceptible diff: 573,518 pixels
+   Current Y_offset: 32.6
+   Vertical gradient: -0.53
+🔧 Calculating adjustment...
+   Vertical gradient: -0.53
+   Adjusting Y_offset: 32.6 → 32.5
+
+==========================================================================================
+ITERATION 43/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.7059%
+   Perceptible diff: 573,380 pixels
+   Current Y_offset: 32.5
+   Vertical gradient: -0.59
+🔧 Calculating adjustment...
+   Vertical gradient: -0.59
+   Adjusting Y_offset: 32.5 → 32.6
+
+==========================================================================================
+ITERATION 44/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.6996%
+   Perceptible diff: 573,518 pixels
+   Current Y_offset: 32.6
+   Vertical gradient: -0.53
+🔧 Calculating adjustment...
+   Vertical gradient: -0.53
+   Adjusting Y_offset: 32.6 → 32.5
+
+==========================================================================================
+ITERATION 45/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.7059%
+   Perceptible diff: 573,380 pixels
+   Current Y_offset: 32.5
+   Vertical gradient: -0.59
+🔧 Calculating adjustment...
+   Vertical gradient: -0.59
+   Adjusting Y_offset: 32.5 → 32.6
+
+==========================================================================================
+ITERATION 46/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.7059%
+   Perceptible diff: 573,380 pixels
+   Current Y_offset: 32.6
+   Vertical gradient: -0.59
+🔧 Calculating adjustment...
+   Vertical gradient: -0.59
+   Adjusting Y_offset: 32.6 → 32.5
+
+==========================================================================================
+ITERATION 47/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.7059%
+   Perceptible diff: 573,380 pixels
+   Current Y_offset: 32.5
+   Vertical gradient: -0.59
+🔧 Calculating adjustment...
+   Vertical gradient: -0.59
+   Adjusting Y_offset: 32.5 → 32.6
+
+==========================================================================================
+ITERATION 48/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.6996%
+   Perceptible diff: 573,518 pixels
+   Current Y_offset: 32.6
+   Vertical gradient: -0.53
+🔧 Calculating adjustment...
+   Vertical gradient: -0.53
+   Adjusting Y_offset: 32.6 → 32.5
+
+==========================================================================================
+ITERATION 49/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.7059%
+   Perceptible diff: 573,380 pixels
+   Current Y_offset: 32.5
+   Vertical gradient: -0.59
+🔧 Calculating adjustment...
+   Vertical gradient: -0.59
+   Adjusting Y_offset: 32.5 → 32.6
+
+==========================================================================================
+ITERATION 50/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.6996%
+   Perceptible diff: 573,518 pixels
+   Current Y_offset: 32.6
+   Vertical gradient: -0.53
+🔧 Calculating adjustment...
+   Vertical gradient: -0.53
+   Adjusting Y_offset: 32.6 → 32.5
+
+==========================================================================================
+ITERATION 51/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.7059%
+   Perceptible diff: 573,380 pixels
+   Current Y_offset: 32.5
+   Vertical gradient: -0.59
+🔧 Calculating adjustment...
+   Vertical gradient: -0.59
+   Adjusting Y_offset: 32.5 → 32.6
+
+==========================================================================================
+ITERATION 52/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.7059%
+   Perceptible diff: 573,380 pixels
+   Current Y_offset: 32.6
+   Vertical gradient: -0.59
+🔧 Calculating adjustment...
+   Vertical gradient: -0.59
+   Adjusting Y_offset: 32.6 → 32.5
+
+==========================================================================================
+ITERATION 53/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.7059%
+   Perceptible diff: 573,380 pixels
+   Current Y_offset: 32.5
+   Vertical gradient: -0.59
+🔧 Calculating adjustment...
+   Vertical gradient: -0.59
+   Adjusting Y_offset: 32.5 → 32.6
+
+==========================================================================================
+ITERATION 54/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.6996%
+   Perceptible diff: 573,518 pixels
+   Current Y_offset: 32.6
+   Vertical gradient: -0.53
+🔧 Calculating adjustment...
+   Vertical gradient: -0.53
+   Adjusting Y_offset: 32.6 → 32.5
+
+==========================================================================================
+ITERATION 55/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.7059%
+   Perceptible diff: 573,380 pixels
+   Current Y_offset: 32.5
+   Vertical gradient: -0.59
+🔧 Calculating adjustment...
+   Vertical gradient: -0.59
+   Adjusting Y_offset: 32.5 → 32.6
+
+==========================================================================================
+ITERATION 56/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.6996%
+   Perceptible diff: 573,518 pixels
+   Current Y_offset: 32.6
+   Vertical gradient: -0.53
+🔧 Calculating adjustment...
+   Vertical gradient: -0.53
+   Adjusting Y_offset: 32.6 → 32.5
+
+==========================================================================================
+ITERATION 57/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.7059%
+   Perceptible diff: 573,380 pixels
+   Current Y_offset: 32.5
+   Vertical gradient: -0.59
+🔧 Calculating adjustment...
+   Vertical gradient: -0.59
+   Adjusting Y_offset: 32.5 → 32.6
+
+==========================================================================================
+ITERATION 58/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.7059%
+   Perceptible diff: 573,380 pixels
+   Current Y_offset: 32.6
+   Vertical gradient: -0.59
+🔧 Calculating adjustment...
+   Vertical gradient: -0.59
+   Adjusting Y_offset: 32.6 → 32.5
+
+==========================================================================================
+ITERATION 59/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.7059%
+   Perceptible diff: 573,380 pixels
+   Current Y_offset: 32.5
+   Vertical gradient: -0.59
+🔧 Calculating adjustment...
+   Vertical gradient: -0.59
+   Adjusting Y_offset: 32.5 → 32.6
+
+==========================================================================================
+ITERATION 60/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.6996%
+   Perceptible diff: 573,518 pixels
+   Current Y_offset: 32.6
+   Vertical gradient: -0.53
+🔧 Calculating adjustment...
+   Vertical gradient: -0.53
+   Adjusting Y_offset: 32.6 → 32.5
+
+==========================================================================================
+ITERATION 61/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.7059%
+   Perceptible diff: 573,380 pixels
+   Current Y_offset: 32.5
+   Vertical gradient: -0.59
+🔧 Calculating adjustment...
+   Vertical gradient: -0.59
+   Adjusting Y_offset: 32.5 → 32.6
+
+==========================================================================================
+ITERATION 62/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.6996%
+   Perceptible diff: 573,518 pixels
+   Current Y_offset: 32.6
+   Vertical gradient: -0.53
+🔧 Calculating adjustment...
+   Vertical gradient: -0.53
+   Adjusting Y_offset: 32.6 → 32.5
+
+==========================================================================================
+ITERATION 63/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.7059%
+   Perceptible diff: 573,380 pixels
+   Current Y_offset: 32.5
+   Vertical gradient: -0.59
+🔧 Calculating adjustment...
+   Vertical gradient: -0.59
+   Adjusting Y_offset: 32.5 → 32.6
+
+==========================================================================================
+ITERATION 64/100
+==========================================================================================
+⚙️  Generating PDF...
+📸 Converting to PNG...
+🔍 Analyzing differences...
+
+📊 RESULTS:
+   Similarity: 73.7059%
+   Perceptible diff: 573,380 pixels
+   Current Y_offset: 32.6
+   Vertical gradient: -0.59
+🔧 Calculating adjustment...
+   Vertical gradient: -0.59
