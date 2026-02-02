@@ -820,7 +820,7 @@
     "italic": false
   },
   {
-    "text": "PyTorch  \u2022 TensorFlow  \u2022 Keras",
+    "text": "• PyTorch  \u2022 TensorFlow  \u2022 Keras",
     "x": 48.63,
     "y": 545.39,
     "font": "TrebuchetMS",
@@ -850,7 +850,7 @@
     "italic": false
   },
   {
-    "text": "Threading  \u2022 OpenCV  \u2022 Pandas",
+    "text": "• Threading  \u2022 OpenCV  \u2022 Pandas",
     "x": 48.63,
     "y": 558.39,
     "font": "TrebuchetMS",
