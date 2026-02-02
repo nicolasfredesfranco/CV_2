@@ -280,9 +280,9 @@
     "italic": true
   },
   {
-    "text": "Valpara\u00edso, Chile ",
+    "text": "Valparaíso, Chile ",
     "x": 47.13,
-    "y": 243.32,
+    "y": 241.32,
     "font": "TrebuchetMS",
     "size": 10.0,
     "color": 0,
@@ -651,7 +651,7 @@
   },
   {
     "text": "Workshop LatinX in AI at NeurIPS ",
-    "x": 42.61,
+    "x": 44.61,
     "y": 444.37,
     "font": "TrebuchetMS-Bold",
     "size": 10.0,
