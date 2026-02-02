@@ -1,6 +1,6 @@
 [
   {
-    "text": "Nicolás Ignacio Fredes Franco",
+    "text": "Nicol\u00e1s Ignacio Fredes Franco",
     "x": 231.63,
     "y": 83.94,
     "font": "TrebuchetMS-Bold",
@@ -10,9 +10,9 @@
     "italic": false
   },
   {
-    "text": "Nicolás Fredes ",
+    "text": "Nicol\u00e1s Fredes ",
     "x": 88.47,
-    "y": 89.24000000000001,
+    "y": 102.24000000000001,
     "font": "TrebuchetMS-Bold",
     "size": 10.0,
     "color": 0,
@@ -22,7 +22,7 @@
   {
     "text": "22 norte 1125 F-602, ",
     "x": 75.85,
-    "y": 100.24000000000001,
+    "y": 113.24000000000001,
     "font": "TrebuchetMS",
     "size": 10.0,
     "color": 0,
@@ -30,9 +30,9 @@
     "italic": false
   },
   {
-    "text": "Viña del Mar, Chile ",
+    "text": "Vi\u00f1a del Mar, Chile ",
     "x": 79.8,
-    "y": 110.25,
+    "y": 123.25,
     "font": "TrebuchetMS",
     "size": 10.0,
     "color": 0,
@@ -52,7 +52,7 @@
   {
     "text": "(569) 9899 1704 ",
     "x": 86.81,
-    "y": 123.26,
+    "y": 136.26,
     "font": "TrebuchetMS",
     "size": 10.0,
     "color": 0,
@@ -72,7 +72,7 @@
   {
     "text": "nico.fredes.franco@gmail.com ",
     "x": 45.23,
-    "y": 134.26,
+    "y": 147.26,
     "font": "TrebuchetMS",
     "size": 10.0,
     "color": 1070028,
@@ -92,7 +92,7 @@
   {
     "text": "Github:",
     "x": 45.23,
-    "y": 145.26999999999998,
+    "y": 158.26999999999998,
     "font": "TrebuchetMS",
     "size": 10.0,
     "color": 0,
@@ -102,7 +102,7 @@
   {
     "text": "// ",
     "x": 88.1,
-    "y": 145.26999999999998,
+    "y": 158.26999999999998,
     "font": "TrebuchetMS",
     "size": 10.0,
     "color": 0,
@@ -112,7 +112,7 @@
   {
     "text": "nicolasfredesfranco ",
     "x": 96.55,
-    "y": 145.26999999999998,
+    "y": 158.26999999999998,
     "font": "TrebuchetMS",
     "size": 10.0,
     "color": 1070028,
@@ -142,7 +142,7 @@
   {
     "text": "LinkedIn: //",
     "x": 45.23,
-    "y": 156.26999999999998,
+    "y": 169.26999999999998,
     "font": "TrebuchetMS",
     "size": 10.0,
     "color": 0,
@@ -152,7 +152,7 @@
   {
     "text": " nicolasfredesfranco ",
     "x": 96.55,
-    "y": 156.26999999999998,
+    "y": 169.26999999999998,
     "font": "TrebuchetMS",
     "size": 10.0,
     "color": 1070028,
@@ -172,7 +172,7 @@
   {
     "text": "Twitter: //",
     "x": 45.23,
-    "y": 167.28,
+    "y": 180.28,
     "font": "TrebuchetMS",
     "size": 10.0,
     "color": 0,
@@ -182,7 +182,7 @@
   {
     "text": " nicofredesfranc",
     "x": 96.55,
-    "y": 167.28,
+    "y": 180.28,
     "font": "TrebuchetMS",
     "size": 10.0,
     "color": 1070028,
@@ -202,7 +202,7 @@
   {
     "text": "EDUCATION",
     "x": 92.63,
-    "y": 182.37,
+    "y": 195.37,
     "font": "TrebuchetMS-Bold",
     "size": 12.01,
     "color": 15790320,
@@ -220,9 +220,9 @@
     "italic": false
   },
   {
-    "text": "Federico Santa María",
+    "text": "Federico Santa Mar\u00eda",
     "x": 47.13,
-    "y": 199.92,
+    "y": 212.92,
     "font": "TrebuchetMS-Bold",
     "size": 14.0,
     "color": 0,
@@ -252,7 +252,7 @@
   {
     "text": "Technical University",
     "x": 47.13,
-    "y": 215.92,
+    "y": 228.92,
     "font": "TrebuchetMS-Bold",
     "size": 14.0,
     "color": 0,
@@ -280,9 +280,9 @@
     "italic": true
   },
   {
-    "text": "Valparaíso, Chile ",
+    "text": "Valpara\u00edso, Chile ",
     "x": 47.13,
-    "y": 230.32,
+    "y": 243.32,
     "font": "TrebuchetMS",
     "size": 10.0,
     "color": 0,
@@ -302,7 +302,7 @@
   {
     "text": "B.S. in Electronic ",
     "x": 47.13,
-    "y": 243.29,
+    "y": 256.28999999999996,
     "font": "TrebuchetMS-Bold",
     "size": 14.01,
     "color": 2978739,
@@ -310,7 +310,7 @@
     "italic": false
   },
   {
-    "text": " voice-integrated system at CMPC Brazil (Guaíba plant), reducing end-to-end",
+    "text": " voice-integrated system at CMPC Brazil (Gua\u00edba plant), reducing end-to-end",
     "x": 224.67,
     "y": 244.53,
     "font": "TrebuchetMS",
@@ -332,7 +332,7 @@
   {
     "text": "Engineering",
     "x": 47.13,
-    "y": 259.3,
+    "y": 272.3,
     "font": "TrebuchetMS-Bold",
     "size": 14.01,
     "color": 2978739,
@@ -362,7 +362,7 @@
   {
     "text": "M.S. in Electronic ",
     "x": 47.13,
-    "y": 280.61,
+    "y": 293.61,
     "font": "TrebuchetMS-Bold",
     "size": 14.01,
     "color": 2978739,
@@ -392,7 +392,7 @@
   {
     "text": "Engineering",
     "x": 47.13,
-    "y": 296.62,
+    "y": 309.62,
     "font": "TrebuchetMS-Bold",
     "size": 14.01,
     "color": 2978739,
@@ -422,7 +422,7 @@
   {
     "text": "GPA: 92% ",
     "x": 47.13,
-    "y": 312.36,
+    "y": 325.36,
     "font": "TrebuchetMS",
     "size": 10.0,
     "color": 0,
@@ -442,7 +442,7 @@
   {
     "text": "Specialty: Machine Learning. ",
     "x": 47.13,
-    "y": 323.47,
+    "y": 336.47,
     "font": "TrebuchetMS",
     "size": 10.0,
     "color": 0,
@@ -450,7 +450,7 @@
     "italic": false
   },
   {
-    "text": "minutes, 1 day, and 1 week. In each case, achieving results with an R²",
+    "text": "minutes, 1 day, and 1 week. In each case, achieving results with an R\u00b2",
     "x": 220.66,
     "y": 330.62,
     "font": "TrebuchetMS",
@@ -462,7 +462,7 @@
   {
     "text": "Thesis: \"Protein functions ",
     "x": 47.13,
-    "y": 334.47,
+    "y": 347.47,
     "font": "TrebuchetMS",
     "size": 10.0,
     "color": 0,
@@ -482,7 +482,7 @@
   {
     "text": "prediction using Deep Learning.\" ",
     "x": 47.13,
-    "y": 345.48,
+    "y": 358.48,
     "font": "TrebuchetMS",
     "size": 10.0,
     "color": 0,
@@ -512,7 +512,7 @@
   {
     "text": "PAPERS & WORKSHOPS",
     "x": 72.33,
-    "y": 364.03,
+    "y": 377.03,
     "font": "TrebuchetMS-Bold",
     "size": 10.66,
     "color": 15790320,
@@ -532,7 +532,7 @@
   {
     "text": "Journal Paper in IEEE ACCESS",
     "x": 48.61,
-    "y": 380.54,
+    "y": 393.54,
     "font": "TrebuchetMS-Bold",
     "size": 10.0,
     "color": 0,
@@ -552,7 +552,7 @@
   {
     "text": "DOI: 10.1109/ACCESS.2021.3094723",
     "x": 50.92,
-    "y": 413.42,
+    "y": 426.42,
     "font": "TrebuchetMS-Italic",
     "size": 9.0,
     "color": 1070028,
@@ -572,7 +572,7 @@
   {
     "text": " \"",
     "x": 45.82,
-    "y": 392.93,
+    "y": 405.93,
     "font": "TrebuchetMS",
     "size": 10.0,
     "color": 0,
@@ -582,7 +582,7 @@
   {
     "text": "HGAN:",
     "x": 52.73,
-    "y": 392.93,
+    "y": 405.93,
     "font": "TrebuchetMS-Bold",
     "size": 10.0,
     "color": 0,
@@ -592,7 +592,7 @@
   {
     "text": " Hyperbolic Generative",
     "x": 80.87,
-    "y": 393.24,
+    "y": 406.24,
     "font": "TrebuchetMS",
     "size": 10.0,
     "color": 0,
@@ -612,7 +612,7 @@
   {
     "text": "July 2021 ",
     "x": 158.04,
-    "y": 403.97,
+    "y": 416.97,
     "font": "TrebuchetMS-Italic",
     "size": 9.0,
     "color": 0,
@@ -622,7 +622,7 @@
   {
     "text": "Adversarial Network\".",
     "x": 50.8,
-    "y": 403.97,
+    "y": 416.97,
     "font": "TrebuchetMS",
     "size": 10.0,
     "color": 0,
@@ -652,7 +652,7 @@
   {
     "text": "Workshop LatinX in AI at NeurIPS ",
     "x": 48.61,
-    "y": 431.37,
+    "y": 444.37,
     "font": "TrebuchetMS-Bold",
     "size": 10.0,
     "color": 0,
@@ -682,7 +682,7 @@
   {
     "text": "December 2019 in Vancouver, Canada ",
     "x": 51.15,
-    "y": 441.31,
+    "y": 454.31,
     "font": "TrebuchetMS-Italic",
     "size": 9.0,
     "color": 0,
@@ -702,7 +702,7 @@
   {
     "text": "SKILLS",
     "x": 108.37,
-    "y": 458.07,
+    "y": 471.07,
     "font": "TrebuchetMS-Bold",
     "size": 12.01,
     "color": 15790320,
@@ -732,7 +732,7 @@
   {
     "text": "PROGRAMMING LANGUAGES",
     "x": 48.63,
-    "y": 476.12,
+    "y": 489.12,
     "font": "TrebuchetMS-Bold",
     "size": 11.0,
     "color": 0,
@@ -750,9 +750,9 @@
     "italic": false
   },
   {
-    "text": "• Python  • C  • C++",
+    "text": "\u2022 Python  \u2022 C  \u2022 C++",
     "x": 48.63,
-    "y": 491.12,
+    "y": 504.12,
     "font": "TrebuchetMS",
     "size": 10.0,
     "color": 0,
@@ -770,9 +770,9 @@
     "italic": false
   },
   {
-    "text": "• MySQL  • SQL",
+    "text": "\u2022 MySQL  \u2022 SQL",
     "x": 48.63,
-    "y": 504.12,
+    "y": 517.12,
     "font": "TrebuchetMS",
     "size": 10.0,
     "color": 0,
@@ -802,7 +802,7 @@
   {
     "text": "FRAMEWORKS",
     "x": 48.63,
-    "y": 517.39,
+    "y": 530.39,
     "font": "TrebuchetMS-Bold",
     "size": 11.0,
     "color": 0,
@@ -820,9 +820,9 @@
     "italic": false
   },
   {
-    "text": "PyTorch  • TensorFlow  • Keras",
+    "text": "PyTorch  \u2022 TensorFlow  \u2022 Keras",
     "x": 48.63,
-    "y": 532.39,
+    "y": 545.39,
     "font": "TrebuchetMS",
     "size": 10.0,
     "color": 0,
@@ -850,9 +850,9 @@
     "italic": false
   },
   {
-    "text": "Threading  • OpenCV  • Pandas",
+    "text": "Threading  \u2022 OpenCV  \u2022 Pandas",
     "x": 48.63,
-    "y": 545.39,
+    "y": 558.39,
     "font": "TrebuchetMS",
     "size": 10.0,
     "color": 0,
@@ -970,7 +970,7 @@
     "italic": false
   },
   {
-    "text": "• NVIDIA Deepstream",
+    "text": "\u2022 NVIDIA Deepstream",
     "x": 48.63,
     "y": 571.39,
     "font": "TrebuchetMS",
@@ -990,7 +990,7 @@
     "italic": false
   },
   {
-    "text": "• Vertex AI Agent Engine",
+    "text": "\u2022 Vertex AI Agent Engine",
     "x": 48.63,
     "y": 584.39,
     "font": "TrebuchetMS",
@@ -1010,7 +1010,7 @@
     "italic": false
   },
   {
-    "text": "• Google-ADK  • LangChain",
+    "text": "\u2022 Google-ADK  \u2022 LangChain",
     "x": 48.63,
     "y": 597.39,
     "font": "TrebuchetMS",
@@ -1070,7 +1070,7 @@
     "italic": false
   },
   {
-    "text": "• AWS  • Snowflake  • GCP",
+    "text": "\u2022 AWS  \u2022 Snowflake  \u2022 GCP",
     "x": 48.63,
     "y": 627.11,
     "font": "TrebuchetMS",
@@ -1110,7 +1110,7 @@
     "italic": false
   },
   {
-    "text": "• Machine Learning",
+    "text": "\u2022 Machine Learning",
     "x": 48.63,
     "y": 655.07,
     "font": "TrebuchetMS",
@@ -1130,7 +1130,7 @@
     "italic": false
   },
   {
-    "text": "• Computer Vision",
+    "text": "\u2022 Computer Vision",
     "x": 48.63,
     "y": 668.07,
     "font": "TrebuchetMS",
@@ -1150,7 +1150,7 @@
     "italic": false
   },
   {
-    "text": "• Natural Language Processing",
+    "text": "\u2022 Natural Language Processing",
     "x": 48.63,
     "y": 681.07,
     "font": "TrebuchetMS",
@@ -1260,7 +1260,7 @@
     "italic": false
   },
   {
-    "text": "• IoT  • Forecasting",
+    "text": "\u2022 IoT  \u2022 Forecasting",
     "x": 48.63,
     "y": 694.07,
     "font": "TrebuchetMS",
@@ -1370,7 +1370,7 @@
     "italic": false
   },
   {
-    "text": "• Object-Oriented Programming",
+    "text": "\u2022 Object-Oriented Programming",
     "x": 48.63,
     "y": 707.07,
     "font": "TrebuchetMS",
@@ -1390,7 +1390,7 @@
     "italic": false
   },
   {
-    "text": "• Parallel Computing",
+    "text": "\u2022 Parallel Computing",
     "x": 48.63,
     "y": 720.07,
     "font": "TrebuchetMS",
@@ -1410,7 +1410,7 @@
     "italic": false
   },
   {
-    "text": "Valparaíso, Chile ",
+    "text": "Valpara\u00edso, Chile ",
     "x": 518.15,
     "y": 732.6,
     "font": "TrebuchetMS",
@@ -1420,7 +1420,7 @@
     "italic": false
   },
   {
-    "text": "• GPU-Accelerated Computing",
+    "text": "\u2022 GPU-Accelerated Computing",
     "x": 48.63,
     "y": 733.07,
     "font": "TrebuchetMS",
@@ -1440,7 +1440,7 @@
     "italic": false
   },
   {
-    "text": "• Generative AI",
+    "text": "\u2022 Generative AI",
     "x": 48.63,
     "y": 746.07,
     "font": "TrebuchetMS",
