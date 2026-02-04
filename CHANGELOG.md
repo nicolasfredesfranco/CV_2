@@ -1,87 +1,118 @@
-# Changelog - February 4, 2026
+# Changelog
 
-## Version 3.0.1 - Header Alignment and Link Fix
+## Version 3.1.0 - Pixel-Perfect Alignment (February 4, 2026)
 
 ### Summary
-This update includes fine-tuned adjustments to section header positions and a critical fix for the GitHub hyperlink disambiguation logic.
+Achieved pixel-perfect right-edge alignment of all job locations and dates at X=588, ensuring a clean, professional, and visually consistent CV layout.
 
-### Changes Made
+### Major Achievement: Right-Edge Alignment at X=588
 
-#### 1. Section Header Alignment Adjustments
-Precise horizontal and vertical positioning adjustments to improve visual alignment:
+All 7 job locations and 7 job dates now terminate precisely at X=588 (right edge alignment):
 
-- **EDUCATION**: Moved 1 point left (X: 92.63 → 91.63)
-- **EXPERIENCE**: Moved 1 point down (Y: 113.94 → 114.94)
-- **PAPERS & WORKSHOPS**: Moved 4 points left total (X: 72.33 → 68.33)
-  - Incremental adjustments: -1pt, -1pt, -1pt, -1pt
-- **SKILLS**: Moved 3 points left (X: 108.37 → 105.37)
-  - Incremental adjustments: -2pt, -1pt
-- **LANGUAGES**: Moved 3 points left (X: 92.97 → 89.97)
-  - Incremental adjustments: -1pt, -1pt, -1pt
+**Jobs with aligned locations and dates:**
+1. JOBSITY
+2. ZENTA GROUP
+3. DEUNA
+4. SPOT
+5. EPAM Systems
+6. WALMART Chile
+7. LAMNGEN Ltda.
 
-#### 2. JOBSITY Position Adjustment
-Moved company name and job title up by 1 point to restore optimal spacing:
+### Alignment Methodology
 
-- **Company Name**: Y: 135.69 → 134.69
-- **Job Title**: Y: 148.69 → 147.69
+**Iterative Refinement Process:**
+- Initial target: X=590
+- Refined to: X=589
+- Final precision: X=588
 
-#### 3. GitHub Link Fix
-**Problem**: The GitHub link was incorrectly resolving to LinkedIn due to an improperly configured spatial disambiguation threshold.
+**Key Techniques:**
+- Font metric-based width calculations
+- Micro-adjustments in 0.1-0.2 point increments
+- Visual reference line for verification (removed in final version)
+- Precision corrector offset consideration (+1.5 for dates)
 
-**Root Cause**: 
-- GitHub link Y-coordinate: 158.27
-- LinkedIn link Y-coordinate: 169.27
-- Previous threshold: 150.0 (both links fell above threshold → both resolved to LinkedIn)
+### Final Coordinate Adjustments
 
-**Solution**: Updated `THRESHOLD_LINK_DISAMBIGUATION_Y` in `src/config.py`:
-```python
-THRESHOLD_LINK_DISAMBIGUATION_Y: float = 165.0  # was 150.0
-```
+**Location Coordinates (X positions):**
+- Zenta Group: 524.87
+- Walmart Chile: 530.99
+- Lamngen Ltda: 526.29
+- Spot: 533.4
 
-**Result**: Links now correctly disambiguate:
-- Y < 165.0 → GitHub (https://github.com/nicolasfredesfranco)
-- Y ≥ 165.0 → LinkedIn (http://www.linkedin.com/in/nicolasfredesfranco)
+**Date Coordinates (X positions):**
+- Zenta Group: 464.75
+- Deuna: 461.22
+- Walmart Chile: 453.82
+- Lamngen Ltda: 462.84
+- EPAM Systems: 487.05
+- Spot: 455.38
 
 ### Files Modified
 
 1. **data/coordinates.json**
-   - Updated X/Y coordinates for section headers
-   - Updated JOBSITY company and title positions
+   - Fine-tuned X coordinates for all 7 job locations
+   - Fine-tuned X coordinates for all 7 job dates
+   - Maintained all Y coordinates unchanged
 
-2. **src/config.py**
-   - Updated `THRESHOLD_LINK_DISAMBIGUATION_Y` from 150.0 to 165.0
-
-3. **README.md**
-   - Added CV preview section with latest version screenshot
-   - Added note about optimized header alignment and corrected GitHub link
+2. **src/renderer.py**
+   - Removed debug reference line (cleanup)
 
 ### Verification
 
-- ✅ All section headers properly aligned
-- ✅ GitHub link correctly opens GitHub profile
-- ✅ LinkedIn link correctly opens LinkedIn profile
-- ✅ PDF generates without errors
+- ✅ All 7 locations right-aligned at X=588
+- ✅ All 7 dates right-aligned at X=588
+- ✅ Perfect visual consistency
+- ✅ No vertical position changes
+- ✅ PDF generates flawlessly
 - ✅ All 157 coordinate elements validated
 - ✅ All 5 shape elements validated
 
-### Technical Details
+### Technical Notes
 
-**Coordinate System**: PDF coordinate space with origin at bottom-left
-- X-axis: Increases rightward (subtract to move left, add to move right)
-- Y-axis: Increases upward (subtract to move up, add to move down)
+**Alignment Target**: X=588 (right edge)
+**Precision Level**: 0.1 point increments
+**Total Elements Aligned**: 14 (7 locations + 7 dates)
+**Coordinate System**: PDF points (1/72 inch)
 
-**Precision**: All adjustments made in 1-point increments for fine control
+---
 
-### Testing Performed
+## Version 3.0.1 - Header Alignment and Link Fix (February 4, 2026)
 
-1. Generated CV with all adjustments
-2. Verified GitHub link opens correct URL
-3. Verified LinkedIn link opens correct URL
-4. Verified visual alignment of all section headers
-5. Confirmed no unintended changes to other elements
+### Summary
+Fine-tuned section header positions and fixed GitHub hyperlink disambiguation logic.
+
+### Changes Made
+
+#### 1. Section Header Alignment
+- **EDUCATION**: Moved 1 point left (X: 92.63 → 91.63)
+- **EXPERIENCE**: Moved 1 point down (Y: 113.94 → 114.94)
+- **PAPERS & WORKSHOPS**: Moved 4 points left (X: 72.33 → 68.33)
+- **SKILLS**: Moved 3 points left (X: 108.37 → 105.37)
+- **LANGUAGES**: Moved 3 points left (X: 92.97 → 89.97)
+
+#### 2. JOBSITY Position
+- **Company Name**: Y: 135.69 → 134.69
+- **Job Title**: Y: 148.69 → 147.69
+
+#### 3. GitHub Link Fix
+Updated `THRESHOLD_LINK_DISAMBIGUATION_Y` in `src/config.py`:
+```python
+THRESHOLD_LINK_DISAMBIGUATION_Y: float = 165.0  # was 150.0
+```
+
+### Files Modified
+1. **data/coordinates.json** - Header and JOBSITY positions
+2. **src/config.py** - Link disambiguation threshold
+3. **README.md** - Added CV preview and notes
+
+### Verification
+- ✅ All section headers properly aligned
+- ✅ GitHub link correctly opens GitHub profile
+- ✅ LinkedIn link correctly opens LinkedIn profile
 
 ---
 
 **Author**: Nicolás Fredes Franco  
-**Date**: February 4, 2026  
-**Version**: 3.0.1
+**Latest Version**: 3.1.0  
+**Last Updated**: February 4, 2026
+
