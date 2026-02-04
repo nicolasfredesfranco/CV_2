@@ -1,8 +1,8 @@
 [
   {
-    "text": "Nicol\u00e1s Ignacio Fredes Franco",
+    "text": "Nicolás Ignacio Fredes Franco",
     "x": 231.63,
-    "y": 83.94,
+    "y": 89.94,
     "font": "TrebuchetMS-Bold",
     "size": 24.01,
     "color": 2978739,
@@ -82,7 +82,7 @@
   {
     "text": "Remote, USA",
     "x": 534.48,
-    "y": 136.42000000000002,
+    "y": 133.42000000000002,
     "font": "TrebuchetMS",
     "size": 8.0,
     "color": 0,
@@ -132,7 +132,7 @@
   {
     "text": "Since January 2026 ",
     "x": 504.28,
-    "y": 147.95,
+    "y": 146.95,
     "font": "TrebuchetMS-Italic",
     "size": 9.0,
     "color": 0,
@@ -242,7 +242,7 @@
   {
     "text": "Las Condes, Chile ",
     "x": 517.8,
-    "y": 203.46,
+    "y": 202.46,
     "font": "TrebuchetMS",
     "size": 8.0,
     "color": 0,
@@ -272,7 +272,7 @@
   {
     "text": "November 2025 - January 2026",
     "x": 456.15,
-    "y": 219.09,
+    "y": 217.09,
     "font": "TrebuchetMS-Italic",
     "size": 9.0,
     "color": 0,
@@ -352,7 +352,7 @@
   {
     "text": "Remote, Mexico ",
     "x": 524.28,
-    "y": 269.43,
+    "y": 267.43,
     "font": "TrebuchetMS",
     "size": 8.0,
     "color": 0,
@@ -382,7 +382,7 @@
   {
     "text": "September 2024 - October 2025",
     "x": 453.23,
-    "y": 283.05,
+    "y": 281.05,
     "font": "TrebuchetMS-Italic",
     "size": 9.0,
     "color": 0,
@@ -642,7 +642,7 @@
   {
     "text": "Santiago, Chile ",
     "x": 524.81,
-    "y": 421.35,
+    "y": 419.35,
     "font": "TrebuchetMS",
     "size": 8.0,
     "color": 0,
@@ -672,7 +672,7 @@
   {
     "text": "February 2024 - September 2024 ",
     "x": 446.35,
-    "y": 436.47,
+    "y": 433.47,
     "font": "TrebuchetMS-Italic",
     "size": 9.0,
     "color": 0,
@@ -832,7 +832,7 @@
   {
     "text": "Remote, USA",
     "x": 532.11,
-    "y": 531.1,
+    "y": 528.1,
     "font": "TrebuchetMS",
     "size": 8.0,
     "color": 0,
@@ -862,7 +862,7 @@
   {
     "text": "May 2023 - October 2023 ",
     "x": 478.04,
-    "y": 544.3199999999999,
+    "y": 541.3199999999999,
     "font": "TrebuchetMS-Italic",
     "size": 9.0,
     "color": 0,
@@ -1022,7 +1022,7 @@
   {
     "text": "Quilicura, Chile ",
     "x": 522.85,
-    "y": 598.91,
+    "y": 596.91,
     "font": "TrebuchetMS",
     "size": 8.0,
     "color": 0,
@@ -1052,7 +1052,7 @@
   {
     "text": "November 2021 - November 2022 ",
     "x": 444.69,
-    "y": 613.53,
+    "y": 611.53,
     "font": "TrebuchetMS-Italic",
     "size": 9.0,
     "color": 0,
@@ -1410,9 +1410,9 @@
     "italic": false
   },
   {
-    "text": "Valpara\u00edso, Chile ",
+    "text": "Valparaíso, Chile ",
     "x": 518.15,
-    "y": 730.6,
+    "y": 728.6,
     "font": "TrebuchetMS",
     "size": 8.0,
     "color": 0,
@@ -1452,7 +1452,7 @@
   {
     "text": "January 2020 - November 2021 ",
     "x": 453.72,
-    "y": 745.72,
+    "y": 743.72,
     "font": "TrebuchetMS-Italic",
     "size": 9.0,
     "color": 0,
