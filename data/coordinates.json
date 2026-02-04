@@ -160,8 +160,18 @@
     "italic": false
   },
   {
-    "text": " Architecting a high-scale  Agentic System on Vertex  AI to intelligently  match 8 ",
+    "text": " Architecting  a  high-scale  Agentic System on Vertex  AI to intelligently  match ",
     "x": 218.99,
+    "y": 161.94,
+    "font": "TrebuchetMS",
+    "size": 10.0,
+    "color": 0,
+    "bold": false,
+    "italic": false
+  },
+  {
+    "text": " 8",
+    "x": 572.8,
     "y": 161.94,
     "font": "TrebuchetMS",
     "size": 10.0,
