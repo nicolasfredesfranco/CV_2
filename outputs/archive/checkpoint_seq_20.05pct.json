@@ -1,0 +1,1578 @@
+{
+  "ronda": 22,
+  "diferencia": 20.04921121233987,
+  "mejoras": 22,
+  "timestamp": 1769920418.4905581,
+  "coordinates": [
+    {
+      "text": "Nicolás Ignacio Fredes Franco",
+      "x": 99.6,
+      "y": 98.16,
+      "font": "TrebuchetMS-Bold",
+      "size": 24.01,
+      "color": 2978739,
+      "bold": true,
+      "italic": false
+    },
+    {
+      "text": "Nicolás Fredes ",
+      "x": 99.6,
+      "y": 98.16,
+      "font": "TrebuchetMS-Bold",
+      "size": 10.0,
+      "color": 0,
+      "bold": true,
+      "italic": false
+    },
+    {
+      "text": "22 norte 1125 F-602, ",
+      "x": 99.6,
+      "y": 120.24,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "Viña del Mar, Chile ",
+      "x": 89.52,
+      "y": 279.36,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "EXPERIENCE",
+      "x": 365.04,
+      "y": 67.44,
+      "font": "TrebuchetMS-Bold",
+      "size": 12.01,
+      "color": 15790320,
+      "bold": true,
+      "italic": false
+    },
+    {
+      "text": "(569) 9899 1704 ",
+      "x": 87.36,
+      "y": 76.32,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "JOBSITY",
+      "x": 214.56,
+      "y": 84.72,
+      "font": "TrebuchetMS-Bold",
+      "size": 14.01,
+      "color": 0,
+      "bold": true,
+      "italic": false
+    },
+    {
+      "text": "nico.fredes.franco@gmail.com ",
+      "x": 45.36,
+      "y": 84.96,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 1070028,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "Remote, USA",
+      "x": 534.96,
+      "y": 89.76,
+      "font": "TrebuchetMS",
+      "size": 8.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "Github: ",
+      "x": 42.24,
+      "y": 290.4,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "// ",
+      "x": 88.56,
+      "y": 98.4,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "nicolasfredesfranco ",
+      "x": 99.6,
+      "y": 98.16,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 1070028,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "Lead Artificial Intelligence Engineer",
+      "x": 214.27,
+      "y": 147.69,
+      "font": "TrebuchetMS-Bold",
+      "size": 13.01,
+      "color": 2847667,
+      "bold": true,
+      "italic": false
+    },
+    {
+      "text": "Since January 2026 ",
+      "x": 527.76,
+      "y": 102.96,
+      "font": "TrebuchetMS-Italic",
+      "size": 9.0,
+      "color": 0,
+      "bold": false,
+      "italic": true
+    },
+    {
+      "text": "LinkedIn: //",
+      "x": 45.36,
+      "y": 109.2,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": " nicolasfredesfranco ",
+      "x": 99.6,
+      "y": 98.16,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 1070028,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": " Architecting a high-scale Agentic System on Vertex AI to intelligently match 8 ",
+      "x": 475.68,
+      "y": 114.96,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "Twitter: //",
+      "x": 44.64,
+      "y": 120.48,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": " nicofredesfranc",
+      "x": 99.6,
+      "y": 120.24,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 1070028,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "million LATAM talents with job opportunities, using LangChain and Google-ADK, ",
+      "x": 221.77,
+      "y": 174.88,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "EDUCATION",
+      "x": 88.56,
+      "y": 134.88,
+      "font": "TrebuchetMS-Bold",
+      "size": 12.01,
+      "color": 15790320,
+      "bold": true,
+      "italic": false
+    },
+    {
+      "text": "deployed via Agent Engine to orchestrate complex industrial workflows.",
+      "x": 221.77,
+      "y": 187.54,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "Federico Santa María",
+      "x": 43.2,
+      "y": 153.6,
+      "font": "TrebuchetMS-Bold",
+      "size": 14.0,
+      "color": 0,
+      "bold": true,
+      "italic": false
+    },
+    {
+      "text": "ZENTA GROUP",
+      "x": 215.97,
+      "y": 201.33,
+      "font": "TrebuchetMS-Bold",
+      "size": 14.01,
+      "color": 0,
+      "bold": true,
+      "italic": false
+    },
+    {
+      "text": "Las Condes, Chile ",
+      "x": 532.08,
+      "y": 157.92,
+      "font": "TrebuchetMS",
+      "size": 8.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "Technical University",
+      "x": 107.28,
+      "y": 168.24,
+      "font": "TrebuchetMS-Bold",
+      "size": 14.0,
+      "color": 0,
+      "bold": true,
+      "italic": false
+    },
+    {
+      "text": "Senior Machine Learning Engineer",
+      "x": 217.16,
+      "y": 217.34,
+      "font": "TrebuchetMS-Bold",
+      "size": 13.01,
+      "color": 2847667,
+      "bold": true,
+      "italic": false
+    },
+    {
+      "text": "November 2025 - January 2026",
+      "x": 456.48,
+      "y": 172.32,
+      "font": "TrebuchetMS-Italic",
+      "size": 9.0,
+      "color": 0,
+      "bold": false,
+      "italic": true
+    },
+    {
+      "text": "Valparaíso, Chile ",
+      "x": 42.24,
+      "y": 182.64,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": " Refactored the post-speech processing architecture for an agentic",
+      "x": 396.96,
+      "y": 184.56,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "B.S. in Electronic ",
+      "x": 89.76,
+      "y": 197.04,
+      "font": "TrebuchetMS-Bold",
+      "size": 14.01,
+      "color": 2978739,
+      "bold": true,
+      "italic": false
+    },
+    {
+      "text": " voice-integrated system at CMPC Brazil (Guaíba plant), reducing end-to-end",
+      "x": 522.0,
+      "y": 185.04,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": " response latency by 85% (from 13s to 2s).",
+      "x": 526.8,
+      "y": 199.44,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "Engineering",
+      "x": 43.2,
+      "y": 213.36,
+      "font": "TrebuchetMS-Bold",
+      "size": 14.01,
+      "color": 2978739,
+      "bold": true,
+      "italic": false
+    },
+    {
+      "text": "DEUNA",
+      "x": 215.76,
+      "y": 222.72,
+      "font": "TrebuchetMS-Bold",
+      "size": 14.01,
+      "color": 0,
+      "bold": true,
+      "italic": false
+    },
+    {
+      "text": "Remote, Mexico ",
+      "x": 534.96,
+      "y": 89.76,
+      "font": "TrebuchetMS",
+      "size": 8.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "M.S. in Electronic ",
+      "x": 89.76,
+      "y": 197.04,
+      "font": "TrebuchetMS-Bold",
+      "size": 14.01,
+      "color": 2978739,
+      "bold": true,
+      "italic": false
+    },
+    {
+      "text": "Lead Data Scientist",
+      "x": 214.71,
+      "y": 282.8,
+      "font": "TrebuchetMS-Bold",
+      "size": 13.01,
+      "color": 2847667,
+      "bold": true,
+      "italic": false
+    },
+    {
+      "text": "September 2024 - October 2025",
+      "x": 453.6,
+      "y": 237.84,
+      "font": "TrebuchetMS-Italic",
+      "size": 9.0,
+      "color": 0,
+      "bold": false,
+      "italic": true
+    },
+    {
+      "text": "Engineering",
+      "x": 43.2,
+      "y": 213.36,
+      "font": "TrebuchetMS-Bold",
+      "size": 14.01,
+      "color": 2978739,
+      "bold": true,
+      "italic": false
+    },
+    {
+      "text": "Implementation of a transformer-based forecasting algorithm for predicting",
+      "x": 323.76,
+      "y": 250.56,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "transactional volume time series at multiple levels of temporal granularity. This",
+      "x": 220.66,
+      "y": 308.61,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "GPA: 92% ",
+      "x": 42.48,
+      "y": 268.32,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "solution generates forecasts up to two weeks in advance for intervals of 15",
+      "x": 323.76,
+      "y": 250.56,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "Specialty: Machine Learning. ",
+      "x": 42.48,
+      "y": 279.6,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "minutes, 1 day, and 1 week. In each case, achieving results with an R²",
+      "x": 443.28,
+      "y": 283.68,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "Thesis: \"Protein functions ",
+      "x": 114.96,
+      "y": 290.4,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "metric above 0.9.",
+      "x": 221.28,
+      "y": 294.72,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "prediction using Deep Learning.\" ",
+      "x": 42.72,
+      "y": 301.44,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "Ideated, designed, and implemented a correlation-based model (leveraging",
+      "x": 412.8,
+      "y": 305.76,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "mutual information among commercial transaction time series) to identify",
+      "x": 258.72,
+      "y": 316.8,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "PAPERS & WORKSHOPS",
+      "x": 68.16,
+      "y": 320.16,
+      "font": "TrebuchetMS-Bold",
+      "size": 10.66,
+      "color": 15790320,
+      "bold": true,
+      "italic": false
+    },
+    {
+      "text": "quantifiable relationships for \"Athia,\" a multimodal generative LLM. This",
+      "x": 282.96,
+      "y": 327.6,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "Journal Paper in IEEE ACCESS",
+      "x": 43.68,
+      "y": 337.92,
+      "font": "TrebuchetMS-Bold",
+      "size": 10.0,
+      "color": 0,
+      "bold": true,
+      "italic": false
+    },
+    {
+      "text": "solution provided data-driven \"reasoning seeds\" for AI agents to explain variable",
+      "x": 301.92,
+      "y": 338.64,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "DOI: 10.1109/ACCESS.2021.3094723",
+      "x": 66.0,
+      "y": 372.72,
+      "font": "TrebuchetMS-Italic",
+      "size": 9.0,
+      "color": 1070028,
+      "bold": false,
+      "italic": true
+    },
+    {
+      "text": "behaviors, using multi-threading and GPU-based processing. It processed data",
+      "x": 299.28,
+      "y": 349.68,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": " \"",
+      "x": 405.84,
+      "y": 338.64,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "HGAN:",
+      "x": 42.72,
+      "y": 348.24,
+      "font": "TrebuchetMS-Bold",
+      "size": 10.0,
+      "color": 0,
+      "bold": true,
+      "italic": false
+    },
+    {
+      "text": " Hyperbolic Generative",
+      "x": 78.0,
+      "y": 348.24,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "from 15+ variables for KFC Ecuador in around 10 seconds.",
+      "x": 323.76,
+      "y": 250.56,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "July 2021 ",
+      "x": 146.4,
+      "y": 360.24,
+      "font": "TrebuchetMS-Italic",
+      "size": 9.0,
+      "color": 0,
+      "bold": false,
+      "italic": true
+    },
+    {
+      "text": "Adversarial Network\".",
+      "x": 44.4,
+      "y": 360.24,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "SPOT",
+      "x": 214.71,
+      "y": 419.22,
+      "font": "TrebuchetMS-Bold",
+      "size": 14.01,
+      "color": 0,
+      "bold": true,
+      "italic": false
+    },
+    {
+      "text": "Santiago, Chile ",
+      "x": 528.24,
+      "y": 376.08,
+      "font": "TrebuchetMS",
+      "size": 8.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "Workshop LatinX in AI at NeurIPS ",
+      "x": 43.68,
+      "y": 393.12,
+      "font": "TrebuchetMS-Bold",
+      "size": 10.0,
+      "color": 0,
+      "bold": true,
+      "italic": false
+    },
+    {
+      "text": "Computer Vision Engineer",
+      "x": 214.71,
+      "y": 434.72,
+      "font": "TrebuchetMS-Bold",
+      "size": 13.01,
+      "color": 2847667,
+      "bold": true,
+      "italic": false
+    },
+    {
+      "text": "February 2024 - September 2024 ",
+      "x": 453.6,
+      "y": 237.84,
+      "font": "TrebuchetMS-Italic",
+      "size": 9.0,
+      "color": 0,
+      "bold": false,
+      "italic": true
+    },
+    {
+      "text": "December 2019 in Vancouver, Canada ",
+      "x": 121.92,
+      "y": 403.2,
+      "font": "TrebuchetMS-Italic",
+      "size": 9.0,
+      "color": 0,
+      "bold": false,
+      "italic": true
+    },
+    {
+      "text": "Developed an algorithm (Deepstream) to analyze security cameras in self-",
+      "x": 220.66,
+      "y": 449.53,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "SKILLS",
+      "x": 42.24,
+      "y": 290.4,
+      "font": "TrebuchetMS-Bold",
+      "size": 12.01,
+      "color": 15790320,
+      "bold": true,
+      "italic": false
+    },
+    {
+      "text": "checkout areas for retailers such as Walmart Mexico and OXXO. The algorithm",
+      "x": 323.76,
+      "y": 250.56,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "generates alerts for possible theft situations, such as people paying for only a",
+      "x": 220.66,
+      "y": 471.54,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "PROGRAMMING LANGUAGES",
+      "x": 44.4,
+      "y": 442.8,
+      "font": "TrebuchetMS-Bold",
+      "size": 11.0,
+      "color": 0,
+      "bold": true,
+      "italic": false
+    },
+    {
+      "text": "portion of their products or passing by without paying. It was capable of",
+      "x": 220.66,
+      "y": 482.54,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "• Python    • C    • C++",
+      "x": 43.92,
+      "y": 456.0,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "processing up to 10 cameras in real time per Nvidia Jetson Xavier, with each",
+      "x": 220.66,
+      "y": 493.55,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "• MySQL    • SQL",
+      "x": 43.92,
+      "y": 470.16,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "camera operating at around 5 FPS. Additionally, the alert delay time on the",
+      "x": 220.66,
+      "y": 504.55,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "platform was less than 10 seconds.",
+      "x": 220.66,
+      "y": 515.56,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "FRAMEWORKS",
+      "x": 44.4,
+      "y": 484.08,
+      "font": "TrebuchetMS-Bold",
+      "size": 11.0,
+      "color": 0,
+      "bold": true,
+      "italic": false
+    },
+    {
+      "text": "EPAM Systems                                                       ",
+      "x": 253.92,
+      "y": 481.44,
+      "font": "TrebuchetMS-Bold",
+      "size": 14.01,
+      "color": 0,
+      "bold": true,
+      "italic": false
+    },
+    {
+      "text": "• PyTorch    • TensorFlow    • Keras",
+      "x": 103.44,
+      "y": 497.52,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "Remote, USA",
+      "x": 538.11,
+      "y": 533.1,
+      "font": "TrebuchetMS",
+      "size": 8.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "Senior Data Scientist",
+      "x": 214.71,
+      "y": 542.5699999999999,
+      "font": "TrebuchetMS-Bold",
+      "size": 13.01,
+      "color": 2978739,
+      "bold": true,
+      "italic": false
+    },
+    {
+      "text": "• Threading    • OpenCV    • Pandas",
+      "x": 49.68,
+      "y": 511.68,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "May 2023 - October 2023 ",
+      "x": 484.04,
+      "y": 546.3199999999999,
+      "font": "TrebuchetMS-Italic",
+      "size": 9.0,
+      "color": 0,
+      "bold": false,
+      "italic": true
+    },
+    {
+      "text": "Optimized the product prices for TBC Corporation across both physical",
+      "x": 219.43,
+      "y": 557.38,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "and",
+      "x": 219.43,
+      "y": 570.31,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "digital",
+      "x": 248.33,
+      "y": 570.31,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "outlets",
+      "x": 289.39,
+      "y": 570.31,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "by",
+      "x": 333.18,
+      "y": 570.31,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "leveraging",
+      "x": 356.88,
+      "y": 523.2,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "data",
+      "x": 248.64,
+      "y": 236.64,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "analysis,",
+      "x": 448.08,
+      "y": 523.2,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "estimating",
+      "x": 498.82,
+      "y": 570.31,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "cross",
+      "x": 558.83,
+      "y": 570.31,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "• NVIDIA Deepstream",
+      "x": 87.84,
+      "y": 526.08,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "elasticities, and developing a decision algorithm for their price strategy.",
+      "x": 219.43,
+      "y": 583.31,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "• Vertex AI Agent Engine",
+      "x": 127.68,
+      "y": 539.52,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "WALMART Chile",
+      "x": 213.52,
+      "y": 595.78,
+      "font": "TrebuchetMS-Bold",
+      "size": 14.01,
+      "color": 0,
+      "bold": true,
+      "italic": false
+    },
+    {
+      "text": "• Google-ADK    • LangChain",
+      "x": 44.64,
+      "y": 553.2,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "Quilicura, Chile ",
+      "x": 528.85,
+      "y": 599.91,
+      "font": "TrebuchetMS",
+      "size": 8.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "Senior Data Scientist",
+      "x": 214.71,
+      "y": 611.78,
+      "font": "TrebuchetMS-Bold",
+      "size": 13.01,
+      "color": 2978739,
+      "bold": true,
+      "italic": false
+    },
+    {
+      "text": "CLOUD",
+      "x": 44.16,
+      "y": 566.88,
+      "font": "TrebuchetMS-Bold",
+      "size": 11.0,
+      "color": 0,
+      "bold": true,
+      "italic": false
+    },
+    {
+      "text": "November 2021 - November 2022 ",
+      "x": 456.48,
+      "y": 172.32,
+      "font": "TrebuchetMS-Italic",
+      "size": 9.0,
+      "color": 0,
+      "bold": false,
+      "italic": true
+    },
+    {
+      "text": " Developed an autonomous algorithm (SQL & Python) for e-commerce products ",
+      "x": 323.76,
+      "y": 250.56,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "• AWS    • Snowflake    • GCP",
+      "x": 82.32,
+      "y": 580.08,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "prices recommendation. Switching from a manual system with a latency of up ",
+      "x": 222.21,
+      "y": 638.97,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "CONCEPTS",
+      "x": 44.16,
+      "y": 594.96,
+      "font": "TrebuchetMS-Bold",
+      "size": 11.0,
+      "color": 0,
+      "bold": true,
+      "italic": false
+    },
+    {
+      "text": "to 6 months to daily price changes. ",
+      "x": 222.21,
+      "y": 651.62,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "• Machine Learning",
+      "x": 87.12,
+      "y": 608.4,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": " Implemented Machine Learning (Python) models to evaluate the annual change ",
+      "x": 219.43,
+      "y": 664.15,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "• Computer Vision",
+      "x": 49.92,
+      "y": 622.32,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "in the product assortment, increasing the range of products considered by 200%. ",
+      "x": 222.21,
+      "y": 677.09,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "• Natural Language Processing",
+      "x": 124.08,
+      "y": 636.24,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "Optimized",
+      "x": 219.43,
+      "y": 689.66,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "a",
+      "x": 275.03,
+      "y": 689.66,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "code",
+      "x": 289.83,
+      "y": 689.66,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "(SQL",
+      "x": 320.72,
+      "y": 689.66,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "&",
+      "x": 350.56,
+      "y": 689.66,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "Python)",
+      "x": 367.17,
+      "y": 689.66,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "for",
+      "x": 411.15,
+      "y": 689.66,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "competitors'",
+      "x": 433.64,
+      "y": 689.66,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "promotions",
+      "x": 498.49,
+      "y": 689.66,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "price",
+      "x": 558.2,
+      "y": 689.66,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "• IoT  • Forecasting",
+      "x": 49.68,
+      "y": 511.68,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "recognition,",
+      "x": 219.43,
+      "y": 702.6,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "making",
+      "x": 284.28,
+      "y": 702.6,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "it",
+      "x": 326.77,
+      "y": 702.6,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "12",
+      "x": 345.12,
+      "y": 655.68,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "times",
+      "x": 365.19,
+      "y": 702.6,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "faster",
+      "x": 400.56,
+      "y": 655.68,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "and",
+      "x": 502.32,
+      "y": 127.92,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "increasing",
+      "x": 464.06,
+      "y": 702.6,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "its",
+      "x": 520.08,
+      "y": 655.68,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "accuracy",
+      "x": 541.68,
+      "y": 657.6,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "• Object-Oriented Programming",
+      "x": 49.92,
+      "y": 662.4,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "from 50% to 80%.",
+      "x": 219.43,
+      "y": 715.25,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "• Parallel Computing",
+      "x": 83.04,
+      "y": 676.08,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "LAMNGEN Ltda.",
+      "x": 215.76,
+      "y": 679.92,
+      "font": "TrebuchetMS-Bold",
+      "size": 14.01,
+      "color": 0,
+      "bold": true,
+      "italic": false
+    },
+    {
+      "text": "Valparaíso, Chile ",
+      "x": 42.24,
+      "y": 182.64,
+      "font": "TrebuchetMS",
+      "size": 8.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "• GPU-Accelerated Computing",
+      "x": 49.92,
+      "y": 690.48,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "Artificial Intelligence Specialist",
+      "x": 214.71,
+      "y": 743.96,
+      "font": "TrebuchetMS-Bold",
+      "size": 13.01,
+      "color": 2978739,
+      "bold": true,
+      "italic": false
+    },
+    {
+      "text": "• Generative AI",
+      "x": 128.88,
+      "y": 349.68,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "January 2020 - November 2021 ",
+      "x": 459.72,
+      "y": 747.72,
+      "font": "TrebuchetMS-Italic",
+      "size": 9.0,
+      "color": 0,
+      "bold": false,
+      "italic": true
+    },
+    {
+      "text": "Developed an AI algorithm (Python) in IoT devices to replace the fault",
+      "x": 219.43,
+      "y": 760.78,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "LANGUAGES",
+      "x": 123.84,
+      "y": 442.8,
+      "font": "TrebuchetMS-Bold",
+      "size": 12.01,
+      "color": 15790320,
+      "bold": true,
+      "italic": false
+    },
+    {
+      "text": "detection system of a Torre",
+      "x": 219.43,
+      "y": 771.78,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "S.A. production line. Switching from faulty",
+      "x": 367.8,
+      "y": 771.78,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "manual registration with 10-minute delays to an automated method of vision",
+      "x": 219.43,
+      "y": 782.79,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "Spanish  ",
+      "x": 43.92,
+      "y": 739.2,
+      "font": "TrebuchetMS-Bold",
+      "size": 10.0,
+      "color": 0,
+      "bold": true,
+      "italic": false
+    },
+    {
+      "text": "Native Speaker ",
+      "x": 124.8,
+      "y": 739.2,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "algorithms connected to a unified database with real-time data availability",
+      "x": 219.43,
+      "y": 793.79,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "English",
+      "x": 44.4,
+      "y": 752.4,
+      "font": "TrebuchetMS-Bold",
+      "size": 10.0,
+      "color": 0,
+      "bold": true,
+      "italic": false
+    },
+    {
+      "text": "Level CEFR C1 ",
+      "x": 93.84,
+      "y": 752.4,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    },
+    {
+      "text": "with a maximum delay of 1 second and 95% accuracy.",
+      "x": 417.36,
+      "y": 759.84,
+      "font": "TrebuchetMS",
+      "size": 10.0,
+      "color": 0,
+      "bold": false,
+      "italic": false
+    }
+  ]
+}
