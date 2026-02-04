@@ -6,6 +6,12 @@
 
 A high-precision, Python-based CV/Resume generation engine designed to programmatically create professional PDF documents with pixel-perfect accuracy.
 
+## 📄 CV Preview
+
+![CV Preview](outputs/cv_preview.png)
+
+*Latest version with optimized header alignment and corrected GitHub link*
+
 ## 🌟 Features
 
 - **🎯 Pixel-Perfect Rendering**: Sub-pixel precision positioning using ReportLab
