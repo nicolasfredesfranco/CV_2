@@ -1390,7 +1390,7 @@
     "italic": false
   },
   {
-    "text": "from 50% to 80%.",
+    "text": "from  50%  to  80%.",
     "x": 219.43,
     "y": 715.25,
     "font": "TrebuchetMS",
@@ -1470,7 +1470,7 @@
     "italic": true
   },
   {
-    "text": "Developed  an  AI  algorithm  (Python)  in  IoT  devices  to  replace  the  fault",
+    "text": "Developed   an   AI   algorithm   (Python)  in  IoT   devices  to  replace  the   fault",
     "x": 219.43,
     "y": 760.78,
     "font": "TrebuchetMS",
@@ -1490,7 +1490,7 @@
     "italic": false
   },
   {
-    "text": "detection  system  of  a  Torre S.A.  production  line. Switching  from  faulty",
+    "text": "detection  system   of   a  Torre S.A.  production   line.  Switching   from   faulty",
     "x": 219.43,
     "y": 771.78,
     "font": "TrebuchetMS",
@@ -1500,17 +1500,7 @@
     "italic": false
   },
   {
-    "text": "S.A. production line. Switching from faulty",
-    "x": 367.8,
-    "y": 771.78,
-    "font": "TrebuchetMS",
-    "size": 10.0,
-    "color": 0,
-    "bold": false,
-    "italic": false
-  },
-  {
-    "text": "manual registration with 10-minute delays to an automated method of vision",
+    "text": "manual  registration  with  10-minute  delays  to  an automated method  of  vision",
     "x": 219.43,
     "y": 782.79,
     "font": "TrebuchetMS",
@@ -1540,7 +1530,7 @@
     "italic": false
   },
   {
-    "text": "algorithms connected to a unified database with real-time data availability",
+    "text": "algorithms  connected   to  a  unified   database  with  real-time  data  availability",
     "x": 219.43,
     "y": 793.79,
     "font": "TrebuchetMS",
