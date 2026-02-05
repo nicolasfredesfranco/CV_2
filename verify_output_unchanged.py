@@ -4,8 +4,8 @@ Output Verification Script
 Ensures CV generation produces IDENTICAL output after any refactoring
 
 Author: Nicolás Ignacio Fredes Franco
-"""
-
+""" 
+ 
 import subprocess
 import hashlib
 from pathlib import Path
