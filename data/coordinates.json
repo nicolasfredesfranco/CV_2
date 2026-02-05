@@ -700,7 +700,7 @@
     "italic": true
   },
   {
-    "text": "Developed  an  algorithm  (Deepstream)  to  analyze   security  cameras  in  self-",
+    "text": "Developed  an  algorithm  (Deepstream)  to   analyze   security  cameras  in  self-",
     "x": 220.66,
     "y": 449.53,
     "font": "TrebuchetMS",
@@ -720,7 +720,7 @@
     "italic": false
   },
   {
-    "text": "checkout areas for retailers such as Walmart Mexico and OXXO. The algorithm",
+    "text": "checkout  areas  for retailers  such  as  Walmart Mexico and OXXO. The algorithm",
     "x": 220.66,
     "y": 460.53,
     "font": "TrebuchetMS",
@@ -730,7 +730,7 @@
     "italic": false
   },
   {
-    "text": "generates alerts for possible theft situations, such as people paying for only a",
+    "text": "generates  alerts  for  possible theft situations, such  as  people paying  for only a",
     "x": 220.66,
     "y": 471.54,
     "font": "TrebuchetMS",
@@ -750,7 +750,7 @@
     "italic": false
   },
   {
-    "text": "portion  of  their  products  or  passing  by  without  paying. It  was  capable  of",
+    "text": "portion   of  their  products  or   passing  by  without  paying.  It  was  capable  of",
     "x": 220.66,
     "y": 482.54,
     "font": "TrebuchetMS",
@@ -770,7 +770,7 @@
     "italic": false
   },
   {
-    "text": "processing up to 10 cameras in real time per Nvidia Jetson Xavier, with each",
+    "text": "processing  up  to  10  cameras in  real time per Nvidia Jetson  Xavier, with  each",
     "x": 220.66,
     "y": 493.55,
     "font": "TrebuchetMS",
@@ -790,7 +790,7 @@
     "italic": false
   },
   {
-    "text": "camera operating at around 5 FPS. Additionally, the alert delay time on the",
+    "text": "camera  operating  at  around  5  FPS.  Additionally,  the alert delay time on the",
     "x": 220.66,
     "y": 504.55,
     "font": "TrebuchetMS",
