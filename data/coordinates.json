@@ -1150,7 +1150,7 @@
     "italic": false
   },
   {
-    "text": "in the product assortment, increasing the range of products considered by 200%.",
+    "text": "in the product assortment, increasing the range of products  considered  by 200%.",
     "x": 222.21,
     "y": 677.09,
     "font": "TrebuchetMS",
@@ -1260,7 +1260,7 @@
     "italic": false
   },
   {
-    "text": " price",
+    "text": "  price",
     "x": 558.2,
     "y": 689.66,
     "font": "TrebuchetMS",
@@ -1370,7 +1370,7 @@
     "italic": false
   },
   {
-    "text": " accuracy",
+    "text": "  accuracy",
     "x": 541.27,
     "y": 702.6,
     "font": "TrebuchetMS",
@@ -1470,7 +1470,7 @@
     "italic": true
   },
   {
-    "text": "Developed an AI algorithm (Python) in IoT devices to replace the fault",
+    "text": "Developed  an  AI  algorithm  (Python)  in  IoT  devices  to  replace  the  fault",
     "x": 219.43,
     "y": 760.78,
     "font": "TrebuchetMS",
@@ -1490,7 +1490,7 @@
     "italic": false
   },
   {
-    "text": "detection system of a Torre",
+    "text": "detection  system  of  a  Torre S.A.  production  line. Switching  from  faulty",
     "x": 219.43,
     "y": 771.78,
     "font": "TrebuchetMS",
