@@ -440,7 +440,7 @@
     "italic": false
   },
   {
-    "text": "solution  generates  forecasts  up  to  two weeks  in  advance  for  intervals of 15",
+    "text": "solution  generates  forecasts  up  to  two weeks  in  advance  for  intervals of  15",
     "x": 220.66,
     "y": 319.62,
     "font": "TrebuchetMS",
@@ -460,7 +460,7 @@
     "italic": false
   },
   {
-    "text": "minutes,  1 day,  and  1 week.  In   each   case,   achieving   results  with  an  R\u00b2",
+    "text": "minutes,  1 day,  and  1 week.  In   each   case,   achieving   results   with  an   R\u00b2",
     "x": 220.66,
     "y": 330.62,
     "font": "TrebuchetMS",
@@ -500,7 +500,7 @@
     "italic": false
   },
   {
-    "text": "Ideated, designed, and implemented a correlation-based model (leveraging",
+    "text": "Ideated,  designed,  and  implemented a  correlation-based  model (leveraging",
     "x": 220.66,
     "y": 352.73,
     "font": "TrebuchetMS",
@@ -510,7 +510,7 @@
     "italic": false
   },
   {
-    "text": "mutual information among commercial transaction time series) to identify",
+    "text": "mutual  information  among  commercial  transaction  time series) to identify",
     "x": 220.66,
     "y": 363.74,
     "font": "TrebuchetMS",
@@ -530,7 +530,7 @@
     "italic": false
   },
   {
-    "text": "quantifiable relationships for \"Athia,\" a multimodal generative LLM. This",
+    "text": "quantifiable  relationships   for \"Athia,\"  a  multimodal  generative LLM.  This",
     "x": 220.66,
     "y": 374.74,
     "font": "TrebuchetMS",
