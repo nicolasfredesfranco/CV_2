@@ -500,7 +500,7 @@
     "italic": false
   },
   {
-    "text": "Ideated,  designed,  and implemented a correlation-based model (leveraging",
+    "text": "Ideated,  designed,  and  implemented a correlation-based  model (leveraging",
     "x": 220.66,
     "y": 352.73,
     "font": "TrebuchetMS",
@@ -510,7 +510,7 @@
     "italic": false
   },
   {
-    "text": "mutual information  among  commercial  transaction  time  series) to identify",
+    "text": "mutual information  among  commercial  transaction  time  series)  to  identify",
     "x": 220.66,
     "y": 363.74,
     "font": "TrebuchetMS",
@@ -530,7 +530,7 @@
     "italic": false
   },
   {
-    "text": "quantifiable  relationships  for  \"Athia,\"  a  multimodal generative LLM. This",
+    "text": "quantifiable  relationships  for  \"Athia,\"  a  multimodal  generative  LLM.  This",
     "x": 220.66,
     "y": 374.74,
     "font": "TrebuchetMS",
@@ -550,7 +550,7 @@
     "italic": false
   },
   {
-    "text": "solution  provided  data-driven \"reasoning  seeds\" for AI agents  to  explain variable",
+    "text": "solution  provided  data-driven \"reasoning  seeds\" for AI agents to explain variable",
     "x": 220.66,
     "y": 385.75,
     "font": "TrebuchetMS",
@@ -570,7 +570,7 @@
     "italic": true
   },
   {
-    "text": "behaviors,  using  multi-threading  and GPU-based processing. It processed data",
+    "text": "behaviors,  using  multi-threading  and GPU-based processing. It  processed  data",
     "x": 220.66,
     "y": 396.75,
     "font": "TrebuchetMS",
