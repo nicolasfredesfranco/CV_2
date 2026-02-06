@@ -65,7 +65,7 @@ class HyperlinkResolver:
                 if y_original < CONFIG.THRESHOLD_LINK_DISAMBIGUATION_Y:
                     return "https://github.com/nicolasfredesfranco"
                 else:
-                    return "http://www.linkedin.com/in/nicolasfredesfranco"
+                    return "https://www.linkedin.com/in/nicolasfredesfranco/"
                     
             return None
             

@@ -54,7 +54,7 @@ class LayoutConfig:
     THRESHOLD_DATE_ALIGN_Y_LIMIT: float = 750.0  # Apply correction only in body
     
     # Vertical threshold to disambiguate links (Github vs LinkedIn)
-    THRESHOLD_LINK_DISAMBIGUATION_Y: float = 165.0
+    THRESHOLD_LINK_DISAMBIGUATION_Y: float = 155.0
 
     # Micro-Precision Offsets (PDF Points)
     OFFSET_DATE_CORRECTION: float = 1.5
