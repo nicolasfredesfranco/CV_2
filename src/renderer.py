@@ -136,15 +136,15 @@ class CVRenderer:
         # DEBUG: Draw green horizontal line above main name
         # Name is at X=233.63, Y=95.94 (PDF space), size=24.01
         # Calculate name top edge in ReportLab space
-        name_y_pdf = 95.94
-        name_y_reportlab = CONFIG.PAGE_HEIGHT - name_y_pdf + CONFIG.Y_GLOBAL_OFFSET
-        name_height = 24.01
-        line_y = name_y_reportlab + name_height - 6  # Top edge of text, lowered 6 pts
+        # name_y_pdf = 95.94
+        # name_y_reportlab = CONFIG.PAGE_HEIGHT - name_y_pdf + CONFIG.Y_GLOBAL_OFFSET
+        # name_height = 24.01
+        # line_y = name_y_reportlab + name_height - 6  # Top edge of text, lowered 6 pts
         
         # Draw dark green line from left edge to right edge of page
-        self.canvas.setStrokeColorRGB(0, 0.5, 0)  # Dark green
-        self.canvas.setLineWidth(1.0)  # Medium thickness
-        self.canvas.line(0, line_y, CONFIG.PAGE_WIDTH, line_y)  # Full width
+        # self.canvas.setStrokeColorRGB(0, 0.5, 0)  # Dark green
+        # self.canvas.setLineWidth(1.0)  # Medium thickness
+        # self.canvas.line(0, line_y, CONFIG.PAGE_WIDTH, line_y)  # Full width
     
     def render_text_elements(self) -> None:
         """
