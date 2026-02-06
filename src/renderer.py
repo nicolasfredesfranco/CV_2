@@ -139,7 +139,7 @@ class CVRenderer:
         name_y_pdf = 95.94
         name_y_reportlab = CONFIG.PAGE_HEIGHT - name_y_pdf + CONFIG.Y_GLOBAL_OFFSET
         name_height = 24.01
-        line_y = name_y_reportlab + name_height - 2  # Top edge of text, lowered 2 pts
+        line_y = name_y_reportlab + name_height - 4  # Top edge of text, lowered 4 pts
         
         # Draw dark green line from left edge to right edge of page
         self.canvas.setStrokeColorRGB(0, 0.5, 0)  # Dark green
