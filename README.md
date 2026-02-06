@@ -119,7 +119,7 @@ CV_2/
 │   ├── renderer.py              # PDF rendering engine
 │   ├── shapes.py                # Geometric shape handling
 │   └── text.py                  # Text rendering logic
-│
+│ 
 ├── data/                        # Data files
 │   ├── coordinates.json         # Text element coordinates
 │   ├── shapes.json              # Rectangle/shape definitions
