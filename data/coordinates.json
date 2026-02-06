@@ -12,7 +12,7 @@
   {
     "text": "Nicolás Fredes ",
     "x": 88.47,
-    "y": 97.24000000000001,
+    "y": 92.24000000000001,
     "font": "TrebuchetMS-Bold",
     "size": 10.0,
     "color": 0,
@@ -22,7 +22,7 @@
   {
     "text": "22 norte 1125 F-602, ",
     "x": 75.85,
-    "y": 108.24000000000001,
+    "y": 103.24000000000001,
     "font": "TrebuchetMS",
     "size": 10.0,
     "color": 0,
@@ -32,7 +32,7 @@
   {
     "text": "Viña del Mar, Chile ",
     "x": 79.8,
-    "y": 118.25,
+    "y": 113.25,
     "font": "TrebuchetMS",
     "size": 10.0,
     "color": 0,
@@ -52,7 +52,7 @@
   {
     "text": "(569) 9899 1704 ",
     "x": 86.81,
-    "y": 131.26,
+    "y": 126.26,
     "font": "TrebuchetMS",
     "size": 10.0,
     "color": 0,
@@ -72,7 +72,7 @@
   {
     "text": "nico.fredes.franco@gmail.com ",
     "x": 45.23,
-    "y": 142.26,
+    "y": 138.26,
     "font": "TrebuchetMS",
     "size": 10.0,
     "color": 1070028,
@@ -92,7 +92,7 @@
   {
     "text": "Github:",
     "x": 45.23,
-    "y": 153.26999999999998,
+    "y": 149.26999999999998,
     "font": "TrebuchetMS",
     "size": 10.0,
     "color": 0,
@@ -102,7 +102,7 @@
   {
     "text": "// ",
     "x": 86.1,
-    "y": 153.26999999999998,
+    "y": 149.26999999999998,
     "font": "TrebuchetMS",
     "size": 10.0,
     "color": 0,
@@ -112,7 +112,7 @@
   {
     "text": "nicolasfredesfranco ",
     "x": 96.55,
-    "y": 153.26999999999998,
+    "y": 149.26999999999998,
     "font": "TrebuchetMS",
     "size": 10.0,
     "color": 1070028,
@@ -142,7 +142,7 @@
   {
     "text": "LinkedIn: //",
     "x": 45.23,
-    "y": 164.26999999999998,
+    "y": 160.26999999999998,
     "font": "TrebuchetMS",
     "size": 10.0,
     "color": 0,
@@ -152,7 +152,7 @@
   {
     "text": " nicolasfredesfranco ",
     "x": 96.55,
-    "y": 164.26999999999998,
+    "y": 160.26999999999998,
     "font": "TrebuchetMS",
     "size": 10.0,
     "color": 1070028,
@@ -182,7 +182,7 @@
   {
     "text": "Twitter: //",
     "x": 45.23,
-    "y": 175.28,
+    "y": 171.28,
     "font": "TrebuchetMS",
     "size": 10.0,
     "color": 0,
@@ -192,7 +192,7 @@
   {
     "text": " nicofredesfranc",
     "x": 96.55,
-    "y": 175.28,
+    "y": 171.28,
     "font": "TrebuchetMS",
     "size": 10.0,
     "color": 1070028,
@@ -212,7 +212,7 @@
   {
     "text": "EDUCATION",
     "x": 91.63,
-    "y": 190.37,
+    "y": 186.37,
     "font": "TrebuchetMS-Bold",
     "size": 12.01,
     "color": 15790320,
@@ -232,7 +232,7 @@
   {
     "text": "Federico Santa María",
     "x": 47.13,
-    "y": 207.92,
+    "y": 202.92,
     "font": "TrebuchetMS-Bold",
     "size": 14.0,
     "color": 0,
@@ -262,7 +262,7 @@
   {
     "text": "Technical University",
     "x": 47.13,
-    "y": 223.92,
+    "y": 218.92,
     "font": "TrebuchetMS-Bold",
     "size": 14.0,
     "color": 0,
@@ -292,7 +292,7 @@
   {
     "text": "Valparaíso, Chile ",
     "x": 47.13,
-    "y": 236.32,
+    "y": 231.32,
     "font": "TrebuchetMS",
     "size": 10.0,
     "color": 0,
@@ -312,7 +312,7 @@
   {
     "text": "B.S. in Electronic ",
     "x": 47.13,
-    "y": 251.28999999999996,
+    "y": 246.28999999999996,
     "font": "TrebuchetMS-Bold",
     "size": 14.01,
     "color": 2978739,
@@ -342,7 +342,7 @@
   {
     "text": "Engineering",
     "x": 47.13,
-    "y": 267.3,
+    "y": 262.3,
     "font": "TrebuchetMS-Bold",
     "size": 14.01,
     "color": 2978739,
@@ -372,7 +372,7 @@
   {
     "text": "M.S. in Electronic ",
     "x": 47.13,
-    "y": 288.61,
+    "y": 283.61,
     "font": "TrebuchetMS-Bold",
     "size": 14.01,
     "color": 2978739,
@@ -402,7 +402,7 @@
   {
     "text": "Engineering",
     "x": 47.13,
-    "y": 304.62,
+    "y": 299.62,
     "font": "TrebuchetMS-Bold",
     "size": 14.01,
     "color": 2978739,
@@ -432,7 +432,7 @@
   {
     "text": "GPA: 92% ",
     "x": 47.13,
-    "y": 320.36,
+    "y": 315.36,
     "font": "TrebuchetMS",
     "size": 10.0,
     "color": 0,
@@ -452,7 +452,7 @@
   {
     "text": "Specialty: Machine Learning. ",
     "x": 47.13,
-    "y": 331.47,
+    "y": 326.47,
     "font": "TrebuchetMS",
     "size": 10.0,
     "color": 0,
@@ -472,7 +472,7 @@
   {
     "text": "Thesis: \"Protein functions ",
     "x": 47.13,
-    "y": 342.47,
+    "y": 337.47,
     "font": "TrebuchetMS",
     "size": 10.0,
     "color": 0,
@@ -492,7 +492,7 @@
   {
     "text": "prediction using Deep Learning.\" ",
     "x": 47.13,
-    "y": 353.48,
+    "y": 348.48,
     "font": "TrebuchetMS",
     "size": 10.0,
     "color": 0,
@@ -522,7 +522,7 @@
   {
     "text": "PAPERS & WORKSHOPS",
     "x": 68.33,
-    "y": 372.03,
+    "y": 367.03,
     "font": "TrebuchetMS-Bold",
     "size": 10.66,
     "color": 15790320,
@@ -542,7 +542,7 @@
   {
     "text": "Journal Paper in IEEE ACCESS",
     "x": 48.61,
-    "y": 388.54,
+    "y": 383.54,
     "font": "TrebuchetMS-Bold",
     "size": 10.0,
     "color": 0,
@@ -562,7 +562,7 @@
   {
     "text": "DOI: 10.1109/ACCESS.2021.3094723",
     "x": 50.92,
-    "y": 421.42,
+    "y": 419.42,
     "font": "TrebuchetMS-Italic",
     "size": 9.0,
     "color": 1070028,
@@ -582,7 +582,7 @@
   {
     "text": " \"",
     "x": 45.82,
-    "y": 400.93,
+    "y": 395.93,
     "font": "TrebuchetMS",
     "size": 10.0,
     "color": 0,
@@ -592,7 +592,7 @@
   {
     "text": "HGAN:",
     "x": 52.73,
-    "y": 400.93,
+    "y": 395.93,
     "font": "TrebuchetMS-Bold",
     "size": 10.0,
     "color": 0,
@@ -602,7 +602,7 @@
   {
     "text": " Hyperbolic Generative",
     "x": 80.87,
-    "y": 401.24,
+    "y": 396.24,
     "font": "TrebuchetMS",
     "size": 10.0,
     "color": 0,
@@ -622,7 +622,7 @@
   {
     "text": "July 2021 ",
     "x": 158.04,
-    "y": 411.97,
+    "y": 406.97,
     "font": "TrebuchetMS-Italic",
     "size": 9.0,
     "color": 0,
@@ -632,7 +632,7 @@
   {
     "text": "Adversarial Network\".",
     "x": 50.8,
-    "y": 411.97,
+    "y": 406.97,
     "font": "TrebuchetMS",
     "size": 10.0,
     "color": 0,
@@ -712,7 +712,7 @@
   {
     "text": "SKILLS",
     "x": 105.37,
-    "y": 471.07,
+    "y": 472.07,
     "font": "TrebuchetMS-Bold",
     "size": 12.01,
     "color": 15790320,
