@@ -10,7 +10,7 @@ We welcome contributions to improve the precision and capabilities of this CV ge
 - **Typing**: Use type hints (`typing` module) for all function arguments and return values.
 
 ### Data Integrity
-- Never modify `data/objective_dictionary.json` manually. It should only be updated via the extraction scripts if the source PDF changes.
+- The `coordinates.json` and `shapes.json` files define the exact positioning of all CV elements.
 - Ensure `coordinates.json` validation passes before committing (`src/validators.py` runs automatically on build).
 
 ### Pull Request Process
@@ -19,4 +19,4 @@ We welcome contributions to improve the precision and capabilities of this CV ge
 3. You may merge the Pull Request in once you have the sign-off of two other developers.
 
 ## Reporting Bugs
-- If you find a visual alignment error, please include a screenshot comparing the `objective` vs `generated` PDF.
+- If you find a visual alignment error, please include a screenshot with a clear description of the issue.
