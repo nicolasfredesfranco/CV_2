@@ -760,7 +760,7 @@
     "italic": false
   },
   {
-    "text": "• Python      • C       • C++",
+    "text": "• Python      • C        • C++",
     "x": 48.63,
     "y": 504.12,
     "font": "TrebuchetMS",
@@ -780,7 +780,7 @@
     "italic": false
   },
   {
-    "text": "• MySQL      • SQL",
+    "text": "• MySQL       • SQL",
     "x": 48.63,
     "y": 517.12,
     "font": "TrebuchetMS",
@@ -1000,7 +1000,7 @@
     "italic": false
   },
   {
-    "text": "• Vertex AI  Agent  Engine",
+    "text": "• Vertex AI  Agent Engine",
     "x": 48.63,
     "y": 584.39,
     "font": "TrebuchetMS",
