@@ -130,8 +130,8 @@
     "italic": false
   },
   {
-    "text": "      January 2026 ",
-    "x": 513.65,
+    "text": "January 2026",
+    "x": 523.65,
     "y": 146.95,
     "font": "TrebuchetMS-Italic",
     "size": 9.0,
@@ -281,7 +281,7 @@
   },
   {
     "text": "November 2025 - December 2025",
-    "x": 461.75,
+    "x": 459.0,
     "y": 217.09,
     "font": "TrebuchetMS-Italic",
     "size": 9.0,
