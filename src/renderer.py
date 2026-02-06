@@ -132,6 +132,19 @@ class CVRenderer:
                 # No transformation needed!
                 self.canvas.setFillColorRGB(*CONFIG.COLOR_PRIMARY_BLUE)
                 self.canvas.rect(x, y, width, height, fill=1, stroke=0)
+        
+        # DEBUG: Draw green horizontal line above main name
+        # Name is at X=233.63, Y=95.94 (PDF space), size=24.01
+        # Calculate name top edge in ReportLab space
+        name_y_pdf = 95.94
+        name_y_reportlab = CONFIG.PAGE_HEIGHT - name_y_pdf + CONFIG.Y_GLOBAL_OFFSET
+        name_height = 24.01
+        line_y = name_y_reportlab + name_height - 2  # Top edge of text, lowered 2 pts
+        
+        # Draw dark green line from left edge to right edge of page
+        self.canvas.setStrokeColorRGB(0, 0.5, 0)  # Dark green
+        self.canvas.setLineWidth(1.0)  # Medium thickness
+        self.canvas.line(0, line_y, CONFIG.PAGE_WIDTH, line_y)  # Full width
     
     def render_text_elements(self) -> None:
         """
