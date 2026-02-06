@@ -133,11 +133,6 @@ class CVRenderer:
                 self.canvas.setFillColorRGB(*CONFIG.COLOR_PRIMARY_BLUE)
                 self.canvas.rect(x, y, width, height, fill=1, stroke=0)
     
-        # DEBUG: Draw vertical reference line at X=587
-        self.canvas.setStrokeColorRGB(0, 0, 1)  # Blue
-        self.canvas.setLineWidth(0.5)  # Thin line
-        self.canvas.line(587, 0, 587, CONFIG.PAGE_HEIGHT)
-    
     def render_text_elements(self) -> None:
         """
         Render all text elements with hyperlinks and precision corrections.
