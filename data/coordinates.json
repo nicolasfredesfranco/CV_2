@@ -760,7 +760,7 @@
     "italic": false
   },
   {
-    "text": "• Python    • C    • C++",
+    "text": "• Python      • C       • C++",
     "x": 48.63,
     "y": 504.12,
     "font": "TrebuchetMS",
@@ -780,7 +780,7 @@
     "italic": false
   },
   {
-    "text": "• MySQL    • SQL",
+    "text": "• MySQL      • SQL",
     "x": 48.63,
     "y": 517.12,
     "font": "TrebuchetMS",
@@ -1000,7 +1000,7 @@
     "italic": false
   },
   {
-    "text": "• Vertex AI Agent Engine",
+    "text": "• Vertex AI  Agent  Engine",
     "x": 48.63,
     "y": 584.39,
     "font": "TrebuchetMS",
@@ -1020,7 +1020,7 @@
     "italic": false
   },
   {
-    "text": "• Google-ADK  • LangChain",
+    "text": "• Google-ADK    • LangChain",
     "x": 48.63,
     "y": 597.39,
     "font": "TrebuchetMS",
@@ -1080,7 +1080,7 @@
     "italic": false
   },
   {
-    "text": "• AWS  • Snowflake  • GCP",
+    "text": "• AWS   • Snowflake   • GCP",
     "x": 48.63,
     "y": 627.11,
     "font": "TrebuchetMS",
@@ -1270,7 +1270,7 @@
     "italic": false
   },
   {
-    "text": "• IoT  • Forecasting",
+    "text": "• IoT    • Forecasting",
     "x": 48.63,
     "y": 694.07,
     "font": "TrebuchetMS",
